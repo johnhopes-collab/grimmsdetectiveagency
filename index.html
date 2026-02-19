@@ -21,6 +21,9 @@
             font-size: 36px;
             font-weight: bold;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .content-container {
@@ -29,22 +32,31 @@
         }
 
         .sidebar {
-            width: 250px;
+            /* Reduced to approximately 75% of original size (was 250px) */
+            width: 187px;
             background-color: #c19a6b; /* Light brown */
-            padding: 20px;
+            padding: 15px; /* Reduced from 20px */
+            /* Make the sidebar sticky */
+            position: sticky;
+            top: 80px; /* Position below the header */
+            height: calc(100vh - 80px); /* Full height minus header */
+            overflow-y: auto; /* In case content is too tall */
+            align-self: flex-start;
         }
 
         .sidebar-button {
             display: block;
             width: 100%;
-            padding: 15px 0;
-            margin-bottom: 15px;
+            /* Reduced padding from 15px to 11px (~75%) */
+            padding: 11px 0;
+            margin-bottom: 11px; /* Reduced from 15px */
             background-color: #5e2c04; /* Dark brown */
             color: #ffd700; /* Yellow */
             text-align: center;
-            font-size: 18px;
+            /* Reduced font size from 18px to 14px (~75%) */
+            font-size: 14px;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px; /* Reduced from 5px */
             cursor: pointer;
             font-weight: bold;
             text-decoration: none;
@@ -86,6 +98,8 @@
             .sidebar {
                 width: 100%;
                 padding: 10px;
+                position: static; /* Remove sticky on mobile */
+                height: auto;
             }
             
             .sidebar-buttons {
@@ -109,7 +123,7 @@
     <div class="content-container">
         <aside class="sidebar">
             <div class="sidebar-buttons">
-                <a href="#" class="sidebar-button">The Cases</a>
+                <a href="#" class="sidebar-button">Cases</a>
                 <a href="#" class="sidebar-button">Detectives</a>
                 <a href="#" class="sidebar-button">Services</a>
                 <a href="#" class="sidebar-button">Contact</a>
@@ -128,6 +142,23 @@
                 <p>Browse our website to learn more about our services, meet our team of expert detectives, or review some of our most notable cases. When you're ready to uncover the truth, contact us for a confidential consultation.</p>
                 
                 <p><em>"In a world of mysteries, we find the facts."</em></p>
+
+                <!-- Added more text to demonstrate scrolling -->
+                <h2>Our Approach</h2>
+                <p>At Grimms Detective Agency, we understand that each case is unique and requires a tailored approach. Our methodology combines time-tested detective work with modern technology and forensic techniques.</p>
+                
+                <p>We begin with a thorough consultation to understand your specific needs and concerns. Our team then develops a strategic investigation plan, utilizing the appropriate resources and expertise for your case.</p>
+                
+                <p>Throughout the investigation, we maintain open communication with our clients, providing regular updates and insights. We believe in transparency and keep you informed at every stage of the process.</p>
+                
+                <p>When the investigation concludes, we deliver comprehensive findings with clear documentation and evidence. Our work doesn't just identify what happened—it helps you understand why it happened and provides guidance on potential next steps.</p>
+                
+                <h2>Our History</h2>
+                <p>Founded in 1923, Grimms Detective Agency has a storied history of solving cases that seemed unsolvable. What began as a small family operation has grown into a respected institution in the investigative community.</p>
+                
+                <p>Through the decades, we've adapted to changing times while maintaining our core values of integrity, diligence, and discretion. From the analog era of fingerprint cards and typewriters to today's digital forensics and surveillance technology, Grimms has remained at the forefront of investigative practice.</p>
+                
+                <p>Our agency has worked on cases spanning from local mysteries to international intrigue. The Grimms name has become synonymous with thorough investigation and unwavering pursuit of the truth.</p>
             </div>
         </main>
     </div>
