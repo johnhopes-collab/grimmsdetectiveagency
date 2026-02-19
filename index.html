@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grimms Detective Agency</title>
     <style>
-        /* CSS with removed sticky positioning */
+        /* CSS with removed motto and mobile-specific image */
         body {
             margin: 0;
             padding: 0;
@@ -17,14 +17,20 @@
             background-color: #2c2c2c;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            /* Removed position: sticky */
         }
         
-        .header img {
+        .header-desktop {
             max-width: 100%; /* Make image responsive */
             height: auto;
             display: block; /* Remove any extra space below image */
             margin: 0 auto; /* Center the image */
+        }
+        
+        .header-mobile {
+            display: none; /* Hide on desktop */
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
         }
 
         .content-container {
@@ -33,32 +39,10 @@
         }
 
         .sidebar {
-            /* Reduced to approximately 75% of original size */
             width: 187px;
             background-color: #c19a6b; /* Light brown */
             padding: 15px;
-            /* Removed position: sticky */
             align-self: flex-start;
-        }
-
-        .agency-motto {
-            font-family: 'Courier New', monospace;
-            letter-spacing: 2px;
-            text-align: center;
-            background-color: #5e2c04;
-            color: #ffd700;
-            padding: 8px 15px;
-            margin: 0;
-            font-weight: bold;
-        }
-
-        .motto-word {
-            font-weight: bold;
-        }
-
-        .motto-separator {
-            margin: 0 10px;
-            opacity: 0.7;
         }
 
         .sidebar-button {
@@ -106,6 +90,14 @@
         }
 
         @media (max-width: 768px) {
+            .header-desktop {
+                display: none; /* Hide desktop banner on mobile */
+            }
+            
+            .header-mobile {
+                display: block; /* Show mobile banner on mobile */
+            }
+            
             .content-container {
                 flex-direction: column;
             }
@@ -131,17 +123,9 @@
 </head>
 <body>
     <header class="header">
-        <!-- Replace text with image banner -->
-        <img src="images/webbanner1.png" alt="Grimms Detective Agency">
-        
-        <!-- Adding motto below the header image -->
-        <div class="agency-motto">
-            <span class="motto-word">SECURE</span>
-            <span class="motto-separator">•</span>
-            <span class="motto-word">RECORD</span>
-            <span class="motto-separator">•</span>
-            <span class="motto-word">CONTAIN</span>
-        </div>
+        <!-- Two banner images - one for desktop, one for mobile -->
+        <img src="images/webbanner1.png" alt="Grimms Detective Agency" class="header-desktop">
+        <img src="images/banner1mobile.png" alt="Grimms Detective Agency" class="header-mobile">
     </header>
 
     <div class="content-container">
