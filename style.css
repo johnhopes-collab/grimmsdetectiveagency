@@ -6,7 +6,7 @@
     --light-color: #ecf0f1;
     --sidebar-brown: #c19a6b;
     --button-brown: #5e2c04;
-    --button-text: #ffd700;
+    --button-text: #e6d9c8;
 }
 
 body {
@@ -99,7 +99,7 @@ body {
 .main-content {
     flex: 1;
     padding: 30px;
-    padding-left: 20px; /* Reduced left padding to hug sidebar */
+    padding-left: 10px; /* Reduced left padding to hug sidebar */
     background-color: transparent;
     box-shadow: none;
 }
@@ -190,5 +190,6 @@ body {
         width: 100%; /* Full width buttons on very small screens */
     }
 }
+
 
 
