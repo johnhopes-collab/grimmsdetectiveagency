@@ -13,28 +13,28 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Georgia', serif;
-    /* Fix #1: Correct path to tiled background and make sure it's set properly */
-    background-image: url('images/tile_bb1.png'); /* Removed '../' from path */
+    background-image: url('images/tile_bb1.png');
     background-repeat: repeat;
+    background-attachment: fixed;
     color: var(--text-color);
-    /* Ensure background is applied */
-    background-attachment: fixed; /* Keep the background fixed during scroll */
 }
 
-/* Header styling */
+/* Header styling - removed top padding */
 .header {
-    background-color: transparent; 
+    background-color: transparent;
     text-align: center;
-    padding: 20px 0;
+    padding: 0; /* Removed padding from all sides */
     width: 100%;
+    margin: 0; /* Ensure no margin */
 }
 
 .header-desktop {
     max-width: 80%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /* Center horizontally but no top margin */
     object-fit: contain;
+    padding-top: 0; /* Explicit zero top padding */
 }
 
 .header-mobile {
@@ -43,25 +43,24 @@ body {
     height: auto;
     margin: 0 auto;
     object-fit: contain;
+    padding-top: 0; /* Explicit zero top padding */
 }
 
-/* Content structure */
+/* Content structure - updated for 3-column layout */
 .content-container {
     display: flex;
     min-height: calc(100vh - 274px);
-    /* Fix #2: Remove max-width to allow full-width background */
     width: 100%;
-    /* Background should show through, not be contained */
+    max-width: 1400px; /* Prevent excessive stretching on ultra-wide screens */
+    margin: 0 auto;
 }
 
-/* Sidebar styling */
+/* Left sidebar styling - adjusted width */
 .sidebar {
-    width: 187px;
-    /* Fix #3: Make sidebar background transparent to show tile */
+    width: 160px; /* Reduced from 187px */
     background-color: var(--sidebar-brown);
     padding: 15px;
     align-self: flex-start;
-    /* Keep sidebar solid for readability */
 }
 
 .sidebar-buttons {
@@ -70,11 +69,14 @@ body {
     margin: 0;
 }
 
+/* Reduced button width to 2/3 */
 .sidebar-button {
     display: block;
-    width: 100%;
+    width: 66%; /* Reduced to 2/3 of original width */
     padding: 11px 0;
     margin-bottom: 11px;
+    margin-left: auto; /* Center the narrower buttons */
+    margin-right: auto;
     background-color: var(--button-brown);
     color: var(--button-text);
     text-align: center;
@@ -93,13 +95,22 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Main content area */
+/* Main content area - reduced padding to hug sidebar */
 .main-content {
     flex: 1;
     padding: 30px;
-    /* Fix #4: Make main content background transparent or semi-transparent */
-    background-color: transparent; /* Allow background to show through */
-    box-shadow: none; /* Remove shadow that might obscure background */
+    padding-left: 20px; /* Reduced left padding to hug sidebar */
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Right sidebar - new addition */
+.right-sidebar {
+    width: 140px; /* Slightly narrower than left sidebar */
+    background-color: var(--sidebar-brown);
+    padding: 15px;
+    align-self: flex-start;
+    /* Currently blank as requested */
 }
 
 .text-box {
@@ -109,7 +120,6 @@ body {
     border-radius: 5px;
     line-height: 1.6;
     color: #333;
-    /* Keep text box background solid for readability */
 }
 
 .text-box h2 {
@@ -117,37 +127,8 @@ body {
     margin-top: 0;
 }
 
-/* Icon integration if needed */
-.sidebar-button::before {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-}
-
-#cases::before {
-    background-image: url('images/icons/case-icon.svg'); /* Adjusted path */
-}
-
-#detectives::before {
-    background-image: url('images/icons/detective-icon.svg'); /* Adjusted path */
-}
-
-#services::before {
-    background-image: url('images/icons/service-icon.svg'); /* Adjusted path */
-}
-
-#contact::before {
-    background-image: url('images/icons/contact-icon.svg'); /* Adjusted path */
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    /* Header image swap */
+/* Responsive styles - updated for 3-column layout */
+@media (max-width: 900px) {
     .header-desktop {
         display: none;
     }
@@ -159,19 +140,22 @@ body {
     }
     
     .header {
-        padding: 10px 0;
+        padding: 0; /* Keep consistent with desktop */
     }
     
-    /* Content layout changes */
     .content-container {
         flex-direction: column;
     }
     
-    .sidebar {
+    .sidebar, .right-sidebar {
         width: 100%;
         padding: 10px;
         height: auto;
         box-sizing: border-box;
+    }
+    
+    .right-sidebar {
+        order: 3; /* Move right sidebar to the bottom on mobile */
     }
     
     .sidebar-buttons {
@@ -181,12 +165,13 @@ body {
     }
     
     .sidebar-button {
-        width: 48%;
+        width: 31%; /* 3 buttons per row on tablet */
         margin-bottom: 10px;
     }
     
     .main-content {
         padding: 15px;
+        order: 2; /* Keep main content in the middle on mobile */
     }
     
     .text-box {
@@ -194,9 +179,14 @@ body {
     }
 }
 
-/* Extra small devices */
+@media (max-width: 600px) {
+    .sidebar-button {
+        width: 48%; /* 2 buttons per row on mobile */
+    }
+}
+
 @media (max-width: 480px) {
     .sidebar-button {
-        width: 100%;
+        width: 100%; /* Full width buttons on very small screens */
     }
 }
