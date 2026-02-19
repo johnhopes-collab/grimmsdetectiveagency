@@ -12,7 +12,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Bebas Neue', 'League Gothic', sans-serif;
+    font-family: 'Georgia', serif;
     background-image: url('images/tile_bb2.png');
     background-repeat: repeat;
     background-attachment: fixed;
@@ -59,6 +59,7 @@ body {
 .sidebar {
     width: 160px; /* Reduced from 187px */
     background-color: var(--sidebar-brown);
+    font-family: 'Bebas Neue', 'League Gothic', sans-serif;
     padding: 15px;
     align-self: flex-start;
 }
@@ -190,6 +191,7 @@ body {
         width: 100%; /* Full width buttons on very small screens */
     }
 }
+
 
 
 
