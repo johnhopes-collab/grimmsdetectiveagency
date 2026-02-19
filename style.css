@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Georgia', serif;
-    background-image: url('images/tile_bb1.png');
+    background-image: url('images/tile_bb2.png');
     background-repeat: repeat;
     background-attachment: fixed;
     color: var(--text-color);
@@ -190,3 +190,4 @@ body {
         width: 100%; /* Full width buttons on very small screens */
     }
 }
+
