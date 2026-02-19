@@ -106,9 +106,9 @@ body {
 
 /* Right sidebar - new addition */
 .right-sidebar {
-    width: 140px; /* Slightly narrower than left sidebar */
+    width: 160px; /* Slightly narrower than left sidebar */
     background-color: var(--sidebar-brown);
-    padding: 15px;
+    padding: 5px;
     align-self: flex-start;
     /* Currently blank as requested */
 }
@@ -190,6 +190,7 @@ body {
         width: 100%; /* Full width buttons on very small screens */
     }
 }
+
 
 
 
