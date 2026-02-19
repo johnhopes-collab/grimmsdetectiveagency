@@ -58,7 +58,7 @@ body {
     width: 100%;
     max-width: 1600px; /* Prevent excessive stretching on ultra-wide screens */
     margin: 0 auto;
-    padding-top: 650px; /* Position content 650px from top of page */
+    padding-top: 5px; /* Position content 650px from top of page */
     box-sizing: border-box;
 }
 
@@ -204,3 +204,4 @@ body {
         width: 100%;
     }
 }
+
