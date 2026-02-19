@@ -79,7 +79,7 @@ body {
     background-color: var(--button-brown);
     color: var(--button-text);
     text-align: center;
-    font-family: 'Bebas Neue', 'League Gothic', sans-serif;
+    font-family: 'Arial Narrow', sans-serif;
     font-size: 14px;
     border: none;
     border-radius: 4px;
@@ -190,6 +190,7 @@ body {
         width: 100%; /* Full width buttons on very small screens */
     }
 }
+
 
 
 
