@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Georgia', serif;
+    font-size: 12px;
     background-image: url('images/tile_bb3.png');
     background-repeat: repeat;
     background-attachment: fixed;
@@ -31,12 +32,14 @@ body {
 }
 
 .header-desktop {
-    max-width: 20%;
+    max-width: 70%;
     height: auto;
     display: block;
     margin: 0 auto;
     object-fit: contain;
     padding-top: 0;
+    position: relative;
+    left: 5px; /* Alternative method: direct offset */
 }
 
 .header-mobile {
@@ -51,7 +54,7 @@ body {
 /* Content structure - adjusted for proper positioning */
 .content-container {
     position: absolute;
-    top: 150px;
+    top: 170px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -64,11 +67,11 @@ body {
     box-sizing: border-box;
 }
 
-/* Left sidebar styling */
+/* Left sidebar styling - adjusted for alignment */
 .sidebar {
     width: 120px;
     background-color: var(--sidebar-brown);
-    padding: 10px;
+    padding: 0 10px 10px 10px; /* Removed top padding */
     align-self: flex-start;
 }
 
@@ -76,6 +79,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    padding-top: 10px; /* Add padding to the buttons container instead */
 }
 
 .sidebar-button {
@@ -104,19 +108,20 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Main content area */
+/* Main content area - adjusted for alignment */
 .main-content {
     flex: 1;
-    padding: 30px 5px 30px 10px;
+    padding: 0 15px 30px 10px; /* Removed top padding */
     background-color: transparent;
     box-shadow: none;
+    align-self: flex-start; /* Ensure it aligns at the top */
 }
 
-/* Right sidebar */
+/* Right sidebar - adjusted for alignment */
 .right-sidebar {
     width: 120px;
     background-color: var(--sidebar-brown);
-    padding: 5px;
+    padding: 0 5px 5px 5px; /* Removed top padding */
     align-self: flex-start;
     margin-left: -5px;
 }
@@ -129,6 +134,7 @@ body {
     line-height: 1.6;
     color: #333;
     max-width: 100%;
+    margin-top: 0; /* Ensure no top margin */
 }
 
 .text-box h2 {
@@ -204,4 +210,3 @@ body {
         width: 100%;
     }
 }
-
