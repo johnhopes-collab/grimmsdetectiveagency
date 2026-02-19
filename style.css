@@ -71,7 +71,7 @@ body {
 
 .sidebar-button {
     display: block;
-    width: 55%; /* Reduced to 2/3 of original width */
+    width: 66%; /* Reduced to 2/3 of original width */
     padding: 4px 0;
     margin-bottom: 11px;
     margin-left: auto; /* Center the narrower buttons */
@@ -190,6 +190,7 @@ body {
         width: 100%; /* Full width buttons on very small screens */
     }
 }
+
 
 
 
