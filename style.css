@@ -31,7 +31,7 @@ body {
 }
 
 .header-desktop {
-    max-width: 80%;
+    max-width: 20%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -51,7 +51,7 @@ body {
 /* Content structure - adjusted for proper positioning */
 .content-container {
     position: absolute;
-    top: 650px;
+    top: 150px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -204,3 +204,4 @@ body {
         width: 100%;
     }
 }
+
