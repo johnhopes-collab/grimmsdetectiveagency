@@ -32,7 +32,7 @@ body {
 }
 
 .header-desktop {
-    max-width: 73%;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -210,4 +210,5 @@ body {
         width: 100%;
     }
 }
+
 
