@@ -109,19 +109,20 @@ body {
 }
 
 
-/* Right sidebar advertisement styling */
+/* Add this debugging CSS temporarily */
 .sidebar-ad {
-    width: 100%;
-    margin: 10px 0;
-    z-index: 10; /* Bring it to front */
-    overflow: hidden;
+    border: 1px solid red; /* Makes the container visible */
 }
 
 .sidebar-ad-image {
-    width: 100%; /* This makes the image match the sidebar width */
-    height: auto; /* Maintains the aspect ratio */
+    width: 100%;
+    height: auto;
     display: block;
     max-width: 100%;
+    border: 1px solid blue; /* Makes the image area visible */
+    opacity: 1 !important; /* Force visibility */
+    position: static !important; /* Prevent positioning issues */
+    visibility: visible !important; /* Ensure visibility */
 }
 
 /* Main content area - adjusted for alignment */
@@ -226,6 +227,7 @@ body {
         width: 100%;
     }
 }
+
 
 
 
