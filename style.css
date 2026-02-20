@@ -145,11 +145,11 @@ a img {
 
 /* Right sidebar - adjusted for alignment */
 .right-sidebar {
-    width: 255px;
+    width: 139px;
     background-color: var(--sidebar-brown);
     padding: 0 0px 0px 0px; /* Removed top padding */
     align-self: flex-start;
-    margin-left: -5px;
+    margin-left: -15px;
 }
 
 .text-box {
@@ -236,15 +236,3 @@ a img {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
