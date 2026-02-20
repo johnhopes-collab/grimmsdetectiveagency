@@ -116,13 +116,12 @@ body {
 }
 
 .sidebar-square-image {
-    width: 100%; /* This makes the image match the sidebar width */
+    width: 50%; /* This makes the image match the sidebar width */
     height: auto; /* Maintains the aspect ratio */
     display: block;
     max-width: 100%;
 }
 
-/* Fix for the blue border around linked images */
 a img {
     border: none;
     outline: none;
@@ -132,6 +131,8 @@ a img {
     text-decoration: none;
     display: block;
 }
+
+
 
 /* Main content area - adjusted for alignment */
 .main-content {
@@ -235,6 +236,7 @@ a img {
         width: 100%;
     }
 }
+
 
 
 
