@@ -122,6 +122,17 @@ body {
     max-width: 100%;
 }
 
+/* Fix for the blue border around linked images */
+a img {
+    border: none;
+    outline: none;
+}
+
+.sidebar-square a {
+    text-decoration: none;
+    display: block;
+}
+
 /* Main content area - adjusted for alignment */
 .main-content {
     flex: 1;
@@ -224,6 +235,7 @@ body {
         width: 100%;
     }
 }
+
 
 
 
