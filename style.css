@@ -108,21 +108,18 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Add this debugging CSS temporarily */
-.sidebar-ad {
-    border: 1px solid red; /* Makes the container visible */
+/* Right sidebar styling */
+.sidebar-square {
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
 }
 
-.sidebar-ad-image {
-    width: 100%;
-    height: auto;
+.sidebar-square-image {
+    width: 100%; /* This makes the image match the sidebar width */
+    height: auto; /* Maintains the aspect ratio */
     display: block;
     max-width: 100%;
-    border: 1px solid blue; /* Makes the image area visible */
-    opacity: 1 !important; /* Force visibility */
-    position: static !important; /* Prevent positioning issues */
-    visibility: visible !important; /* Ensure visibility */
 }
 
 /* Main content area - adjusted for alignment */
@@ -227,6 +224,7 @@ body {
         width: 100%;
     }
 }
+
 
 
 
