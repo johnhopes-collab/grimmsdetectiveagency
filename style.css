@@ -176,10 +176,6 @@ a img {
   max-width: 1100px;
   margin: 4rem auto;
   padding: 2rem;
-  background-color: #f8f5f0;
-  border: 1px solid #d4c9b0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  font-size: 65%; /* Makes all em/rem measurements inside 85% of normal */
 }
 
 /* Elegant heading */
@@ -190,6 +186,7 @@ a img {
   color: #2c2c2c;
   margin-bottom: 2.5rem;
   position: relative;
+  font-size: 200%;
 }
 
 .testimonials-heading:after {
@@ -230,6 +227,7 @@ a img {
   margin: 0;
   padding: 0;
   color: #333;
+  font-size: 100%;
 }
 
 .testimonial cite {
@@ -240,6 +238,7 @@ a img {
   font-weight: 400;
   color: #666;
   margin-top: 0.8rem;
+  font-size: 80%;
 }
 
 
@@ -311,8 +310,6 @@ a img {
         width: 100%;
     }
 }
-
-
 
 
 
