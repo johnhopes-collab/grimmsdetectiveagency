@@ -108,6 +108,21 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+/* Right sidebar advertisement styling */
+.sidebar-ad {
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.sidebar-ad-image {
+    width: 100%; /* This makes the image match the sidebar width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block;
+    max-width: 100%;
+}
+
 /* Main content area - adjusted for alignment */
 .main-content {
     flex: 1;
@@ -210,6 +225,7 @@ body {
         width: 100%;
     }
 }
+
 
 
 
