@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiries - Grimms Detective Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Two banner images - one for desktop, one for mobile -->
+        <img src="images/banner6.png" alt="Grimms Detective Agency" class="header-desktop">
+        <img src="images/banner2mobile.png" alt="Grimms Detective Agency" class="header-mobile">
+    </header>
+
+    <div class="content-container">
+        <aside class="sidebar">
+            <div class="sidebar-buttons">
+                <a href="index.html" class="sidebar-button">FRONT DESK</a>
+                <a href="#" class="sidebar-button">CASE FILES</a>
+                <a href="#" class="sidebar-button">ARCHIVES</a>
+                <a href="#" class="sidebar-button">ABOUT US</a>
+                <a href="inquiries.html" class="sidebar-button">INQUIRIES</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="text-box">
+                <h2>Submit an Inquiry</h2>
+                <p>Have a case of a peculiar nature? The Grimms Detective Agency specializes in matters others can't—or won't—handle. Fill out the form below to contact our agents.</p>
+                
+                <!-- Add your inquiry form or contact information here -->
+                <form action="submit_form.php" method="post">
+                    <div>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="inquiry">Nature of Inquiry:</label>
+                        <textarea id="inquiry" name="inquiry" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit Inquiry</button>
+                </form>
+                
+                <p>Or contact us directly:</p>
+                <p>Address: 221B Baker Street, London<br>
+                Telephone: (555) 123-4567<br>
+                Telegraph: GRIMMSAGENCY</p>
+            </div>
+        </main>
+
+        <aside class="right-sidebar">
+            <!-- Currently blank as in your original -->
+        </aside>
+    </div>
+</body>
+</html>
