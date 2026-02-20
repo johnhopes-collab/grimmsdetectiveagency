@@ -179,7 +179,7 @@ a img {
   background-color: #f8f5f0;
   border: 1px solid #d4c9b0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  font-size: 85%; /* Makes all em/rem measurements inside 85% of normal */
+  font-size: 65%; /* Makes all em/rem measurements inside 85% of normal */
 }
 
 /* Elegant heading */
@@ -311,6 +311,7 @@ a img {
         width: 100%;
     }
 }
+
 
 
 
