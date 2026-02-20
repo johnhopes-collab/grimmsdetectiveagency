@@ -213,7 +213,7 @@ a img {
 }
 
 .testimonial:before {
-  content: """;
+  content: "";
   position: absolute;
   top: -20px;
   left: 10px;
@@ -311,6 +311,7 @@ a img {
         width: 100%;
     }
 }
+
 
 
 
