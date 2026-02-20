@@ -145,9 +145,9 @@ a img {
 
 /* Right sidebar - adjusted for alignment */
 .right-sidebar {
-    width: 120px;
+    width: 255px;
     background-color: var(--sidebar-brown);
-    padding: 0 5px 5px 5px; /* Removed top padding */
+    padding: 0 0px 0px 0px; /* Removed top padding */
     align-self: flex-start;
     margin-left: -5px;
 }
@@ -236,6 +236,7 @@ a img {
         width: 100%;
     }
 }
+
 
 
 
