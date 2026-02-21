@@ -14,7 +14,7 @@ body {
     padding: 0;
     font-family: 'Georgia', serif;
     font-size: 13px;
-    background-image: url('images/tile_bb3.png');
+    background-image: url('images/tile_bb4.png');
     background-repeat: repeat;
     background-attachment: fixed;
     color: var(--text-color);
@@ -174,8 +174,8 @@ a img {
 /* Overall container */
 .testimonials-container {
   max-width: 1100px;
-  margin: 4rem auto;
-  padding: 2rem;
+  margin: 1rem auto;
+  padding: 1rem;
 }
 
 /* Elegant heading */
@@ -202,8 +202,8 @@ a img {
 
 /* Individual testimonial styling */
 .testimonial {
-  margin-bottom: 3rem;
-  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
   background-color: white;
   border-left: 4px solid #b8a278;
   position: relative;
@@ -237,8 +237,8 @@ a img {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: #666;
-  margin-top: 0.8rem;
-  font-size: 80%;
+  margin-top: 0.4rem;
+  font-size: 90%;
 }
 
 
