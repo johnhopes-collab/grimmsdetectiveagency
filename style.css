@@ -293,67 +293,7 @@ a img {
     /* Your existing mobile styles */
 
 }
-
-@media (max-width: 600px) { /* 600px ÷ 0.7 = 857px */
-    /* Your existing tablet styles */
-    .header-desktop {
-        display: none;
-    }
-    
-    .header-mobile {
-        display: block;
-        max-width: 90%;
-        margin: 0 auto;
-    }
-    
-    /* Reset the positioning for mobile */
-    .header {
-        position: static;
-    }
-    
-    .content-container {
-        position: static;
-        flex-direction: column;
-        min-height: auto;
-    }
-    
-    .sidebar, .right-sidebar {
-        width: 100%;
-        padding: 10px;
-        height: auto;
-        box-sizing: border-box;
-        margin-left: 0;
-    }
-    
-    .right-sidebar {
-        order: 3;
-    }
-    
-    .sidebar-buttons {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
-    .sidebar-button {
-        width: 31%;
-        margin-bottom: 10px;
-    }
-    
-    .main-content {
-        padding: 15px;
-        order: 2;
-    }
-    
-    .text-box {
-        padding: 15px;
-        background-color: #f9f3e9;
-    }
-
-}
-
-@media (max-width: 500px) { /* 480px ÷ 0.7 = 685px */
-    /* Your existing small mobile styles */
+@media (max-width: 480px) {
     .sidebar-button {
         width: 100%;
     }
