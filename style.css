@@ -293,7 +293,7 @@ a img {
 
 }
 
-@media (max-width: 857px) { /* 600px ÷ 0.7 = 857px */
+@media (max-width: 600px) { /* 600px ÷ 0.7 = 857px */
     /* Your existing tablet styles */
     .header-desktop {
         display: none;
@@ -351,7 +351,7 @@ a img {
 
 }
 
-@media (max-width: 685px) { /* 480px ÷ 0.7 = 685px */
+@media (max-width: 500px) { /* 480px ÷ 0.7 = 685px */
     /* Your existing small mobile styles */
     .sidebar-button {
         width: 100%;
