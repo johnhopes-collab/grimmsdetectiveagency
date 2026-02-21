@@ -287,76 +287,111 @@ a img {
 
 
 
-/* Responsive styles */
-@media (max-width: 1285px) { /* 900px ÷ 0.7 = 1285px */
-    /* Your existing mobile styles */
-
+/* Adjust your media queries to use standard breakpoints */
+@media (max-width: 900px) {
+    /* Tablet styles */
+    .header-desktop {
+        width: 90%; /* Wider on tablet */
+    }
+    
+    .main-content {
+        width: calc(100% - 28%); /* Adjust for slightly narrower sidebars */
+    }
 }
 
-@media (max-width: 600px) { /* 600px ÷ 0.7 = 857px */
-    /* Your existing tablet styles */
+@media (max-width: 768px) {
+    /* Mobile styles */
+    body {
+        font-size: 14px; /* Increase font size for mobile */
+    }
+    
     .header-desktop {
         display: none;
     }
     
     .header-mobile {
         display: block;
-        max-width: 90%;
+        width: 100%;
+        max-width: 100%;
         margin: 0 auto;
+        padding: 10px 0;
     }
     
-    /* Reset the positioning for mobile */
+    /* Reset positioning */
     .header {
         position: static;
+        margin-bottom: 20px; /* Add space below header */
     }
     
     .content-container {
         position: static;
         flex-direction: column;
+        margin-top: 0; /* Remove negative margin */
         min-height: auto;
+        width: 100%;
+        padding: 0 10px; /* Add some padding */
+        box-sizing: border-box;
     }
     
     .sidebar, .right-sidebar {
         width: 100%;
-        padding: 10px;
-        height: auto;
-        box-sizing: border-box;
-        margin-left: 0;
-    }
-    
-    .right-sidebar {
-        order: 3;
-    }
-    
-    .sidebar-buttons {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
-    .sidebar-button {
-        width: 31%;
-        margin-bottom: 10px;
+        margin: 0 0 15px 0;
     }
     
     .main-content {
-        padding: 15px;
-        order: 2;
+        width: 100%;
+        margin: 0 0 15px 0;
+        order: 1; /* Display main content first */
     }
     
+    .sidebar {
+        order: 2; /* Display left sidebar second */
+    }
+    
+    .right-sidebar {
+        order: 3; /* Display right sidebar last */
+    }
+    
+    /* Improve mobile navigation */
+    .sidebar-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .sidebar-button {
+        width: 48%; /* Two buttons per row */
+        margin-bottom: 10px;
+        font-size: 14px; /* Larger text for buttons */
+        padding: 10px 0; /* Taller buttons for touch */
+    }
+    
+    /* Fix page title bar */
+    .page-title-bar {
+        position: relative;
+        top: 0;
+        margin-bottom: 10px;
+        height: 20px; /* Taller for mobile */
+    }
+    
+    .page-title {
+        font-size: 12px; /* Larger text */
+    }
+    
+    /* Text box padding */
     .text-box {
         padding: 15px;
-        background-color: #f9f3e9;
     }
-
 }
 
-@media (max-width: 500px) { /* 480px ÷ 0.7 = 685px */
-    /* Your existing small mobile styles */
+@media (max-width: 480px) {
+    /* Small mobile adjustments */
     .sidebar-button {
-        width: 100%;
+        width: 100%; /* Full width buttons for smallest screens */
+        margin-bottom: 8px;
     }
 }
+
 
 
 
