@@ -263,11 +263,11 @@ a img {
 /* Full-width page title bar */
 .page-title-bar {
     position: absolute;
-    top: calc(-4vh); /* Position it 15px above the content container's margin-top */
+    top: calc(-2vh); /* Position it 15px above the content container's margin-top */
     left: 0;
     right: 0;
     width: 100%;
-    height: 15px;
+    height: 11px;
     background-color: #5e2c04; /* Same as your button-brown variable */
     display: flex;
     justify-content: center;
@@ -276,8 +276,8 @@ a img {
 }
 
 .page-title {
-    font-family: 'Arial Narrow', sans-serif;
-    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+    font-size: 7px;
     color: var(--button-text);
     font-weight: bold;
     letter-spacing: 1px;
