@@ -293,11 +293,62 @@ a img {
     /* Your existing mobile styles */
 
 }
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     .sidebar-button {
         width: 100%;
     }
+
+        .header-desktop {
+        display: none;
+    }
+    
+    .header-mobile {
+        display: block;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    /* Reset the positioning for mobile */
+    .header {
+        position: static;
+    }
+    
+    .content-container {
+        position: static;
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .sidebar, .right-sidebar {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+    
+    .right-sidebar {
+        order: 3;
+    }
+    
+    .sidebar-buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    
+    .main-content {
+        padding: 15px;
+        order: 2;
+    }
+    
+    .text-box {
+        padding: 15px;
+        background-color: #f9f3e9;
+    }
 }
+
 
 
 
