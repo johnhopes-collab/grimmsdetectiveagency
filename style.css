@@ -288,7 +288,7 @@ a img {
 
 
 /* Adjust your media queries to use standard breakpoints */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     /* Tablet styles */
     .header-desktop {
         width: 90%; /* Wider on tablet */
@@ -299,7 +299,7 @@ a img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
     /* Mobile styles */
     body {
         font-size: 14px; /* Increase font size for mobile */
@@ -391,6 +391,7 @@ a img {
         margin-bottom: 8px;
     }
 }
+
 
 
 
