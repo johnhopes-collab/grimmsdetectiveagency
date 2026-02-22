@@ -23,6 +23,8 @@ body {
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    display: flex; /* Add this */
+    flex-direction: column; /* Add this */
 }
 
 /* Adjust header for proportional scaling */
@@ -68,6 +70,7 @@ body {
     box-sizing: border-box;
     padding: 0; /* Remove padding */
     justify-content: space-between; /* This pushes sidebars to edges */
+    margin-bottom: 30px; /* Add space before the footer */
 }
 
 
@@ -332,6 +335,37 @@ a img {
 
 
 
+/* Footer styling */
+.site-footer {
+    width: 100%;
+    background-color: rgba(94, 44, 4, 0.95); /* Using your button-brown color with opacity */
+    color: var(--button-text);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Space between content and footer */
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 8px; /* Keeping with your site's small text style */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow at the top of footer */
+}
+
+.footer-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.site-footer .small-text {
+    font-size: 7px;
+    opacity: 0.7;
+}
+
+
+
 
 /* Responsive styles */
 @media (max-width: 1285px) { /* 900px ÷ 0.7 = 1285px */
@@ -426,6 +460,21 @@ a img {
         width: 48%; /* Two buttons per row on smaller screens */
         margin: 4px;
     }
+
+    .site-footer {
+        font-size: 10px;
+        padding: 15px 0;
+    }
+    
+    .site-footer .small-text {
+        font-size: 9px;
+    }
+    
+    .footer-content {
+        max-width: 90%;
+        padding: 0 15px;
+    }
+
     
     /* For very small screens */
     @media (max-width: 350px) {
@@ -436,6 +485,7 @@ a img {
 
 
 }
+
 
 
 
