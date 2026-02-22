@@ -374,7 +374,7 @@ a img {
 
 
 /* Medium screens (Small desktops and tablets landscape) */
-@media (min-width: 600px){
+@media (min-width: 501px){
     .mobile-menu-toggle {
         display: none;
     }
@@ -402,7 +402,7 @@ a img {
 }
 
 /* Small screens (Mobile - both portrait and landscape) */
-@media (max-width: 599px) {
+@media (max-width: 500px) {
     body {
         background-size: 100%; /* Adjust background for mobile */
     }
@@ -574,6 +574,7 @@ a img {
         right: 5px;
     }
 }
+
 
 
 
