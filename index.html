@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<button class="mobile-menu-toggle">☰ Menu</button>
+		<div class="mobile-dropdown">
+		    <a href="index.html">Front Desk</a>
+		    <a href="casefiles.html">Case Files</a>
+		    <a href="archives.html">Archives</a>
+		    <a href="about.html">About Us</a>
+		    <a href="inquiries.html">Inquiries</a>
+		</div>
     <header class="header">
         <!-- Two banner images - one for desktop, one for mobile -->
         <img src="images/banner7.png" alt="Grimms Detective Agency" class="header-desktop">
@@ -68,5 +76,27 @@
 			<p class="small-text"></p>
 		</div>
 	</footer>			
+	<script>
+	    document.addEventListener('DOMContentLoaded', function() {
+	        const menuToggle = document.querySelector('.mobile-menu-toggle');
+	        const mobileDropdown = document.querySelector('.mobile-dropdown');
+	        
+	        if (menuToggle && mobileDropdown) {
+	            menuToggle.addEventListener('click', function(e) {
+	                e.preventDefault();
+	                mobileDropdown.classList.toggle('active');
+	            });
+	            
+	            // Close menu when clicking outside
+	            document.addEventListener('click', function(event) {
+	                if (mobileDropdown.classList.contains('active') &&
+	                    !mobileDropdown.contains(event.target) && 
+	                    !menuToggle.contains(event.target)) {
+	                    mobileDropdown.classList.remove('active');
+	                }
+	            });
+	        }
+	    });
+	</script>
 </body>
 </html>
