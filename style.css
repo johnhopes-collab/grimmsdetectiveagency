@@ -75,12 +75,16 @@ body {
 .sidebar {
     width: 14%;
     background-color: var(--sidebar-brown);
+    background-image: url('images/sidebarL/Lbar1.png');
+    background-size: 100% 98%;
+    background-repeat: no-repeat;
     padding: 0;
     align-self: flex-start;
     box-sizing: border-box;
-    margin: 0;
+    margin: 3px 0 0 0;
 }
 
+/* These styles will help maintain button size during zoom */
 .sidebar-buttons {
     padding: 8px;
     box-sizing: border-box;
@@ -90,25 +94,66 @@ body {
 .sidebar-button {
     display: block;
     width: 89%;
+    height: 30px; /* Fixed height for your button */
     padding: 6px 0;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--button-brown);
+    background-color: transparent; /* Remove background color */
+    background-size: 100% 100%; /* Make background image cover entire button */
+    background-repeat: no-repeat;
+    background-position: center;
     color: var(--button-text);
     text-align: center;
     font-family: 'Arial Narrow', sans-serif;
-    font-size: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: transform 0.2s;
+    position: relative; /* For text positioning */
 }
 
+/* Individual button backgrounds */
+.button-frontdesk {
+    background-image: url('images/sidebarL/Lbutton_magnifyingglass.png');
+}
+
+.button-casefiles {
+    background-image: url('images/sidebarL/Lbutton_hat.png');
+}
+
+.button-archives {
+    background-image: url('images/sidebarL/Lbutton_books.png');
+}
+
+.button-aboutus {
+    background-image: url('images/sidebarL/Lbutton_qmark.png');
+}
+
+.button-inquiries {
+    background-image: url('images/sidebarL/Lbutton_mail.png');
+}
+
+
+.button-icon {
+    height: 20px; /* Adjust based on your icon size */
+    width: 80%;
+    margin-right: 5px;
+}
+
+.button-text {
+    position: relative;
+    z-index: 2; /* Place text above button image */
+    display: inline-block;
+    font-size: 8px;
+    line-height: 15px; /* Center text vertically - should match button height */
+    margin-left: 20px; /* Example adjustment */
+}
+
+/* Hover effect */
 .sidebar-button:hover {
-    background-color: #7a3805;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -293,12 +338,42 @@ a img {
     /* Your existing mobile styles */
 
 }
+
+@media (min-width: 551px) { /* Desktop only */
+    .sidebar-buttons {
+        padding: 14px;
+        box-sizing: border-box;
+    }
+    
+    .sidebar-button {
+        width: 80px; /* Fixed width */
+        height: 15px; /* Fixed height */
+    }
+    
+    .button-text {
+        font-size: 8px !important; /* Force fixed size */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+}
+
 @media (max-width: 550px) {
     .sidebar-button {
-        width: 100%;
+        height: 30px; /* Fixed height */
+        width: 120px; /* Fixed width */
+        font-size: 10px; /* Fixed font size */
+        margin: 8px auto;
+    }
+    
+    .button-icon {
+        height: 18px; /* Fixed icon height */
+        width: auto;
+    }
+    
+    .button-text {
+        font-size: 10px !important; /* Force fixed size */
     }
 
-        .header-desktop {
+    .header-desktop {
         display: none;
     }
     
@@ -331,13 +406,6 @@ a img {
         order: 3;
     }
     
-    .sidebar-buttons {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    
     .main-content {
         padding: 15px;
         order: 2;
@@ -347,6 +415,26 @@ a img {
         padding: 15px;
         background-color: #f9f3e9;
     }
+
+    .sidebar-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .sidebar-button {
+        width: 48%; /* Two buttons per row on smaller screens */
+        margin: 4px;
+    }
+    
+    /* For very small screens */
+    @media (max-width: 350px) {
+        .sidebar-button {
+            width: 100%;
+        }
+    }
+
+
 }
 
 
