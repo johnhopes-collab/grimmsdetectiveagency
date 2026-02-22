@@ -372,42 +372,42 @@ a img {
 
 /* ====== RESPONSIVE STYLING ====== */
 
-/* Large screens (Desktop) */
-@media (min-width: 1024px) {
-    .mobile-menu-toggle {
-        display: none;
-    }
-    
-    .mobile-dropdown {
-        display: none;
-    }
-    
-    /* Your desktop settings remain unchanged here */
-}
 
 /* Medium screens (Small desktops and tablets landscape) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 600px){
     .mobile-menu-toggle {
         display: none;
     }
     
     .mobile-dropdown {
         display: none;
+    }
+    
+    /* Add these button size constraints */
+    .sidebar-buttons {
+        padding: 14px;
+        box-sizing: border-box;
+    }
+    
+    .sidebar-button {
+        width: 80px; /* Fixed width */
+        height: 15px; /* Fixed height */
+    }
+    
+    .button-text {
+        font-size: 8px !important; /* Force fixed size */
+        white-space: nowrap; /* Prevent text wrapping */
     }
     
     /* Adjust some spacing for medium screens */
     .content-container {
-        margin-top: -20vh;
+        margin-top: -26vh;
     }
-    
-    .sidebar-button {
-        height: 28px;
-        width: 85%;
-    }
+
 }
 
 /* Small screens (Mobile - both portrait and landscape) */
-@media (max-width: 767px) {
+@media (max-width: 599px) {
     body {
         background-size: 100%; /* Adjust background for mobile */
     }
