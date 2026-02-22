@@ -383,26 +383,21 @@ a img {
         display: none;
     }
     
-    /* Add these button size constraints */
     .sidebar-buttons {
         padding: 14px;
         box-sizing: border-box;
     }
     
     .sidebar-button {
-        width: 80px; /* Fixed width */
-        height: 15px; /* Fixed height */
+        width: 80px;
+        height: 15px;
     }
     
     .button-text {
-        font-size: 8px !important; /* Force fixed size */
-        white-space: nowrap; /* Prevent text wrapping */
+        font-size: 8px !important;
+        white-space: nowrap;
     }
-    
-    /* Adjust some spacing for medium screens */
-    .content-container {
-        margin-top: -26vh;
-    }
+
 
 }
 
@@ -579,6 +574,7 @@ a img {
         right: 5px;
     }
 }
+
 
 
 
