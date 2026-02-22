@@ -67,7 +67,13 @@
                     <img src="images/sq_radio1b.png" alt="Radio Grimm Link" class="sidebar-square-image">
                 </a>
             </div>
+
+		    <div id="random-promos">
+		        <!-- Random promos will be inserted here by JavaScript -->
+		    </div>
+
         </aside>
+		
     </div>
 
 	<footer class="site-footer">
@@ -97,6 +103,87 @@
 	            });
 	        }
 	    });
+	
+	    document.addEventListener('DOMContentLoaded', function() {
+	        const menuToggle = document.querySelector('.mobile-menu-toggle');
+	        const mobileDropdown = document.querySelector('.mobile-dropdown');
+	        
+	        if (menuToggle && mobileDropdown) {
+	            menuToggle.addEventListener('click', function(e) {
+	                e.preventDefault();
+	                mobileDropdown.classList.toggle('active');
+	            });
+	            
+	            // Close menu when clicking outside
+	            document.addEventListener('click', function(event) {
+	                if (mobileDropdown.classList.contains('active') &&
+	                    !mobileDropdown.contains(event.target) && 
+	                    !menuToggle.contains(event.target)) {
+	                    mobileDropdown.classList.remove('active');
+	                }
+	            });
+	        }
+	        
+	        // Random promo images functionality
+	        displayRandomPromos();
+	    });
+	    
+	    function displayRandomPromos() {
+	        // Array of all available promo images
+	        const promoImages = [
+	            { src: 'images/sq/sq_g_grandball.png', alt: 'Grand Ball', link: '#grandball' },
+	            { src: 'images/sq/sq_g_jazznights.png', alt: 'Jazz Nights', link: '#jazznights' },
+	            { src: 'images/sq/sq_g_luxe1.png', alt: 'Luxe', link: '#luxe' },
+	            { src: 'images/sq/sq_news1.png', alt: 'News', link: '#news' },
+	            { src: 'images/sq/sq_c_face.png', alt: 'Face', link: '#face' }
+		        { src: 'images/sq/sq_c_metropolis.png', alt: 'Metropolis', link: '#metropolis' }
+	        ];
+	        
+	        // Randomly select 2 unique images
+	        const randomPromos = getRandomPromos(promoImages, 2);
+	        
+	        // Get the container for the random promos
+	        const promosContainer = document.getElementById('random-promos');
+	        
+	        // Clear any existing content
+	        promosContainer.innerHTML = '';
+	        
+	        // Add the random promos to the page
+	        randomPromos.forEach(promo => {
+	            const promoDiv = document.createElement('div');
+	            promoDiv.className = 'sidebar-square';
+	            
+	            const promoLink = document.createElement('a');
+	            promoLink.href = promo.link;
+	            
+	            const promoImg = document.createElement('img');
+	            promoImg.src = promo.src;
+	            promoImg.alt = promo.alt;
+	            promoImg.className = 'sidebar-square-image';
+	            
+	            promoLink.appendChild(promoImg);
+	            promoDiv.appendChild(promoLink);
+	            promosContainer.appendChild(promoDiv);
+	        });
+	    }
+	    
+	    function getRandomPromos(promos, count) {
+	        // Create a copy of the array to avoid modifying the original
+	        const promosCopy = [...promos];
+	        const result = [];
+	        
+	        // Select random items
+	        for (let i = 0; i < count && promosCopy.length > 0; i++) {
+	            // Get a random index
+	            const randomIndex = Math.floor(Math.random() * promosCopy.length);
+	            // Remove the selected item and add it to the result
+	            result.push(promosCopy.splice(randomIndex, 1)[0]);
+	        }
+	        
+	        return result;
+	    }
+
+		
 	</script>
 </body>
 </html>
