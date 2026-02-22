@@ -1,4 +1,8 @@
-/* Base styles 1*/
+@-ms-viewport {
+    width: device-width;
+}
+
+/* Base styles*/
 :root {
     --primary-color: #2c3e50;
     --accent-color: #e74c3c;
@@ -366,126 +370,150 @@ a img {
 
 
 
+/* ====== RESPONSIVE STYLING ====== */
 
-/* Responsive styles */
-@media (max-width: 1285px) { /* 900px ÷ 0.7 = 1285px */
-    /* Your existing mobile styles */
-
-}
-
-@media (min-width: 551px) { /* Desktop only */
-    .sidebar-buttons {
-        padding: 14px;
-        box-sizing: border-box;
+/* Large screens (Desktop) */
+@media (min-width: 1024px) {
+    .mobile-menu-toggle {
+        display: none;
     }
-    
-    .sidebar-button {
-        width: 80px; /* Fixed width */
-        height: 15px; /* Fixed height */
-    }
-    
-    .button-text {
-        font-size: 8px !important; /* Force fixed size */
-        white-space: nowrap; /* Prevent text wrapping */
+    .mobile-dropdown {
+        display: none;
     }
 }
 
-@media (max-width: 550px) {
-    .sidebar-button {
-        height: 30px; /* Fixed height */
-        width: 120px; /* Fixed width */
-        font-size: 10px; /* Fixed font size */
-        margin: 8px auto;
-    }
-    
-    .button-icon {
-        height: 18px; /* Fixed icon height */
-        width: auto;
-    }
-    
-    .button-text {
-        font-size: 10px !important; /* Force fixed size */
-    }
 
+/* Small screens (Mobile - both portrait and landscape) */
+@media (max-width: 767px) {
+    /* Toggle for mobile dropdown menu */
+    .mobile-menu-toggle {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+        background-color: var(--button-brown);
+        color: var(--button-text);
+        border: none;
+        border-radius: 4px;
+        padding: 8px 12px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    /* Mobile dropdown menu */
+    .mobile-dropdown {
+        display: none; /* Hidden by default, toggled with JS */
+        position: fixed;
+        top: 50px;
+        right: 10px;
+        background-color: var(--sidebar-brown);
+        border-radius: 4px;
+        width: 200px;
+        z-index: 99;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    
+    .mobile-dropdown.active {
+        display: block;
+    }
+    
+    .mobile-dropdown a {
+        display: block;
+        padding: 12px 15px;
+        color: var(--button-text);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        font-size: 14px;
+        font-weight: bold;
+        background-color: var(--button-brown);
+        margin: 5px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    
+    .mobile-dropdown a:last-child {
+        border-bottom: none;
+    }
+    
+    /* Hide desktop header, show mobile header */
     .header-desktop {
         display: none;
     }
-    
     .header-mobile {
         display: block;
+        padding: 15px 0;
         max-width: 90%;
         margin: 0 auto;
     }
-    
-    /* Reset the positioning for mobile */
-    .header {
-        position: static;
-    }
-    
+    /* Content layout changes */
     .content-container {
-        position: static;
         flex-direction: column;
-        min-height: auto;
-    }
-    
-    .sidebar, .right-sidebar {
-        width: 100%;
+        margin-top: 10px;
         padding: 10px;
-        height: auto;
-        box-sizing: border-box;
-        margin-left: 0;
+        width: 100%;
     }
-    
-    .right-sidebar {
-        order: 3;
+    /* Hide sidebar on mobile */
+    .sidebar {
+        display: none;
     }
-    
+    /* Adjust main content width */
     .main-content {
-        padding: 15px;
+        width: 100%;
+        order: 1;
+        padding: 0;
+        margin: 0;
+    }
+    /* Move right sidebar below content */
+    .right-sidebar {
+        width: 100%;
         order: 2;
-    }
-    
-    .text-box {
-        padding: 15px;
-        background-color: #f9f3e9;
-    }
-
-    .sidebar-buttons {
+        margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
-    
-    .sidebar-button {
-        width: 48%; /* Two buttons per row on smaller screens */
-        margin: 4px;
+    .sidebar-square {
+        width: 45%;
     }
-
+    /* Adjust text box padding */
+    .text-box {
+        padding: 15px;
+    }
+    /* Adjust page title positioning */
+    .page-title-bar {
+        position: relative;
+        top: 0;
+        height: auto;
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
+    .page-title {
+        font-size: 12px;
+    }
+    /* Footer adjustments */
     .site-footer {
-        font-size: 10px;
+        font-size: 12px;
         padding: 15px 0;
     }
-    
-    .site-footer .small-text {
-        font-size: 9px;
-    }
-    
     .footer-content {
         max-width: 90%;
-        padding: 0 15px;
     }
-
-    
-    /* For very small screens */
-    @media (max-width: 350px) {
-        .sidebar-button {
-            width: 100%;
-        }
-    }
-
-
 }
 
+/* Extra small screens (Small mobile phones) */
+@media (max-width: 375px) {
+    .sidebar-square {
+        width: 100%; /* Stack sidebar images in very small screens */
+    }
+    .text-box {
+        padding: 10px;
+    }
+    .mobile-dropdown {
+        width: 180px;
+    }
+}
 
 
 
