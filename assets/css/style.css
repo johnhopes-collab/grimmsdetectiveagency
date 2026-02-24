@@ -1,0 +1,587 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+/* Base styles*/
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-color: #ecf0f1;
+    --sidebar-brown: #c19a6b;
+    --button-brown: #5e2c04;
+    --button-text: #e6d9c8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    font-size: 10px; /* Consider changing to rem units */
+    background-image: url('images/tile_bb4.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 50%; /* This scales the image to 80% of its original size */
+    color: var(--text-color);
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex; /* Add this */
+    flex-direction: column; /* Add this */
+}
+
+/* Adjust header for proportional scaling */
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    text-align: center;
+    padding: 0;
+    height: auto;
+}
+
+/* Header alignment to match content */
+.header-desktop {
+    width: 70%;
+    height: auto;
+    padding-left: 7px; /* Move everything in the header right */
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    position: relative;
+    transform: translateX(0); /* Adjust as needed */
+}
+
+
+.header-mobile {
+    display: none;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    padding-top: 0;
+}
+
+/* Create a fixed-ratio container system */
+.content-container {
+    position: relative;
+    margin-top: -26vh;
+    z-index: 1;
+    display: flex;
+    min-height: calc(100vh - 40vh);
+    width: 100%; /* Full width */
+    box-sizing: border-box;
+    padding: 0; /* Remove padding */
+    justify-content: space-between; /* This pushes sidebars to edges */
+    margin-bottom: 30px; /* Add space before the footer */
+}
+
+
+/* Left sidebar anchored to left edge */
+.sidebar {
+    width: 14%;
+    background-color: var(--sidebar-brown);
+    background-image: url('images/sidebarL/Lbar1.png');
+    background-size: 100% 98%;
+    background-repeat: no-repeat;
+    padding: 0;
+    align-self: flex-start;
+    box-sizing: border-box;
+    margin: 3px 0 0 0;
+}
+
+/* These styles will help maintain button size during zoom */
+.sidebar-buttons {
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+
+.sidebar-button {
+    display: block;
+    width: 89%;
+    height: 30px; /* Fixed height for your button */
+    padding: 6px 0;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent; /* Remove background color */
+    background-size: 100% 100%; /* Make background image cover entire button */
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--button-text);
+    text-align: center;
+    font-family: 'Arial Narrow', sans-serif;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s;
+    position: relative; /* For text positioning */
+}
+
+/* Individual button backgrounds */
+.button-frontdesk {
+    background-image: url('images/sidebarL/Lbutton_magnifyingglass.png');
+}
+
+.button-casefiles {
+    background-image: url('images/sidebarL/Lbutton_hat.png');
+}
+
+.button-archives {
+    background-image: url('images/sidebarL/Lbutton_books.png');
+}
+
+.button-aboutus {
+    background-image: url('images/sidebarL/Lbutton_qmark.png');
+}
+
+.button-inquiries {
+    background-image: url('images/sidebarL/Lbutton_mail.png');
+}
+
+
+.button-icon {
+    height: 20px; /* Adjust based on your icon size */
+    width: 80%;
+    margin-right: 5px;
+}
+
+.button-text {
+    position: relative;
+    z-index: 2; /* Place text above button image */
+    display: inline-block;
+    font-size: 8px;
+    line-height: 15px; /* Center text vertically - should match button height */
+    margin-left: 20px; /* Example adjustment */
+}
+
+/* Hover effect */
+.sidebar-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right sidebar styling */
+.sidebar-square {
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.sidebar-square-image {
+    width: 100%; /* This makes the image match the sidebar width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block;
+    max-width: 100%;
+}
+
+a img {
+    border: none;
+    outline: none;
+}
+
+.sidebar-square a {
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Main content that takes remaining space with margins */
+.main-content {
+    width: calc(100% - 12% - 17%); /* Total - left sidebar - right sidebar*/
+    flex: none;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    align-self: flex-start;
+    box-sizing: border-box;
+    margin-left: 0.4rem; /* Small gap between left sidebar and content */
+    margin-right: 0rem; /* Small gap between content and right sidebar */
+}
+
+
+/* Right sidebar anchored to right edge */
+.right-sidebar {
+    width: 14%;
+    background-color: var(--sidebar-brown);
+    padding: 0;
+    align-self: flex-start;
+    box-sizing: border-box;
+    margin: 0; /* Remove margin */
+}
+
+
+
+/* Add internal padding to the text box rather than the container */
+/* Fix the text box margins */
+.text-box {
+    background-color: rgba(249, 243, 233, 0.95);
+    border: 1px solid #d9c8a9;
+    padding: 25px;
+    border-radius: 5px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0; /* Remove the side margins here */
+    box-sizing: border-box;
+}
+
+
+.text-box h2 {
+    color: var(--button-brown);
+    margin-top: 0;
+}
+
+
+
+
+/* Overall container */
+.testimonials-container {
+  max-width: 1100px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+/* Elegant heading */
+.testimonials-heading {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c2c2c;
+  margin-bottom: 2.5rem;
+  position: relative;
+  font-size: 200%;
+}
+
+.testimonials-heading:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #b8a278, transparent);
+}
+
+/* Individual testimonial styling */
+.testimonial {
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-left: 4px solid #b8a278;
+  position: relative;
+}
+
+.testimonial:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  color: rgba(184, 162, 120, 0.2);
+  line-height: 1;
+}
+
+.testimonial blockquote {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 100%;
+}
+
+.testimonial cite {
+  display: block;
+  font-style: italic;
+  text-align: right;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #666;
+  margin-top: 0.4rem;
+  font-size: 90%;
+}
+
+
+
+/* Full-width page title bar */
+.page-title-bar {
+    position: absolute;
+    top: calc(-2vh); /* Position it 15px above the content container's margin-top */
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 11px;
+    background-color: #5e2c04; /* Same as your button-brown variable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.page-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 7px;
+    color: var(--button-text);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Footer styling */
+.site-footer {
+    width: 100%;
+    background-color: rgba(94, 44, 4, 0.95); /* Using your button-brown color with opacity */
+    color: var(--button-text);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Space between content and footer */
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 8px; /* Keeping with your site's small text style */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow at the top of footer */
+}
+
+.footer-content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.site-footer .small-text {
+    font-size: 7px;
+    opacity: 0.7;
+}
+
+
+
+/* ====== RESPONSIVE STYLING ====== */
+
+
+/* Medium screens (Small desktops and tablets landscape) */
+@media (min-width: 501px){
+    .mobile-menu-toggle {
+        display: none;
+    }
+    
+    .mobile-dropdown {
+        display: none;
+    }
+    
+    .sidebar-buttons {
+        padding: 14px;
+        box-sizing: border-box;
+    }
+    
+    .sidebar-button {
+        width: 80px;
+        height: 15px;
+    }
+    
+    .button-text {
+        font-size: 8px !important;
+        white-space: nowrap;
+    }
+
+
+}
+
+/* Small screens (Mobile - both portrait and landscape) */
+@media (max-width: 500px) {
+    body {
+        background-size: 100%; /* Adjust background for mobile */
+    }
+
+    /* Toggle for mobile dropdown menu */
+    .mobile-menu-toggle {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+        background-color: var(--button-brown);
+        color: var(--button-text);
+        border: none;
+        border-radius: 4px;
+        padding: 8px 12px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    /* Mobile dropdown menu */
+    .mobile-dropdown {
+        display: none; /* Hidden by default, toggled with JS */
+        position: fixed;
+        top: 50px;
+        right: 10px;
+        background-color: var(--sidebar-brown);
+        border-radius: 4px;
+        width: 200px;
+        z-index: 99;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        padding: 8px;
+    }
+    
+    .mobile-dropdown.active {
+        display: block;
+    }
+    
+    .mobile-dropdown a {
+        display: block;
+        padding: 12px 15px;
+        color: var(--button-text);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        font-size: 14px;
+        font-weight: bold;
+        background-color: var(--button-brown);
+        margin: 5px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    
+    .mobile-dropdown a:last-child {
+        border-bottom: none;
+    }
+    
+    /* Hide desktop header, show mobile header */
+    .header-desktop {
+        display: none;
+    }
+    
+    .header-mobile {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+    
+    /* Content layout changes */
+    .header {
+        position: relative;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    
+    .content-container {
+        flex-direction: column;
+        margin-top: 0;
+        padding: 15px;
+        min-height: unset;
+        width: auto;
+    }
+    
+    /* Hide sidebar on mobile */
+    .sidebar {
+        display: none;
+    }
+    
+    /* Adjust main content width */
+    .main-content {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Move right sidebar below content */
+    .right-sidebar {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .sidebar-square {
+        width: 70%;
+        max-width: 250px;
+        margin: 10px auto;
+    }
+    
+    /* Adjust text box padding */
+    .text-box {
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    /* Adjust page title positioning */
+    .page-title-bar {
+        position: relative;
+        top: 0;
+        height: auto;
+        padding: 8px 0;
+        margin-bottom: 10px;
+    }
+    
+    .page-title {
+        font-size: 12px;
+    }
+    
+    /* Footer adjustments */
+    .site-footer {
+        font-size: 12px;
+        padding: 15px 0;
+        margin-top: 20px;
+    }
+    
+    .footer-content {
+        max-width: 90%;
+    }
+    
+    /* Text size adjustments for readability */
+    .text-box h2 {
+        font-size: 20px;
+    }
+    
+    .text-box p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Extra small screens (Small mobile phones) */
+@media (max-width: 375px) {
+    .sidebar-square {
+        width: 90%;
+    }
+    
+    .text-box {
+        padding: 10px;
+    }
+    
+    .mobile-dropdown {
+        width: 180px;
+        right: 5px;
+    }
+    
+    .mobile-menu-toggle {
+        right: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
