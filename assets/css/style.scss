@@ -85,7 +85,7 @@ body {
 .sidebar {
     width: 14%;
     background-color: var(--sidebar-brown);
-    background-image: url('assets/images/sidebarL/Lbar1.png');
+    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbar1.png');
     background-size: 100% 98%;
     background-repeat: no-repeat;
     padding: 0;
@@ -131,19 +131,19 @@ body {
 }
 
 .button-casefiles {
-    background-image: url('assets/images/sidebarL/Lbutton_hat.png');
+    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_hat.png');
 }
 
 .button-archives {
-    background-image: url('assets/images/sidebarL/Lbutton_books.png');
+    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_books.png');
 }
 
 .button-aboutus {
-    background-image: url('assets/images/sidebarL/Lbutton_qmark.png');
+    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_qmark.png');
 }
 
 .button-inquiries {
-    background-image: url('assets/images/sidebarL/Lbutton_mail.png');
+    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_mail.png');
 }
 
 
