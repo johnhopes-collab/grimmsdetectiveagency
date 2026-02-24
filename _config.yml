@@ -1,0 +1,7 @@
+title: Grimms Detective Agency
+description: Specialists in cases of a peculiar nature since 1889
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
