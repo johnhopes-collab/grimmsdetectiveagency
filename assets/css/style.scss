@@ -24,14 +24,14 @@ body {
     background-image: url('{{ site.baseurl }}/assets/images/tile_bb4.png');
     background-repeat: repeat;
     background-attachment: fixed;
-    background-size: 50%; /* This scales the image to 80% of its original size */
+    background-size: 50%; /* This scales the image to 50% of its original size */
     color: var(--text-color);
     position: relative;
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
-    display: flex; /* Add this */
-    flex-direction: column; /* Add this */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Adjust header for proportional scaling */
@@ -73,9 +73,9 @@ body {
     z-index: 1;
     display: flex;
     min-height: calc(100vh - 40vh);
-    width: 100%; /* Full width */
+    width: 100%;
     box-sizing: border-box;
-    padding: 0; /* Remove padding */
+    padding: 0;
     justify-content: space-between; /* This pushes sidebars to edges */
     margin-bottom: 30px; /* Add space before the footer */
 }
@@ -104,7 +104,7 @@ body {
 .sidebar-button {
     display: block;
     width: 89%;
-    height: 30px; /* Fixed height for your button */
+    height: 30px; /* Fixed height for button */
     padding: 6px 0;
     margin-bottom: 4px;
     margin-left: auto;
@@ -159,7 +159,7 @@ body {
     display: inline-block;
     font-size: 8px;
     line-height: 15px; /* Center text vertically - should match button height */
-    margin-left: 20px; /* Example adjustment */
+    margin-left: 20px;
 }
 
 /* Hover effect */
@@ -239,9 +239,6 @@ a img {
     color: var(--button-brown);
     margin-top: 0;
 }
-
-
-
 
 /* Overall container */
 .testimonials-container {
@@ -323,7 +320,7 @@ a img {
     right: 0;
     width: 100%;
     height: 11px;
-    background-color: #5e2c04; /* Same as your button-brown variable */
+    background-color: #5e2c04; /* Same as button-brown variable */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,13 +342,13 @@ a img {
 /* Footer styling */
 .site-footer {
     width: 100%;
-    background-color: rgba(94, 44, 4, 0.95); /* Using your button-brown color with opacity */
+    background-color: rgba(94, 44, 4, 0.95); /* Using button-brown color with opacity */
     color: var(--button-text);
     text-align: center;
     padding: 10px 0;
     margin-top: 20px; /* Space between content and footer */
     font-family: 'Arial Narrow', sans-serif;
-    font-size: 8px; /* Keeping with your site's small text style */
+    font-size: 8px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow at the top of footer */
 }
 
