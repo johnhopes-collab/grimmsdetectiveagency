@@ -18,7 +18,7 @@ body {
     padding: 0;
     font-family: 'Georgia', serif;
     font-size: 10px; /* Consider changing to rem units */
-    background-image: url('assets/images/tile_bb4.png');
+    background-image: url('images/tile_bb4.png');
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: 50%; /* This scales the image to 80% of its original size */
