@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+    {% include mobile-menu.html %}
+    {% include header.html %}
+    
+    <div class="content-container">
+        {% include sidebar-left.html %}
+
+        <main class="main-content">
+            <div class="page-title-bar">
+                <span class="page-title">{{ page.title }}</span>
+            </div>
+            <div class="text-box">
+                {{ content }}
+            </div>
+        </main>
+        
+        {% include sidebar-right.html %}
+    </div>
+
+    {% include footer.html %}
+            
+    <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+</body>
+</html>
