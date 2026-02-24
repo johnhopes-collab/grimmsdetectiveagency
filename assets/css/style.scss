@@ -127,7 +127,7 @@ body {
 
 /* Individual button backgrounds */
 .button-frontdesk {
-    background-image: url('assets/images/sidebarL/Lbutton_magnifyingglass.png');
+    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_magnifyingglass.png');
 }
 
 .button-casefiles {
