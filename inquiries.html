@@ -1,61 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inquiries - Grimms Detective Agency</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<button class="mobile-menu-toggle">☰ Menu</button>
-		<div class="mobile-dropdown">
-		    <a href="index.html">Front Desk</a>
-		    <a href="casefiles.html">Case Files</a>
-		    <a href="archives.html">Archives</a>
-		    <a href="about.html">About Us</a>
-		    <a href="inquiries.html">Inquiries</a>
-		</div>
-    <header class="header">
-        <!-- Two banner images - one for desktop, one for mobile -->
-        <img src="images/banner7.png" alt="Grimms Detective Agency" class="header-desktop">
-        <img src="images/mobile_banner1.png" alt="Grimms Detective Agency" class="header-mobile">
-    </header>
+---
+layout: default
+title: Inquiries
+---
 
-    <!-- Left Sidebar -->
-    <div class="content-container">
-        <aside class="sidebar">
-            <div class="sidebar-buttons">
-                <a href="index.html" class="sidebar-button button-frontdesk">
-                    <span class="button-text">FRONT DESK</span>
-                </a>
-                <a href="casefiles.html" class="sidebar-button button-casefiles">
-                    <span class="button-text">CASE FILES</span>
-                </a>
-                <a href="archives.html" class="sidebar-button button-archives">
-                    <span class="button-text">ARCHIVES</span>
-                </a>
-                <a href="about.html" class="sidebar-button button-aboutus">
-                    <span class="button-text">ABOUT US</span>
-                </a>
-                <a href="inquiries.html" class="sidebar-button button-inquiries">
-                    <span class="button-text">INQUIRIES</span>
-                </a>
-            </div>
-        </aside>
-		
-        <main class="main-content">
-			<div class="page-title-bar">
-				<span class="page-title">INQUIRIES</span>
-			</div>
-            <div class="text-box">
-                <h2>A Telegram Away</h2>
-                <p>Is there a hob in your hatbox? A troll you can't take? Is your mirror speaking in nursery rhymes? When fairytales manifest in the concrete jungle, Grimms' Detective Agency is your first and last line of defense.</p> 
+<h2>A Telegram Away</h2>
+<p>Is there a hob in your hatbox? A troll you can't take? Is your mirror speaking in nursery rhymes? When fairytales manifest in the concrete jungle, Grimms' Detective Agency is your first and last line of defense.</p> 
 				
-				<p>Send us a telegram and our secretary will reach out to you. No case too enchanted, no mystery too magical.</p>
+<p>Send us a telegram and our secretary will reach out to you. No case too enchanted, no mystery too magical.</p>
 
-                <p style="text-indent: 3em;"> → Please send inquiries to: <a href="phoebe@grimmsdetectiveagency.com">phoebe@grimmsdetectiveagency.com</a></p>
+<p style="text-indent: 3em;"> → Please send inquiries to: <a href="phoebe@grimmsdetectiveagency.com">phoebe@grimmsdetectiveagency.com</a></p>
 
-				<br><br>
+<br><br>
 				
 				
 				<h2>Testimonials</h2>
@@ -114,57 +69,3 @@
 					</div>   
 				   </div>
 				</section>
-            </div>
-        </main>
-
-        <aside class="right-sidebar">
-            <!-- Currently blank as in your original -->
-        </aside>
-    </div>
-	<footer class="site-footer">
-		<div class="footer-content">
-			<p>© 2026 Agency Grimm. All rights reserved.</p>
-			<p class="small-text"></p>
-		</div>
-    </footer>			
-	<script>
-	    document.addEventListener('DOMContentLoaded', function() {
-	        const menuToggle = document.querySelector('.mobile-menu-toggle');
-	        const mobileDropdown = document.querySelector('.mobile-dropdown');
-	        
-	        if (menuToggle && mobileDropdown) {
-	            menuToggle.addEventListener('click', function(e) {
-	                e.preventDefault();
-	                mobileDropdown.classList.toggle('active');
-	            });
-	            
-	            // Close menu when clicking outside
-	            document.addEventListener('click', function(event) {
-	                if (mobileDropdown.classList.contains('active') &&
-	                    !mobileDropdown.contains(event.target) && 
-	                    !menuToggle.contains(event.target)) {
-	                    mobileDropdown.classList.remove('active');
-	                }
-	            });
-	        }
-	    });
-	</script>	
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
