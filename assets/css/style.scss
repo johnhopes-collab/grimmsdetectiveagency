@@ -217,6 +217,9 @@ a img {
     align-self: flex-start;
     box-sizing: border-box;
     margin: 0; /* Remove margin */
+    display: flex;           /* Add this */
+    flex-direction: column;  /* Add this */
+    overflow: hidden;        /* Add this */
 }
 
 
@@ -376,6 +379,16 @@ a img {
     width: 100% !important;
     height: auto !important;
     box-sizing: border-box !important;
+}
+
+/* Make sidebar square containers more constrained */
+.right-sidebar .sidebar-square {
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: 200px;      /* Add a reasonable max-height */
 }
 
 
@@ -585,17 +598,14 @@ a img {
 }
 
 
-
-/* Add this at the very end of your style.scss file */
 .right-sidebar img {
-    border: 2px solid red !important;
-    max-width: 100% !important;  
-    width: 100% !important;
+    max-width: 100% !important;
+    width: auto !important;
+    max-height: 200px !important; /* Force a maximum height */
     height: auto !important;
-    box-sizing: border-box !important;
+    object-fit: contain !important;
+    display: block !important;
 }
-
-
 
 
 
