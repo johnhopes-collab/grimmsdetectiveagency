@@ -216,7 +216,7 @@ a img {
     margin: 0; /* Remove margin */
     display: flex;
     flex-direction: column;
-    gap: 5px; /* This creates space between flex children */
+    gap: 10px; /* This creates space between flex children */
     overflow: hidden;
 }
 
@@ -372,11 +372,7 @@ a img {
 
 /* Make sidebar square containers more constrained */
 .right-sidebar .sidebar-square {
-    width: 100%;
-    margin: 0 !important; /* Remove all margin between square containers */
-    padding: 0;
-    overflow: hidden;
-    box-sizing: border-box;
+    margin: 0 !important;
 }
 
 
@@ -527,9 +523,11 @@ a img {
     }
     
     .sidebar-square {
-        width: 70%;
-        max-width: 250px;
-        margin: 10px auto;
+        width: 100%;
+        margin: 0 !important; /* Override this to remove ALL margins */
+        overflow: hidden;
+        padding: 0;
+        box-sizing: border-box;
     }
     
     /* Adjust text box padding */
