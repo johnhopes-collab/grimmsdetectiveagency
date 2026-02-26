@@ -214,9 +214,10 @@ a img {
     align-self: flex-start;
     box-sizing: border-box;
     margin: 0; /* Remove margin */
-    display: flex;           /* Add this */
-    flex-direction: column;  /* Add this */
-    overflow: hidden;        /* Add this */
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* This creates space between flex children */
+    overflow: hidden;
 }
 
 
