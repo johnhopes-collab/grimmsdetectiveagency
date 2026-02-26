@@ -586,7 +586,14 @@ a img {
 
 
 
-
+/* Add this at the very end of your style.scss file */
+.right-sidebar img {
+    border: 2px solid red !important;
+    max-width: 100% !important;  
+    width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+}
 
 
 
