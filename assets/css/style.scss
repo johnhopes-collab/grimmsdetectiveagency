@@ -369,23 +369,13 @@ a img {
 }
 
 
-
-
-/* Replace the temporary debugging styles with these permanent fixes */
-.right-sidebar .sidebar-square {
-    width: 100%;
-    margin: 10px 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden; /* Prevents oversized content from spilling */
-}
-
-.right-sidebar .sidebar-square-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 100%;
-    object-fit: contain; /* Ensures the image fits within its container */
+/* Temporary debugging styles */
+.sidebar-square-image {
+    border: 2px solid red !important; /* Visible border to confirm class is applied */
+    max-width: 100% !important;  
+    width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
 }
 
 
