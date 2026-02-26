@@ -379,15 +379,12 @@ a img {
     box-sizing: border-box;
 }
 
-/* Optional: if you want the tiniest separation */
-.right-sidebar .sidebar-square:not(:first-child) {
-    margin-top: 5px !important; /* Optional: adds 1px space between images if desired */
-}
+
 
 /* Ensure clean links with no extra spacing */
 .right-sidebar .sidebar-square a {
     display: block;
-    line-height: 0; /* Remove any line spacing */
+    line-height: 5; /* Remove any line spacing */
 }
 
 
