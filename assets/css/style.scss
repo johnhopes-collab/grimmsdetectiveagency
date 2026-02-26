@@ -372,15 +372,6 @@ a img {
 }
 
 
-/* Temporary debugging styles */
-.sidebar-square-image {
-    border: 2px solid red !important; /* Visible border to confirm class is applied */
-    max-width: 100% !important;  
-    width: 100% !important;
-    height: auto !important;
-    box-sizing: border-box !important;
-}
-
 /* Make sidebar square containers more constrained */
 .right-sidebar .sidebar-square {
     width: 100%;
