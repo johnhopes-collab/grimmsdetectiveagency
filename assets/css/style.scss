@@ -211,10 +211,12 @@ a img {
     width: 14%;
     background-color: var(--sidebar-brown);
     padding: 0;
-    padding-top: 1px;
     align-self: flex-start;
     box-sizing: border-box;
-    margin: 0; /* Remove margin */
+    margin-top: 10px !important; /* Add this with !important */
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     display: flex;
     flex-direction: column;
     gap: 4px; /* This creates space between flex children */
