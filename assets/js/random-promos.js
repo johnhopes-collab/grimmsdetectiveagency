@@ -18,25 +18,25 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 'grandball',
-            path: '/assets/images/sq/sq_g_grandball.png',
+            path: '/assets/images/sq/sq_g_grandball2.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'Grand Ball Promo'
         },
         {
             id: 'jazznights',
-            path: '/assets/images/sq/sq_g_jazznights.png',
+            path: '/assets/images/sq/sq_g_jazznights2.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'Jazz Nights Promo'
         },
         {
             id: 'luxe',
-            path: '/assets/images/sq/sq_g_luxe1.png',
+            path: '/assets/images/sq/sq_g_luxe2.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'Luxe Promo'
         },
         {
             id: 'speed',
-            path: '/assets/images/sq/sq_g_speed.png',
+            path: '/assets/images/sq/sq_g_speed2.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'Speed Promo'
         },
