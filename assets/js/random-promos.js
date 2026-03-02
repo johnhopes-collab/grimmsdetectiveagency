@@ -5,50 +5,71 @@ document.addEventListener('DOMContentLoaded', function() {
     // List of promo images
     const promoImages = [
         {
+            id: 'face',
             path: '/assets/images/sq/sq_c_face2.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'Face Promo'
         },
         {
+            id: 'metropolis',
             path: '/assets/images/sq/sq_c_metropolis3.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'Metropolis Promo'
         },
         {
+            id: 'grandball',
             path: '/assets/images/sq/sq_g_grandball.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'Grand Ball Promo'
         },
         {
+            id: 'jazznights',
             path: '/assets/images/sq/sq_g_jazznights.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'Jazz Nights Promo'
         },
         {
+            id: 'luxe',
             path: '/assets/images/sq/sq_g_luxe1.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'Luxe Promo'
         },
         {
+            id: 'speed',
             path: '/assets/images/sq/sq_g_speed.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'Speed Promo'
         },
         {
+            id: 'news',
             path: '/assets/images/sq_news1.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'News Promo'
         }
     ];
     
-    // Function to get random unique items
-    function getRandomUniqueItems(array, count) {
-        const shuffled = [...array].sort(() => 0.5 - Math.random());
+    // Get previously displayed promos from localStorage
+    const previousPromos = JSON.parse(localStorage.getItem('displayedPromos')) || [];
+    
+    // Function to get random unique items, excluding previous ones
+    function getRandomUniqueItems(array, count, excludeIds) {
+        // Create a filtered array that excludes previously shown promos
+        const availablePromos = array.filter(promo => !excludeIds.includes(promo.id));
+        
+        // If we don't have enough available promos (unlikely but possible),
+        // fall back to using all promos
+        const poolToUse = availablePromos.length >= count ? availablePromos : array;
+        
+        // Shuffle and select
+        const shuffled = [...poolToUse].sort(() => 0.5 - Math.random());
         return shuffled.slice(0, count);
     }
     
-    // Get two random unique promo images
-    const selectedPromos = getRandomUniqueItems(promoImages, 2);
+    // Get two random promos, excluding the previous ones
+    const selectedPromos = getRandomUniqueItems(promoImages, 2, previousPromos);
+    
+    // Save current selection for next time
+    localStorage.setItem('displayedPromos', JSON.stringify(selectedPromos.map(promo => promo.id)));
     
     // Set first promo
     const promoImg1 = document.getElementById('random-promo-img-1');
@@ -67,4 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
         promoImg2.alt = selectedPromos[1].alt;
         promoLink2.href = selectedPromos[1].link;
     }
+    
+    // Log for debugging (you can remove this in production)
+    console.log('Previous promos:', previousPromos);
+    console.log('New promos:', selectedPromos.map(p => p.id));
 });
