@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 'news',
-            path: '/assets/images/sq_news1.png',
+            path: '/assets/images/sq/sq_news1.png',
             link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
             alt: 'News Promo'
         }
