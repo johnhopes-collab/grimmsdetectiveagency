@@ -86,7 +86,8 @@ body {
     width: 14%;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbar1.png');
-    background-size: 100% 98%;
+    background-size: 100% auto; /* Let height scale naturally with width */
+    min-height: 400px;
     background-repeat: no-repeat;
     padding: 0;
     align-self: flex-start;
