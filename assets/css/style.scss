@@ -20,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Georgia', serif;
-    font-size: 10px; /* Consider changing to rem units */
+    font-size: 100%; /* Consider changing to rem units */
     background-image: url('{{ site.baseurl }}/assets/images/tile_bb4.png');
     background-repeat: repeat;
     background-attachment: fixed;
@@ -103,7 +103,7 @@ body {
 
 .sidebar-button {
     display: block;
-    width: 110%;
+    width: 85%;
     height: 30px; /* Fixed height for button */
     padding: 6px 0;
     margin-bottom: 4px;
@@ -157,7 +157,7 @@ body {
     position: relative;
     z-index: 2; /* Place text above button image */
     display: inline-block;
-    font-size: 8px;
+    font-size: 100%;
     line-height: 15px; /* Center text vertically - should match button height */
     margin-left: 20px;
 }
@@ -330,7 +330,7 @@ a img {
 
 .page-title {
     font-family: 'Arial', sans-serif;
-    font-size: 7px;
+    font-size: 20px;
     color: var(--button-text);
     font-weight: bold;
     letter-spacing: 1px;
@@ -365,7 +365,7 @@ a img {
 }
 
 .site-footer .small-text {
-    font-size: 7px;
+    font-size: 100%;
     opacity: 0.7;
 }
 
@@ -408,7 +408,7 @@ a img {
     }
     
     .button-text {
-        font-size: 8px !important;
+        font-size: 100% !important;
         white-space: nowrap;
     }
 
