@@ -125,28 +125,22 @@ body {
     position: relative; /* For text positioning */
 }
 
-/* Individual button backgrounds */
+/* LEFT MENU - Individual button backgrounds */
 .button-frontdesk {
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_magnifyingglass.png');
 }
-
 .button-casefiles {
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_hat.png');
 }
-
 .button-archives {
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_books.png');
 }
-
 .button-aboutus {
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_qmark.png');
 }
-
 .button-inquiries {
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_mail.png');
 }
-
-
 .button-icon {
     height: 20px; /* Adjust based on your icon size */
     width: 80%;
