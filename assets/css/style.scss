@@ -69,10 +69,10 @@ body {
 /* Create a fixed-ratio container system */
 .content-container {
     position: relative;
-    margin-top: 90vh;
+    margin-top: -10vh;
     z-index: 1;
     display: flex;
-    min-height: 100vh;
+    min-height: calc(100vh - 25vh);
     width: 100%;
     box-sizing: border-box;
     padding: 0;
