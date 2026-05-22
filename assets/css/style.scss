@@ -598,9 +598,9 @@ a img {
 .archive-nav-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px 0;
-    max-width: 600px;
+    gap: 12px;
+    padding: 15px 0;
+    max-width: 360px; /* Reduced from 600px for 60% smaller */
     margin: 0 auto;
 }
 
@@ -608,7 +608,7 @@ a img {
     background-color: rgba(249, 243, 233, 0.95);
     border: 2px solid #d9c8a9;
     border-radius: 8px;
-    padding: 20px;
+    padding: 12px; /* Reduced from 20px */
     text-align: center;
     text-decoration: none;
     color: var(--text-color);
@@ -629,23 +629,20 @@ a img {
 }
 
 .archive-card-image-container {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 15px auto;
+    width: 90%; /* Takes up almost the whole width */
+    margin: 0 auto 8px auto; /* Reduced bottom margin */
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background-color: rgba(94, 44, 4, 0.1);
-    padding: 10px;
-    box-sizing: border-box;
+    /* Removed circular background and padding */
 }
 
 .archive-card-image {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%; /* Fill the container */
+    height: auto;
     object-fit: contain;
     transition: filter 0.3s ease;
+    /* Images will maintain their square aspect ratio */
 }
 
 .archive-card:hover .archive-card-image {
@@ -653,15 +650,15 @@ a img {
 }
 
 .archive-card-title {
-    font-size: 16px;
+    font-size: 14px; /* Reduced from 16px */
     font-weight: bold;
     color: var(--button-brown);
-    margin-bottom: 10px;
+    margin-bottom: 6px; /* Reduced from 10px */
     font-family: 'Georgia', serif;
 }
 
 .archive-card-description {
-    font-size: 12px;
+    font-size: 10px; /* Reduced from 12px */
     color: #666;
     line-height: 1.4;
     opacity: 0;
@@ -679,19 +676,17 @@ a img {
 @media (max-width: 500px) {
     .archive-nav-container {
         grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 15px;
+        gap: 10px;
+        padding: 10px;
+        max-width: 240px; /* Also reduced proportionally */
     }
     
     .archive-card {
         aspect-ratio: 4/3; /* Slightly wider on mobile for better fit */
+        padding: 10px;
     }
     
     .archive-card-image-container {
-        width: 60px;
-        height: 60px;
+        width: 85%; /* Slightly smaller on mobile for better proportions */
     }
 }
-
-
-
