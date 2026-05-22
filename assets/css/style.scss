@@ -630,7 +630,7 @@ a img {
 
 .archive-card-image-container {
     width: 90%; /* Takes up almost the whole width */
-    margin: 0 auto 8px auto; /* Reduced bottom margin */
+    margin: 0 auto 2px auto; /* Reduced bottom margin */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -653,7 +653,8 @@ a img {
     font-size: 14px; /* Reduced from 16px */
     font-weight: bold;
     color: var(--button-brown);
-    margin-bottom: 1px; /* Reduced from 10px */
+    margin-bottom: 6px; /* Reduced from 10px */
+    margin-top: 0; 
     font-family: 'Georgia', serif;
 }
 
