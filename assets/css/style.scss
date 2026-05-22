@@ -653,7 +653,7 @@ a img {
     font-size: 14px; /* Reduced from 16px */
     font-weight: bold;
     color: var(--button-brown);
-    margin-bottom: 6px; /* Reduced from 10px */
+    margin-bottom: 16px; /* Reduced from 10px */
     margin-top: 0; 
     font-family: 'Georgia', serif;
 }
@@ -663,11 +663,11 @@ a img {
     color: #666;
     line-height: 1.4;
     opacity: 0;
-    transform: translateY(5px);
+    transform: translateY(8px);
     transition: all 0.3s ease;
     font-style: italic;
     position: absolute; /* Add absolute positioning */
-    bottom: 20px; /* Position from bottom of card */
+    bottom: 5px; /* Position from bottom of card */
     left: 12px; /* Match card padding */
     right: 12px; /* Match card padding */
 }
