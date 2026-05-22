@@ -1,6 +1,14 @@
 ---
 layout: default
-title: Prices
+title: Prices Archive
 ---
 
-<h2>Coming Soon!</h2>
+<div class="page-title-bar">
+    <div class="page-title">Prices Archive</div>
+</div>
+
+<div class="text-box">
+    <h2>Economic Data</h2>
+    <p>Historical pricing information and economic context...</p>
+    <!-- Add your prices content here -->
+</div>
