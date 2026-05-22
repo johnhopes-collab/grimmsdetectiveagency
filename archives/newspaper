@@ -1,6 +1,14 @@
 ---
 layout: default
-title: Newspaper
+title: Newspaper Archive
 ---
 
-<h2>Coming Soon!</h2>
+<div class="page-title-bar">
+    <div class="page-title">Newspaper Archive</div>
+</div>
+
+<div class="text-box">
+    <h2>Press Coverage</h2>
+    <p>Newspaper clippings and articles related to our cases...</p>
+    <!-- Add your newspaper content here -->
+</div>
