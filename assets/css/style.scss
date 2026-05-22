@@ -662,9 +662,13 @@ a img {
     color: #666;
     line-height: 1.4;
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(-10px);
     transition: all 0.3s ease;
     font-style: italic;
+    position: absolute; /* Add absolute positioning */
+    bottom: 20px; /* Position from bottom of card */
+    left: 12px; /* Match card padding */
+    right: 12px; /* Match card padding */
 }
 
 .archive-card:hover .archive-card-description {
