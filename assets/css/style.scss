@@ -742,3 +742,79 @@ a img {
 .at-index-tale-no-desc {
     cursor: help;
 }
+
+
+/* Custom Tooltip Styling */
+.at-index-tale,
+.at-index-tale-no-desc {
+    position: relative;
+}
+
+/* Hide the default browser tooltip */
+.at-index-tale[title]:hover:after,
+.at-index-tale-no-desc[title]:hover:after {
+    content: none;
+}
+
+/* Custom tooltip */
+.at-index-tale:hover:before,
+.at-index-tale-no-desc:hover:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5f1e8; /* Manila/cream background */
+    color: #333;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 2px solid var(--button-brown);
+    box-shadow: 0 4px 12px rgba(94, 44, 4, 0.3);
+    font-size: 12px;
+    line-height: 1.4;
+    max-width: 300px;
+    width: max-content;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: normal;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    margin-bottom: 8px;
+}
+
+.at-index-tale:hover:before,
+.at-index-tale-no-desc:hover:before {
+    opacity: 1;
+}
+
+/* Tooltip arrow */
+.at-index-tale:hover:after,
+.at-index-tale-no-desc:hover:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--button-brown);
+    z-index: 1001;
+    margin-bottom: 2px;
+}
+
+/* Adjust positioning for very long tooltips */
+@media (max-width: 500px) {
+    .at-index-tale:hover:before,
+    .at-index-tale-no-desc:hover:before {
+        max-width: 250px;
+        left: 0;
+        transform: none;
+    }
+    
+    .at-index-tale:hover:after,
+    .at-index-tale-no-desc:hover:after {
+        left: 20px;
+        transform: none;
+    }
+}
