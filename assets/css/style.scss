@@ -761,9 +761,9 @@ a img {
 .at-index-tale-no-desc:hover:before {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
     background-color: #f5f1e8; /* Manila/cream background */
     color: #333;
     padding: 12px 16px;
@@ -781,7 +781,7 @@ a img {
     white-space: normal;
     text-align: left;
     font-family: 'Georgia', serif;
-    margin-bottom: 8px;
+    margin-left: 8px;
 }
 
 .at-index-tale:hover:before,
@@ -794,27 +794,37 @@ a img {
 .at-index-tale-no-desc:hover:after {
     content: '';
     position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
     border: 6px solid transparent;
-    border-top-color: var(--button-brown);
+    border-right-color: var(--button-brown);
     z-index: 1001;
-    margin-bottom: 2px;
+    margin-left: 2px;
 }
 
-/* Adjust positioning for very long tooltips */
+/* Adjust positioning for mobile - switch back to above on small screens */
 @media (max-width: 500px) {
     .at-index-tale:hover:before,
     .at-index-tale-no-desc:hover:before {
+        top: auto;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
         max-width: 250px;
-        left: 0;
-        transform: none;
+        margin-left: 0;
+        margin-bottom: 8px;
     }
     
     .at-index-tale:hover:after,
     .at-index-tale-no-desc:hover:after {
-        left: 20px;
-        transform: none;
+        top: auto;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-right-color: transparent;
+        border-top-color: var(--button-brown);
+        margin-left: 0;
+        margin-bottom: 2px;
     }
 }
