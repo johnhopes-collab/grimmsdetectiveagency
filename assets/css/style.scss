@@ -828,3 +828,19 @@ a img {
         margin-bottom: 2px;
     }
 }
+
+/* Inline image styling */
+.inline-image-right {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin: 0 0 15px 15px; /* bottom and left margins */
+    border-radius: 4px;
+    border: 1px solid #d9c8a9; /* Subtle border to match your theme */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Clear floats after text content */
+.clear-float {
+    clear: both;
+}
