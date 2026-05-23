@@ -844,3 +844,33 @@ a img {
 .clear-float {
     clear: both;
 }
+
+
+/* Background image styling */
+.text-box-with-bg {
+    background-image: url('{{ site.baseurl }}/assets/images/graphic.png');
+    background-repeat: no-repeat;
+    background-position: right center; /* Aligns to the right, centers vertically */
+    background-size: auto 200px; /* Keeps original width, sets height to 200px */
+    position: relative;
+}
+
+/* Optional: Add a semi-transparent overlay to make text more readable */
+.text-box-with-bg-overlay {
+    background-image: url('{{ site.baseurl }}/assets/images/graphic.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 200px;
+    position: relative;
+}
+
+.text-box-with-bg-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%; /* Adjust this to cover however much of the image you want to dim */
+    background: linear-gradient(to left, rgba(249, 243, 233, 0.7), transparent);
+    pointer-events: none;
+}
