@@ -892,15 +892,15 @@ a img {
     border-radius: 4px;
 }
 .grimm-header-khm {
-    width: 25px;
+    width: 16px;
     text-align: right;
 }
 
 .grimm-header-english {
     flex-grow: 1;
     text-align: center;
-    padding-left: 25px;  /* Space from KHM column */
-    padding-right: 5px; /* Space from German column */
+    padding-left: 15px;  /* Space from KHM column */
+    padding-right: 15px; /* Space from German column */
 }
 
 .grimm-header-german {
