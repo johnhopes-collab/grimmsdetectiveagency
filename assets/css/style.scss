@@ -878,6 +878,9 @@ a img {
 /* Grimm Tales CSS - ADD TO BOTTOM OF CSS FILE */
 
 /* Grimm Tales Header - extends AT Index styling */
+/* Grimm Tales CSS - REPLACE THE PREVIOUS GRIMM CSS WITH THIS */
+
+/* Grimm Tales Header - extends AT Index styling */
 .grimm-header {
     display: flex;
     margin-bottom: 15px;
@@ -916,9 +919,9 @@ a img {
     width: 100%;
     border-collapse: collapse;
     font-family: 'Arial', sans-serif;
-    font-size: 10px; /* Smaller font */
+    font-size: 10px;
     line-height: 1.3;
-    margin-top: -15px; /* Pull up close to header */
+    margin-top: -15px;
 }
 
 .grimm-data-table tbody tr:hover {
@@ -932,33 +935,26 @@ a img {
 }
 
 .grimm-khm-cell {
-    width: 40px; /* Wider column */
+    width: 40px;
     font-weight: bold;
     color: var(--button-brown);
-    text-align: right; /* Right aligned */
-    padding-right: 15px; /* Space between number and English title */
+    text-align: right;
+    padding-right: 15px;
 }
 
 .grimm-english-cell {
-    width: calc((100% - 140px) / 2); /* Adjusted for wider KHM column */
-    position: relative; /* For tooltip positioning */
+    width: calc((100% - 140px) / 2);
 }
 
 .grimm-german-cell {
-    width: calc((100% - 140px) / 2); /* Adjusted for wider KHM column */
-    font-style: italic; /* Italicized */
+    width: calc((100% - 140px) / 2);
+    font-style: italic;
     color: #555;
 }
 
 .grimm-atu-cell {
-    width: 30px;
+    width: 60px;
     font-weight: bold;
     color: var(--button-brown);
     text-align: left;
-}
-
-/* Enable tooltips for Grimm English titles */
-.grimm-english-cell .at-index-tale {
-    cursor: help;
-    text-decoration: underline dotted;
 }
