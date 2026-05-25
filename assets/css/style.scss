@@ -874,3 +874,104 @@ a img {
     background: linear-gradient(to left, rgba(249, 243, 233, 0.7), transparent);
     pointer-events: none;
 }
+
+
+/* Grimm Tales Table Styling */
+.grimm-table-container {
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+    line-height: 1.3;
+    margin-top: 20px;
+}
+
+.grimm-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(249, 243, 233, 0.95);
+    border: 2px solid #d9c8a9;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.grimm-table-header {
+    background-color: rgba(94, 44, 4, 0.1);
+    font-weight: bold;
+    border-bottom: 2px solid #d9c8a9;
+}
+
+.grimm-table-header th {
+    padding: 12px 8px;
+    text-align: left;
+    color: var(--button-brown);
+    border-right: 1px solid #d9c8a9;
+    font-size: 12px;
+}
+
+.grimm-table-header th:last-child {
+    border-right: none;
+}
+
+.grimm-table tbody tr {
+    border-bottom: 1px solid rgba(217, 200, 169, 0.3);
+}
+
+.grimm-table tbody tr:hover {
+    background-color: rgba(94, 44, 4, 0.05);
+}
+
+.grimm-table td {
+    padding: 8px;
+    vertical-align: top;
+    border-right: 1px solid rgba(217, 200, 169, 0.3);
+}
+
+.grimm-table td:last-child {
+    border-right: none;
+}
+
+.grimm-khm {
+    font-weight: bold;
+    color: var(--button-brown);
+    width: 60px;
+    text-align: center;
+}
+
+.grimm-english {
+    width: 35%;
+    cursor: help;
+}
+
+.grimm-german {
+    width: 35%;
+    font-style: italic;
+    color: #555;
+}
+
+.grimm-atu {
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--button-brown);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .grimm-table {
+        font-size: 10px;
+    }
+    
+    .grimm-table td,
+    .grimm-table th {
+        padding: 6px 4px;
+    }
+    
+    .grimm-khm,
+    .grimm-atu {
+        width: 50px;
+    }
+    
+    .grimm-english,
+    .grimm-german {
+        width: 40%;
+    }
+}
