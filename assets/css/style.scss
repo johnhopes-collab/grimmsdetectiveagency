@@ -899,12 +899,14 @@ a img {
 .grimm-header-english {
     flex-grow: 1;
     text-align: center;
-    margin-right: 15px;
+    padding-left: 15px;  /* Space from KHM column */
+    padding-right: 15px; /* Space from German column */
 }
 
 .grimm-header-german {
     flex-grow: 1;
-    margin-right: 15px;
+    text-align: left;    /* Left align German title */
+    padding-right: 15px; /* Space from ATU column */
 }
 
 .grimm-header-atu {
