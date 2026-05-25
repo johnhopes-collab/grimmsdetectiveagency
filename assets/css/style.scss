@@ -875,6 +875,8 @@ a img {
     pointer-events: none;
 }
 
+/* Grimm Tales CSS - ADD TO BOTTOM OF CSS FILE */
+
 /* Grimm Tales Header - extends AT Index styling */
 .grimm-header {
     display: flex;
@@ -905,4 +907,48 @@ a img {
 .grimm-header-atu {
     width: 60px;
     flex-shrink: 0;
+}
+
+/* Grimm Data Table */
+.grimm-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+    line-height: 1.3;
+    margin-top: -15px; /* Pull up close to header */
+}
+
+.grimm-data-table tbody tr:hover {
+    background-color: rgba(94, 44, 4, 0.05);
+}
+
+.grimm-data-table td {
+    padding: 4px 8px;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(217, 200, 169, 0.2);
+}
+
+.grimm-khm-cell {
+    width: 60px;
+    font-weight: bold;
+    color: var(--button-brown);
+    text-align: left;
+}
+
+.grimm-english-cell {
+    width: calc((100% - 120px) / 2);
+}
+
+.grimm-german-cell {
+    width: calc((100% - 120px) / 2);
+    font-style: italic;
+    color: #555;
+}
+
+.grimm-atu-cell {
+    width: 60px;
+    font-weight: bold;
+    color: var(--button-brown);
+    text-align: left;
 }
