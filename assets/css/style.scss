@@ -895,15 +895,18 @@ a img {
     width: 25px;
     text-align: right;
 }
+
 .grimm-header-english {
-    width: 25px;
     flex-grow: 1;
-    text-align: right;
+    text-align: center;
+    margin-right: 15px;
 }
+
 .grimm-header-german {
     flex-grow: 1;
     margin-right: 15px;
 }
+
 .grimm-header-atu {
     width: 60px;
     flex-shrink: 0;
