@@ -890,12 +890,14 @@ a img {
 }
 
 .grimm-header-khm {
-    width: 60px;
+    width: 80px;
     flex-shrink: 0;
+    text-align: right;
 }
 
 .grimm-header-english {
     flex-grow: 1;
+    margin-left: 15px;
     margin-right: 15px;
 }
 
@@ -914,7 +916,7 @@ a img {
     width: 100%;
     border-collapse: collapse;
     font-family: 'Arial', sans-serif;
-    font-size: 11px;
+    font-size: 10px; /* Smaller font */
     line-height: 1.3;
     margin-top: -15px; /* Pull up close to header */
 }
@@ -930,19 +932,21 @@ a img {
 }
 
 .grimm-khm-cell {
-    width: 60px;
+    width: 80px; /* Wider column */
     font-weight: bold;
     color: var(--button-brown);
-    text-align: left;
+    text-align: right; /* Right aligned */
+    padding-right: 15px; /* Space between number and English title */
 }
 
 .grimm-english-cell {
-    width: calc((100% - 120px) / 2);
+    width: calc((100% - 140px) / 2); /* Adjusted for wider KHM column */
+    position: relative; /* For tooltip positioning */
 }
 
 .grimm-german-cell {
-    width: calc((100% - 120px) / 2);
-    font-style: italic;
+    width: calc((100% - 140px) / 2); /* Adjusted for wider KHM column */
+    font-style: italic; /* Italicized */
     color: #555;
 }
 
@@ -951,4 +955,10 @@ a img {
     font-weight: bold;
     color: var(--button-brown);
     text-align: left;
+}
+
+/* Enable tooltips for Grimm English titles */
+.grimm-english-cell .at-index-tale {
+    cursor: help;
+    text-decoration: underline dotted;
 }
