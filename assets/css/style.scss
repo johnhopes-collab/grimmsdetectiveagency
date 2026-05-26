@@ -32,7 +32,6 @@ body {
     flex-direction: column;
 }
 
-/* Adjust header for proportional scaling */
 .header {
     position: relative;
     width: 100%;
@@ -41,8 +40,6 @@ body {
     padding: 0;
     height: auto;
 }
-
-/* Header alignment to match content */
 .header-desktop {
     width: 70%;
     height: auto;
@@ -53,7 +50,6 @@ body {
     position: relative;
     transform: translateX(0); /* Adjust as needed */
 }
-
 .header-mobile {
     display: none;
     max-width: 90%;
@@ -63,21 +59,10 @@ body {
     padding-top: 0;
 }
 
-/* Shield Logo - at top-left */
-.logo-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999; 
-    pointer-events: none; 
-}
-.site-logo {
-    display: block;
-    width: min(150px, 20vw); 
-    height: auto; 
-    pointer-events: auto; 
-    transition: opacity 0.1s ease;
-}
+/* Shield Logo - SHIELD LOGO at top-left */
+.logo-container {    position: absolute;    top: 0;    left: 0;    z-index: 9999;     pointer-events: none;}
+.site-logo      {    display: block;    width: min(150px, 20vw); 
+                     height: auto;     pointer-events: auto;     transition: opacity 0.1s ease;}
 /* Hide logo completely on mobile */
 @media (max-width: 500px) {    .logo-container {display: none;}}
 
