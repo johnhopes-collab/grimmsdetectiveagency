@@ -124,6 +124,8 @@ body {
     text-decoration: none;
     transition: transform 0.2s;
     position: relative; /* For text positioning */
+    background-color: red !important; /* This should make buttons red */
+    border: 5px solid blue !important; /* This should add a thick blue border */
 }
 
 
