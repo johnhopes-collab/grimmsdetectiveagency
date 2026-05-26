@@ -105,7 +105,7 @@ body {
 .sidebar-button {
     display: block;
     width: 89%;
-    height: 39; /* Fixed height for button */
+    height: 42; /* Fixed height for button */
     padding: 8px 0;
     margin-bottom: 5px;
     margin-left: auto;
@@ -135,7 +135,7 @@ body {
 .button-inquiries {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_mail.png');}
 
 .button-icon {
-    height: 26px; /* Adjust based on your icon size */
+    height: 30px; /* Adjust based on your icon size */
     width: 80%;
     margin-right: 5px;
 }
