@@ -85,6 +85,7 @@ body {
 /* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
     width: 135px; /* Fixed width */
+    height: 230px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbar1.png');
     background-size: 100% 100%;
@@ -93,7 +94,6 @@ body {
     align-self: flex-start;
     box-sizing: border-box;
     margin: 3px 0 0 0;
-    aspect-ratio: 1 / 1.7;
 }
 /* scale proportionally */
 .sidebar-buttons {    padding: 0px;    box-sizing: border-box;}
