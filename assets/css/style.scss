@@ -107,32 +107,28 @@ body {
 
 /* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
-    width: 17%;
+    width: 200px; /* Fixed width - adjust this to your desired size */
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbar1.png');
-    background-size: 100% 100%; /* Changed from 98% to 100% */
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 0;
     align-self: flex-start;
     box-sizing: border-box;
     margin: 3px 0 0 0;
-    /* Add aspect ratio to maintain proportions */
-    aspect-ratio: 1 / 1.4; /* Adjust this ratio based on your Lbar1.png dimensions */
 }
 /* scale proportionally */
 .sidebar-buttons {
-    padding: 0.8vw; /* Changed from fixed 8px to viewport-based */
+    padding: 8px; /* Back to fixed pixels */
     box-sizing: border-box;
-    height: 100%; /* Fill the sidebar height */
 }
 
-/* Make buttons scale with sidebar */
 .sidebar-button {
     display: block;
     width: 89%;
-    height: 3.5vw; /* Changed from fixed 30px to viewport-based */
-    padding: 0.6vw 0; /* Changed from fixed 6px to viewport-based */
-    margin-bottom: 0.4vw; /* Changed from fixed 4px to viewport-based */
+    height: 30px; /* Back to fixed pixels */
+    padding: 6px 0; /* Back to fixed pixels */
+    margin-bottom: 4px; /* Back to fixed pixels */
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
@@ -178,9 +174,9 @@ body {
     position: relative;
     z-index: 2;
     display: inline-block;
-    font-size: 0.6vw; /* Changed from fixed 8px to viewport-based */
-    line-height: 1.5;
-    margin-left: 1.5vw; /* Changed from fixed 20px to viewport-based */
+    font-size: 8px;
+    line-height: 15px;
+    margin-left: 20px;
 }
 
 /* Hover effect */
@@ -215,16 +211,17 @@ a img {
 
 /* Main content that takes remaining space with margins */
 .main-content {
-    width: calc(100% - 12% - 17%); /* Total - left sidebar - right sidebar*/
+    width: calc(100% - 200px - 200px - 0.4rem); /* Subtract both fixed sidebar widths + gap */
     flex: none;
     padding: 0;
     background-color: transparent;
     box-shadow: none;
     align-self: flex-start;
     box-sizing: border-box;
-    margin-left: 0.4rem; /* Small gap between left sidebar and content */
-    margin-right: 0rem; /* Small gap between content and right sidebar */
+    margin-left: 0.4rem;
+    margin-right: 0rem;
 }
+
 
 
 /* Right sidebar anchored to right edge */
