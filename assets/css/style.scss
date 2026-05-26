@@ -1,9 +1,7 @@
 ---
 ---
 
-@-ms-viewport {
-    width: device-width;
-}
+@-ms-viewport {    width: device-width;}
 
 /* Base styles - 1 1 1 1 1 1 1 1 1*/
 :root {
@@ -81,11 +79,7 @@ body {
     transition: opacity 0.1s ease;
 }
 /* Hide logo completely on mobile */
-@media (max-width: 500px) {
-    .logo-container {display: none;}
-}
-
-
+@media (max-width: 500px) {    .logo-container {display: none;}}
 
 
 /* Create a fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
@@ -116,10 +110,7 @@ body {
     margin: 3px 0 0 0;
 }
 /* scale proportionally */
-.sidebar-buttons {
-    padding: 8px;
-    box-sizing: border-box;
-}
+.sidebar-buttons {    padding: 8px;    box-sizing: border-box;}
 
 .sidebar-button {
     display: block;
@@ -176,19 +167,11 @@ body {
     box-sizing: border-box;
 }
 
-.sidebar-square-image {
-    border: none !important;
-}
+.sidebar-square-image {    border: none !important;}
 
-a img {
-    border: none;
-    outline: none;
-}
+a img {    border: none;    outline: none;}
 
-.sidebar-square a {
-    text-decoration: none;
-    display: block;
-}
+.sidebar-square a {    text-decoration: none;    display: block;}
 
 
 /* Main content that takes remaining space with margins */
@@ -204,8 +187,6 @@ a img {
     margin-right: 0rem;
 }
 
-
-
 /* Right sidebar anchored to right edge */
 .right-sidebar {
     width: 14%;
@@ -220,10 +201,6 @@ a img {
     overflow: hidden;
 }
 
-
-
-/* Add internal padding to the text box rather than the container */
-/* Fix the text box margins */
 .text-box {
     background-color: rgba(249, 243, 233, 0.95);
     border: 1px solid #d9c8a9;
@@ -313,7 +290,7 @@ a img {
 
 
 
-/* Full-width page title bar */
+/* Full-width page title bar - TITLE BAR 5 5 5 5 5 5 5 5 5 5 5*/
 .page-title-bar {
     position: absolute;
     top: calc(-2vh); /* Position it 15px above the content container's margin-top */
@@ -340,7 +317,7 @@ a img {
 
 
 
-/* Footer styling */
+/* Footer styling - FOOTER 6 6 6 6 6 6 6 6 6 6*/
 .site-footer {
     width: 100%;
     background-color: rgba(94, 44, 4, 0.95); /* Using button-brown color with opacity */
