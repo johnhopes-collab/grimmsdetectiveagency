@@ -219,14 +219,12 @@ a img {    border: none;    outline: none;}
     margin-top: 0;
 }
 
-/* Overall container */
+/* Individual testimonial styling - TESTIMONIALS 6 6 6 6 6 6 6 6 6 6*/
 .testimonials-container {
   max-width: 1100px;
   margin: 1rem auto;
   padding: 1rem;
 }
-
-/* Elegant heading */
 .testimonials-heading {
   font-family: 'Playfair Display', serif;
   text-align: center;
@@ -236,7 +234,6 @@ a img {    border: none;    outline: none;}
   position: relative;
   font-size: 200%;
 }
-
 .testimonials-heading:after {
   content: "";
   position: absolute;
@@ -247,8 +244,6 @@ a img {    border: none;    outline: none;}
   height: 2px;
   background: linear-gradient(to right, transparent, #b8a278, transparent);
 }
-
-/* Individual testimonial styling */
 .testimonial {
   margin-bottom: 2rem;
   padding: 1rem 2rem;
@@ -256,7 +251,6 @@ a img {    border: none;    outline: none;}
   border-left: 4px solid #b8a278;
   position: relative;
 }
-
 .testimonial:before {
   content: "";
   position: absolute;
@@ -267,7 +261,6 @@ a img {    border: none;    outline: none;}
   color: rgba(184, 162, 120, 0.2);
   line-height: 1;
 }
-
 .testimonial blockquote {
   font-family: 'Lora', serif;
   font-size: 1.1rem;
@@ -277,7 +270,6 @@ a img {    border: none;    outline: none;}
   color: #333;
   font-size: 100%;
 }
-
 .testimonial cite {
   display: block;
   font-style: italic;
@@ -291,7 +283,7 @@ a img {    border: none;    outline: none;}
 
 
 
-/* Full-width page title bar - TITLE BAR 5 5 5 5 5 5 5 5 5 5 5*/
+/* Full-width page title bar - TITLE BAR 7 7 7 7 7 7 7 7 7 7 7 7 7 7*/
 .page-title-bar {
     position: absolute;
     top: calc(-2vh); /* Position it 15px above the content container's margin-top */
@@ -318,7 +310,7 @@ a img {    border: none;    outline: none;}
 
 
 
-/* Footer styling - FOOTER 6 6 6 6 6 6 6 6 6 6*/
+/* Footer styling - FOOTER 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8*/
 .site-footer {
     width: 100%;
     background-color: rgba(94, 44, 4, 0.95); /* Using button-brown color with opacity */
@@ -330,31 +322,15 @@ a img {    border: none;    outline: none;}
     font-size: 14px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow at the top of footer */
 }
-
-.footer-content {
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 5px;
-}
-
-.site-footer p {
-    margin: 5px 0;
-    line-height: 1.4;
-}
-
-.site-footer .small-text {
-    font-size: 7px;
-    opacity: 0.7;
-}
+.footer-content {   max-width: 80%;    margin: 0 auto;    padding: 5px;}
+.site-footer p {    margin: 5px 0;     line-height: 1.4;}
+.site-footer .small-text {    font-size: 7px;    opacity: 0.7;}
 
 
 /* Make sidebar square containers more constrained */
 .right-sidebar .sidebar-square {
     margin: 0 !important;
 }
-
-
-
 /* Ensure clean links with no extra spacing */
 .right-sidebar .sidebar-square a {
     display: block;
@@ -578,7 +554,7 @@ a img {    border: none;    outline: none;}
     box-sizing: border-box !important;
 }
 
-/* Archive Navigation Cards */
+/* Archive Navigation Cards - ARCHIVE CARDS 11 11 11 11 11 11 11 11 11 11*/
 .archive-nav-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -587,7 +563,6 @@ a img {    border: none;    outline: none;}
     max-width: 360px; /* Reduced from 600px for 60% smaller */
     margin: 0 auto;
 }
-
 .archive-card {
     background-color: rgba(249, 243, 233, 0.95);
     border: 2px solid #d9c8a9;
@@ -605,22 +580,18 @@ a img {    border: none;    outline: none;}
     justify-content: space-between;
     overflow: hidden;
 }
-
 .archive-card:hover {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 8px 20px rgba(94, 44, 4, 0.3);
     border-color: var(--button-brown);
 }
-
 .archive-card-image-container {
     width: 90%; /* Takes up almost the whole width */
     margin: 0 auto 2px auto; /* Reduced bottom margin */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Removed circular background and padding */
 }
-
 .archive-card-image {
     width: 100%; /* Fill the container */
     height: auto;
@@ -628,22 +599,17 @@ a img {    border: none;    outline: none;}
     transition: filter 0.3s ease;
     /* Images will maintain their square aspect ratio */
 }
-
-.archive-card:hover .archive-card-image {
-    filter: grayscale(100%);
-}
-
+.archive-card:hover .archive-card-image {    filter: grayscale(100%);}
 .archive-card-title {
-    font-size: 14px; /* Reduced from 16px */
+    font-size: 14px;
     font-weight: bold;
     color: var(--button-brown);
-    margin-bottom: 26px; /* Reduced from 10px */
+    margin-bottom: 26px;
     margin-top: 0; 
     font-family: 'Georgia', serif;
 }
-
 .archive-card-description {
-    font-size: 10px; /* Reduced from 12px */
+    font-size: 10px;
     color: #666;
     line-height: 1.4;
     opacity: 0;
@@ -655,12 +621,7 @@ a img {    border: none;    outline: none;}
     left: 12px; /* Match card padding */
     right: 12px; /* Match card padding */
 }
-
-.archive-card:hover .archive-card-description {
-    opacity: 1;
-    transform: translateY(0);
-}
-
+.archive-card:hover .archive-card-description {    opacity: 1;    transform: translateY(0);}
 /* Responsive adjustments for mobile */
 @media (max-width: 500px) {
     .archive-nav-container {
@@ -669,12 +630,10 @@ a img {    border: none;    outline: none;}
         padding: 10px;
         max-width: 240px; /* Also reduced proportionally */
     }
-    
     .archive-card {
         aspect-ratio: 4/3; /* Slightly wider on mobile for better fit */
         padding: 10px;
     }
-    
     .archive-card-image-container {
         width: 85%; /* Slightly smaller on mobile for better proportions */
     }
