@@ -100,14 +100,14 @@ body {
 
 .sidebar-button {
     display: block;
-    width: 120px;
-    height: 35px;
-    padding: 2px 0;
+    width: 89%;
+    height: 30px; /* Fixed height for button */
+    padding: 6px 0;
     margin-bottom: 4px;
     margin-left: auto;
     margin-right: auto;
-    background-color: transparent;
-    background-size: 100% 100%;
+    background-color: transparent; /* Remove background color */
+    background-size: 100% 100%; /* Make background image cover entire button */
     background-repeat: no-repeat;
     background-position: center;
     color: var(--button-text);
@@ -119,7 +119,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     transition: transform 0.2s;
-    position: relative;
+    position: relative; /* For text positioning */
 }
 
 /* LEFT MENU - Individual button backgrounds */
