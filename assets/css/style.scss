@@ -77,7 +77,7 @@ body {
 
 .site-logo {
     display: block;
-    width: 150px;
+    width: min(150px, 20vw); 
     height: auto; 
     pointer-events: auto; 
     transition: opacity 0.1s ease;
