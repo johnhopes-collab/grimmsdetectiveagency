@@ -82,7 +82,7 @@ body {
 @media (max-width: 500px) {    .logo-container {display: none;}}
 
 
-/* Create a fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
+/* Fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
 .content-container {
     position: relative;
     margin-top: 1vh;
@@ -99,7 +99,7 @@ body {
 
 /* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
-    width: 140px; /* Fixed width - adjust this to your desired size */
+    width: 145px; /* Fixed width */
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbar1.png');
     background-size: 100% 100%;
@@ -108,6 +108,7 @@ body {
     align-self: flex-start;
     box-sizing: border-box;
     margin: 3px 0 0 0;
+    aspect-ratio: 1 / 1.2;
 }
 /* scale proportionally */
 .sidebar-buttons {    padding: 8px;    box-sizing: border-box;}
