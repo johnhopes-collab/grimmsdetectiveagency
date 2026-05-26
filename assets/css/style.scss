@@ -5,7 +5,7 @@
     width: device-width;
 }
 
-/* Base styles*/
+/* Base styles - 1 1 1 1 1 1 1 1 1*/
 :root {
     --primary-color: #2c3e50;
     --accent-color: #e74c3c;
@@ -56,7 +56,6 @@ body {
     transform: translateX(0); /* Adjust as needed */
 }
 
-
 .header-mobile {
     display: none;
     max-width: 90%;
@@ -74,7 +73,6 @@ body {
     z-index: 9999; 
     pointer-events: none; 
 }
-
 .site-logo {
     display: block;
     width: min(150px, 20vw); 
@@ -82,7 +80,6 @@ body {
     pointer-events: auto; 
     transition: opacity 0.1s ease;
 }
-
 /* Hide logo completely on mobile */
 @media (max-width: 500px) {
     .logo-container {
@@ -93,7 +90,7 @@ body {
 
 
 
-/* Create a fixed-ratio container system */
+/* Create a fixed-ratio container system - MAIN AREA 2 2 2 2 2 2 2 2 2 2*/
 .content-container {
     position: relative;
     margin-top: 1vh;
@@ -108,36 +105,39 @@ body {
 }
 
 
-/* Left sidebar anchored to left edge */
+/* Left sidebar - make height scale with width */
 .sidebar {
     width: 14%;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbar1.png');
-    background-size: 100% 98%;
+    background-size: 100% 100%; /* Changed from 98% to 100% */
     background-repeat: no-repeat;
     padding: 0;
     align-self: flex-start;
     box-sizing: border-box;
     margin: 3px 0 0 0;
+    /* Add aspect ratio to maintain proportions */
+    aspect-ratio: 1 / 4; /* Adjust this ratio based on your Lbar1.png dimensions */
 }
 
-/* These styles will help maintain button size during zoom */
+/* Make button container scale proportionally */
 .sidebar-buttons {
-    padding: 8px;
+    padding: 0.8vw; /* Changed from fixed 8px to viewport-based */
     box-sizing: border-box;
+    height: 100%; /* Fill the sidebar height */
 }
 
-
+/* Make buttons scale with sidebar */
 .sidebar-button {
     display: block;
     width: 89%;
-    height: 30px; /* Fixed height for button */
-    padding: 6px 0;
-    margin-bottom: 4px;
+    height: 3.5vw; /* Changed from fixed 30px to viewport-based */
+    padding: 0.6vw 0; /* Changed from fixed 6px to viewport-based */
+    margin-bottom: 0.4vw; /* Changed from fixed 4px to viewport-based */
     margin-left: auto;
     margin-right: auto;
-    background-color: transparent; /* Remove background color */
-    background-size: 100% 100%; /* Make background image cover entire button */
+    background-color: transparent;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     color: var(--button-text);
@@ -149,7 +149,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     transition: transform 0.2s;
-    position: relative; /* For text positioning */
+    position: relative;
 }
 
 /* LEFT MENU - Individual button backgrounds */
@@ -174,13 +174,14 @@ body {
     margin-right: 5px;
 }
 
+/* Scale text with buttons */
 .button-text {
     position: relative;
-    z-index: 2; /* Place text above button image */
+    z-index: 2;
     display: inline-block;
-    font-size: 8px;
-    line-height: 15px; /* Center text vertically - should match button height */
-    margin-left: 20px;
+    font-size: 0.6vw; /* Changed from fixed 8px to viewport-based */
+    line-height: 1.5;
+    margin-left: 1.5vw; /* Changed from fixed 20px to viewport-based */
 }
 
 /* Hover effect */
