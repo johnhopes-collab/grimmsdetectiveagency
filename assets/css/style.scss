@@ -96,7 +96,14 @@ body {
     margin: 3px 0 0 0;
 }
 /* scale proportionally */
-.sidebar-buttons {    padding: 0px;    box-sizing: border-box;}
+.sidebar-buttons { 
+    padding: 0px;    
+    box-sizing: border-box;
+    height: 100%;           /* ADD THIS - let it use full sidebar height */
+    display: flex;          /* ADD THIS - control button layout */
+    flex-direction: column; /* ADD THIS - stack buttons vertically */
+    justify-content: flex-start; /* ADD THIS - align buttons to top */
+}
 
 .sidebar-button {
     display: block;
