@@ -66,6 +66,30 @@ body {
     padding-top: 0;
 }
 
+/* Shield Logo - positioned at absolute top-left */
+.logo-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+    pointer-events: none; 
+}
+
+.site-logo {
+    display: block;
+    width: 64vw; /* 64% of viewport width */
+    height: auto; 
+    pointer-events: auto; 
+    transition: opacity 0.1s ease;
+}
+
+/* Hide logo completely on mobile */
+@media (max-width: 500px) {
+    .logo-container {
+        display: none;
+    }
+}
+
 /* Create a fixed-ratio container system */
 .content-container {
     position: relative;
