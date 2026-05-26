@@ -105,7 +105,7 @@ body {
 
 /* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
-    width: 200px; /* Fixed width - adjust this to your desired size */
+    width: 140px; /* Fixed width - adjust this to your desired size */
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbar1.png');
     background-size: 100% 100%;
@@ -193,7 +193,7 @@ a img {
 
 /* Main content that takes remaining space with margins */
 .main-content {
-    width: calc(100% - 200px - 200px - 0.4rem); /* Subtract both fixed sidebar widths + gap */
+    width: calc(100% - 12% - 17%); 
     flex: none;
     padding: 0;
     background-color: transparent;
