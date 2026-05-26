@@ -97,7 +97,7 @@ body {
 }
 /* These styles will help maintain button size during zoom */
 .sidebar-buttons {
-    padding: 1px;
+    padding: 8px;
     box-sizing: border-box;
 }
 
@@ -135,7 +135,7 @@ body {
 .button-inquiries {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_mail.png');}
 
 .button-icon {
-    height: 30px; /* Adjust based on your icon size */
+    height: 10px; /* Adjust based on your icon size */
     width: 80%;
     margin-right: 5px;
 }
