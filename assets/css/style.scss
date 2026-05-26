@@ -82,9 +82,7 @@ body {
 }
 /* Hide logo completely on mobile */
 @media (max-width: 500px) {
-    .logo-container {
-        display: none;
-    }
+    .logo-container {display: none;}
 }
 
 
@@ -119,16 +117,16 @@ body {
 }
 /* scale proportionally */
 .sidebar-buttons {
-    padding: 8px; /* Back to fixed pixels */
+    padding: 8px;
     box-sizing: border-box;
 }
 
 .sidebar-button {
     display: block;
     width: 89%;
-    height: 30px; /* Back to fixed pixels */
-    padding: 6px 0; /* Back to fixed pixels */
-    margin-bottom: 4px; /* Back to fixed pixels */
+    height: 30px;
+    padding: 6px 0;
+    margin-bottom: 4px;
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
@@ -148,26 +146,13 @@ body {
 }
 
 /* LEFT MENU - Individual button backgrounds */
-.button-frontdesk {
-    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_magnifyingglass.png');
-}
-.button-casefiles {
-    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_hat.png');
-}
-.button-archives {
-    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_books.png');
-}
-.button-aboutus {
-    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_qmark.png');
-}
-.button-inquiries {
-    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_mail.png');
-}
-.button-icon {
-    height: 20px; /* Adjust based on your icon size */
-    width: 80%;
-    margin-right: 5px;
-}
+.button-frontdesk {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_magnifyingglass.png');}
+.button-casefiles {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_hat.png');}
+.button-archives {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_books.png');}
+.button-aboutus {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_qmark.png');}
+.button-inquiries {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_mail.png');}
+
+.button-icon {height: 20px; /* Adjust based on your icon size */ width: 80%; margin-right: 5px;}
 
 /* Scale text with buttons */
 .button-text {
@@ -180,12 +165,9 @@ body {
 }
 
 /* Hover effect */
-.sidebar-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+.sidebar-button:hover {transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
 
-/* Right sidebar styling */
+/* Right sidebar styling - RIGHT SIDE BAR*/
 .sidebar-square {
     width: 100%;
     margin: 10px 0;
