@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 'speed',
-            path: '/assets/images/sq/sq_g_speed2.png',
-            link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
+            path: '/assets/images/sq/sq_g_speed4.png',
+            link: 'https://grimmsdetectiveagency.com/archives/cars.html',
             alt: 'Speed Promo'
         },
         {
