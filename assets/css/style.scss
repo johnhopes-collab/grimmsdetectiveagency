@@ -65,7 +65,7 @@ body {
     padding-top: 0;
 }
 
-/* Shield Logo - positioned at absolute top-left */
+/* Shield Logo - at top-left */
 .logo-container {
     position: absolute;
     top: 0;
@@ -90,7 +90,7 @@ body {
 
 
 
-/* Create a fixed-ratio container system - MAIN AREA 2 2 2 2 2 2 2 2 2 2*/
+/* Create a fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
 .content-container {
     position: relative;
     margin-top: 1vh;
@@ -105,7 +105,7 @@ body {
 }
 
 
-/* Left sidebar - make height scale with width */
+/* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
     width: 17%;
     background-color: var(--sidebar-brown);
@@ -119,8 +119,7 @@ body {
     /* Add aspect ratio to maintain proportions */
     aspect-ratio: 1 / 1.4; /* Adjust this ratio based on your Lbar1.png dimensions */
 }
-
-/* Make button container scale proportionally */
+/* scale proportionally */
 .sidebar-buttons {
     padding: 0.8vw; /* Changed from fixed 8px to viewport-based */
     box-sizing: border-box;
