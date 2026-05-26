@@ -116,8 +116,8 @@ body {
 .sidebar-button {
     display: block;
     width: 89%;
-    height: 30px;
-    padding: 6px 0;
+    height: 39px;
+    padding: 8px 0;
     margin-bottom: 4px;
     margin-left: auto;
     margin-right: auto;
@@ -151,9 +151,9 @@ body {
     position: relative;
     z-index: 2;
     display: inline-block;
-    font-size: 8px;
-    line-height: 15px;
-    margin-left: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    margin-left: 26px;
 }
 
 /* Hover effect */
@@ -212,14 +212,12 @@ a img {    border: none;    outline: none;}
     margin: 0; /* Remove the side margins here */
     box-sizing: border-box;
 }
-
-
 .text-box h2 {
     color: var(--button-brown);
     margin-top: 0;
 }
 
-/* Individual testimonial styling - TESTIMONIALS 6 6 6 6 6 6 6 6 6 6*/
+/*==== Individual testimonial styling - TESTIMONIALS 6 6 6 6 6 6 6 6 6 6 ====*/
 .testimonials-container {
   max-width: 1100px;
   margin: 1rem auto;
@@ -283,7 +281,7 @@ a img {    border: none;    outline: none;}
 
 
 
-/* Full-width page title bar - TITLE BAR 7 7 7 7 7 7 7 7 7 7 7 7 7 7*/
+/* ==== Full-width page title bar - TITLE BAR 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ====*/
 .page-title-bar {
     position: absolute;
     top: calc(-2vh); /* Position it 15px above the content container's margin-top */
@@ -297,7 +295,6 @@ a img {    border: none;    outline: none;}
     align-items: center;
     z-index: 2;
 }
-
 .page-title {
     font-family: 'Arial', sans-serif;
     font-size: 12px;
