@@ -94,6 +94,7 @@ body {
     align-self: flex-start;
     box-sizing: border-box;
     margin: 3px 0 0 0;
+    z-index: 3;
 }
 /* These styles will help maintain button size during zoom */
 .sidebar-buttons {
@@ -122,6 +123,7 @@ body {
     text-decoration: none;
     transition: transform 0.2s;
     position: relative;
+    z-index: 4;
 }
 
 .button-frontdesk {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_magnifyingglass.png');}
