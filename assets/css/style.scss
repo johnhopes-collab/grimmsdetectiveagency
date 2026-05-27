@@ -84,7 +84,7 @@ body {
 
 /* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
-    width: 142px; /* Fixed width */
+    width: 135px; /* Fixed width */
     height: 227px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbar1.png');
@@ -105,7 +105,7 @@ body {
 
 .sidebar-button {
     display: block;
-    width: 90px; /* Your test width */
+    width: 110px; /* Your test width */
     height: 20px;
     padding: 8px 0;
     margin-bottom: 5px;
