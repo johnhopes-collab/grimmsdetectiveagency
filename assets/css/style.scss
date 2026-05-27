@@ -906,3 +906,9 @@ a img {    border: none;    outline: none;}
     color: var(--button-brown);
     text-align: left;
 }
+
+.resizing-image {
+    display: block; margin: 0 auto; max-width: 60%; height: auto; background: none; border: none; box-shadow: none; padding: 0;
+}
+/* Mobile view */
+@media (max-width: 768px) {.resizing-image{max-width: 100%;}}
