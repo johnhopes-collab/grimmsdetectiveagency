@@ -759,6 +759,12 @@ a img {    border: none;    outline: none;}
     border: 1px solid #d9c8a9; /* Subtle border to match your theme */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+.inline-image-middle {
+    float: center;
+    border-radius: 4px;
+    border: 1px solid #d9c8a9; /* Subtle border to match your theme */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* Clear floats after text content */
 .clear-float {
