@@ -910,5 +910,8 @@ a img {    border: none;    outline: none;}
 .resizing-image {
     display: block; margin: 0 auto; max-width: 60%; height: auto; background: none; border: none; box-shadow: none; padding: 0;
 }
+.resizing-image35 {
+    display: block; margin: 0 auto; max-width: 35%; height: auto; background: none; border: none; box-shadow: none; padding: 0;
+}
 /* Mobile view */
-@media (max-width: 768px) {.resizing-image{max-width: 100%;}}
+@media (max-width: 768px) {.resizing-image{max-width: 100%;} .resizing-image35{max-width: 100%;}}
