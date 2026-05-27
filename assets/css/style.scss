@@ -60,7 +60,7 @@ body {
 }
 
 /* Shield Logo - SHIELD LOGO at top-left */
-.logo-container {    position: absolute;    top: 6;    left: 6px;    z-index: 9999;     pointer-events: none;}
+.logo-container {    position: absolute;    top: 6px;    left: 6px;    z-index: 9999;     pointer-events: none;}
 .site-logo      {    display: block;    width: min(120px, 20vw); 
                      height: auto;     pointer-events: auto;     transition: opacity 0.1s ease;}
 /* Hide logo completely on mobile */
