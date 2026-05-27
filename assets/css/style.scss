@@ -15,31 +15,20 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif;
+    margin: 0;    padding: 0;    font-family: 'Georgia', serif;
     font-size: 12px; /* Consider changing to rem units */
     background-image: url('{{ site.baseurl }}/assets/images/tile_bb4.png');
-    background-repeat: repeat;
-    background-attachment: fixed;
+    background-repeat: repeat; background-attachment: fixed;
     background-size: 40%; /* This scales the image to 50% of its original size */
     color: var(--text-color);
     position: relative;
     width: 100%;
     min-height: 100vh;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+    overflow-x: hidden;    display: flex;    flex-direction: column;
 }
 
-.header {
-    position: relative;
-    width: 100%;
-    z-index: 0;
-    text-align: center;
-    padding: 0;
-    height: auto;
-}
+.header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
+
 .header-desktop {
     width: 70%;
     height: auto;
@@ -89,11 +78,7 @@ body {
     height: 237px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbar1.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding: 0;
-    align-self: flex-start;
-    box-sizing: border-box;
+    background-size: 100% 100%; background-repeat: no-repeat; padding: 0; align-self: flex-start; box-sizing: border-box;
     margin: -8px 0 0 0;
     z-index: 3;
 }
@@ -106,17 +91,13 @@ body {
     box-sizing: border-box;
 }
 
-
 .sidebar-button {
     display: block;
     width: 102px; /* Your test width */
     height: 19px;
     padding: 8px 0;
     margin-bottom: 4px;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    margin-left: auto; margin-right: auto; background-size: 100% 100%; background-repeat: no-repeat;
     background-position: center;
     color: var(--button-text);
     text-align: center;
@@ -136,10 +117,7 @@ body {
 .button-aboutus {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_qmark.png');}
 .button-inquiries {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_mail.png');}
 
-.button-icon {
-    height: 30px; /* Adjust based on your icon size */
-    margin-right: 5px;
-}
+.button-icon {height: 30px; margin-right: 5px;}
 
 /* Scale text with buttons */
 .button-text {
@@ -213,11 +191,7 @@ a img {    border: none;    outline: none;}
 }
 
 /*==== Individual testimonial styling - TESTIMONIALS 6 6 6 6 6 6 6 6 6 6 ====*/
-.testimonials-container {
-  max-width: 1100px;
-  margin: 1rem auto;
-  padding: 1rem;
-}
+.testimonials-container {  max-width: 1100px;  margin: 1rem auto;  padding: 1rem;}
 .testimonials-heading {
   font-family: 'Playfair Display', serif;
   text-align: center;
@@ -303,12 +277,8 @@ a img {    border: none;    outline: none;}
     color: inherit;              /* Uses same color as title text */
     text-decoration: underline; /* Underlined */
 }
-.page-title a:visited {
-    color: inherit;
-}
-.page-title a:hover {
-    opacity: 0.85;
-}
+.page-title a:visited {    color: inherit;}
+.page-title a:hover   {    opacity: 0.85;}
 
 
 
@@ -330,14 +300,9 @@ a img {    border: none;    outline: none;}
 
 
 /* Make sidebar square containers more constrained */
-.right-sidebar .sidebar-square {
-    margin: 0 !important;
-}
+.right-sidebar .sidebar-square {    margin: 0 !important;}
 /* Ensure clean links with no extra spacing */
-.right-sidebar .sidebar-square a {
-    display: block;
-    line-height: 0; /* Remove any line spacing */
-}
+.right-sidebar .sidebar-square a {    display: block;    line-height: 0; /* Remove any line spacing */}
 
 
 /* ====== RESPONSIVE STYLING ====== */
