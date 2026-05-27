@@ -777,6 +777,17 @@ a img {    border: none;    outline: none;}
     border: 1px solid #d9c8a9;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+.image-block {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.image-caption {
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+}
     
 /* Clear floats after text content */
 .clear-float {
