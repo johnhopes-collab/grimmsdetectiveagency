@@ -110,11 +110,9 @@ body {
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
-    background-color: red !important; /* Keep this for visibility */
-    /* COMMENT OUT THE BACKGROUND IMAGE PROPERTIES */
-    /* background-size: 100% 100%; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     border: 2px solid blue;
     color: var(--button-text);
     text-align: center;
@@ -127,14 +125,11 @@ body {
     position: relative;
 }
 
-/* TEMPORARILY COMMENT OUT BACKGROUND IMAGES */
-/*
 .button-frontdesk {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_magnifyingglass.png');}
 .button-casefiles {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_hat.png');}
 .button-archives {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_books.png');}
 .button-aboutus {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_qmark.png');}
 .button-inquiries {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_mail.png');}
-*/
 
 .button-icon {
     height: 30px; /* Adjust based on your icon size */
