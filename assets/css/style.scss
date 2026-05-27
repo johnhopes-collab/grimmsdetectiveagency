@@ -84,6 +84,7 @@ body {
 
 /* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
+    top: calc(-2vh); 
     width: 135px; /* Fixed width */
     height: 227px;
     background-color: var(--sidebar-brown);
