@@ -86,15 +86,15 @@ body {
 
 /* Unified sidebar scaling unit */
 .sidebar-unit {
-    position: fixed; /* Changed to fixed */
-    top: 0;          /* True page 0,0 */
-    left: 0;         /* True page 0,0 */
+    position: absolute; /* Changed from fixed */
+    top: 0;             /* Relative to content-container */
+    left: 0;            /* Relative to content-container */
     z-index: 3;
-    transform-origin: 0 0; /* Now truly scales from page 0,0 */
+    transform-origin: 0 0; /* Still scales from container's 0,0 */
     transform: scale(1);
     transition: transform 0.3s ease;
-    /* No margins needed - we'll position content with padding/absolute positioning inside */
 }
+
 
 
 /* Logo within the unit */
@@ -132,16 +132,17 @@ body {
 
 /* Full-width title bar that scales with sidebar */
 .page-title-bar-wrapper {
-    position: fixed;
-    top: 0;
+    position: absolute; /* Changed from fixed */
+    top: 0;             /* Relative to content-container */
     left: 0;
     right: 0;
     width: 100%;
     z-index: 2;
-    transform-origin: 0 0; /* True page origin */
+    transform-origin: 0 0;
     transform: scale(1);
     transition: transform 0.3s ease;
 }
+
 
 
 
