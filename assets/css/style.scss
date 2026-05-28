@@ -30,9 +30,7 @@ body {
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;    transform-origin: center top; /* Scale from center */}
 
 .header-desktop {
-    width: 60vw;
-    transform: scale(1);          /* This will scale with zoom */
-    transform-origin: center top;
+    width: min(60rem, 60vw);     /* rem instead of px */
     max-width: none;
     height: auto;
     padding-left: 0.4rem;
@@ -40,6 +38,7 @@ body {
     margin: 0 auto;
     object-fit: contain;
     position: relative;
+}
 } /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
 .header-mobile {
     display: none;
