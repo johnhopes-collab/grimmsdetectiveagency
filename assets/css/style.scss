@@ -55,7 +55,6 @@ body {
     padding-top: 0;
 }
 
-/* Shield Logo - SHIELD LOGO at top-left */
 
 /* Fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
 .content-container {
@@ -81,10 +80,10 @@ body {
     margin: 0 0 0 0;
     z-index: 3;
 }
-/* New logo styles as part of sidebar */
+/* Shield Logo - SHIELD LOGO at top-left */
 .sidebar-logo-container {
     position: absolute;
-    top: -25px; /* Position above the sidebar */
+    top: -125px; /* Position above the sidebar */
     left: 0;
     width: 135px; /* Match sidebar width exactly */
     text-align: left;
