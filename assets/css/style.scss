@@ -87,13 +87,16 @@ body {
 /* Unified sidebar scaling unit */
 .sidebar-unit {
     position: relative;
-    top: -115px; /* Move it higher - adjust as needed */
-    left: 5px;
+    top: 0; /* Changed from -115px */
+    left: 0; /* Changed from 5px */
     z-index: 3;
-    transform-origin: top left;
+    transform-origin: 0 0; /* Now truly scales from page 0,0 */
     transform: scale(1);
     transition: transform 0.3s ease;
-    margin: -14px 0 0 0; /* Adjusted margins */
+    /* Use margin/padding to position the content inside */
+    margin-top: -109px; /* Adjust to get logo where you want it */
+    margin-left: 5px;   /* Move content right by 5px */
+    margin-bottom: -14px;
 }
 
 /* Logo within the unit */
@@ -102,6 +105,7 @@ body {
     width: 130px;
     height: auto;
     margin-bottom: -10px;
+    margin-top: 6px; /* This positions logo 6px from top after scaling */
 }
 .sidebar-logo {
     width: 100%;
@@ -114,7 +118,7 @@ body {
     margin: 0;
     top: 0;
     width: 135px;
-    height: 200px; /* Reduced height since no title bar */
+    height: 200px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
     background-size: 100% 100%;
@@ -126,14 +130,14 @@ body {
 
 /* Full-width title bar that scales with sidebar */
 .page-title-bar-wrapper {
-    position: fixed; /* Fixed to stay at top */
-    top: 6px; /* 6px from top as requested */
+    position: fixed;
+    top: 0; /* Start at true 0 */
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 2; /* Below sidebar but above content */
-    transform-origin: top left;
-    transform: scale(1); /* Will be synchronized with sidebar scale */
+    z-index: 2;
+    transform-origin: 0 0; /* True page origin */
+    transform: scale(1);
     transition: transform 0.3s ease;
 }
 
@@ -315,6 +319,7 @@ a img {    border: none;    outline: none;}
     display: flex;
     align-items: center;
     padding-left: 20px;
+    padding-top: 6px; /* This creates the 6px offset from top */
     box-sizing: border-box;
 }
 .page-title {
