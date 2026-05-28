@@ -253,7 +253,8 @@ a img {    border: none;    outline: none;}
 /* ==== Full-width page title bar - TITLE BAR 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ====*/
 .page-title-bar {
     position: relative; /* Changed from absolute */
-    width: 100%;
+    width: 100vw;                    /* Full viewport width */
+    margin-left: calc(-50vw + 50%);  /* Center it by pulling left */
     height: 1rem; /* Convert 16px to rem */
     background-color: #5e2c04; /* Lighter brown to match menu; darker one is #492D21 */
     display: flex;
