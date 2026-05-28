@@ -51,7 +51,7 @@ body {
 .site-logo      {    display: block;    width: min(130px, 20vw); 
                      height: auto;     pointer-events: auto;     transition: opacity 0.1s ease;}
 /* Hide logo completely on mobile */
-@media (max-width: 500px) {    .logo-container {display: none;}}
+@media (max-width: 500px) {    .sidebar-logo-container {display: none;}}
 
 
 /* Fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
