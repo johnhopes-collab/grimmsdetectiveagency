@@ -251,7 +251,7 @@ a img {    border: none;    outline: none;}
 
 
 
-/* ==== Full-width page title bar - TITLE BAR 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ====*/
+/* ==== Full-width page title bar - TITLE BAR 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ====*/
 .page-title-bar {
     position: relative; /* Changed from absolute */
     width: 100vw;                    /* Full viewport width */
@@ -261,7 +261,7 @@ a img {    border: none;    outline: none;}
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -0.125rem; /* Small negative margin to stay under header */
+    margin-top: -0.05rem; /* Small negative margin to stay under header */
     transform-origin: center top;
     z-index: 5;
 }
