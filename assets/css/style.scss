@@ -79,13 +79,12 @@ body {
 
 /* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
-    top: -9px;
     width: 135px; /* Fixed width */
     height: 237px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
     background-size: 100% 100%; background-repeat: no-repeat; padding: 0; align-self: flex-start; box-sizing: border-box;
-    margin: -8px 0 0 0;
+    margin: -4px 0 0 0;
     z-index: 3;
 }
 /* These styles will help maintain button size during zoom */
