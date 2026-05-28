@@ -30,8 +30,10 @@ body {
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;    transform-origin: center top; /* Scale from center */}
 
 .header-desktop {
-    width: min(200rem, 60vw);     /* Adjust percentages to match your desired look */
-    max-width: none;             /* Remove any constraints */
+    width: 60vw;
+    transform: scale(1);          /* This will scale with zoom */
+    transform-origin: center top;
+    max-width: none;
     height: auto;
     padding-left: 0.4rem;
     display: block;
