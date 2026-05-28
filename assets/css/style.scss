@@ -30,7 +30,7 @@ body {
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;    transform-origin: center top; /* Scale from center */}
 
 .header-desktop {
-    width: min(60vw, 900px);     /* Adjust percentages to match your desired look */
+    width: min(900px, 60vw);     /* Adjust percentages to match your desired look */
     max-width: none;             /* Remove any constraints */
     height: auto;
     padding-left: 0.4rem;
