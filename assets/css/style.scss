@@ -37,7 +37,8 @@ body {
     margin: 0 auto;
     object-fit: contain;
     position: relative;
-    transform-origin: center center; /* Ensure center scaling */
+    max-width: none;  /* Add this to override any constraints */
+    min-width: none;  /* Add this to override any constraints */
 }
 .header-mobile {
     display: none;
