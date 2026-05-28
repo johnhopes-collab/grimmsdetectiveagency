@@ -82,6 +82,39 @@ body {
     margin: -8px 0 0 0;
     z-index: 3;
 }
+
+
+/* Unified sidebar scaling unit */
+.sidebar-unit {
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    z-index: 9999;
+    transform-origin: top left; /* Everything scales from top-left corner */
+    transform: scale(1); /* Default scale - adjust as needed */
+    transition: transform 0.3s ease; /* Smooth scaling */
+}
+/* Logo within the unit */
+.sidebar-logo-container {
+    position: relative;
+    width: 130px;
+    height: auto;
+    margin-bottom: 5px; /* Small gap between logo and sidebar */
+}
+.sidebar-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* Sidebar within the unit */
+.sidebar-unit .sidebar {
+    position: relative; /* Change from your current positioning */
+    margin: 0; /* Remove existing margins */
+    top: 0; /* Reset top positioning */
+}
+
+
+
 /* These styles will help maintain button size during zoom */
 .sidebar-buttons {
     padding-top: 20px;
