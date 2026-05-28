@@ -73,25 +73,32 @@ body {
 
 /* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
-    width: 135px; /* Fixed width */
+    width: 135px;
     height: 237px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
-    background-size: 100% 100%; background-repeat: no-repeat; padding: 0; align-self: flex-start; box-sizing: border-box;
+    background-size: 100% 100%; 
+    background-repeat: no-repeat; 
+    padding: 0; 
+    align-self: flex-start; 
+    box-sizing: border-box;
     margin: 0 0 0 0;
-    z-index: 3;
+    z-index: 8; /* Higher than title bar (5) - this elevates the entire sidebar context */
+    position: relative; /* Ensure it creates a stacking context */
 }
+
 /* Shield Logo - SHIELD LOGO at top-left */
 .sidebar-logo-container {
-    position: fixed;
-    top: 10px; /* Position above the sidebar */
+    position: absolute;
+    top: -115px; /* Your current positioning */
     left: 0;
-    width: 135px; /* Match sidebar width exactly */
+    width: 135px;
     text-align: left;
-    padding-left: 5px; /* Match your original left: 5px */
-    z-index: 10;
+    padding-left: 5px;
+    z-index: 2; /* Within sidebar context: logo above menu buttons */
     pointer-events: none;
 }
+
 .sidebar-logo {
     display: block;
     width: min(130px, 20vw); /* Keep your original sizing logic */
@@ -125,7 +132,7 @@ body {
     text-decoration: none;
     transition: transform 0.2s;
     position: relative;
-    z-index: 4;
+    z-index: 1;
 }
 
 .button-frontdesk {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_hat.png');}
