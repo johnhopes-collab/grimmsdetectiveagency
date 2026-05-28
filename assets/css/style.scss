@@ -27,17 +27,17 @@ body {
     overflow-x: hidden;    display: flex;    flex-direction: column;
 }
 
-.header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
+.header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;    transform-origin: center top; /* Scale from center */}
 
 .header-desktop {
     width: 70%;
     height: auto;
-    padding-left: 7px; /* Move everything in the header right */
+    padding-left: 0.4375rem; /* Convert 7px to rem */
     display: block;
     margin: 0 auto;
     object-fit: contain;
     position: relative;
-    transform: translateX(0); /* Adjust as needed */
+    transform-origin: center center; /* Ensure center scaling */
 }
 .header-mobile {
     display: none;
