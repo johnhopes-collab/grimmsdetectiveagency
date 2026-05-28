@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 'metropolis',
             path: '/assets/images/sq/sq_c_metropolis1.png',
-            link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
+            link: 'https://grimmsdetectiveagency.com/archives/map.html',
             alt: 'Metropolis Promo'
         },
         {
