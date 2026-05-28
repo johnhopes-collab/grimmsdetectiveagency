@@ -60,16 +60,15 @@ body {
 .content-container {
     position: relative;
     margin-top: 1vh;
-    z-index: 1;
+    z-index: 1; /* Lower than scaling elements */
     display: flex;
     min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
     padding: 0;
-    justify-content: space-between; /* This pushes sidebars to edges */
-    margin-bottom: 30px; /* Add space before the footer */
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
-
 
 /* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
@@ -86,17 +85,12 @@ body {
 
 /* Unified sidebar scaling unit */
 .sidebar-unit {
-    position: absolute; /* Changed from fixed */
-    top: 0;             /* Relative to content-container */
-    left: 0;            /* Relative to content-container */
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 3;
-    transform-origin: 0 0; /* Still scales from container's 0,0 */
-    transform: scale(1);
-    transition: transform 0.3s ease;
+    /* No transform properties here - inherited from parent */
 }
-
-
-
 /* Logo within the unit */
 .sidebar-logo-container {
     position: absolute;
@@ -131,18 +125,29 @@ body {
 
 
 /* Full-width title bar that scales with sidebar */
+/* Title bar wrapper - also inherits scaling from parent */
 .page-title-bar-wrapper {
-    position: absolute; /* Changed from fixed */
-    top: 0;             /* Relative to content-container */
+    position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
     z-index: 2;
-    transform-origin: 0 0;
+    /* No transform properties here - inherited from parent */
+}
+
+
+.page-scaling-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0; /* No height so it doesn't affect layout */
+    z-index: 10;
+    transform-origin: 0 0; /* True page 0,0 */
     transform: scale(1);
     transition: transform 0.3s ease;
 }
-
 
 
 
