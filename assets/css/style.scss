@@ -56,12 +56,6 @@ body {
 }
 
 /* Shield Logo - SHIELD LOGO at top-left */
-.logo-container {    position: absolute;    top: 10px;    left: 5px;    z-index: 9999;     pointer-events: none;}
-.site-logo      {    display: block;    width: min(130px, 20vw); 
-                     height: auto;     pointer-events: auto;     transition: opacity 0.1s ease;}
-/* Hide logo completely on mobile */
-@media (max-width: 500px) {    .logo-container {display: none;}}
-
 
 /* Fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
 .content-container {
@@ -86,6 +80,24 @@ body {
     background-size: 100% 100%; background-repeat: no-repeat; padding: 0; align-self: flex-start; box-sizing: border-box;
     margin: 0 0 0 0;
     z-index: 3;
+}
+/* New logo styles as part of sidebar */
+.sidebar-logo-container {
+    position: absolute;
+    top: -25px; /* Position above the sidebar */
+    left: 0;
+    width: 135px; /* Match sidebar width exactly */
+    text-align: left;
+    padding-left: 5px; /* Match your original left: 5px */
+    z-index: 10;
+    pointer-events: none;
+}
+.sidebar-logo {
+    display: block;
+    width: min(130px, 20vw); /* Keep your original sizing logic */
+    height: auto;
+    pointer-events: auto;
+    transition: opacity 0.1s ease;
 }
 /* These styles will help maintain button size during zoom */
 .sidebar-buttons {
