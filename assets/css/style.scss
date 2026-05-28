@@ -27,18 +27,24 @@ body {
     overflow-x: hidden;    display: flex;    flex-direction: column;
 }
 
-.header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;    transform-origin: center top; /* Scale from center */}
-
-.header-desktop {
-    width: min(60rem, 60vw);     /* rem instead of px */
-    max-width: none;
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    text-align: center;
+    padding: 0;
     height: auto;
-    padding-left: 0.4rem;
+}
+/* Header alignment to match content */
+.header-desktop {
+    width: 70%;
+    height: auto;
+    padding-left: 7px; /* Move everything in the header right */
     display: block;
     margin: 0 auto;
     object-fit: contain;
     position: relative;
-}
+    transform: translateX(0); /* Adjust as needed */
 } /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
 .header-mobile {
     display: none;
