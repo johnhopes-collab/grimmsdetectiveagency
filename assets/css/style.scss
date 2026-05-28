@@ -124,11 +124,10 @@ body {
 }
 
 
-/* Full-width title bar that scales with sidebar */
-/* Title bar wrapper - also inherits scaling from parent */
+/* Full-width title bar that scales with sidebar - Title bar wrapper - also inherits scaling from parent */
 .page-title-bar-wrapper {
     position: absolute;
-    top: 0;
+    top: 140;
     left: 0;
     right: 0;
     width: 100%;
