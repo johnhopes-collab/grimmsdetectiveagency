@@ -30,7 +30,7 @@ body {
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;    transform-origin: center top; /* Scale from center */}
 
 .header-desktop {
-    width: min(75rem, 60vw);     /* Adjust percentages to match your desired look */
+    width: min(200rem, 60vw);     /* Adjust percentages to match your desired look */
     max-width: none;             /* Remove any constraints */
     height: auto;
     padding-left: 0.4rem;
@@ -38,7 +38,7 @@ body {
     margin: 0 auto;
     object-fit: contain;
     position: relative;
-}
+} /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
 .header-mobile {
     display: none;
     max-width: 90%;
