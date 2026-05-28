@@ -27,15 +27,8 @@ body {
     overflow-x: hidden;    display: flex;    flex-direction: column;
 }
 
-.header {
-    position: relative;
-    width: 100%;
-    z-index: 0;
-    text-align: center;
-    padding: 0;
-    height: auto;
-}
-/* Header alignment to match content */
+.header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
+
 .header-desktop {
     width: 70%;
     height: auto;
@@ -45,7 +38,7 @@ body {
     object-fit: contain;
     position: relative;
     transform: translateX(0); /* Adjust as needed */
-} /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+}
 .header-mobile {
     display: none;
     max-width: 90%;
@@ -55,10 +48,18 @@ body {
     padding-top: 0;
 }
 
+/* Shield Logo - SHIELD LOGO at top-left */
+.logo-container {    position: absolute;    top: 10px;    left: 5px;    z-index: 9999;     pointer-events: none;}
+.site-logo      {    display: block;    width: min(130px, 20vw); 
+                     height: auto;     pointer-events: auto;     transition: opacity 0.1s ease;}
+/* Hide logo completely on mobile */
+@media (max-width: 500px) {    .logo-container {display: none;}}
+
 
 /* Fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
 .content-container {
     position: relative;
+    margin-top: 1vh;
     z-index: 1;
     display: flex;
     min-height: 100vh;
@@ -66,45 +67,20 @@ body {
     box-sizing: border-box;
     padding: 0;
     justify-content: space-between; /* This pushes sidebars to edges */
-    margin-top: -5px;
     margin-bottom: 30px; /* Add space before the footer */
 }
 
 
 /* Left sidebar - LEFT SIDE BAR MENU */
 .sidebar {
-    width: 135px;
+    top: -12px;
+    width: 135px; /* Fixed width */
     height: 237px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
-    background-size: 100% 100%; 
-    background-repeat: no-repeat; 
-    padding: 0; 
-    align-self: flex-start; 
-    box-sizing: border-box;
-    margin: 0 0 0 0;
-    z-index: 8; /* Higher than title bar (5) - this elevates the entire sidebar context */
-    position: relative; /* Ensure it creates a stacking context */
-}
-
-/* Shield Logo - SHIELD LOGO at top-left */
-.sidebar-logo-container {
-    position: absolute;
-    top: -115px; /* Your current positioning */
-    left: 0;
-    width: 135px;
-    text-align: left;
-    padding-left: 5px;
-    z-index: 2; /* Within sidebar context: logo above menu buttons */
-    pointer-events: none;
-}
-
-.sidebar-logo {
-    display: block;
-    width: min(130px, 20vw); /* Keep your original sizing logic */
-    height: auto;
-    pointer-events: auto;
-    transition: opacity 0.1s ease;
+    background-size: 100% 100%; background-repeat: no-repeat; padding: 0; align-self: flex-start; box-sizing: border-box;
+    margin: -8px 0 0 0;
+    z-index: 3;
 }
 /* These styles will help maintain button size during zoom */
 .sidebar-buttons {
@@ -132,7 +108,7 @@ body {
     text-decoration: none;
     transition: transform 0.2s;
     position: relative;
-    z-index: 1;
+    z-index: 4;
 }
 
 .button-frontdesk {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_hat.png');}
@@ -274,27 +250,26 @@ a img {    border: none;    outline: none;}
 
 
 
-/* ==== Full-width page title bar - TITLE BAR 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ====*/
+/* ==== Full-width page title bar - TITLE BAR 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ====*/
 .page-title-bar {
-    position: relative; /* Changed from absolute */
-    margin-top: -0.125rem; /* Small negative margin to stay under header */
-    width: 100vw;                    /* Full viewport width */
-    margin-left: calc(-50vw + 50%);  /* Center it by pulling left */
-    height: 1rem; /* Convert 16px to rem */
+    position: absolute;
+    top: calc(-2vh); /* Position it 15px above the content container's margin-top */
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 16px;
     background-color: #5e2c04; /* Lighter brown to match menu; darker one is #492D21 */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -0.125rem; /* Small negative margin to stay under header */
-    transform-origin: center top;
     z-index: 5;
 }
 .page-title {
     font-family: 'Arial', sans-serif;
-    font-size: 0.75rem; 
+    font-size: 12px;
     color: var(--button-text);
     font-weight: bold;
-    letter-spacing: 0.0625rem; /* Convert 1px to rem */
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -473,7 +448,7 @@ a img {    border: none;    outline: none;}
         top: 0;
         height: auto;
         padding: 8px 0;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
     
     .page-title {
@@ -905,13 +880,3 @@ a img {    border: none;    outline: none;}
 }
 /* Mobile view */
 @media (max-width: 768px) {.resizing-image{max-width: 100%;} .resizing-image35{max-width: 50%;}}
-
-
-.left-navigation-group {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform-origin: 0 0; /* Scale from top-left */
-    transition: transform 0.3s ease;
-    z-index: 8; /* Above title bar */
-}
