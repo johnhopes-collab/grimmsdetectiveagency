@@ -138,16 +138,17 @@ body {
 
 
 .page-scaling-container {
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute; /* Changed from relative */
+    top: 0;             /* True page top */
+    left: 0;            /* True page left */
     width: 100%;
-    height: 0; /* No height so it doesn't affect layout */
+    height: 0;          /* No height so it doesn't affect layout */
     z-index: 10;
     transform-origin: 0 0; /* True page 0,0 */
     transform: scale(1);
     transition: transform 0.3s ease;
 }
+
 
 
 
