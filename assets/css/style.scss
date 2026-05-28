@@ -86,20 +86,23 @@ body {
 
 /* Unified sidebar scaling unit */
 .sidebar-unit {
-    position: fixed;
-    top: 10px;
+    position: relative; /* Changed from fixed */
+    top: -12px; /* Restore your original top offset */
     left: 5px;
-    z-index: 9999;
-    transform-origin: top left; /* Everything scales from top-left corner */
-    transform: scale(1); /* Default scale - adjust as needed */
-    transition: transform 0.3s ease; /* Smooth scaling */
+    z-index: 3;
+    transform-origin: top left;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    margin: -8px 0 0 0; /* Restore your original margins */
 }
+
+
 /* Logo within the unit */
 .sidebar-logo-container {
     position: relative;
     width: 130px;
     height: auto;
-    margin-bottom: 5px; /* Small gap between logo and sidebar */
+    margin-bottom: 5px;
 }
 .sidebar-logo {
     width: 100%;
@@ -108,9 +111,19 @@ body {
 }
 /* Sidebar within the unit */
 .sidebar-unit .sidebar {
-    position: relative; /* Change from your current positioning */
-    margin: 0; /* Remove existing margins */
-    top: 0; /* Reset top positioning */
+    position: relative;
+    margin: 0;
+    top: 0;
+    /* Keep all your original sidebar dimensions and background */
+    width: 135px;
+    height: 237px;
+    background-color: var(--sidebar-brown);
+    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 0;
+    align-self: flex-start;
+    box-sizing: border-box;
 }
 
 
