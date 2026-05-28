@@ -100,11 +100,12 @@ body {
 /* Logo within the unit */
 .sidebar-logo-container {
     position: absolute;
-    top: 6px;        /* 6px from page top */
+    top: 12px;        /* 6px from page top */
     left: 5px;       /* 5px from page left */
     width: 130px;
     height: auto;
     margin-bottom: -10px;
+    z-index: 5;
 }
 
 .sidebar-logo {
@@ -115,7 +116,7 @@ body {
 /* Sidebar within the unit */
 .sidebar-unit .sidebar {
     position: absolute;
-    top: 50px;       /* Adjust based on where you want menu relative to logo */
+    top: 250px;       /* Adjust based on where you want menu relative to logo */
     left: 5px;       /* Same left position as logo */
     width: 135px;
     height: 200px;
@@ -125,6 +126,7 @@ body {
     background-repeat: no-repeat;
     padding: 0;
     box-sizing: border-box;
+    z-index: 3;
 }
 
 
