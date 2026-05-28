@@ -77,7 +77,7 @@ body {
     width: 135px; /* Fixed width */
     height: 237px;
     background-color: var(--sidebar-brown);
-    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbar1.png');
+    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
     background-size: 100% 100%; background-repeat: no-repeat; padding: 0; align-self: flex-start; box-sizing: border-box;
     margin: -8px 0 0 0;
     z-index: 3;
@@ -111,11 +111,11 @@ body {
     z-index: 4;
 }
 
-.button-frontdesk {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_magnifyingglass.png');}
-.button-casefiles {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_hat.png');}
-.button-archives {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_books.png');}
-.button-aboutus {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_qmark.png');}
-.button-inquiries {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/Lbutton_mail.png');}
+.button-frontdesk {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_hat.png');}
+.button-casefiles {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_glass.png');}
+.button-archives {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_books.png');}
+.button-aboutus {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_qmark.png');}
+.button-inquiries {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_mail.png');}
 
 .button-icon {height: 30px; margin-right: 5px;}
 
