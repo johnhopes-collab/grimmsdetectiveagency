@@ -30,15 +30,14 @@ body {
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;    transform-origin: center top; /* Scale from center */}
 
 .header-desktop {
-    width: 70%;
+    width: min(60vw, 900px);     /* Adjust percentages to match your desired look */
+    max-width: none;             /* Remove any constraints */
     height: auto;
-    padding-left: 0.4375rem; /* Convert 7px to rem */
+    padding-left: 0.4rem;
     display: block;
     margin: 0 auto;
     object-fit: contain;
     position: relative;
-    max-width: none;  /* Add this to override any constraints */
-    min-width: none;  /* Add this to override any constraints */
 }
 .header-mobile {
     display: none;
