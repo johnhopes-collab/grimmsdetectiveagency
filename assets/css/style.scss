@@ -188,7 +188,7 @@ a img {    border: none;    outline: none;}
     align-self: flex-start;
     box-sizing: border-box;
     margin-left: 150px; /* Adjust based on your sidebar width + some padding */
-    width: calc(100% - 150px - 17%); /* Adjust the calc to account for the margin */
+    width: 70vw; /* Adjust the calc to account for the margin */
 }
 
 /* Right sidebar anchored to right edge */
