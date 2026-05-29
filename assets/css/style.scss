@@ -28,7 +28,7 @@ body {
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
 
 .header-desktop {
-    width: 70%;
+    width: 69vw;
     height: auto;
     padding-left: 7px; /* Move everything in the header right */
     display: block;
@@ -45,13 +45,6 @@ body {
     object-fit: contain;
     padding-top: 0;
 }
-
-/* Shield Logo - SHIELD LOGO at top-left */
-.logo-container {    position: fixed;    top: 10px;    left: 5px;    z-index: 9999;     pointer-events: none;}
-.site-logo      {    display: block;    width: min(130px, 20vw); 
-                     height: auto;     pointer-events: auto;     transition: opacity 0.1s ease;}
-/* Hide logo completely on mobile */
-@media (max-width: 500px) {    .sidebar-logo-container {display: none;}}
 
 
 /* Fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
@@ -100,6 +93,8 @@ body {
     margin-bottom: -10px;
     z-index: 3;
 }
+/* Hides logo on mobile */
+@media (max-width: 500px) {    .sidebar-logo-container {display: none;}}
 
 .sidebar-logo {     width: 100%;    height: auto;    display: block; }
 
