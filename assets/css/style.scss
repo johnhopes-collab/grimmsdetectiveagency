@@ -61,10 +61,10 @@ body {
     margin-bottom: 30px;
 }
 
-/* Left sidebar - LEFT SIDE BAR MENU */
+/* Left sidebar - LEFT SIDE BAR MENU 2 2 2 2 2 2 2 2 2 LEFT SIDE BAR MENU*/
 .sidebar {
-    top: -12px;
-    width: 135px; /* Fixed width */
+    top: -12px; /* Shield height from top */
+    width: 135px; /* Shield width */
     height: 237px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
@@ -72,24 +72,17 @@ body {
     margin: -8px 0 0 0;
     z-index: 3;
 }
-
-
-/* Unified sidebar scaling unit */
-.sidebar-unit {
+.sidebar-unit { /* Unified sidebar scaling unit */
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height:0;
+    top: 0; left: 0;
+    width: 100vw; height: 0;
     z-index: 5; /* Single z-index for the whole unit */
 }
 /* Logo within the unit */
 .sidebar-logo-container {
     position: absolute;
-    top: 22px;        /* 6px from page top */
-    left: 5px;       /* 5px from page left */
-    width: 130px;
-    height: auto;
+    top: 22px; left: 5px; 
+    width: 130px; height: auto;
     margin-bottom: -10px;
     z-index: 3;
 }
@@ -101,36 +94,24 @@ body {
 /* Sidebar within the unit */
 .sidebar-unit .sidebar {
     position: absolute;
-    top: 146px;       /* Adjust based on where you want menu relative to logo */
-    left: 5px;       /* Same left position as logo */
-    width: 135px;
-    height: 230px;
+    top: 146px; left: 5px;
+    width: 135px; height: 230px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
     background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding: 0;
-    box-sizing: border-box;
+    background-repeat: no-repeat;     padding: 0;    box-sizing: border-box;
     z-index: 1;
 }
-
-
 /* Full-width title bar that scales with sidebar - Title bar wrapper - also inherits scaling from parent */
 .page-title-bar-wrapper {
     position: absolute;
-    top: 135px;
-    left: 0;
+    top: 135px; left: 0;
     width: 100vw;
     z-index: 2; /* Middle layer */
 }
-
-
 .page-scaling-container {
-    position: absolute; /* Changed from relative */
-    top: 0;             /* True page top */
-    left: 0;            /* True page left */
-    width: 100%;
-    height: 0;          /* No height so it doesn't affect layout */
+    position: absolute; /* Changed from relative */     top: 0; left: 0; /* True page top and left */
+    width: 100%; height: 0; /* No height so it doesn't affect layout */
     z-index: 10;
     transform-origin: 0 0; /* True page 0,0 */
     transform: scale(1);
@@ -138,16 +119,8 @@ body {
 }
 
 
-
-
 /* These styles will help maintain button size during zoom */
-.sidebar-buttons {
-    padding-top: 20px;
-    padding-left: 14px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
-}
+.sidebar-buttons { padding-top: 20px; padding-left: 14px; padding-right: 10px; padding-bottom: 10px; box-sizing: border-box; }
 
 .sidebar-button {
     display: block;
