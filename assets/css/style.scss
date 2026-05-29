@@ -101,18 +101,15 @@ body {
     z-index: 3;
 }
 
-.sidebar-logo {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+.sidebar-logo {     width: 100%;    height: auto;    display: block; }
+
 /* Sidebar within the unit */
 .sidebar-unit .sidebar {
     position: absolute;
-    top: 143px;       /* Adjust based on where you want menu relative to logo */
+    top: 146px;       /* Adjust based on where you want menu relative to logo */
     left: 5px;       /* Same left position as logo */
     width: 135px;
-    height: 200px;
+    height: 230px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
     background-size: 100% 100%;
