@@ -327,9 +327,13 @@ a img {    border: none;    outline: none;}
     box-sizing: border-box;
 }
 .page-title {
-    font-size: 16px; /* Will scale with transform */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: var(--button-text);
     font-weight: bold;
-    color: var(--text-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 /* Synchronize scaling - both elements scale together */
 .sidebar-unit,
