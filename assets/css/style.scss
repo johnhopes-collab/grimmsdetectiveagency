@@ -81,7 +81,7 @@ body {
 /* Logo within the unit */
 .sidebar-logo-container {
     position: absolute;
-    top: 21px; left: 10px; 
+    top: 21px; left: 0px; 
     width: 130px; height: auto;
     margin-bottom: -10px;
     z-index: 3;
@@ -94,7 +94,7 @@ body {
 /* Sidebar within the unit */
 .sidebar-unit .sidebar {
     position: absolute;
-    top: 146px; left: 5px;
+    top: 146px; left: 0px;
     width: 135px; height: 230px;
     background-color: var(--sidebar-brown);
     background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
