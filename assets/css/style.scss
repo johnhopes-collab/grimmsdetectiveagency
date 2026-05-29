@@ -86,7 +86,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 6; /* Single z-index for the whole unit */
+    width: 100vw;
+    height:0;
+    z-index: 5; /* Single z-index for the whole unit */
 }
 /* Logo within the unit */
 .sidebar-logo-container {
@@ -128,7 +130,7 @@ body {
     left: 0;
     right: 0;
     width: 100vw;
-    z-index: 5; /* Middle layer */
+    z-index: 2; /* Middle layer */
 }
 
 
