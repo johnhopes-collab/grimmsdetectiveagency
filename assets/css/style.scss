@@ -166,7 +166,7 @@ body {
 /* Right sidebar styling - RIGHT SIDE BAR*/
 .sidebar-square {
     width: 100%;
-    margin-top: 3px;
+    margin-top: 0px 0;
     overflow: hidden;
     padding: 0px;
     box-sizing: border-box;
@@ -198,7 +198,7 @@ a img {    border: none;    outline: none;}
     padding: 0;
     align-self: flex-start;
     box-sizing: border-box;
-    margin: 3px 0 0 0; 
+    margin: 7px 0 0 0; 
     display: flex;
     flex-direction: column;
     gap: 4px; /* This creates space between flex children */
