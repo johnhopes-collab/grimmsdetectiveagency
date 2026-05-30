@@ -28,9 +28,7 @@ body {
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
 
 .header-desktop {
-    /* Change from fixed percentage to viewport-responsive */
-    width: 70vw; /* This will scale with browser zoom */
-    max-width: 70%; /* Prevent it from getting too large */
+    width: 70%; /* Keep original percentage, NOT 70vw */
     height: auto;
     padding-left: 7px;
     display: block;
@@ -39,19 +37,13 @@ body {
     position: relative;
     transform: translateX(0);
 }
-/* Header scaling system - separate from sidebar scaling */
+
+/* Header scaling system */
 .header-scaling-container {
-    position: relative; /* Keep in document flow */
-    width: 100%;
-    transform-origin: top center; /* This is the magic property! */
-    z-index: 0;
-}
-/* Keep your existing header styles, just ensure this origin is set */
-.header-scaling-container .header {
     position: relative;
     width: 100%;
+    transform-origin: top center; /* Only addition needed */
     z-index: 0;
-    transform-origin: top center; /* Redundant but explicit */
 }
 .header-mobile {
     display: none;
