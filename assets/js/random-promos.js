@@ -41,16 +41,10 @@ document.addEventListener('DOMContentLoaded', function() {
             alt: 'Speed Promo'
         },
         {
-            id: 'newspaper1',
-            path: '/assets/images/sq/sq_h_newspaper1.png',
-            link: 'https://grimmsdetectiveagency.com/archives/newspaper.html',
-            alt: 'Newspaper Promo 1'
-        },
-        {
-            id: 'newspaper2',
+            id: 'newspaper',
             path: '/assets/images/sq/sq_h_newspaper2.png',
             link: 'https://grimmsdetectiveagency.com/archives/newspaper.html',
-            alt: 'Newspaper Promo 2'
+            alt: 'Newspaper Promo'
         },
     ];
     
