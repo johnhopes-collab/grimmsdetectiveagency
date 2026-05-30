@@ -25,36 +25,6 @@ body {
     overflow-x: hidden;    display: flex;    flex-direction: column;
 }
 
-.banner-container {    position: absolute;    top: 14px;    left: 5px;    z-index: 9999;     pointer-events: none;}
-.site-banner      {    display: block;    width: min(800px, 20vw); 
-                     height: auto;     pointer-events: auto;     transition: opacity 0.1s ease;}
-/* Hide dekstop banner completely on mobile */
-@media (max-width: 500px) {    .banner-container {display: none;}}
-
-
-/* EXACT COPY of working sidebar scaling system */
-.header2-scaling-container {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 0;
-    z-index: -1; /* Behind other content */
-    transform-origin: top center; /* Only difference - center instead of 0 0 */
-}
-
-.header2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.header2-desktop {
-    width: 70%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
 
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
 
@@ -127,20 +97,18 @@ body {
 }
 /* Hides logo on mobile */
 @media (max-width: 500px) {    .sidebar-logo-container {display: none;}}
-
 .sidebar-logo {     width: 100%;    height: auto;    display: block; }
 
 
 /* Attempted Header 2 within the unit */
 .sidebar-banner-container {
     position: absolute;
-    top: 5px; left: 200px; 
-    width: 800px; height: auto;
+    top: 0; left: 152px; 
+    width: 710px; height: auto;
     z-index: 3;
 }
 /* Hides logo on mobile */
 @media (max-width: 500px) {    .sidebar-banner-container {display: none;}}
-
 .sidebar-banner {     width: 100%;    height: auto;    display: block; }
 
 /* Sidebar within the unit */
