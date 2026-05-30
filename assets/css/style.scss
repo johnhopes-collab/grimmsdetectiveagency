@@ -85,12 +85,10 @@ body {
     margin-bottom: -10px;
     z-index: 3;
 }
-/* Hides logo on mobile */
-@media (max-width: 500px) {    .sidebar-logo-container {display: none;}}
 .sidebar-logo {     width: 100%;    height: auto;    display: block; }
 
 
-/* Attempted Header 2 within the unit */
+/* NEW HEADER - Attached to Side Banner */
 .sidebar-banner-container {
     position: absolute;
     top: 0; left: 164px; 
@@ -98,9 +96,10 @@ body {
     margin-right:100px;
     z-index: 3;
 }
-/* Hides logo on mobile */
-@media (max-width: 500px) {    .sidebar-banner-container {display: none;}}
 .sidebar-banner {     width: 100%;    height: auto;    display: block; }
+
+/* Hides Shield and New Header on mobile */
+@media (max-width: 500px) {    .sidebar-logo-container {display: none;} .sidebar-banner-container {display: none;}}
 
 /* Sidebar within the unit */
 .sidebar-unit .sidebar {
