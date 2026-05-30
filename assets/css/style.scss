@@ -38,6 +38,7 @@ body {
     position: relative;
     transform: translateX(0);
 }
+@media (min-width: 500px) {    .header-desktop {display: none;}}
 
 /* Header scaling system */
 .header-scaling-container {
