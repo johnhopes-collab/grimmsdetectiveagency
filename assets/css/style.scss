@@ -833,9 +833,8 @@ a img {    border: none;    outline: none;}
     display: block;
 }
 @media (max-width: 500px) { .image-block-breakout {
-    width: 80vw;              /* viewport-based width CITY MAP*/
-    max-width: 400px;         /* safety cap */
-    max-width: 500px;         /* safety cap */
+    width: 90vw;              /* viewport-based width CITY MAP*/
+    max-width: 600px;         /* safety cap */
     margin-left: 0; 
     margin-right: 0;
 }}
