@@ -25,6 +25,31 @@ body {
     overflow-x: hidden;    display: flex;    flex-direction: column;
 }
 
+/* TEST HEADER 2 - Completely independent */
+.header2-scaling-container {
+    position: relative;
+    width: 100%;
+    transform-origin: top center;
+    z-index: -1; /* Behind original header for now */
+}
+
+.header2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: auto;
+}
+
+.header2-desktop {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    position: relative;
+}
+
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
 
 .header-desktop {
