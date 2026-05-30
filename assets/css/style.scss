@@ -210,7 +210,7 @@ a img {    border: none;    outline: none;}
     align-self: flex-start;
     box-sizing: border-box;
     margin-left: 142px; /* Adjust based on your sidebar width + some padding */
-    min-width: 71vw; /* Adjust the calc to account for the margin */
+    width: 71vw; /* Adjust the calc to account for the margin */
 }
 
 /* Right sidebar anchored to right edge */
