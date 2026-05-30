@@ -8,8 +8,11 @@
 </head>
 <body>
     
-    {% include header.html %}
     {% include mobile-menu.html %}
+    
+    <div class="header-scaling-container">
+        {% include header.html %}
+    </div>
 
     <div class="page-scaling-container">
         {% include sidebar-left.html %}
