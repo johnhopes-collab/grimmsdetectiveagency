@@ -28,7 +28,9 @@ body {
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
 
 .header-desktop {
-    width: calc(70vw - 10px); /* Subtracts for padding */
+    /* Change from fixed percentage to viewport-responsive */
+    width: 70vw; /* This will scale with browser zoom */
+    max-width: 70%; /* Prevent it from getting too large */
     height: auto;
     padding-left: 7px;
     display: block;
@@ -39,9 +41,12 @@ body {
 }
 /* Header scaling system - separate from sidebar scaling */
 .header-scaling-container {
-    position: relative; /* Keep in document flow */
+    position: relative;
     width: 100%;
     z-index: 0;
+    transform-origin: top center;
+    /* Use viewport-based scaling instead of transform */
+    zoom: 1; /* This property responds to browser zoom */
 }
 .header-scaling-container .header {
     position: relative;
