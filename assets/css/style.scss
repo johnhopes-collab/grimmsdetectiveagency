@@ -823,8 +823,8 @@ a img {    border: none;    outline: none;}
 
 .image-block-breakout {
     width: 80vw;              /* viewport-based width CITY MAP*/
-    max-width: 900px;         /* safety cap */
-    margin-left: calc(50% - 40vw); 
+    max-width: 600px;         /* safety cap */
+    margin-left: calc(58% - 40vw); 
     margin-right: calc(50% - 40vw);
 }
 .image-block-breakout img {
