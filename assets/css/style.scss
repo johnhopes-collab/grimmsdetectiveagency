@@ -41,17 +41,17 @@ body {
 }
 /* Header scaling system - separate from sidebar scaling */
 .header-scaling-container {
-    position: relative;
+    position: relative; /* Keep in document flow */
     width: 100%;
+    transform-origin: top center; /* This is the magic property! */
     z-index: 0;
-    transform-origin: top center;
-    /* Use viewport-based scaling instead of transform */
-    zoom: 1; /* This property responds to browser zoom */
 }
+/* Keep your existing header styles, just ensure this origin is set */
 .header-scaling-container .header {
     position: relative;
     width: 100%;
     z-index: 0;
+    transform-origin: top center; /* Redundant but explicit */
 }
 .header-mobile {
     display: none;
