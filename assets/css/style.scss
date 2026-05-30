@@ -26,7 +26,9 @@ body {
 }
 
 .header2-scaling-container {
-    transform-origin: top center; /* Only this property */
+    transform-origin: top center;
+    background-color: red; /* Temporary - to see the container boundaries */
+    border: 2px solid blue; /* Temporary - to see exactly what's scaling */
 }
 
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
