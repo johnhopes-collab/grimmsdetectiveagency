@@ -26,9 +26,15 @@ body {
 }
 
 .header2-scaling-container {
-    transform-origin: top center;
-    background-color: red; /* Temporary - to see the container boundaries */
-    border: 2px solid blue; /* Temporary - to see exactly what's scaling */
+    transform-origin: top center !important;
+    background-color: red;
+    border: 2px solid blue;
+    /* Override any potential conflicts */
+    position: static !important;
+    transform: none !important;
+    width: auto !important;
+    left: auto !important;
+    right: auto !important;
 }
 
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
