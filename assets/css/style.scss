@@ -28,8 +28,7 @@ body {
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
 
 .header-desktop {
-    width: 70vw; /* This will scale with browser zoom */
-    max-width: 70%; /* Prevent it from getting too large */
+    width: calc(70vw - 10px); /* Subtracts for padding */
     height: auto;
     padding-left: 7px;
     display: block;
