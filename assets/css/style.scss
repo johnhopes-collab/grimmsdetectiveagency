@@ -37,6 +37,20 @@ body {
     position: relative;
     transform: translateX(0); /* Adjust as needed */
 }
+/* Header scaling system - separate from sidebar scaling */
+.header-scaling-container {
+    position: relative; /* Keep in document flow */
+    width: 100%;
+    transform-origin: top center; /* Scale from top center */
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+.header-scaling-container .header {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
 .header-mobile {
     display: none;
     max-width: 90%;
