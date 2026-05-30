@@ -832,7 +832,7 @@ a img {    border: none;    outline: none;}
     height: auto;
     display: block;
 }
-@media (min-width: 500px) { .image-block-breakout {
+@media (max-width: 500px) { .image-block-breakout {
     margin-left: calc(50% - 40vw); 
     margin-right: calc(50% - 40vw);
     max-width: 500px;         /* safety cap */
