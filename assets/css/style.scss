@@ -26,7 +26,7 @@ body {
 }
 
 .header2-scaling-container {
-    /* NO properties at all - just the selector */
+    transform-origin: top center; /* Only this property */
 }
 
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
