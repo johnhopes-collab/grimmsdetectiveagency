@@ -101,16 +101,16 @@ body {
 
 .header-square-container {
     position: absolute;
-    top: 18px; right: 10%; 
+    top: 18px; right: 2%; 
     width: 110px; height: auto;
-    transform: translateX(50%);
     z-index: 1;
 }
 .header-square {     width: 100%;    height: auto;    display: block; }
 
 /* Hides Shield and New Header on mobile */
-@media (max-width: 1000px) {    .sidebar-logo-container {display: none;} .header-square-container {display: none;}}
-@media (max-width: 500px) {    .sidebar-banner-container {display: none;}}
+@media (max-width: 1000px) {    .header-square-container  {display: none;}}
+@media (max-width: 700px)  {    .sidebar-logo-container   {display: none;}}
+@media (max-width: 500px)  {    .sidebar-banner-container {display: none;}}
 
 /* Sidebar within the unit */
 .sidebar-unit .sidebar {
