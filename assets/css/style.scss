@@ -24,6 +24,14 @@ body {
     min-height: 100vh;
     overflow-x: hidden;    display: flex;    flex-direction: column;
 }
+
+.banner-container {    position: absolute;    top: 14px;    left: 5px;    z-index: 9999;     pointer-events: none;}
+.site-banner      {    display: block;    width: min(800px, 20vw); 
+                     height: auto;     pointer-events: auto;     transition: opacity 0.1s ease;}
+/* Hide dekstop banner completely on mobile */
+@media (max-width: 500px) {    .banner-container {display: none;}}
+
+
 /* EXACT COPY of working sidebar scaling system */
 .header2-scaling-container {
     position: absolute;
