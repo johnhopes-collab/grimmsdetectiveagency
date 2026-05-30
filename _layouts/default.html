@@ -9,20 +9,18 @@
 <body>
 
     {% include mobile-menu.html %}
-    {% include header.html %}
 
     <div class="page-scaling-container">
+        {% include header.html %}
         {% include sidebar-left.html %}
     </div>
 
     <div class="content-container">
-
         <main class="main-content">
             <div class="text-box">
                 {{ content }}
             </div>
         </main>
-        
         {% include sidebar-right.html %}
     </div>
 
