@@ -3,7 +3,6 @@
 
 /* Base styles - 1 1 1 1 1 1 1 1 1*/
 :root {
-    --scale-factor: 1; 
     --primary-color: #2c3e50;
     --accent-color: #e74c3c;
     --text-color: #333;
@@ -26,16 +25,8 @@ body {
     overflow-x: hidden;    display: flex;    flex-direction: column;
 }
 
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-    text-align: center;
-    padding: 0;
-    height: auto;
-}
+.header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
+
 .header-desktop {
     width: 70%;
     height: auto;
@@ -59,8 +50,8 @@ body {
 /* Fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
 .content-container {
     position: relative;
-    margin-top: 20vh; /* Increase this - adjust based on your header height */
-    z-index: 1;
+    margin-top: 1vh;
+    z-index: 1; /* Lower than scaling elements */
     display: flex;
     min-height: 100vh;
     width: 100%;
@@ -83,13 +74,9 @@ body {
 }
 .sidebar-unit { /* Unified sidebar scaling unit */
     position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100vw; 
-    height: 0;
-    z-index: 5;
-    transform-origin: 0 0;
-    transform: translateX(calc(-50vw + 50vw / var(--scale-factor, 1)));
+    top: 0; left: 0;
+    width: 100vw; height: 0;
+    z-index: 5; /* Single z-index for the whole unit */
 }
 /* Logo within the unit */
 .sidebar-logo-container {
@@ -123,14 +110,11 @@ body {
     z-index: 2; /* Middle layer */
 }
 .page-scaling-container {
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%; 
-    height: 0; /* No height so it doesn't affect layout */
+    position: absolute; /* Changed from relative */     top: 0; left: 0; /* True page top and left */
+    width: 100%; height: 0; /* No height so it doesn't affect layout */
     z-index: 10;
-    transform-origin: 50% 0; /* TOP-CENTER origin for header */
-    transform: scale(var(--scale-factor));
+    transform-origin: 0 0; /* True page 0,0 */
+    transform: scale(1);
     transition: transform 0.3s ease;
 }
 
