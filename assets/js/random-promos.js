@@ -40,12 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
             link: 'https://grimmsdetectiveagency.com/archives/cars.html',
             alt: 'Speed Promo'
         },
-        {
-            id: 'news',
-            path: '/assets/images/sq/sq_news3.png',
-            link: 'https://grimmsdetectiveagency.com/index.html', // Replace with actual link
-            alt: 'News Promo'
-        }
     ];
     
     // Get previously displayed promos from localStorage
