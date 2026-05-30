@@ -23,6 +23,10 @@ body {
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;    display: flex;    flex-direction: column;
+    /* Add these zoom prevention lines */
+    zoom: reset; /* Webkit browsers */
+    -moz-transform-origin: 0 0; /* Firefox fallback */
+    -moz-transform: scale(1); /* Firefox fallback */
 }
 
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
