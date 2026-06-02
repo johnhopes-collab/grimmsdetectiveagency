@@ -60,9 +60,9 @@ body {
 /* Unified sidebar scaling unit */ 
 .sidebar-unit             { position: absolute; top: 0; left: 0; width: 100vw; height: 0; z-index: 5; /* Single z-index for the whole unit */ }
 .sidebar-block            {  width: 100%;    height: auto;    display: block; }
-.sidebar-logo-container   { /* Logo within the unit */ position: absolute; top: 21px; left: 0px; width: 130px; height: auto; margin-bottom: -10px;        z-index: 3; }
-.sidebar-banner-container { /* NEW HEADER w/in unit*/  position: absolute; top: 0;    left: 51%; width: 710px; height: auto; transform: translateX(-50%); z-index: 1; } 
-.header-square-container  { /* Radio Promo w/in unit*/ position: absolute; top: 18px; right: 2%; width: 110px; height: auto;                              z-index: 1; }
+.sidebar-logo-container   { /* Shield Logo */ position: absolute; top: 21px; left: 0px; width: 130px; height: auto; margin-bottom: -10px;        z-index: 3; }
+.sidebar-banner-container { /* NEW HEADER  */ position: absolute; top: 0;    left: 51%; width: 710px; height: auto; transform: translateX(-50%); z-index: 1; } 
+.header-square-container  { /* Radio Promo */ position: absolute; top: 18px; right: 2%; width: 110px; height: auto;                              z-index: 1; }
 @media (max-width: 1000px) { .header-square-container  {display: none;}} /* Hides Shield and Desktop Header on mobile */
 @media (max-width: 800px)  { .sidebar-logo-container   {display: none;}}
 @media (max-width: 500px)  { .sidebar-banner-container {display: none;}}
