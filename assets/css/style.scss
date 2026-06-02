@@ -29,6 +29,10 @@ body {
 
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
 .header-scaling-container { position: relative; width: 100%; transform-origin: top center; z-index: 0; } /* Header scaling system - necessary? - for mobile */
+@media (max-width: 500px) {
+    .header-mobile { display: block; width: 90%; margin: 0 auto; padding-top: 15px; }
+    .header { position: relative; height: auto; padding-bottom: 10px; }
+}
 
 /* Fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
 .content-container {
@@ -298,18 +302,7 @@ a img {    border: none;    outline: none;}
         text-align: center;
     }
     .mobile-dropdown a:last-child { border-bottom: none; }
-    
-    .header-mobile {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 15px;
-    }
-    .header {
-        position: relative;
-        height: auto;
-        padding-bottom: 10px;
-    }
+
     .content-container { flex-direction: column; margin-top: 20px; padding: 15px; min-height: unset; width: auto; }
     .sidebar { display: none; } /* Hide sidebar on mobile */
     .main-content { width: 100%; padding: 0; margin: 0; } /* Adjust main content width */
