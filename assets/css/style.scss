@@ -25,17 +25,10 @@ body {
     overflow-x: hidden;    display: flex;    flex-direction: column;
 }
 
+.header-desktop {} @media (min-width: 500px) {    .header-desktop {display: none;}} /* Find a way to delete */
 
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
-.header-desktop {}
-@media (min-width: 500px) {    .header-desktop {display: none;}}
-/* Header scaling system */
-.header-scaling-container {
-    position: relative;
-    width: 100%;
-    transform-origin: top center; /* Only addition needed */
-    z-index: 0;
-}
+.header-scaling-container { position: relative; width: 100%; transform-origin: top center; z-index: 0; } /* Header scaling system - necessary? - for mobile */
 .header-mobile {
     display: none;
     max-width: 90%;
@@ -45,12 +38,11 @@ body {
     padding-top: 0;
 }
 
-
 /* Fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
 .content-container {
     position: relative;
     margin-top: 146px;
-    z-index: 1; /* Lower than scaling elements */
+    z-index: 1; 
     display: flex;
     min-height: 100vh;
     width: 100%;
@@ -60,7 +52,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* Left sidebar - LEFT SIDE BAR MENU 2 2 2 2 2 2 2 2 2 LEFT SIDE BAR MENU*/
+/* == LEFT SIDEBAR MENU 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 LEFT SIDEBAR MENU == */
 .sidebar {     
     top: -12px; width: 135px; height: 237px;  /* Shield + Menu position and dimensions */
     background-color: var(--sidebar-brown);
@@ -70,15 +62,14 @@ body {
     z-index: 3;
 }
 
-.sidebar-unit { /* Unified sidebar scaling unit */ position: absolute; top: 0; left: 0; width: 100vw; height: 0; z-index: 5; /* Single z-index for the whole unit */ }
-
-.sidebar-block {     width: 100%;    height: auto;    display: block; }
-
+/* Unified sidebar scaling unit */ 
+.sidebar-unit             { position: absolute; top: 0; left: 0; width: 100vw; height: 0; z-index: 5; /* Single z-index for the whole unit */ }
+.sidebar-block            {  width: 100%;    height: auto;    display: block; }
 .sidebar-logo-container   { /* Logo within the unit */ position: absolute; top: 21px; left: 0px; width: 130px; height: auto; margin-bottom: -10px;        z-index: 3; }
 .sidebar-banner-container { /* NEW HEADER w/in unit*/  position: absolute; top: 0;    left: 51%; width: 710px; height: auto; transform: translateX(-50%); z-index: 1; } 
 .header-square-container  { /* Radio Promo w/in unit*/ position: absolute; top: 18px; right: 2%; width: 110px; height: auto;                              z-index: 1; }
 
-/* Hides Shield and New Header on mobile */
+/* Hides Shield and Desktop Header on mobile */
 @media (max-width: 1000px) {    .header-square-container  {display: none;}}
 @media (max-width: 800px)  {    .sidebar-logo-container   {display: none;}}
 @media (max-width: 500px)  {    .sidebar-banner-container {display: none;}}
@@ -96,28 +87,15 @@ body {
 }
 /* Full-width title bar that scales with sidebar - Title bar wrapper - also inherits scaling from parent */
 .page-title-bar-wrapper {
-    position: absolute;
-    top: 135px; left: 0;
-    width: 100vw;
-    z-index: 2; /* Middle layer */
-}
+    position: absolute; top: 135px; left: 0; width: 100vw; z-index: 2; /* Middle layer */ }
 .page-scaling-container {
-    position: absolute; /* Changed from relative */     top: 0; left: 0; /* True page top and left */
-    width: 100%; height: 0; /* No height so it doesn't affect layout */
-    z-index: 10;
-    transform-origin: 0 0; /* True page 0,0 */
-}
+    position: absolute; top: 0;     left: 0; width: 100%; height: 0; /* No height so doesn't affect layout */ z-index: 10; transform-origin: 0 0; /* True page 0,0 */ }
 
 /* MENU - These styles will help maintain button size during zoom - MENU 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 */
 .sidebar-buttons { padding-top: 20px; padding-left: 14px; padding-right: 10px; padding-bottom: 10px; box-sizing: border-box; }
-
-.sidebar-button {
+.sidebar-button  {
     display: block;
-    width: 102px; /* Your test width */
-    height: 19px;
-    padding: 8px 0;
-    margin-bottom: 4px;
-    margin-left: auto; margin-right: auto; background-size: 100% 100%; background-repeat: no-repeat;
+    width: 102px; height: 19px; padding: 8px 0; margin-bottom: 4px; margin-left: auto; margin-right: auto; background-size: 100% 100%; background-repeat: no-repeat;
     background-position: center;
     color: var(--button-text);
     text-align: center;
@@ -130,27 +108,14 @@ body {
     position: relative;
     z-index: 4;
 }
-
 .button-frontdesk {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_hat.png');}
 .button-casefiles {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_glass.png');}
 .button-archives {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_books.png');}
 .button-aboutus {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_qmark.png');}
 .button-inquiries {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_mail.png');}
-
 .button-icon {height: 30px; margin-right: 5px;}
-
-/* Scale text with buttons */
-.button-text {
-    position: relative;
-    z-index: 2;
-    display: inline-block;
-    font-size: 10px;
-    line-height: 18px;
-    margin-left: 22px;
-}
-
-/* Hover effect */
-.sidebar-button:hover {transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+.button-text { position: relative; z-index: 2; display: inline-block; font-size: 10px; line-height: 18px; margin-left: 22px; } /* Scale text with buttons */
+.sidebar-button:hover {transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}                                 /* Hover effect */
 
 /* Right sidebar styling - RIGHT SIDE BAR 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 */
 .sidebar-square {
@@ -163,18 +128,6 @@ body {
 .sidebar-square-image {    border: none !important;}
 a img {    border: none;    outline: none;}
 .sidebar-square a {    text-decoration: none;    display: block;}
-
-/* Main content that takes remaining space with margins 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 */
-.main-content {
-    flex: none;
-    padding: 0;
-    background-color: transparent;
-    box-shadow: none;
-    align-self: flex-start;
-    box-sizing: border-box;
-    margin-left: 142px; /* Adjust based on your sidebar width + some padding */
-    width: 71vw; /* Adjust the calc to account for the margin */
-}
 
 /* Right sidebar anchored to right edge */
 .right-sidebar {
@@ -189,7 +142,55 @@ a img {    border: none;    outline: none;}
     gap: 4px; /* This creates space between flex children */
     overflow: hidden;
 }
+.right-sidebar .sidebar-square   {    margin: 0 !important;} /* Make sidebar square containers more constrained */
+.right-sidebar .sidebar-square a {    display: block;    line-height: 0; } /* Remove any line spacing - Ensure clean links with no extra spacing */
+.right-sidebar img {
+    border: none !important;
+    max-width: 100% !important;  
+    width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+}
 
+/* ==== Full-width page title bar - TITLE BAR 5 5 5 5 5 5 5 5 5 5 5 5 5 5 ====*/
+.page-title-bar {
+    width: 100%;
+    height: 16px;
+    background-color: #5e2c04; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.page-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: var(--button-text);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.sidebar-unit, .page-title-bar-wrapper { transform: scale(1); } /* Synchronize scaling - both elements scale together */
+.page-title a {
+    color: inherit;              /* Uses same color as title text */
+    text-decoration: underline; /* Underlined */
+}
+.page-title a:visited {    color: inherit;}
+.page-title a:hover   {    opacity: 0.85;}
+
+/* Main content that takes remaining space with margins 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 */
+.main-content {
+    flex: none;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    align-self: flex-start;
+    box-sizing: border-box;
+    margin-left: 142px; /* Adjust based on sidebar width + some padding */
+    width: 71vw;        /* Adjust to account for the margin */
+}
 .text-box {
     background-color: rgb(249, 243, 233);
     border: 1px solid #d9c8a9;
@@ -197,15 +198,29 @@ a img {    border: none;    outline: none;}
     border-radius: 5px;
     line-height: 1.6;
     color: #333;
-    margin: 0; /* Remove the side margins here */
+    margin: 0; 
     box-sizing: border-box;
 }
-.text-box h2 {
-    color: var(--button-brown);
-    margin-top: 0;
-}
+.text-box h2 { color: var(--button-brown); margin-top: 0; }
 
-/*==== Individual testimonial styling - TESTIMONIALS 6 6 6 6 6 6 6 6 6 6 ====*/
+/*=== Footer styling - FOOTER 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ===*/
+.site-footer {
+    width: 100%;
+    background-color: rgba(94, 44, 4, 0.95); /* Using button-brown color with opacity */
+    color: var(--button-text);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Space between content and footer */
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 14px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow at the top of footer */
+}
+.footer-content {   max-width: 80%;    margin: 0 auto;    padding: 5px;}
+.site-footer p {    margin: 5px 0;     line-height: 1.4;}
+.site-footer .small-text {    font-size: 7px;    opacity: 0.7;}
+
+
+/*==== Individual testimonial styling - TESTIMONIALS 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 ====*/
 .testimonials-container {  max-width: 1100px;  margin: 1rem auto;  padding: 1rem;}
 .testimonials-heading {
   font-family: 'Playfair Display', serif;
@@ -236,8 +251,7 @@ a img {    border: none;    outline: none;}
 .testimonial:before {
   content: "";
   position: absolute;
-  top: -20px;
-  left: 10px;
+  top: -20px; left: 10px;
   font-family: 'Playfair Display', serif;
   font-size: 5rem;
   color: rgba(184, 162, 120, 0.2);
@@ -247,8 +261,7 @@ a img {    border: none;    outline: none;}
   font-family: 'Lora', serif;
   font-size: 1.1rem;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
   color: #333;
   font-size: 100%;
 }
@@ -265,69 +278,12 @@ a img {    border: none;    outline: none;}
 
 
 
-/* ==== Full-width page title bar - TITLE BAR 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ====*/
-.page-title-bar {
-    width: 100%;
-    height: 16px;
-    background-color: #5e2c04; /* Same as button-brown variable */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
-    box-sizing: border-box;
-}
-.page-title {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    color: var(--button-text);
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-/* Synchronize scaling - both elements scale together */
-.sidebar-unit,
-.page-title-bar-wrapper {
-    transform: scale(1); /* Default scale */
-}
-.page-title a {
-    color: inherit;              /* Uses same color as title text */
-    text-decoration: underline; /* Underlined */
-}
-.page-title a:visited {    color: inherit;}
-.page-title a:hover   {    opacity: 0.85;}
-
-
-
-/* Footer styling - FOOTER 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8*/
-.site-footer {
-    width: 100%;
-    background-color: rgba(94, 44, 4, 0.95); /* Using button-brown color with opacity */
-    color: var(--button-text);
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px; /* Space between content and footer */
-    font-family: 'Arial Narrow', sans-serif;
-    font-size: 14px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow at the top of footer */
-}
-.footer-content {   max-width: 80%;    margin: 0 auto;    padding: 5px;}
-.site-footer p {    margin: 5px 0;     line-height: 1.4;}
-.site-footer .small-text {    font-size: 7px;    opacity: 0.7;}
-
-
-/* Make sidebar square containers more constrained */
-.right-sidebar .sidebar-square {    margin: 0 !important;}
-/* Ensure clean links with no extra spacing */
-.right-sidebar .sidebar-square a {    display: block;    line-height: 0; /* Remove any line spacing */}
-
-
 /* ========= RESPONSIVE STYLING ========= */
 
-/* Hides Mobile Elements on Desktop */
+/* == DESKTOP - Hides Mobile Elements on Desktop == */
 @media (min-width: 501px) { .mobile-menu-toggle { display: none; } .mobile-dropdown { display: none; } }
 
-/* == Mobile Display - both portrait and landscape - MOBILE DISPLAY == */
+/* == MOBILE - Mobile Display - both portrait and landscape - MOBILE DISPLAY == */
 @media (max-width: 500px) {
     body { background-size: 50%; /* Adjust background for mobile */ }
     .mobile-menu-toggle {
@@ -345,9 +301,8 @@ a img {    border: none;    outline: none;}
         cursor: pointer;
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
-    /* Mobile Dropdown Menu */
     .mobile-dropdown {
-        display: none; /* Hidden by default, toggled with JS */
+        display: none; /* Mobile Dropdown Menu - Hidden by default, toggled with JS */
         position: fixed;
         top: 50px;
         right: 10px;
@@ -389,16 +344,13 @@ a img {    border: none;    outline: none;}
     .content-container {
         flex-direction: column;
         margin-top: 20px; /* Primary solution to lower the content on mobile */
-        padding: 15px; /* Secondary solution to lower the content on mobile:     padding: 60px 15px 15px 15px;  top right bottom left */
+        padding: 15px;    /* Secondary solution to lower the content on mobile:     padding: 60px 15px 15px 15px;  top right bottom left */
         min-height: unset;
         width: auto;
     }
     
-    /* Hide sidebar on mobile */
-    .sidebar { display: none; }
-    
-    /* Adjust main content width */
-    .main-content {        width: 100%;        padding: 0;        margin: 0;    }
+    .sidebar { display: none; } /* Hide sidebar on mobile */
+    .main-content { width: 100%; padding: 0; margin: 0; } /* Adjust main content width */
     
     /* Move right sidebar below content */
     .right-sidebar {
@@ -416,26 +368,15 @@ a img {    border: none;    outline: none;}
         box-sizing: border-box;
     }
     
-    .text-box { padding: 15px; font-size: 14px; } /* Adjust text box padding */
-    
-    /* Adjust page title positioning */
-    .page-title-bar {
-        position: relative;
-        top: 0;
-        height: auto;
-        padding: 8px 0;
-        margin-bottom: 10px;
-    }
-    .page-title { font-size: 12px; }
-
+    .text-box       { padding: 15px; font-size: 14px; } /* Adjust text box padding */
+    .page-title-bar { position: relative; top: 0; height: auto; padding: 8px 0; margin-bottom: 10px; }     /* Adjust page title positioning */
+    .page-title     { font-size: 12px; }
     .site-footer    { font-size: 12px; padding: 15px 0; margin-top: 20px; } /* Footer adjustments */
     .footer-content { max-width: 90%; }
-    
-    /* Text Size adjustments for readability */
-    .text-box h2 { font-size: 20px; } .text-box p  { font-size: 14px; line-height: 1.5; }
+    .text-box h2    { font-size: 20px; } .text-box p  { font-size: 14px; line-height: 1.5; } /* Text Size adjustments for readability */
 }
 
-/* Extra small screens (Small mobile phones) */
+/* == MOBILE - Extra small screens (Small mobile phones) - MOBILE == */
 @media (max-width: 375px) {
     .sidebar-square     { width: 90%; }
     .text-box           { padding: 10px; }
@@ -447,21 +388,14 @@ a img {    border: none;    outline: none;}
 /* ====== END OF RESPONSIVE STYLING ====== */
 /* ====== END OF RESPONSIVE STYLING ====== */
 
-.right-sidebar img {
-    border: none !important;
-    max-width: 100% !important;  
-    width: 100% !important;
-    height: auto !important;
-    box-sizing: border-box !important;
-}
 
-/* Archive Navigation Cards - ARCHIVE CARDS 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 */
+/* ARCHIVE - Navigation Cards - ARCHIVE CARDS 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 */
 .archive-nav-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     padding: 15px 0;
-    max-width: 360px; /* Reduced from 600px for 60% smaller */
+    max-width: 360px;
     margin: 0 auto;
 }
 .archive-card {
@@ -474,7 +408,7 @@ a img {    border: none;    outline: none;}
     color: var(--text-color);
     transition: all 0.3s ease;
     cursor: pointer; position: relative;
-    aspect-ratio: 3/4; /* This creates your 3:4 ratio */
+    aspect-ratio: 3/4; /* This creates 3:4 ratio */
     display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;
 }
 .archive-card:hover {
@@ -507,10 +441,8 @@ a img {    border: none;    outline: none;}
     transform: translateY(8px);
     transition: all 0.3s ease;
     font-style: italic;
-    position: absolute; /* Add absolute positioning */
-    top: 170px; /* Position from top of card */
-    left: 12px; /* Match card padding */
-    right: 12px; /* Match card padding */
+    position: absolute;
+    top: 170px; left: 12px; right: 12px;
 }
 .archive-card:hover .archive-card-description {    opacity: 1;    transform: translateY(0);}
 /* Responsive adjustments for mobile */
@@ -526,7 +458,7 @@ a img {    border: none;    outline: none;}
 }
 
 
-/* AT Index Styling 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 */
+/* ARCHIVE - AT Index 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 */
 .at-index-header {
     display: flex;
     margin-bottom: 15px;
@@ -610,16 +542,11 @@ a img {    border: none;    outline: none;}
     }
 }
 
-/* Inline image styling 10 10 10 10 10 10 10 10 10 10 10 */
-.inline-image-right {
-    float: right;
-    width: 250px;
-    height: 200px;
-    margin: 0 0 15px 15px; /* bottom and left margins */
-    border-radius: 4px;
-    border: 1px solid #d9c8a9; /* Subtle border to match your theme */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+/* IMG - Inline image styling 10 10 10 10 10 10 10 10 10 10 10 */
+.image-block { width: 300px; margin: 0 auto; text-align: center; }
+.inline-image-right { float: right; width: 250px; height: 200px; margin: 0 0 15px 15px; border-radius: 4px; border: 1px solid #d9c8a9; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+.inline-image-left  { float: left;  width: 110px; height: 120px; margin: 0 15px 0 0;    border-radius: 4px; border: 1px solid #d9c8a9; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+.clear-float { clear: both; } /* Clear floats after text content */
 .inline-image-middle {
     display: block;
     width: 300px;
@@ -628,29 +555,8 @@ a img {    border: none;    outline: none;}
     border: 1px solid #d9c8a9;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.inline-image-left {
-    float: left;
-    width: 110px;
-    height: 120px;
-    margin: 0 15px 0 0; /* bottom and left margins */
-    border-radius: 4px;
-    border: 1px solid #d9c8a9; /* Subtle border to match your theme */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.image-block { width: 300px; margin: 0 auto; text-align: center; }
-
 .image-caption { margin-top: 6px; font-size: 0.85rem; color: #777; font-style: italic; }
-.inline-image-right {
-    float: right;
-    width: 250px;
-    height: 200px;
-    margin: 0 0 15px 15px; /* bottom and left margins */
-    border-radius: 4px;
-    border: 1px solid #d9c8a9; /* Subtle border to match your theme */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-.clear-float { clear: both; } /* Clear floats after text content */
+
 
 /* CITY MAP Styling 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 */
 .image-block-breakout {
