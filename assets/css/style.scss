@@ -61,35 +61,28 @@ body {
     margin: -8px 0 0 0;
     z-index: 3;
 }
-
 /* Unified sidebar scaling unit */ 
 .sidebar-unit             { position: absolute; top: 0; left: 0; width: 100vw; height: 0; z-index: 5; /* Single z-index for the whole unit */ }
 .sidebar-block            {  width: 100%;    height: auto;    display: block; }
 .sidebar-logo-container   { /* Logo within the unit */ position: absolute; top: 21px; left: 0px; width: 130px; height: auto; margin-bottom: -10px;        z-index: 3; }
 .sidebar-banner-container { /* NEW HEADER w/in unit*/  position: absolute; top: 0;    left: 51%; width: 710px; height: auto; transform: translateX(-50%); z-index: 1; } 
 .header-square-container  { /* Radio Promo w/in unit*/ position: absolute; top: 18px; right: 2%; width: 110px; height: auto;                              z-index: 1; }
+@media (max-width: 1000px) { .header-square-container  {display: none;}} /* Hides Shield and Desktop Header on mobile */
+@media (max-width: 800px)  { .sidebar-logo-container   {display: none;}}
+@media (max-width: 500px)  { .sidebar-banner-container {display: none;}}
 
-/* Hides Shield and Desktop Header on mobile */
-@media (max-width: 1000px) {    .header-square-container  {display: none;}}
-@media (max-width: 800px)  {    .sidebar-logo-container   {display: none;}}
-@media (max-width: 500px)  {    .sidebar-banner-container {display: none;}}
-
-/* Sidebar within the unit */
 .sidebar-unit .sidebar {
     position: absolute;
     top: 146px; left: 0px;
     width: 135px; height: 230px;
     background-color: var(--sidebar-brown);
-    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;     padding: 0;    box-sizing: border-box;
+    background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu.png'); /* MENU Graphic */
+    background-size: 100% 100%; background-repeat: no-repeat; padding: 0; box-sizing: border-box;
     z-index: 1;
 }
 /* Full-width title bar that scales with sidebar - Title bar wrapper - also inherits scaling from parent */
-.page-title-bar-wrapper {
-    position: absolute; top: 135px; left: 0; width: 100vw; z-index: 2; /* Middle layer */ }
-.page-scaling-container {
-    position: absolute; top: 0;     left: 0; width: 100%; height: 0; /* No height so doesn't affect layout */ z-index: 10; transform-origin: 0 0; /* True page 0,0 */ }
+.page-title-bar-wrapper { position: absolute; top: 135px; left: 0; width: 100vw; z-index: 2; /* Middle layer */ }
+.page-scaling-container { position: absolute; top: 0; left: 0; width: 100%; height: 0;  z-index: 10; transform-origin: 0 0; /* True page 0,0 */ }
 
 /* MENU - These styles will help maintain button size during zoom - MENU 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 */
 .sidebar-buttons { padding-top: 20px; padding-left: 14px; padding-right: 10px; padding-bottom: 10px; box-sizing: border-box; }
@@ -115,7 +108,7 @@ body {
 .button-inquiries {background-image: url('{{ site.baseurl }}/assets/images/sidebarL/menu_mail.png');}
 .button-icon {height: 30px; margin-right: 5px;}
 .button-text { position: relative; z-index: 2; display: inline-block; font-size: 10px; line-height: 18px; margin-left: 22px; } /* Scale text with buttons */
-.sidebar-button:hover {transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}                                 /* Hover effect */
+.sidebar-button:hover {transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);} /* Hover effect */
 
 /* Right sidebar styling - RIGHT SIDE BAR 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 */
 .sidebar-square {
@@ -173,10 +166,7 @@ a img {    border: none;    outline: none;}
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .sidebar-unit, .page-title-bar-wrapper { transform: scale(1); } /* Synchronize scaling - both elements scale together */
-.page-title a {
-    color: inherit;              /* Uses same color as title text */
-    text-decoration: underline; /* Underlined */
-}
+.page-title a { color: inherit; /* Uses same color as title text */ text-decoration: underline; /* Underlined */ }
 .page-title a:visited {    color: inherit;}
 .page-title a:hover   {    opacity: 0.85;}
 
@@ -340,15 +330,13 @@ a img {    border: none;    outline: none;}
         height: auto;
         padding-bottom: 10px;
     }
-    
     .content-container {
         flex-direction: column;
         margin-top: 20px; /* Primary solution to lower the content on mobile */
-        padding: 15px;    /* Secondary solution to lower the content on mobile:     padding: 60px 15px 15px 15px;  top right bottom left */
+        padding: 15px;
         min-height: unset;
         width: auto;
     }
-    
     .sidebar { display: none; } /* Hide sidebar on mobile */
     .main-content { width: 100%; padding: 0; margin: 0; } /* Adjust main content width */
     
@@ -578,35 +566,6 @@ a img {    border: none;    outline: none;}
 }}
 
 
-/* Background image styling */
-.text-box-with-bg {
-    background-image: url('{{ site.baseurl }}/assets/images/graphic.png');
-    background-repeat: no-repeat;
-    background-position: right center; /* Aligns to the right, centers vertically */
-    background-size: auto 200px; /* Keeps original width, sets height to 200px */
-    position: relative;
-}
-
-/* Optional: Add a semi-transparent overlay to make text more readable */
-.text-box-with-bg-overlay {
-    background-image: url('{{ site.baseurl }}/assets/images/ban_stop.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto 200px;
-    position: relative;
-}
-.text-box-with-bg-overlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 60%; /* Adjust this to cover however much of the image you want to dim */
-    background: linear-gradient(to left, rgba(249, 243, 233, 0.7), transparent);
-    pointer-events: none;
-}
-
-
 /* Grimm Tales Header - extends AT Index styling - 12 12 12 12 12 12 12 12 12*/
 .grimm-header {
     display: flex;
@@ -639,6 +598,7 @@ a img {    border: none;    outline: none;}
 .grimm-english-cell { width: calc((100% - 140px) / 2); }
 .grimm-german-cell  { width: calc((100% - 140px) / 2); font-style: italic; color: #555; }
 .grimm-atu-cell     { width: 60px; font-weight: bold; color: var(--button-brown); text-align: left; }
+
 
 /* CUSTOM IMAGE STYLING For Inline Images - 13 13 13 13 13 13 13 13 13*/
 .resizing-image35 {    display: block; margin: 0 auto; max-width: 35%; height: auto; background: none; border: none; box-shadow: none; padding: 0; }
