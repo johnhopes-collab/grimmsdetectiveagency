@@ -29,14 +29,6 @@ body {
 
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
 .header-scaling-container { position: relative; width: 100%; transform-origin: top center; z-index: 0; } /* Header scaling system - necessary? - for mobile */
-.header-mobile {
-    display: none;
-    max-width: 90%;
-    height: auto;
-    margin: 0 auto;
-    object-fit: contain;
-    padding-top: 0;
-}
 
 /* Fixed-ratio container system - LAYOUT & SIDE BARS 2 2 2 2 2 2 2 2 2 2*/
 .content-container {
@@ -181,16 +173,7 @@ a img {    border: none;    outline: none;}
     margin-left: 142px; /* Adjust based on sidebar width + some padding */
     width: 71vw;        /* Adjust to account for the margin */
 }
-.text-box {
-    background-color: rgb(249, 243, 233);
-    border: 1px solid #d9c8a9;
-    padding: 25px;
-    border-radius: 5px;
-    line-height: 1.6;
-    color: #333;
-    margin: 0; 
-    box-sizing: border-box;
-}
+.text-box { background-color: rgb(249, 243, 233); border: 1px solid #d9c8a9; padding: 25px; border-radius: 5px; line-height: 1.6; color: #333; margin: 0; box-sizing: border-box; }
 .text-box h2 { color: var(--button-brown); margin-top: 0; }
 
 /*=== Footer styling - FOOTER 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ===*/
@@ -207,7 +190,7 @@ a img {    border: none;    outline: none;}
 }
 .footer-content {   max-width: 80%;    margin: 0 auto;    padding: 5px;}
 .site-footer p {    margin: 5px 0;     line-height: 1.4;}
-.site-footer .small-text {    font-size: 7px;    opacity: 0.7;}
+.site-footer .small-text { font-size: 7px; opacity: 0.7;}
 
 
 /*==== Individual testimonial styling - TESTIMONIALS 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 ====*/
@@ -279,9 +262,7 @@ a img {    border: none;    outline: none;}
     .mobile-menu-toggle {
         display: block;
         position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 100;
+        top: 10px; right: 10px; z-index: 100;
         background-color: var(--button-brown);
         color: var(--button-text);
         border: none;
@@ -294,8 +275,7 @@ a img {    border: none;    outline: none;}
     .mobile-dropdown {
         display: none; /* Mobile Dropdown Menu - Hidden by default, toggled with JS */
         position: fixed;
-        top: 50px;
-        right: 10px;
+        top: 50px; right: 10px;
         background-color: var(--sidebar-brown);
         border-radius: 4px;
         width: 200px;
@@ -330,13 +310,7 @@ a img {    border: none;    outline: none;}
         height: auto;
         padding-bottom: 10px;
     }
-    .content-container {
-        flex-direction: column;
-        margin-top: 20px; /* Primary solution to lower the content on mobile */
-        padding: 15px;
-        min-height: unset;
-        width: auto;
-    }
+    .content-container { flex-direction: column; margin-top: 20px; padding: 15px; min-height: unset; width: auto; }
     .sidebar { display: none; } /* Hide sidebar on mobile */
     .main-content { width: 100%; padding: 0; margin: 0; } /* Adjust main content width */
     
@@ -590,10 +564,8 @@ a img {    border: none;    outline: none;}
     margin-top: -15px; }
 .grimm-data-table tbody tr:hover { background-color: rgba(94, 44, 4, 0.05); }
 .grimm-data-table td {
-    padding: 4px 8px;
-    vertical-align: top;
+    padding: 4px 8px; vertical-align: top;
     border-bottom: 1px solid rgba(217, 200, 169, 0.2); }
-
 .grimm-khm-cell     { width: 10px; font-weight: bold; color: var(--button-brown); text-align: right; padding-right: 15px; }
 .grimm-english-cell { width: calc((100% - 140px) / 2); }
 .grimm-german-cell  { width: calc((100% - 140px) / 2); font-style: italic; color: #555; }
