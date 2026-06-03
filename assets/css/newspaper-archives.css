@@ -7,10 +7,10 @@
     padding: 20px 0;
     
     /* ADJUSTABLE SPACING VARIABLES - Change these to experiment! */
-    --cabinet-horizontal-spacing: 0rem;     /* Horizontal gaps between cabinets */
+    --cabinet-horizontal-spacing: 0.6rem;     /* Horizontal gaps between cabinets */
     --cabinet-vertical-spacing: 0rem;       /* Vertical gaps between cabinets */
-    --grid-padding-top: 0.3125rem;          /* Grid top padding */
-    --grid-padding-horizontal: 0.625rem;    /* Grid left/right padding */
+    --grid-padding-top: 1.5rem;          /* Grid top padding */
+    --grid-padding-horizontal: 0rem;    /* Grid left/right padding */
     --grid-gap: 0px;                        /* CSS Grid gap - try negative values if needed */
 }
 
