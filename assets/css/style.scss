@@ -13,16 +13,13 @@
 }
 
 body {
-    margin: 0;    padding: 0;    font-family: 'Georgia', serif;
-    font-size: 12px; /* Consider changing to rem units */
+    margin: 0;    padding: 0;    font-family: 'Georgia', serif; font-size: 12px; /* Consider changing to rem units */
     background-image: url('{{ site.baseurl }}/assets/images/tile_bb4.png');
-    background-repeat: repeat; background-attachment: fixed;
-    background-size: 40%; /* This scales the image to 50% of its original size */
+    background-repeat: repeat; background-attachment: fixed; background-size: 40%; /* Scales bg to 40% of original size */
     color: var(--text-color);
     position: relative;
-    width: 100%;
-    min-height: 100vh;
-    overflow-x: hidden;    display: flex;    flex-direction: column;
+    width: 100%; min-height: 100vh;
+    overflow-x: hidden; display: flex; flex-direction: column;
 }
 
 .header {position: relative; width: 100%; z-index: 0; text-align: center; padding: 0; height: auto;}
@@ -57,7 +54,7 @@ body {
     z-index: 3;
 }
 /* Unified sidebar scaling unit */ 
-.sidebar-unit             { position: absolute; top: 0; left: 0; width: 100vw; height: 0; z-index: 5; /* Single z-index for the whole unit */ }
+.sidebar-unit             { position: absolute; top: 0; left: 0; width: 100vw; height: 0; z-index: 5; } /* Single z-index for the whole unit */ 
 .sidebar-block            {  width: 100%;    height: auto;    display: block; }
 .sidebar-logo-container   { /* Shield Logo */ position: absolute; top: 21px; left: 0px; width: 130px; height: auto; margin-bottom: -10px;        z-index: 3; }
 .sidebar-banner-container { /* NEW HEADER  */ position: absolute; top: 0;    left: 51%; width: 710px; height: auto; transform: translateX(-50%); z-index: 1; } 
@@ -75,7 +72,7 @@ body {
     background-size: 100% 100%; background-repeat: no-repeat; padding: 0; box-sizing: border-box;
     z-index: 1;
 }
-/* Full-width title bar that scales with sidebar - Title bar wrapper - also inherits scaling from parent */
+/* TITLE BAR Scaling wrapper, inherits scaling from parent */
 .page-title-bar-wrapper { position: absolute; top: 135px; left: 0; width: 100vw; z-index: 2; /* Middle layer */ }
 .page-scaling-container { position: absolute; top: 0; left: 0; width: 100%; height: 0;  z-index: 10; transform-origin: 0 0; /* True page 0,0 */ }
 
@@ -105,7 +102,7 @@ body {
 .button-text { position: relative; z-index: 2; display: inline-block; font-size: 10px; line-height: 18px; margin-left: 22px; } /* Scale text with buttons */
 .sidebar-button:hover {transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);} /* Hover effect */
 
-/* Right sidebar styling - RIGHT SIDE BAR 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 */
+/*=== RIGHT SIDE BAR 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 RIGHT SIDE BAR ===*/
 .sidebar-square {
     width: 100%;
     margin-top: 0px 0;
@@ -113,9 +110,9 @@ body {
     padding: 0px;
     box-sizing: border-box;
 }
-.sidebar-square-image {    border: none !important;}
-a img {    border: none;    outline: none;}
-.sidebar-square a {    text-decoration: none;    display: block;}
+.sidebar-square-image { border: none !important;}
+a img { border: none; outline: none;}
+.sidebar-square a { text-decoration: none; display: block;}
 
 /* Right sidebar anchored to right edge */
 .right-sidebar {
@@ -140,7 +137,7 @@ a img {    border: none;    outline: none;}
     box-sizing: border-box !important;
 }
 
-/* ==== Full-width page title bar - TITLE BAR 5 5 5 5 5 5 5 5 5 5 5 5 5 5 ====*/
+/* ==== TITLE BAR 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 TITLE BAR ====*/
 .page-title-bar {
     width: 100%;
     height: 16px;
@@ -161,7 +158,7 @@ a img {    border: none;    outline: none;}
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .sidebar-unit, .page-title-bar-wrapper { transform: scale(1); } /* Synchronize scaling - both elements scale together */
-.page-title a { color: inherit; /* Uses same color as title text */ text-decoration: underline; /* Underlined */ }
+.page-title a { color: inherit; /* Same color as title text */ text-decoration: underline; /* Underlined */ }
 .page-title a:visited {    color: inherit;}
 .page-title a:hover   {    opacity: 0.85;}
 
@@ -182,7 +179,7 @@ a img {    border: none;    outline: none;}
 /*=== Footer styling - FOOTER 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ===*/
 .site-footer {
     width: 100%;
-    background-color: rgba(94, 44, 4, 0.95); /* Using button-brown color with opacity */
+    background-color: rgba(94, 44, 4, 0.95); /* Button-brown color with opacity */
     color: var(--button-text);
     text-align: center;
     padding: 10px 0;
@@ -266,10 +263,8 @@ a img {    border: none;    outline: none;}
         display: block;
         position: fixed;
         top: 10px; right: 10px; z-index: 100;
-        background-color: var(--button-brown);
-        color: var(--button-text);
-        border: none;
-        border-radius: 4px;
+        background-color: var(--button-brown); color: var(--button-text);
+        border: none; border-radius: 4px;
         padding: 8px 12px;
         font-size: 16px;
         cursor: pointer;
@@ -293,8 +288,7 @@ a img {    border: none;    outline: none;}
         color: var(--button-text);
         text-decoration: none;
         border-bottom: 1px solid rgba(255,255,255,0.1);
-        font-size: 14px;
-        font-weight: bold;
+        font-size: 14px; font-weight: bold;
         background-color: var(--button-brown);
         margin: 5px;
         border-radius: 3px;
@@ -321,7 +315,6 @@ a img {    border: none;    outline: none;}
         padding: 0;
         box-sizing: border-box;
     }
-    
     .text-box       { padding: 15px; font-size: 14px; } /* Adjust text box padding */
     .page-title-bar { position: relative; top: 0; height: auto; padding: 8px 0; margin-bottom: 10px; }     /* Adjust page title positioning */
     .page-title     { font-size: 12px; }
@@ -365,28 +358,11 @@ a img {    border: none;    outline: none;}
     aspect-ratio: 3/4; /* This creates 3:4 ratio */
     display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;
 }
-.archive-card:hover {
-    transform: translateY(-5px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(94, 44, 4, 0.3);
-    border-color: var(--button-brown);
-}
-.archive-card-image-container {
-    width: 90%; /* Takes up almost the whole width */
-    margin: 0 auto 2px auto;
-    display: flex; align-items: center; justify-content: center;
-}
-.archive-card-image {
-    width: 100%; /* Fill the container */
-    height: auto;
-    object-fit: contain;
-    transition: filter 0.3s ease;
-}
-.archive-card:hover .archive-card-image {    filter: grayscale(100%);}
-.archive-card-title {
-    font-size: 14px; font-weight: bold; color: var(--button-brown);
-    margin-bottom: 26px; margin-top: 0; 
-    font-family: 'Georgia', serif;
-}
+.archive-card:hover { transform: translateY(-5px) scale(1.03); box-shadow: 0 8px 20px rgba(94, 44, 4, 0.3); border-color: var(--button-brown); }
+.archive-card-image-container { width:  90%; margin: 0 auto 2px auto; display: flex; align-items: center; justify-content: center; }
+.archive-card-image           { width: 100%; height: auto; object-fit: contain; transition: filter 0.3s ease; }
+.archive-card:hover .archive-card-image { filter: grayscale(100%);}
+.archive-card-title { font-size: 14px; font-weight: bold; color: var(--button-brown); margin-bottom: 26px; margin-top: 0; font-family: 'Georgia', serif; }
 .archive-card-description {
     font-size: 10px;
     color: #666;
@@ -444,8 +420,7 @@ a img {    border: none;    outline: none;}
     background-color: #f5f1e8; /* Manila/cream background */
     color: #333;
     padding: 12px 16px;
-    border-radius: 6px;
-    border: 2px solid var(--button-brown);
+    border-radius: 6px; border: 2px solid var(--button-brown);
     box-shadow: 0 4px 12px rgba(94, 44, 4, 0.3);
     font-size: 12px;
     line-height: 1.4;
@@ -464,8 +439,7 @@ a img {    border: none;    outline: none;}
 .at-index-tale:hover:after, .at-index-tale-no-desc:hover:after { /* Tooltip arrow */
     content: '';
     position: absolute;
-    top: 50%;
-    left: 100%;
+    top: 50%; left: 100%;
     transform: translateY(-50%);
     border: 6px solid transparent;
     border-right-color: var(--button-brown);
@@ -475,19 +449,14 @@ a img {    border: none;    outline: none;}
 @media (max-width: 500px) { /* Adjust positioning for mobile - switch back to above on small screens */
     .at-index-tale:hover:before,
     .at-index-tale-no-desc:hover:before {
-        top: auto;
-        bottom: 100%;
-        left: 50%;
+        top: auto; bottom: 100%; left: 50%;
         transform: translateX(-50%);
         max-width: 250px;
-        margin-left: 0;
-        margin-bottom: 8px;
+        margin-left: 0; margin-bottom: 8px;
     }
     .at-index-tale:hover:after,
     .at-index-tale-no-desc:hover:after {
-        top: auto;
-        bottom: 100%;
-        left: 50%;
+        top: auto; bottom: 100%; left: 50%;
         transform: translateX(-50%);
         border-right-color: transparent;
         border-top-color: var(--button-brown);
@@ -505,8 +474,7 @@ a img {    border: none;    outline: none;}
     display: block;
     width: 300px;
     margin: 0 auto;
-    border-radius: 4px;
-    border: 1px solid #d9c8a9;
+    border-radius: 4px; border: 1px solid #d9c8a9;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .image-caption { margin-top: 6px; font-size: 0.85rem; color: #777; font-style: italic; }
@@ -527,8 +495,7 @@ a img {    border: none;    outline: none;}
 @media (max-width: 500px) { .image-block-breakout {
     width: 90vw;              /* viewport-based width CITY MAP*/
     max-width: 600px;         /* safety cap */
-    margin-left: 0; 
-    margin-right: 0;
+    margin-left: 0; margin-right: 0;
 }}
 
 
@@ -555,9 +522,7 @@ a img {    border: none;    outline: none;}
     line-height: 1.3;
     margin-top: -15px; }
 .grimm-data-table tbody tr:hover { background-color: rgba(94, 44, 4, 0.05); }
-.grimm-data-table td {
-    padding: 4px 8px; vertical-align: top;
-    border-bottom: 1px solid rgba(217, 200, 169, 0.2); }
+.grimm-data-table td { padding: 4px 8px; vertical-align: top; border-bottom: 1px solid rgba(217, 200, 169, 0.2); }
 .grimm-khm-cell     { width: 10px; font-weight: bold; color: var(--button-brown); text-align: right; padding-right: 15px; }
 .grimm-english-cell { width: calc((100% - 140px) / 2); }
 .grimm-german-cell  { width: calc((100% - 140px) / 2); font-style: italic; color: #555; }
