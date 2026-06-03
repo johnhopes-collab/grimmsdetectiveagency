@@ -7,17 +7,18 @@
     padding: 20px 0;
     
     /* ADJUSTABLE SPACING VARIABLES - Change these to experiment! */
-    --cabinet-horizontal-spacing: 0.625rem; /* 10px - adjust this for horizontal gaps */
-    --cabinet-vertical-spacing: 0.4375rem;  /* 7px - adjust this for vertical gaps */
-    --grid-padding-top: 0.3125rem;          /* 5px - adjust grid top padding */
-    --grid-padding-horizontal: 0.625rem;    /* 10px - adjust grid left/right padding */
+    --cabinet-horizontal-spacing: 0rem;     /* Horizontal gaps between cabinets */
+    --cabinet-vertical-spacing: 0rem;       /* Vertical gaps between cabinets */
+    --grid-padding-top: 0.3125rem;          /* Grid top padding */
+    --grid-padding-horizontal: 0.625rem;    /* Grid left/right padding */
+    --grid-gap: 0px;                        /* CSS Grid gap - try negative values if needed */
 }
 
 .newspaper-archives-background {
     width: 100%;
     height: auto;
     display: block;
-    aspect-ratio: 601/547; /* Maintains original aspect ratio */
+    aspect-ratio: 601/547;
 }
 
 .newspaper-archives-grid {
@@ -29,18 +30,23 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 0;
+    gap: var(--grid-gap); /* This was set to 0 before, now it's adjustable */
     padding: var(--grid-padding-top) var(--grid-padding-horizontal);
+    box-sizing: border-box;
 }
 
 .newspaper-cabinet-card {
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: var(--cabinet-vertical-spacing) var(--cabinet-horizontal-spacing);
     text-decoration: none;
     color: inherit;
     display: block;
+    box-sizing: border-box;
+    
+    /* Remove all default margins and apply our custom spacing */
+    margin: 0;
+    padding: var(--cabinet-vertical-spacing) var(--cabinet-horizontal-spacing);
 }
 
 .newspaper-cabinet-image {
@@ -48,11 +54,13 @@
     height: auto;
     display: block;
     transition: all 0.3s ease;
+    margin: 0; /* Ensure no default image margins */
+    padding: 0;
 }
 
 .newspaper-cabinet-card:hover {
     transform: scale(1.05);
-    z-index: 10; /* Bring hovered card to front */
+    z-index: 10;
 }
 
 .newspaper-cabinet-card:hover .newspaper-cabinet-image {
@@ -61,10 +69,10 @@
 
 .newspaper-cabinet-year {
     position: absolute;
-    left: 40.22%; /* 72px out of 179px = ~40.22% */
-    top: 23.76%; /* 24px out of 101px = ~23.76% */
-    width: 21.79%; /* (111-72)px out of 179px = ~21.79% */
-    height: 11.88%; /* (36-24)px out of 101px = ~11.88% */
+    left: 40.22%;
+    top: 23.76%;
+    width: 21.79%;
+    height: 11.88%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,15 +81,16 @@
     font-weight: bold;
     color: #2c1810;
     text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
-    pointer-events: none; /* Ensures clicks pass through to the card */
+    pointer-events: none;
+    margin: 0; /* Ensure no margins on text */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .newspaper-archives-container {
         padding: 15px;
-        --cabinet-horizontal-spacing: 0.375rem; /* Tighter on mobile */
-        --cabinet-vertical-spacing: 0.25rem;    /* Tighter on mobile */
+        --cabinet-horizontal-spacing: 0rem;
+        --cabinet-vertical-spacing: 0rem;
     }
     
     .newspaper-cabinet-year {
@@ -100,8 +109,8 @@
     }
     
     .newspaper-archives-container {
-        --cabinet-horizontal-spacing: 0.25rem; /* Even tighter on small mobile */
-        --cabinet-vertical-spacing: 0.1875rem;
+        --cabinet-horizontal-spacing: 0rem;
+        --cabinet-vertical-spacing: 0rem;
         --grid-padding-horizontal: 0.5rem;
     }
 }
