@@ -22,13 +22,6 @@
 
 }
 
-/* Responsive scaling for smaller screens */
-@media (max-width: 1200px) {
-    .archive-container {
-        transform: scale(0.8);
-        transform-origin: center;
-    }
-}
 
 @media (max-width: 900px) {
     .archive-container {
@@ -39,10 +32,10 @@
 /* Left Panel - Accordion Area */
 .archive-container .left-panel {
     position: absolute;
-    left: 58px;  
-    top: 58px;   
-    width: 425px; 
-    height: 498px; 
+    left: 28px;  
+    top: 50px;   
+    width: 245px; 
+    height: 420px; 
     overflow-y: auto;
     overflow-x: hidden;
 }
