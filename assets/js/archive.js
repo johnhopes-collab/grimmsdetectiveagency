@@ -79,14 +79,6 @@ class NewspaperArchive {
         });
     }
 
-    handleDecemberTab(tabContent) {
-        // December tab expands upward, so we need special positioning
-        if (tabContent.classList.contains('active')) {
-            // Calculate how much space we need and adjust positioning
-            const contentHeight = tabContent.scrollHeight;
-            tabContent.style.maxHeight = `${contentHeight}px`;
-        }
-    }
 
     displayNewspaperIssue(issue) {
         const rightPanel = document.getElementById('newspaper-display');
