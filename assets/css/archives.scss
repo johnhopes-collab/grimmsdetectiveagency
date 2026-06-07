@@ -41,12 +41,13 @@
 }
 
 .archive-container .tab-header {
-    height: 40px;
-    background-image: url('{{ site.baseurl }}/archives/images/file-folder-tab.png');
+    height: 43px;
+    background-image: url('{{ site.baseurl }}/assets/images/file-folder-tab.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
+    align-items: flex-start;  /* Align to top */
+    justify-content: flex-start; /* Align to left */
     cursor: pointer;
     font-weight: bold;
     font-size: 14px;
@@ -55,12 +56,10 @@
     transition: all 0.3s ease;
     font-family: 'Times New Roman', serif;
     margin-bottom: -20px;
-
-        /* Add specific positioning */
-    padding-left: 20px;  /* Move text right */
-    padding-top: 5px;    /* Move text up (negative values move down) */
-    justify-content: flex-start; /* Align to left side of container */
-
+    
+    /* Fine-tune positioning */
+    padding-left: 25px;   /* Move right from left edge */
+    padding-top: 8px;     /* Move down from top edge */
 }
 
 .archive-container .tab-header:hover {
