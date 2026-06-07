@@ -41,7 +41,8 @@
 }
 
 .archive-container .tab-header {
-    height: 43px;
+    width: 203px;
+    height: 38px;
     background-image: url('{{ site.baseurl }}/archives/images/file-folder-tab.png');
     background-size: cover;
     background-repeat: no-repeat;
