@@ -5,16 +5,21 @@
 /* Newspaper Archive Styles */
 
 .archive-container {
-    width: 1091px;
-    height: 732px;
-    background-image: url('{{ site.baseurl }}/archives/images/main-frame.png');
-    background-size: cover;
+    width: 1264px; /* Original image size */
+    height: 847px;
+    background-image: url('{{ site.baseurl }}/assets/images/main-frame.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center;
     position: relative;
-    max-width: 95vw;
-    max-height: 95vh;
     margin: 20px auto;
+    
+    /* Scale the entire container down */
+    transform: scale(0.863); /* 1091/1264 = 0.863 */
+    transform-origin: center;
+    
+    /* Adjust margins to compensate for scaling */
+    margin: 20px auto;
+
 }
 
 /* Responsive scaling for smaller screens */
