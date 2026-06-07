@@ -171,15 +171,3 @@
     font-weight: bold;
     color: #333;
 }
-
-/* December Special Behavior */
-.archive-container .month-tab[data-month="dec"] .tab-content.active {
-    position: absolute;
-    bottom: 43px;
-    left: 0;
-    right: 0;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-bottom: none;
-    z-index: 10;
-}
