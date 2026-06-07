@@ -75,10 +75,6 @@ class NewspaperArchive {
                 // Toggle the active class
                 tabContent.classList.toggle('active');
 
-                // Handle December special behavior
-                if (month === 'dec') {
-                    this.handleDecemberTab(tabContent);
-                }
             });
         });
     }
