@@ -98,10 +98,12 @@
 }
 
 /* Add this to your main CSS file or create _sass/archive.scss Add this to your main CSS file or create _sass/archive.scss */
+/* Newspaper Archive Styles */
+
 .archive-container {
     width: 1091px;
     height: 732px;
-    background-image: url('{{ "/assets/images/main-frame.png" | relative_url }}');
+    background-image: url('../images/main-frame.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -147,7 +149,7 @@
 
 .archive-container .tab-header {
     height: 43px;
-    background-image: url('{{ "/assets/images/file-folder-tab.png" | relative_url }}');
+    background-image: url('../images/file-folder-tab.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -210,7 +212,7 @@
 }
 
 .archive-container .newspaper-content {
-    background-image: url('{{ "/assets/images/newspaper-bg.png" | relative_url }}');
+    background-image: url('../images/newspaper-bg.png');
     background-repeat: repeat-y;
     background-size: 100% auto;
     padding: 20px;
@@ -281,4 +283,5 @@
     background-color: white;
     border: 1px solid #ddd;
     border-bottom: none;
+    z-index: 10;
 }
