@@ -103,7 +103,7 @@ class NewspaperArchive {
         const headerDiv = document.createElement('div');
         headerDiv.className = 'newspaper-header';
         const headerImg = document.createElement('img');
-        headerImg.src = `/assets/images/headers/${issue.newspaper}.png`;
+        headerImg.src = `/archives/images/headers/${issue.newspaper}.png`;
         headerImg.alt = issue.newspaper;
         headerDiv.appendChild(headerImg);
 
