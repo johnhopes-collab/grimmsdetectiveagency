@@ -47,7 +47,6 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
     cursor: pointer;
     font-weight: bold;
     font-size: 14px;
@@ -56,6 +55,12 @@
     transition: all 0.3s ease;
     font-family: 'Times New Roman', serif;
     margin-bottom: -20px;
+
+        /* Add specific positioning */
+    padding-left: 20px;  /* Move text right */
+    padding-top: 5px;    /* Move text up (negative values move down) */
+    justify-content: flex-start; /* Align to left side of container */
+
 }
 
 .archive-container .tab-header:hover {
