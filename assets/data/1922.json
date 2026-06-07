@@ -5,7 +5,7 @@
       {
         "id": "1922-jan-001",
         "date": "1/5/22",
-        "newspaper": "brooklyn-daily-eagle",
+        "newspaper": "brooklyn-daily-eagle2",
         "displayText": "1/5/22 - BROOKLYN DAILY EAGLE",
         "stories": [
           {
@@ -21,7 +21,7 @@
       {
         "id": "1922-jan-002", 
         "date": "1/12/22",
-        "newspaper": "evening-mail",
+        "newspaper": "evening-mail2",
         "displayText": "1/12/22 - EVENING MAIL",
         "stories": [
           {
@@ -37,7 +37,7 @@
       {
         "id": "1922-jan-003",
         "date": "1/19/22", 
-        "newspaper": "new-york-american",
+        "newspaper": "new-york-american2",
         "displayText": "1/19/22 - NEW YORK AMERICAN",
         "stories": [
           {
@@ -55,7 +55,7 @@
       {
         "id": "1922-feb-001",
         "date": "2/3/22",
-        "newspaper": "the-globe",
+        "newspaper": "the-globe2",
         "displayText": "2/3/22 - THE GLOBE",
         "stories": [
           {
@@ -71,7 +71,7 @@
       {
         "id": "1922-feb-002",
         "date": "2/14/22",
-        "newspaper": "brooklyn-daily-eagle",
+        "newspaper": "brooklyn-daily-eagle2",
         "displayText": "2/14/22 - BROOKLYN DAILY EAGLE",
         "stories": [
           {
@@ -87,7 +87,7 @@
       {
         "id": "1922-feb-003",
         "date": "2/28/22",
-        "newspaper": "evening-mail",
+        "newspaper": "evening-mail2",
         "displayText": "2/28/22 - EVENING MAIL",
         "stories": [
           {
@@ -105,7 +105,7 @@
       {
         "id": "1922-mar-001",
         "date": "3/7/22",
-        "newspaper": "new-york-american",
+        "newspaper": "new-york-american2",
         "displayText": "3/7/22 - NEW YORK AMERICAN",
         "stories": [
           {
@@ -121,7 +121,7 @@
       {
         "id": "1922-mar-002",
         "date": "3/15/22",
-        "newspaper": "the-globe",
+        "newspaper": "the-globe2",
         "displayText": "3/15/22 - THE GLOBE",
         "stories": [
           {
@@ -137,7 +137,7 @@
       {
         "id": "1922-mar-003",
         "date": "3/28/22",
-        "newspaper": "brooklyn-daily-eagle",
+        "newspaper": "brooklyn-daily-eagle2",
         "displayText": "3/28/22 - BROOKLYN DAILY EAGLE",
         "stories": [
           {
