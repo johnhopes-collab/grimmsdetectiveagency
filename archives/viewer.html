@@ -1,0 +1,95 @@
+---
+layout: default
+title: Viewer
+---
+
+<div class="archive-container">
+    <div class="left-panel">
+        <div class="month-accordion">
+            <div class="month-tab" data-month="jan">
+                <div class="tab-header">Jan</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="jan-headlines">
+                        <!-- Headlines will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="feb">
+                <div class="tab-header">Feb</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="feb-headlines"></div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="mar">
+                <div class="tab-header">Mar</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="mar-headlines"></div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="apr">
+                <div class="tab-header">Apr</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="apr-headlines"></div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="may">
+                <div class="tab-header">May</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="may-headlines"></div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="jun">
+                <div class="tab-header">Jun</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="jun-headlines"></div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="jul">
+                <div class="tab-header">Jul</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="jul-headlines"></div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="aug">
+                <div class="tab-header">Aug</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="aug-headlines"></div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="sep">
+                <div class="tab-header">Sep</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="sep-headlines"></div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="oct">
+                <div class="tab-header">Oct</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="oct-headlines"></div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="nov">
+                <div class="tab-header">Nov</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="nov-headlines"></div>
+                </div>
+            </div>
+            <div class="month-tab" data-month="dec">
+                <div class="tab-header">Dec</div>
+                <div class="tab-content">
+                    <div class="headlines-list" id="dec-headlines"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="right-panel" id="newspaper-display">
+        <!-- Newspaper content will appear here -->
+    </div>
+    
+    <div class="year-display" id="year-text">
+        <!-- Year will be populated by JavaScript -->
+    </div>
+</div>
+
+<script src="{{ '/assets/js/archive.js' | relative_url }}"></script>
