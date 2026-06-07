@@ -103,7 +103,7 @@
 .archive-container {
     width: 1091px;
     height: 732px;
-    background-image: url('../images/main-frame.png');
+    background-image: url('../archives/images/main-frame.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -149,7 +149,7 @@
 
 .archive-container .tab-header {
     height: 43px;
-    background-image: url('../images/file-folder-tab.png');
+    background-image: url('../archives/images/file-folder-tab.png');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -212,7 +212,7 @@
 }
 
 .archive-container .newspaper-content {
-    background-image: url('../images/newspaper-bg.png');
+    background-image: url('../archives/images/newspaper-bg.png');
     background-repeat: repeat-y;
     background-size: 100% auto;
     padding: 20px;
