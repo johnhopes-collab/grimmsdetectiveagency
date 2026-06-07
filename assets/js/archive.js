@@ -70,7 +70,6 @@ class NewspaperArchive {
             header.addEventListener('click', (e) => {
                 const monthTab = e.target.closest('.month-tab');
                 const tabContent = monthTab.querySelector('.tab-content');
-                const month = monthTab.dataset.month;
 
                 // Toggle the active class
                 tabContent.classList.toggle('active');
