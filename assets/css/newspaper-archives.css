@@ -96,8 +96,8 @@
         max-width: 37.5625rem; /* 601px converted to rem */
         margin: 0 auto;
         padding: 20px 0;
-        margin-left: -5px;
-        height: 650px;
+        margin-left: 1px;
+        height: 700px;
     }
     
     .newspaper-cabinet-year { font-size: 0.6rem; }
