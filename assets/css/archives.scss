@@ -206,5 +206,10 @@
         overflow-y: auto;
         overflow-x: hidden;
     }
+
+    .archive-container .story-content {
+        font-size: 0.7rem;
+    }
+    
     .archive-container .year-display { display: none; }
 }
