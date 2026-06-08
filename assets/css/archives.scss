@@ -179,7 +179,7 @@
 
 @media (max-width: 900px) {
     .archive-container {
-        width: 340px;
+        width: 330px;
         height: 640px;
         background-image: url('{{ site.baseurl }}/archives/images/mobile-frame.png');
         background-size: 100% 100%; background-repeat: no-repeat; position: relative;
@@ -191,7 +191,7 @@
         position: absolute;
         left: 28px;  
         top: 394px;    /* 30px */
-        width: 282px; 
+        width: 275px; 
         height: 220px; 
         overflow-y: auto;
         overflow-x: hidden;
@@ -201,7 +201,7 @@
         position: absolute;
         left: 28px;  
         top: 28px;    
-        width: 282px; 
+        width: 275px; 
         height: 327px; 
         overflow-y: auto;
         overflow-x: hidden;
