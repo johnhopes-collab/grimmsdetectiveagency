@@ -179,8 +179,8 @@
 
 @media (max-width: 900px) {
     .archive-container {
-        width: 380px;
-        height: 610px;
+        width: 340px;
+        height: 640px;
         background-image: url('{{ site.baseurl }}/archives/images/mobile-frame.png');
         background-size: 100% 100%; background-repeat: no-repeat; position: relative;
         left: 0;
@@ -190,9 +190,9 @@
     .archive-container .left-panel {
         position: absolute;
         left: 28px;  
-        top: 354px;    /* 30px */
+        top: 394px;    /* 30px */
         width: 282px; 
-        height: 240px; 
+        height: 220px; 
         overflow-y: auto;
         overflow-x: hidden;
     }
