@@ -15,12 +15,6 @@
 }
 
 
-@media (max-width: 900px) {
-    .archive-container {
-        transform: scale(0.6);
-    }
-}
-
 /* Left Panel - Accordion Area */
 .archive-container .left-panel {
     position: absolute;
@@ -183,7 +177,7 @@
     color: #333;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
     .archive-container {
         width: 380px;
         height: 610px;
