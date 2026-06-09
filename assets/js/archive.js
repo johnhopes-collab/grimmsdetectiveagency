@@ -13,6 +13,9 @@ class NewspaperArchive {
         
         // Display the year
         document.getElementById('year-text').textContent = this.currentYear;
+
+        // Update the title bar
+        this.updateTitleBar();
         
         // Load the data for this year
         this.loadArchiveData();
@@ -20,7 +23,17 @@ class NewspaperArchive {
         // Set up event listeners
         this.setupEventListeners();
     }
-
+    
+    updateTitleBar() {
+        const titleElement = document.querySelector('.page-title');
+        if (titleElement) {
+            titleElement.innerHTML = `<a href="/archives.html">Archives</a> / Newspaper Archives / ${this.currentYear}`;
+        }
+        
+        // Also update the browser tab title (stripped of HTML)
+        document.title = `Archives / Newspaper Archives / ${this.currentYear} - ${document.title.split(' - ').pop()}`;
+    }
+    
     getYearFromURL() {
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get('year') || '1922'; // Default to 1922 if no year specified
