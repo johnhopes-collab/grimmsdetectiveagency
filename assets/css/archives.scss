@@ -253,9 +253,9 @@
     .archive-container .left-panel {
         position: absolute;
         left: 28px;  
-        top: 394px;    /* 30px */
+        top: 454px;    /* was 394 */
         width: 275px; 
-        height: 220px; 
+        height: 257px; /* was 220 */
         overflow-y: auto;
         overflow-x: hidden;
     }
@@ -265,7 +265,7 @@
         left: 28px;  
         top: 28px;    
         width: 275px; 
-        height: 327px; 
+        height: 383px; /* was 327 before font stuff */
         overflow-y: auto;
         overflow-x: hidden;
     }
