@@ -1,6 +1,63 @@
 ---
 ---
 
+/* Custom Font Definitions */
+@font-face {
+    font-family: 'BulletinGothic';
+    src: url('{{ site.baseurl }}/assets/fonts/BulletinGothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINCondensed';
+    src: url('{{ site.baseurl }}/assets/fonts/DIN_Condensed.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBodoni';
+    src: url('{{ site.baseurl }}/assets/fonts/LibreBodoni-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NarrowRegular';
+    src: url('{{ site.baseurl }}/assets/fonts/narrow1-rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('{{ site.baseurl }}/assets/fonts/Playfair.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Font Style Classes */
+.archive-container .story-headline.font-style-1 {
+    font-family: 'BulletinGothic', 'Times New Roman', serif;
+}
+
+.archive-container .story-headline.font-style-2 {
+    font-family: 'DINCondensed', 'Times New Roman', serif;
+}
+
+.archive-container .story-headline.font-style-3 {
+    font-family: 'LibreBodoni', 'Times New Roman', serif;
+}
+
+.archive-container .story-headline.font-style-4 {
+    font-family: 'NarrowRegular', 'Times New Roman', serif;
+}
+
+.archive-container .story-headline.font-style-5 {
+    font-family: 'Playfair', 'Times New Roman', serif;
+}
+
 /* Add this to your main CSS file or create _sass/archive.scss Add this to your main CSS file or create _sass/archive.scss */
 /* Newspaper Archive Styles */
 
