@@ -27,7 +27,7 @@ class NewspaperArchive {
     updateTitleBar() {
         const titleElement = document.querySelector('.page-title');
         if (titleElement) {
-            titleElement.innerHTML = `<a href="/archives.html">Archives</a> / Newspaper Archives / ${this.currentYear}`;
+            titleElement.innerHTML = `<a href="/archives.html">Archives</a> / <a href="/archives/newspaper.html">Newspaper Archives</a> / ${this.currentYear}`;
         }
         
         // Also update the browser tab title (stripped of HTML)
