@@ -10,10 +10,12 @@
         "stories": [
           {
             "headline": "FACTORY WORKERS STRIKE FOR BETTER CONDITIONS",
+            "fontStyle": "5",
             "content": "Local factory workers have organized a strike demanding better working conditions and fair wages. The strike began early Monday morning with over 200 workers participating. Union leaders are optimistic about reaching an agreement with management by the end of the week. The workers are specifically demanding shorter hours and improved safety measures in the manufacturing facilities."
           },
           {
             "headline": "NEW BRIDGE CONSTRUCTION APPROVED",
+            "fontStyle": "2",
             "content": "The city council has approved funding for a new bridge connecting the downtown district to the residential areas. Construction is expected to begin in the spring and will provide much-needed relief to traffic congestion. The project will cost approximately $50,000 and is scheduled for completion by late 1923."
           }
         ]
@@ -26,11 +28,18 @@
         "stories": [
           {
             "headline": "LOCAL BASEBALL TEAM WINS CHAMPIONSHIP",
+            "fontStyle": "1",
             "content": "The hometown baseball team secured victory in yesterday's championship game with a final score of 7-4. Fans gathered in the town square to celebrate the team's first championship win in over a decade. The victory was achieved through exceptional pitching and strategic base running in the final innings."
           },
           {
             "headline": "WEATHER SERVICE PREDICTS HARSH WINTER",
+            "fontStyle": "4",
             "content": "The National Weather Service has issued predictions for an unusually harsh winter season. Citizens are advised to prepare for heavy snowfall and extended periods of cold weather expected to last through March. Local authorities recommend stocking up on heating fuel and winter supplies."
+          },
+          {
+            "headline": "BRITISH PM DECLARED BANKRUPT",
+            "fontStyle": "6",
+            "content": "The Prime Minister stepped down from office today under heavy criticism from the press."
           }
         ]
       },
@@ -42,10 +51,12 @@
         "stories": [
           {
             "headline": "MAYOR ANNOUNCES INFRASTRUCTURE IMPROVEMENTS",
+            "fontStyle": "2",
             "content": "Mayor Johnson announced a comprehensive plan to improve the city's infrastructure over the next two years. The plan includes road repairs, new streetlights, and improvements to the water system serving the growing population. The initiative represents the largest municipal investment in city services in recent memory."
           },
           {
             "headline": "LOCAL THEATER PRESENTS NEW PRODUCTION",
+            "fontStyle": "6",
             "content": "The Grand Theatre will present its newest production next month, featuring local actors in a dramatic interpretation of classic literature. Tickets are now available at the box office for weekend performances. The production promises to showcase the finest theatrical talent in the region."
           }
         ]
@@ -60,10 +71,12 @@
         "stories": [
           {
             "headline": "SCHOOL BOARD APPROVES NEW CURRICULUM",
+            "fontStyle": "3",
             "content": "The local school board has voted to implement a modernized curriculum focusing on practical skills and scientific education. The changes will take effect in the upcoming fall semester and represent a significant shift toward progressive educational methods. Teachers will receive additional training during the summer months."
           },
           {
             "headline": "FIRE DPT RECEIVES NEW EQUIPMENT",
+            "fontStyle": "4",
             "content": "The volunteer fire department has acquired a new steam-powered fire engine, significantly improving the city's firefighting capabilities. The equipment was purchased through community fundraising efforts and municipal bonds. Fire Chief Williams expressed confidence that response times will improve dramatically."
           }
         ]
@@ -76,10 +89,12 @@
         "stories": [
           {
             "headline": "VALENTINE'S DAY CELEBRATION DRAWS LARGE CROWDS",
+            "fontStyle": "5",
             "content": "The annual Valentine's Day celebration in Central Park attracted hundreds of couples and families despite the cold weather. Local merchants reported increased sales of flowers and confections throughout the week. The community dance held at the town hall was particularly well-attended."
           },
           {
             "headline": "RAILROAD COMPANY ANNOUNCES SCHEDULE CHANGES",
+            "fontStyle": "2",
             "content": "The Eastern Railroad Company has announced modifications to passenger service schedules beginning next month. The changes are designed to improve efficiency and reduce delays during peak travel periods. Passengers are advised to check with station agents for updated departure times."
           }
         ]
@@ -92,10 +107,12 @@
         "stories": [
           {
             "headline": "LOCAL BUSINESS ASSOCIATION FORMS",
+            "fontStyle": "1",
             "content": "Merchants and business owners have established a formal association to promote commercial interests and coordinate community development efforts. The organization plans to meet monthly and will focus on attracting new businesses to the downtown district. Membership is open to all local entrepreneurs."
           },
           {
             "headline": "SPRING PLANTING SEASON APPROACHES",
+            "fontStyle": "4",
             "content": "Agricultural experts advise farmers to begin preparing for spring planting as weather conditions show signs of improvement. Seed suppliers report strong demand for crop varieties suited to the local climate. The county agricultural extension office offers consultation services for optimal planting strategies."
           }
         ]
@@ -110,10 +127,12 @@
         "stories": [
           {
             "headline": "WOMEN'S SUFFRAGE GROUP HOLDS RALLY",
+            "fontStyle": "2",
             "content": "The local chapter of the Women's Suffrage Association organized a successful rally advocating for continued political participation by women voters. The event featured speakers discussing civic responsibility and the importance of female voices in democratic processes. Over 150 attendees participated in the afternoon gathering."
           },
           {
             "headline": "NEW LIBRARY BRANCH OPENS DOWNTOWN",
+            "fontStyle": "6",
             "content": "The public library system has opened its third branch location in the downtown business district. The facility features modern reading rooms and an expanded collection of technical and professional publications. Library officials anticipate serving the growing number of office workers and professionals in the area."
           }
         ]
@@ -126,10 +145,12 @@
         "stories": [
           {
             "headline": "ST. PATRICK'S DAY PARADE PLANNED",
+            "fontStyle": "3",
             "content": "The Irish-American community is organizing an elaborate St. Patrick's Day parade featuring local marching bands and cultural organizations. The procession will begin at noon on Main Street and conclude with festivities at Municipal Park. All citizens are invited to participate in the celebration of Irish heritage."
           },
           {
             "headline": "MANUFACTURING PLANT EXPANDS OPERATIONS",
+            "fontStyle": "4",
             "content": "The Riverside Manufacturing Company has announced plans to expand its production facilities and hire an additional 75 workers. The expansion reflects growing demand for the company's industrial products and represents a significant investment in local employment. Construction of the new wing will begin immediately."
           }
         ]
@@ -142,10 +163,12 @@
         "stories": [
           {
             "headline": "CITY COUNCIL DEBATES WATER",
+            "fontStyle": "5",
             "content": "Municipal officials continue discussions regarding necessary improvements to the city's water distribution system. The proposed upgrades would ensure reliable service to rapidly growing residential neighborhoods and require significant capital investment. Citizens have been invited to attend public hearings on the matter."
           },
           {
             "headline": "LOCAL MUSICIANS FORM ORCHESTRA",
+            "fontStyle": "2",
             "content": "Talented musicians from throughout the region have established a community orchestra dedicated to performing classical and popular musical selections. The ensemble plans to present its inaugural concert next month at the Opera House. Rehearsals are held weekly and new members are welcome to audition."
           }
         ]
