@@ -24,6 +24,19 @@
             "content": "A consortium of prominent New York banking houses has arranged massive loans to stabilize Germany's devastated financial system under the revolutionary Dawes Plan reorganization scheme. Leading Wall Street financiers report unprecedented investment opportunities in German industrial reconstruction while expressing confidence in the nation's economic recovery potential. American capital has begun flowing into Fatherland factories and municipalities, promising to restore prosperity while generating substantial returns for shrewd Yankee investors."
           }
         ]
+      },
+      {
+        "id": "1924-aug-002",
+        "date": "8/5/24",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/5/24 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "FED RAID STRIKES BOOZE NEST! LOWER EAST SIDE LIQUOR RING SMASHED IN DARING SWOOP",
+            "fontStyle": "2",
+            "content": "Federal agents and city police smashed into an East Side basement yesterday in a surprise raid, uncovering barrels of illegal liquor ready for distribution across the city. Several men were seized on the spot while others fled through rear exits and rooftops in a panic. Authorities are investigating reports tying the operation to Charles Luciano, a young East Side figure already known to police in connection with minor gang arrests. Officials believe the raid may expose a wider bootlegging network operating beneath the city’s streets."
+          }
+        ]
       }
     ],
     "sep": [
@@ -63,11 +76,6 @@
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "12/20/24 - BROOKLYN DAILY EAGLE",
         "stories": [
-          {
-            "headline": "FED RAID STRIKES BOOZE NEST! LITTLE ITALY LIQUOR RING SMASHED IN DARING SWOOP",
-            "fontStyle": "2",
-            "content": "Federal agents and city police smashed into a Little Italy basement yesterday in a surprise raid, uncovering barrels of illegal liquor ready for distribution across the city. Several men were seized on the spot while others fled through rear exits and rooftops in a panic. Authorities are investigating reports tying the operation to Ambrose Stikes, a mysterious East Side figure already known to police in connection with minor gang arrests. Officials believe the raid may expose a wider bootlegging network operating beneath the city’s streets."
-          },
           {
             "headline": "VALENTINO RETURNS",
             "fontStyle": "6",
