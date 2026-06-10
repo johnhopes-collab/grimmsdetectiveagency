@@ -124,13 +124,23 @@
         ]
       }
     ],
+    "nov": [
+      {
+        "id": "1924-nov-001",
+        "date": "11/5/24",
+        "newspaper": "evening-mail3",
+        "displayText": "11/5/24 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Coolidge Triumphs",
+            "fontStyle": "3",
+            "content": "President Calvin Coolidge has achieved a decisive electoral victory over Democratic challenger John W. Davis and Progressive maverick Robert M. La Follette, securing a full term based on his promise of continued business prosperity. The Vermont Republican's comfortable margin reflects voter satisfaction with current economic conditions while rejecting Democratic appeals for government reform. Coolidge's victory ensures Republican policies will guide America through the remainder of the prosperous decade ahead."
+          }
+        ]
+      }
+    ],
     "dec": [
       {
-
-
-
-
-
         "id": "1924-dec-001",
         "date": "12/20/24",
         "newspaper": "brooklyn-daily-eagle",
