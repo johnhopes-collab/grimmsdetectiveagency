@@ -1,0 +1,96 @@
+{
+  "year": 1920,
+  "months": {
+    "jan": [
+      {
+        "id": "1920-jan-001",
+        "date": "1/2/20",
+        "newspaper": "evening-mail3",
+        "displayText": "1/2/20 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "City Prepares for Enforcement of Prohibition Amendment",
+            "fontStyle": "5",
+            "content": "With the national prohibition law scheduled to take effect later this month, municipal authorities and business operators are making preparations for the transition. Many licensed establishments have begun reducing liquor inventories and adjusting operations in anticipation of federal enforcement. City officials indicate that cooperation with federal authorities will be necessary to implement the new regulations effectively. The extent of future enforcement activity remains uncertain, though preparations are underway across multiple agencies."
+          }
+        ]
+      },
+      {
+        "id": "1920-jan-002",
+        "date": "1/17/20",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "1/17/20 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "AMERICA GOES DRY! CITY FACES BOOZE SHOCK",
+            "fontStyle": "2",
+            "content": "At midnight, the nation officially entered the era of Prohibition as enforcement of the liquor ban took effect under the Volstead Act. In New York, saloons closed or attempted last-minute sales in a rush of activity before the deadline. Federal agents and police began preparing for immediate enforcement actions, though officials acknowledge that widespread illegal distribution is likely to emerge. The city now faces an uncertain future as the legal liquor trade comes to an abrupt end."
+          },
+          {
+            "headline": "LOCAL CITIZEN MOURNS “END OF CIVILIZATION” AS SALOONS SHUTTER DOORS",
+            "fontStyle": "2",
+            "content": "Timothy O'Malley, longtime patron of Murphy's Tavern on the Bowery, expressed profound grief at America's transformation into a “desert wasteland.” The devoted customer, who maintained a daily vigil at his corner barstool for seventeen years, declared Prohibition represents “the death of human fellowship and Christian brotherhood.” O'Malley lamented the loss of “scholarly discussions” conducted over whiskey and predicted dire consequences for American culture now that “places of learning and refinement” have been eliminated by federal tyranny."
+          }
+        ]
+      },
+      {
+        "id": "1920-jan-003",
+        "date": "1/17/20",
+        "newspaper": "evening-mail3",
+        "displayText": "1/17/20 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "National Prohibition Takes Effect Under Constitutional Amendment",
+            "fontStyle": "2",
+            "content": "The Eighteenth Amendment to the Constitution, together with its enabling legislation, took effect at midnight, prohibiting the manufacture and sale of intoxicating liquors throughout the United States. In New York, licensed establishments closed or adjusted operations in compliance with the law, while federal and local authorities prepared for enforcement responsibilities. Officials stated that the success of the measure will depend on sustained cooperation between agencies and public adherence to the new legal framework."
+          },
+          {
+            "headline": "Editorial: The Nation Enters a New Era of Temperance",
+            "fontStyle": "2",
+            "content": "With the Eighteenth Amendment now in effect, the United States has embarked upon a significant experiment in public policy aimed at reducing the social harms associated with the liquor traffic. Early indications suggest orderly compliance in many jurisdictions, and officials have expressed confidence in the enforceability of the new law. While challenges in implementation are anticipated, supporters maintain that the prohibition of intoxicating liquors will yield long-term benefits in public health, productivity, and civic order, marking a constructive step in national reform."
+          }
+        ]
+      }
+    ],
+    "apr": [
+      {
+        "id": "1920-apr-001",
+        "date": "4/2/20",
+        "newspaper": "new-york-american",
+        "displayText": "4/2/20 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "LITERARY SENSATION EMERGES; “THIS SIDE OF PARADISE” CAPTURES COLLEGIATE GENERATION",
+            "fontStyle": "3",
+            "content": "Young Princeton graduate F. Scott Fitzgerald has achieved remarkable critical acclaim with his debut novel examining the moral complexities of contemporary university life. Distinguished critics praise the twenty-three-year-old author's penetrating analysis of post-war youth's disillusionment while celebrating his sophisticated prose style. The work's frank portrayal of modern collegiate romance and intellectual questioning has established Fitzgerald as the definitive voice of America's emerging generation, promising a brilliant literary career ahead."
+          }
+        ]
+      }
+    ],
+    "dec": [
+      {
+
+
+
+
+
+        "id": "1920-dec-001",
+        "date": "12/20/20",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "12/20/20 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "VALENTINO RETURNS",
+            "fontStyle": "6",
+            "content": "The Great Lover makes his triumphant screen comeback in “A Sainted Devil,” displaying the smoldering intensity that has made Rudolph Valentino the world's most celebrated romantic star. Female audiences pack theaters nationwide to witness their idol's latest portrayal of passionate devotion and exotic allure. Despite continuing criticism from masculine quarters, Valentino's box office dominance proves his hypnotic screen presence remains undiminished by recent personal scandals and legal entanglements."
+          },
+          {
+            "headline": "BAVARIAN PUTSCH LEADER RELEASED AS GERMANY WATCHES WITH UNEASE",
+            "fontStyle": "6",
+            "content": "Adolf Hitler, leader of the failed Munich uprising of 1923, has been released from Landsberg Prison after serving a reduced sentence for his role in the attempted Bavarian coup. His early release has drawn sharp attention in Germany and abroad, where officials continue to monitor nationalist agitation amid ongoing economic distress. Hitler’s supporters greeted the news with demonstrations of loyalty, while critics warn that the return of the former agitator may signal renewed unrest in a country still struggling to stabilize after revolution and defeat."
+          }
+        ]
+      }
+    ]
+  }
+}
