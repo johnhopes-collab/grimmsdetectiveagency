@@ -1,6 +1,66 @@
 {
   "year": 1923,
   "months": {
+    "jan": [
+      {
+        "id": "1923-jan-001",
+        "date": "1/12/23",
+        "newspaper": "evening-mail3",
+        "displayText": "1/12/23 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "French Occupy Ruhr Valley - Poincaré Orders Seizure of German Coal",
+            "fontStyle": "3",
+            "content": "French military forces have invaded Germany's industrial heartland following Berlin's failure to deliver promised war reparation payments to Allied creditors. Premier Poincaré declared French troops will occupy coal mines and steel mills throughout the Ruhr Valley until Germany honors its financial obligations under the Versailles Treaty. German workers threaten massive strikes while international observers fear the aggressive occupation may trigger renewed European conflict just five years after the Armistice."
+          },
+          {
+            "headline": "Police Sergeant Explains The “Speak Easy”",
+            "fontStyle": "3",
+            "content": "We spoke with Sergeant Patrick Mulligan of the 14th Precinct, who provided illuminating details about the city's flourishing illegal drinking establishments. According to him, the term 'speakeasy' comes from illegal vendors providing venues where law breakers can “speak easy”. These places survive on secrecy, he says, and are often located behind unmarked doorways or cellar doors. The veteran officer also clarified the mysterious term “blind pig”. Customers pay a quarter to see a “blind pig” or some other nonsense attraction in the back room. Of course, there's no pig, but the drinks are 'complimentary' with your admission. Technically they're not selling liquor, Mulligan says, just charging for entertainment. The 14th Precinct says they know every blind pig and speakeasy in the district, but close one down and three more open by week's end."
+          }
+        ]
+      }
+    ],
+    "apr": [
+      {
+        "id": "1923-apr-001",
+        "date": "4/19/23",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "4/19/23 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "YANKEE STADIUM OPENS IN TRIUMPH! “HOUSE THAT RUTH BUILT” WELCOMES 74,000 FANS",
+            "fontStyle": "3",
+            "content": "The magnificent new Yankee Stadium welcomed its first capacity crowd yesterday as Babe Ruth christened his palatial baseball cathedral with a dramatic three-run homer against Boston. The colossal concrete and steel monument to America's pastime cost over two million dollars while providing luxurious accommodations for seventy-four thousand spectators. Ruth's opening day heroics before the largest baseball crowd in history confirmed that the “Sultan of Swat” has indeed built himself the world's most spectacular sporting palace."
+          },
+          {
+            "headline": "IRRESPONSIBILE MOTORISTS TERRORIZE STREETS",
+            "fontStyle": "3",
+            "content": "The motor car epidemic has transformed peaceful thoroughfares into death traps where reckless youth careen through crowded districts at murderous speeds. Last month alone witnessed seventeen pedestrian fatalities while property damage mounts daily from collisions and runaways. Authorities must mandate improved braking systems, speed governors, and driver examinations before this mechanical plague destroys civilized urban life through wholesale carnage and mayhem."
+          }
+        ]
+      }
+    ],
+    "jun": [
+      {
+        "id": "1923-jun-001",
+        "date": "6/10/23",
+        "newspaper": "the-globe",
+        "displayText": "6/10/23 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "HARDING SCANDALS DEEPEN - CORRUPTION PROBE THREATENS WHITE HOUSE REPUTATION",
+            "fontStyle": "3",
+            "content": "Congressional investigators continue examining suspicious financial dealings within President Harding's administration as whispers of graft and influence-peddling reach alarming proportions. Republican leaders express growing concern over allegations involving Interior Secretary Albert Fall and other cabinet members accused of profiting from government contracts. While the President maintains his personal integrity remains untainted, political observers warn that mounting evidence of administrative corruption could severely damage Republican prospects in upcoming elections."
+          },
+          {
+            "headline": "Anti-Immigration Sentiment On The Rise",
+            "fontStyle": "3",
+            "content": "Mr. Smith, a Queens resident, represents a growing number of citizens who live in fear of the growing tide of immigrants into the United States.  “They're dangerous. They come into our neighborhoods and refuse to give up their foreign ways, and they bring those fairytales with them. There's more of them every time I look outside. When I was a kid, pixies and goblins were things you told stories about, now they're everywhere.” Concerns over assimilation and immigration quotas have reached Washington, where legislation is being drafted to address the growing issue."
+          }
+        ]
+      }
+    ],
     "jul": [
       {
         "id": "1923-jul-001",
