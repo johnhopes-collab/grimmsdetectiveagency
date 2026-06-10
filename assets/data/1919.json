@@ -56,6 +56,21 @@
         ]
       }
     ],
+    "oct": [
+      {
+        "id": "1919-oct-001",
+        "date": "10/9/24",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "10/9/19 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "CINCINNATI UPSETS WHITE SOX! REDS CAPTURE WORLD SERIES IN STUNNING TRIUMPH",
+            "fontStyle": "3",
+            "content": "The Cincinnati Reds have claimed baseball's ultimate prize in a shocking upset victory over heavily favored Chicago, defeating the American League champions five games to three in a series marked by curious White Sox errors and lackluster hitting. Cincinnati's unexpected triumph represents the greatest World Series surprise in recent memory as the underdog National League club outplayed Chicago's star-studded lineup featuring “Shoeless” Joe Jackson and Eddie Cicotte. Baseball experts struggle to explain the White Sox' mysterious collapse against supposedly inferior opposition."
+          }
+        ]
+      }
+    ],
     "dec": [
       {
         "id": "1919-dec-001",
