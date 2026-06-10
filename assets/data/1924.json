@@ -139,6 +139,34 @@
         ]
       }
     ],
+    "oct": [
+      {
+        "id": "1924-oct-001",
+        "date": "10/16/24",
+        "newspaper": "the-globe",
+        "displayText": "10/16/24 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "GERMAN AERIAL COLOSSUS ARRIVES! MIGHTY ZEPPELIN COMPLETES HISTORIC TRANSATLANTIC VOYAGE",
+            "fontStyle": "3",
+            "content": "The magnificent dirigible LZ 126, destined to become the USS Los Angeles, has successfully concluded its epochal eighty-one-hour flight from Friedrichshafen to Lakehurst, marking a triumphant demonstration of German aeronautical genius transformed to peaceful purposes. Commander Hugo Eckener's masterful navigation of the colossal airship across treacherous Atlantic waters represents not merely a technical achievement, but a profound symbol of international reconciliation and scientific progress. The graceful passage of this aerial leviathan over New York Harbor, witnessed by thousands of awestruck citizens, heralds a new era wherein German engineering excellence serves American naval advancement rather than destructive warfare."
+          }
+        ]
+      },
+      {
+        "id": "1924-oct-002",
+        "date": "10/16/24",
+        "newspaper": "new-york-american",
+        "displayText": "10/16/24 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "GERMAN SKY MONSTER INVADES AMERICA! COLOSSAL ZEPPELIN TERRIFIES HARBOR CROWDS",
+            "fontStyle": "3",
+            "content": "The enormous German war machine LZ 126 has descended upon American shores like a mechanical vulture, its massive shadow darkening Manhattan skies as terrified citizens flee in panic! The gigantic aerial behemoth, stretching longer than three city blocks, roared over the Statue of Liberty with Teutonic Commander Hugo Eckener at the helm of this floating fortress. Witnesses report the monstrous dirigible's engines thundered like approaching doom while its sinister bulk blotted out the sun, reminding horrified onlookers of Kaiser's bombing raids over London!"
+          }
+        ]
+      }
+    ],
     "nov": [
       {
         "id": "1924-nov-001",
