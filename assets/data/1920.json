@@ -113,6 +113,37 @@
             "content": "A revolutionary feminine type has emerged from America's social transformation, exemplified by figures such as Mrs. F. Scott Fitzgerald and prominent Manhattan socialites who embrace unprecedented freedom in dress, behavior, and social engagement. These modern young women, dubbed "flappers" by popular terminology, challenge conventional propriety through shortened hemlines, bobbed hair, and spirited independence. Their influence extends beyond mere fashion, suggesting fundamental changes in feminine roles that may reshape American society's entire social fabric."
           }
         ]
+      },
+      {
+        "id": "1920-aug-002",
+        "date": "8/26/20",
+        "newspaper": "evening-mail3",
+        "displayText": "8/26/20 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Women’s Suffrage Amendment Formally Proclaimed as Law",
+            "fontStyle": "3",
+            "content": "The Nineteenth Amendment to the Constitution, granting women the right to vote throughout the United States, was formally proclaimed ratified today after certification of the required approvals by the states. The action follows confirmation earlier this month that the amendment had secured the necessary number of ratifications, with final administrative procedures now completed by federal authorities. Officials of the National American Woman Suffrage Association and allied organizations have marked the occasion as the culmination of a long legislative campaign extending over several decades. Election officials in multiple states are preparing to implement the provisions of the amendment in forthcoming electoral processes."
+          }
+        ]
+      },
+      {
+        "id": "1920-aug-003",
+        "date": "8/26/20",
+        "newspaper": "new-york-american",
+        "displayText": "8/26/22 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "WOMEN WIN THE BALLOT! NATION STUNNED AS SOCIAL ORDER IS FLIPPED UPSIDE DOWN",
+            "fontStyle": "3",
+            "content": "The nation was thrown into unprecedented upheaval yesterday as the final ratification of the suffrage amendment confirmed that women now possess the right to vote across the United States. While suffrage leaders hailed the moment as a triumph of civic equality, husbands across the country have reportedly entered a state of confusion and despair. Suffrage supporters, meanwhile, insist that the change marks only the beginning of a more enlightened civic era, though commentators note with interest that several prominent women have already urged immediate attention to housing, education, and public morals. The full effect of the new electorate, officials admit, cannot yet be predicted."
+          },
+          {
+            "headline": "BABE BELTS 46TH HOMER! RUTH'S PHENOMENAL SLUGGING PACKS POLO GROUNDS TO CAPACITY",
+            "fontStyle": "3",
+            "content": "New York's newest baseball sensation has obliterated his own home run record, crushing his forty-sixth circuit blast of the season before a frenzied crowd of forty thousand spectators. Babe Ruth's prodigious power display has transformed the Yankees from also-rans into the city's hottest attraction, with fans jamming every available seat at the Polo Grounds. The Bambino’s incredible slugging exhibition has revolutionized baseball while establishing New York as America's undisputed sporting capital."
+          }
+        ]
       }
     ],
     "dec": [
