@@ -6,7 +6,7 @@
         "id": "1919-jan-001",
         "date": "1/25/19",
         "newspaper": "the-globe",
-        "displayText": "1/18/24 - THE GLOBE",
+        "displayText": "1/18/19 - THE GLOBE",
         "stories": [
           {
             "headline": "LEAGUE OF NATIONS PROPOSED AS PEACE PLAN TAKES SHAPE",
@@ -19,9 +19,9 @@
     "jun": [
       {
         "id": "1919-jun-001",
-        "date": "7/18/24",
+        "date": "7/18/19",
         "newspaper": "the-globe",
-        "displayText": "7/18/24 - THE GLOBE",
+        "displayText": "7/18/19 - THE GLOBE",
         "stories": [
           {
             "headline": "Senate Moves Toward Enforcement of National Prohibition Law",
@@ -34,7 +34,7 @@
     "jul": [
       {
         "id": "1919-jul-001",
-        "date": "7/18/24",
+        "date": "7/18/19",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "7/18/19 - BROOKLYN DAILY EAGLE",
         "stories": [
@@ -59,7 +59,7 @@
     "oct": [
       {
         "id": "1919-oct-001",
-        "date": "10/9/24",
+        "date": "10/9/19",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "10/9/19 - BROOKLYN DAILY EAGLE",
         "stories": [
@@ -74,7 +74,7 @@
     "dec": [
       {
         "id": "1919-dec-001",
-        "date": "12/15/24",
+        "date": "12/15/19",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "12/20/19 - BROOKLYN DAILY EAGLE",
         "stories": [
