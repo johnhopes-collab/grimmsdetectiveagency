@@ -83,19 +83,19 @@
       },
       {
         "id": "1922-feb-002",
-        "date": "2/14/22",
+        "date": "2/2/22",
         "newspaper": "brooklyn-daily-eagle",
-        "displayText": "2/14/22 - BROOKLYN DAILY EAGLE",
+        "displayText": "2/2/22 - BROOKLYN DAILY EAGLE",
         "stories": [
           {
-            "headline": "VALENTINE'S DAY CELEBRATION DRAWS LARGE CROWDS",
+            "headline": "HOLLYWOOD DIRECTOR MURDERED, FOUND SHOT IN LOVE NEST BUNGALOW",
             "fontStyle": "5",
-            "content": "The annual Valentine's Day celebration in Central Park attracted hundreds of couples and families despite the cold weather. Local merchants reported increased sales of flowers and confections throughout the week. The community dance held at the town hall was particularly well-attended."
+            "content": "Prominent film director William Desmond Taylor has been discovered dead in his fashionable Los Angeles residence, victim of a mysterious gunshot wound that has plunged Hollywood into its darkest scandal yet. Police investigators report finding evidence of secret love affairs, illegal narcotics, and studio blackmail schemes within the slain filmmaker's luxurious bungalow. Popular comedienne Mabel Normand emerges as key witness in the sensational case that threatens to expose the movie colony's most shocking secrets and depraved activities."
           },
           {
-            "headline": "RAILROAD COMPANY ANNOUNCES SCHEDULE CHANGES",
+            "headline": "VALENTINO CONQUERS AMERICA, “SHEIK” STAR DRIVES WOMEN TO SWOONING FRENZY",
             "fontStyle": "2",
-            "content": "The Eastern Railroad Company has announced modifications to passenger service schedules beginning next month. The changes are designed to improve efficiency and reduce delays during peak travel periods. Passengers are advised to check with station agents for updated departure times."
+            "content": "Rudolph Valentino's smoldering performance as the desert chieftain in “The Sheik” has transformed the unknown Italian actor into America's most dangerous screen sensation. Theater managers report fainting spells and mass hysteria as female audiences surrender to the magnetic appeal of Hollywood's first “Latin Lover.” The dark-eyed Adonis has revolutionized romantic cinema while triggering fierce debates among male critics who denounce his exotic appeal as a threat to traditional American masculinity."
           }
         ]
       },
@@ -118,12 +118,32 @@
         ]
       }
     ],
-    "mar": [
+    "may": [
       {
-        "id": "1922-mar-001",
-        "date": "3/7/22",
+        "id": "1922-may-001",
+        "date": "5/20/22",
         "newspaper": "new-york-american",
-        "displayText": "3/7/22 - NEW YORK AMERICAN",
+        "displayText": "5/20/22 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "VALENTINO ARRESTED! SCREEN LOVER FACES BIGAMY CHARGES IN MATRIMONIAL MUDDLE",
+            "fontStyle": "3",
+            "content": "Cinema's greatest romantic idol spent a humiliating night in New York jail cells after police charged Rudolph Valentino with bigamy following his hasty marriage to actress Natacha Rambova. Authorities claim the Latin Lover's divorce from his first wife had not been legally finalized when he exchanged vows with the Russian-born designer. Though charges appear likely to collapse under legal scrutiny, the scandal threatens to tarnish Valentino's carefully cultivated image as Hollywood's premier romantic figure."
+          },
+          {
+            "headline": "GERMAN MARK COLLAPSES",
+            "fontStyle": "3",
+            "content": "Germany's monetary system has plunged into catastrophic collapse as the mark tumbles to unprecedented depths against the dollar, requiring wheelbarrows full of banknotes to purchase basic necessities. Reports from Berlin describe desperate citizens burning currency for fuel while bread prices soar beyond the reach of entire families. The German Republic's financial catastrophe threatens complete economic ruin as hyperinflation destroys savings and renders German money practically worthless in international markets."
+          }
+        ]
+      }
+    ],
+    "dec": [
+      {
+        "id": "1922-dec-001",
+        "date": "12/7/22",
+        "newspaper": "new-york-american",
+        "displayText": "12/7/22 - NEW YORK AMERICAN",
         "stories": [
           {
             "headline": "WOMEN'S SUFFRAGE GROUP HOLDS RALLY",
@@ -138,10 +158,10 @@
         ]
       },
       {
-        "id": "1922-mar-002",
-        "date": "3/15/22",
+        "id": "1922-dec-002",
+        "date": "12/15/22",
         "newspaper": "the-globe",
-        "displayText": "3/15/22 - THE GLOBE",
+        "displayText": "12/15/22 - THE GLOBE",
         "stories": [
           {
             "headline": "ST. PATRICK'S DAY PARADE PLANNED",
@@ -156,10 +176,10 @@
         ]
       },
       {
-        "id": "1922-mar-003",
-        "date": "3/28/22",
+        "id": "1922-dec-003",
+        "date": "12/28/22",
         "newspaper": "brooklyn-daily-eagle",
-        "displayText": "3/28/22 - BROOKLYN DAILY EAGLE",
+        "displayText": "12/28/22 - BROOKLYN DAILY EAGLE",
         "stories": [
           {
             "headline": "CITY COUNCIL DEBATES WATER",
