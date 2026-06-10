@@ -61,6 +61,21 @@
         ]
       }
     ],
+    "may": [
+      {
+        "id": "1924-may-001",
+        "date": "5/22/24",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "5/22/24 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "GOBLINS HELD IN THRILL MURDER! CHICAGO CREATURES CONFESS TO KILLING FOR EXCITEMENT",
+            "fontStyle": "3",
+            "content": "So-called “Scritch” and “Scratch”, of Brooklyn’s West Side, have been arrested for the cold-blooded murder of fourty-year-old Jim Planks in a crime they allegedly committed purely for intellectual stimulation. Police report the green-skinned cretins planned the perfect murder as a philosophical experiment. The shocking case has horrified the nation."
+          }
+        ]
+      }
+    ],
     "jun": [
       {
         "id": "1924-apr-001",
@@ -128,8 +143,21 @@
       }
     ],
     "sep": [
-      {
+        {
         "id": "1924-sep-001",
+        "date": "9/12/24",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "9/12/24 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "GOBLINS ESCAPE GALLOWS! DARROW'S BRILLIANT PLEA SAVES KILLERS",
+            "fontStyle": "2",
+            "content": "Defense attorney Clarence Darrow has achieved a stunning courtroom triumph, persuading the New York judge to spare Scritch and Scratch from execution despite their confession to murdering Jim Planks for the sheer thrill of it. Darrow's masterful twelve-hour argument against capital punishment moved the court to impose life sentences rather than death, shocking observers who expected swift execution for the unrepentant killers. It leaves the public wondering whether these fairytale creatures can be reasoned with at all and what place they have in America’s future."
+          }
+        ]
+      },
+      {
+        "id": "1924-sep-002",
         "date": "9/14/24",
         "newspaper": "new-york-american",
         "displayText": "9/14/24 - NEW YORK AMERICAN",
