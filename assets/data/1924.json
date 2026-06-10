@@ -9,9 +9,19 @@
         "displayText": "8/5/24 - EVENING MAIL",
         "stories": [
           {
-            "headline": "FACTORY WORKERS STRIKE FOR BETTER CONDITIONS",
+            "headline": "Bootleg Liquor Seized in Lower East Side Raid",
             "fontStyle": "5",
-            "content": "Local factory workers have organized a strike demanding better working conditions and fair wages. The strike began early Monday morning with over 200 workers participating. Union leaders are optimistic about reaching an agreement with management by the end of the week. The workers are specifically demanding shorter hours and improved safety measures in the manufacturing facilities."
+            "content": "Federal agents and city police yesterday raided a basement warehouse on the Lower East Side, seizing several barrels of illicit alcohol believed destined for distribution through local saloons operating in violation of Prohibition law. Authorities reported the arrest of several men on site, while others fled prior to entry. Among those later identified in connection with the premises was Charles Luciano, a young East Side resident previously known to police for minor arrests. No formal charges have yet been announced."
+          },
+          {
+            "headline": "SOVIETS PROMOTE NEW SOCIAL ORDER AS WEST WATCHES WARILY",
+            "fontStyle": "5",
+            "content": "Reports from Moscow describe continued efforts by the Soviet government to reshape social and economic life under its revolutionary system, including state control of industry, collective planning, and sweeping changes to traditional institutions. Western diplomats note a mixture of curiosity and concern regarding the Bolshevik “experiment,” which seeks to remake society along entirely new lines. While trade contacts remain limited, officials acknowledge that the Soviet Union is beginning to establish cautious diplomatic and economic relations with several European powers despite ideological tensions."
+          },
+          {
+            "headline": "German Economy in Recovery",
+            "fontStyle": "5",
+            "content": "A consortium of prominent New York banking houses has arranged massive loans to stabilize Germany's devastated financial system under the revolutionary Dawes Plan reorganization scheme. Leading Wall Street financiers report unprecedented investment opportunities in German industrial reconstruction while expressing confidence in the nation's economic recovery potential. American capital has begun flowing into Fatherland factories and municipalities, promising to restore prosperity while generating substantial returns for shrewd Yankee investors."
           }
         ]
       }
