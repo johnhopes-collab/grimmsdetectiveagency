@@ -53,11 +53,6 @@
             "headline": "SCHOOL BOARD APPROVES NEW CURRICULUM",
             "fontStyle": "3",
             "content": "The local school board has voted to implement a modernized curriculum focusing on practical skills and scientific education. The changes will take effect in the upcoming fall semester and represent a significant shift toward progressive educational methods. Teachers will receive additional training during the summer months."
-          },
-          {
-            "headline": "FIRE DPT RECEIVES NEW EQUIPMENT",
-            "fontStyle": "4",
-            "content": "The volunteer fire department has acquired a new steam-powered fire engine, significantly improving the city's firefighting capabilities. The equipment was purchased through community fundraising efforts and municipal bonds. Fire Chief Williams expressed confidence that response times will improve dramatically."
           }
         ]
       },
@@ -94,6 +89,21 @@
             "headline": "SPRING PLANTING SEASON APPROACHES",
             "fontStyle": "4",
             "content": "Agricultural experts advise farmers to begin preparing for spring planting as weather conditions show signs of improvement. Seed suppliers report strong demand for crop varieties suited to the local climate. The county agricultural extension office offers consultation services for optimal planting strategies."
+          }
+        ]
+      }
+    ],
+    "mar": [
+      {
+        "id": "1922-mar-001",
+        "date": "3/9/22",
+        "newspaper": "new-york-american",
+        "displayText": "3/9/22 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "FITZGERALDS DAZZLE MANHATTAN, THROWS WILD PARTIES NIGHTLY",
+            "fontStyle": "3",
+            "content": "Literary couple Scott and Zelda Fitzgerald have transformed New York nightlife with their spectacular revelries and champagne-soaked gatherings that last until dawn. The author's latest novel “The Beautiful and Damned” merely provides backdrop to their real-life escapades involving bathtub gin, rooftop dancing, and outrageous stunts that scandalize proper society. Zelda's recent book review cheekily accused her husband of plagiarizing her personal correspondence, delighting readers already fascinated by their tumultuous romance."
           }
         ]
       }
