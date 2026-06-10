@@ -1,0 +1,98 @@
+{
+  "year": 1923,
+  "months": {
+    "aug": [
+      {
+        "id": "1923-aug-001",
+        "date": "8/4/23",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/4/23 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "“THE KILLER” MADDEN WALKS FREE! PAROLED AFTER YEARS IN SING SING",
+            "fontStyle": "3",
+            "content": "Owney “The Killer” Madden, one of the most feared figures of the West Side underworld, was released on parole yesterday after serving years for the Doyle killing. His departure from Sing Sing was carried out quietly, but word of his freedom spread rapidly through New York’s underworld. Authorities confirmed that Madden was released under strict supervision, though officials declined to comment on his future activities. Police sources expressed concern that his return may signal renewed unrest among former gang factions now active in bootlegging and gambling operations. Madden left prison without making a statement."
+          },
+          {
+            "headline": "SULTAN OF SWAT DOMINATES DIAMOND! RUTH'S INCREDIBLE SEASON REACHES NEW HEIGHTS",
+            "fontStyle": "3",
+            "content": "Babe Ruth continues his phenomenal assault on American League pitching, leading all circuit clouters while maintaining a batting average that astounds baseball experts nationwide. The Yankee slugger's combination of power and precision has reached unprecedented levels, driving in runs at a record pace while terrorizing opposing hurlers with his mighty bat. Ruth's superhuman performance this season has elevated him beyond mere athletic stardom into the realm of sporting legend, cementing his position as baseball's undisputed king."
+          }
+        ]
+      },
+      {
+        "id": "1923-aug-002",
+        "date": "8/4/23",
+        "newspaper": "evening-mail3",
+        "displayText": "8/4/23 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "IMMIGRATION DEBATES CONTINUE",
+            "fontStyle": "3",
+            "content": "The current congressional deliberations regarding an excess of immigration present a fundamental challenge to the character that has long distinguished America. Nativist voices in Washington advocate for severe restrictions upon European immigration, warning against the excesses of Italian, Jewish, and Irish immigrants."
+          },
+          {
+            "headline": "Owney Madden Released on Parole",
+            "fontStyle": "3",
+            "content": "Owney Madden, who has been confined in Sing Sing Prison since his conviction in 1915 for manslaughter in the Doyle case, was released on parole yesterday. Prison officials stated that he departed without incident and in accordance with the terms of his release. Authorities offered no comment on his immediate plans. Madden’s name had been associated in earlier years with gang activity on the West Side. His parole status will subject him to supervision by the proper authorities for the duration of the term imposed by the court."
+          },
+          {
+            "headline": "On the So-Called “Flapper”",
+            "fontStyle": "3",
+            "content": "Observers of contemporary manners note with some concern the rapid emergence of the so-called “flapper,” whose abbreviated dress, brisk independence, and enthusiasm for jazz-age entertainments represent a marked departure from established social forms. Respectable households across the country have been positively aghast. Parents are urged to exercise vigilance in guarding daughters against the more dubious influences of jazz music, late-night dancing, and the alarming new habit of cigarette smoking, lest the drawing room become entirely indistinguishable from the dance hall."
+          }
+        ]
+      }
+    ],
+    "nov": [
+      {
+        "id": "1923-nov-001",
+        "date": "11/9/23",
+        "newspaper": "the-globe",
+        "displayText": "11/9/23 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "HARLEM JAZZ CRAZE CAPTIVATES CITY! WHITE SOCIETY FLOCKS UPTOWN FOR MUSIC",
+            "fontStyle": "3",
+            "content": "Manhattan's elite abandon traditional entertainment venues to experience the electrifying jazz orchestras and dance halls transforming Harlem into America's cultural epicenter. White audiences pack uptown nightclubs to witness the revolutionary musical artistry emerging from the Negro district's creative explosion. The syncopated rhythms and improvisational genius of Harlem's musicians have created an entirely new form of American expression that threatens to overturn centuries of established musical tradition."
+          },
+          {
+            "headline": "YANKEES REIGN SUPREME - WORLD SERIES TRIUMPH ELECTRIFIES BASEBALL CAPITAL",
+            "fontStyle": "3",
+            "content": "New York still celebrates the Yankees' magnificent World Series victory over their crosstown rivals, marking the franchise's first championship in their spectacular new stadium cathedral. Babe Ruth's towering home runs in the “House That Ruth Built” have transformed the Bronx ballpark into baseball's holiest shrine while establishing Yankee supremacy over the once-dominant Giants. The American League champions' triumph represents a seismic shift in New York's baseball hierarchy that promises decades of diamond dominance."
+          },
+          {
+            "headline": "BEERHALL PUTSCH CRUSHED - GERMAN AUTHORITIES CLASH WITH EXTREMISTS",
+            "fontStyle": "3",
+            "content": "Authorities in Munich have suppressed an attempted coup led by Adolf Hitler and nationalist factions seeking to seize power in Bavaria. The uprising, which briefly saw armed militants attempt to march through the city, collapsed after intervention by police and government forces. Hitler and several associates have been arrested or are being sought. Officials describe the event as a serious but contained threat to the German state, though tensions remain high in the wake of political instability and economic strain."
+          }
+        ]
+      }
+    ],
+    "dec": [
+      {
+        "id": "1923-dec-001",
+        "date": "12/13/23",
+        "newspaper": "the-globe",
+        "displayText": "12/15/23 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "FEDERAL AGENTS BATTLE BOOTLEG EMPIRE IN FUTILE WAR",
+            "fontStyle": "3",
+            "content": "Prohibition enforcement crumbles as illegal saloons multiply faster than federal authorities can shutter them throughout Manhattan's underground drinking empire. Police raids on West Side speakeasies yield minimal arrests while organized crime syndicates laugh at government attempts to enforce the liquor ban. New Yorkers openly flaunt the Volstead Act in fashionable basement clubs where bootleg whiskey flows freely despite official promises of complete alcohol elimination from American society."
+          },
+          {
+            "headline": "CHARLESTON MANIA SWEEPS BROADWAY",
+            "fontStyle": "3",
+            "content": "The sensational Charleston dance has erupted from the musical “Runnin' Wild” to become the most shocking social phenomenon since the tango invasion. Young women abandon traditional ballroom propriety to perform the frenzied knee-knocking steps that horrify older generations while thrilling jazz-age dancers. Dance hall proprietors report unprecedented crowds as the Charleston's wild gyrations revolutionize American social dancing and challenge every established norm of feminine deportment and public behavior."
+          },
+          {
+            "headline": "ITALY QUIETED UNDER FASCIST RULE AS ORDER RETURNS TO STREETS",
+            "fontStyle": "6",
+            "content": "Italy appears to have entered a new phase of uneasy stability under Benito Mussolini’s Fascist government, which now holds firm control over Rome and much of the country. While critics on the left denounce the regime as authoritarian and elements on the right express discomfort with its methods, officials report a marked reduction in strikes, unrest, and political disorder. Many observers note that the new movement has brought order to a previously fractured nation."
+          }
+        ]
+      }
+    ]
+  }
+}
