@@ -62,12 +62,12 @@
         ]
       }
     ],
-    "feb": [
+    "sep": [
       {
-        "id": "1924-feb-001",
-        "date": "2/3/24",
+        "id": "1924-sep-001",
+        "date": "9/3/24",
         "newspaper": "the-globe",
-        "displayText": "2/3/24 - THE GLOBE",
+        "displayText": "9/3/24 - THE GLOBE",
         "stories": [
           {
             "headline": "SCHOOL BOARD APPROVES NEW CURRICULUM",
@@ -78,42 +78,6 @@
             "headline": "FIRE DPT RECEIVES NEW EQUIPMENT",
             "fontStyle": "4",
             "content": "The volunteer fire department has acquired a new steam-powered fire engine, significantly improving the city's firefighting capabilities. The equipment was purchased through community fundraising efforts and municipal bonds. Fire Chief Williams expressed confidence that response times will improve dramatically."
-          }
-        ]
-      },
-      {
-        "id": "1924-feb-002",
-        "date": "2/14/24",
-        "newspaper": "brooklyn-daily-eagle",
-        "displayText": "2/14/24 - BROOKLYN DAILY EAGLE",
-        "stories": [
-          {
-            "headline": "VALENTINE'S DAY CELEBRATION DRAWS LARGE CROWDS",
-            "fontStyle": "5",
-            "content": "The annual Valentine's Day celebration in Central Park attracted hundreds of couples and families despite the cold weather. Local merchants reported increased sales of flowers and confections throughout the week. The community dance held at the town hall was particularly well-attended."
-          },
-          {
-            "headline": "RAILROAD COMPANY ANNOUNCES SCHEDULE CHANGES",
-            "fontStyle": "2",
-            "content": "The Eastern Railroad Company has announced modifications to passenger service schedules beginning next month. The changes are designed to improve efficiency and reduce delays during peak travel periods. Passengers are advised to check with station agents for updated departure times."
-          }
-        ]
-      },
-      {
-        "id": "1924-feb-003",
-        "date": "2/28/24",
-        "newspaper": "evening-mail3",
-        "displayText": "2/28/24 - EVENING MAIL",
-        "stories": [
-          {
-            "headline": "LOCAL BUSINESS ASSOCIATION FORMS",
-            "fontStyle": "1",
-            "content": "Merchants and business owners have established a formal association to promote commercial interests and coordinate community development efforts. The organization plans to meet monthly and will focus on attracting new businesses to the downtown district. Membership is open to all local entrepreneurs."
-          },
-          {
-            "headline": "SPRING PLANTING SEASON APPROACHES",
-            "fontStyle": "4",
-            "content": "Agricultural experts advise farmers to begin preparing for spring planting as weather conditions show signs of improvement. Seed suppliers report strong demand for crop varieties suited to the local climate. The county agricultural extension office offers consultation services for optimal planting strategies."
           }
         ]
       }
