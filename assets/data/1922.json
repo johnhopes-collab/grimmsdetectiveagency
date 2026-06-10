@@ -138,6 +138,31 @@
         ]
       }
     ],
+    "oct": [
+      {
+        "id": "1922-oct-001",
+        "date": "10/29/22",
+        "newspaper": "new-york-american",
+        "displayText": "10/29/22 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "VALENTINO'S “BLOOD & SAND” CONTINUES FEMININE SIEGE! THEATERS STOCK SMELLING SALTS",
+            "fontStyle": "3",
+            "content": "A full month after its premiere, Rudolph Valentino's latest romantic triumph continues wreaking havoc upon the nation's female population as “Blood and Sand” draws unprecedented crowds of swooning admirers. Theater proprietors report deploying emergency medical stations while ushers distribute fans to combat the epidemic of feminine fainting spells triggered by the Latin Lover's matador portrayal. Local physicians blame Valentino's “dangerous magnetism” for a citywide shortage of smelling salts as susceptible ladies require constant revival during the film's passionate sequences."
+          },
+          {
+            "headline": "MUSSOLINI MARCHES ON ROME",
+            "fontStyle": "3",
+            "content": "Italy is gripped by crisis as armed Fascist squads under Benito Mussolini advance toward Rome in a dramatic show of force against the government. Reports describe columns of black-shirted militants moving through the countryside, seizing control of towns and rail lines as pressure mounts on the monarchy to act. The capital is said to be on edge as fears grow that Italy may soon fall under the control of a revolutionary nationalist movement."
+          },
+          {
+            "headline": "GIANTS SWEEP YANKEES! RUTH FAILS MISERABLY AS CROSSTOWN RIVALS CLAIM WORLD TITLE",
+            "fontStyle": "3",
+            "content": "The New York Giants have humiliated their American League neighbors in a stunning four-game World Series sweep, reducing the mighty Yankees to helpless also-rans before hometown crowds. Babe Ruth, baseball's supposed superman, managed a pathetic .118 batting average without a single home run as Giants pitchers made him appear utterly ordinary. The Sultan of Swat's complete collapse transforms him from hero to goat while Giants fans celebrate their team's masterful neutralization of the game's biggest star."
+          }
+        ]
+      }
+    ],
     "dec": [
       {
         "id": "1922-dec-001",
