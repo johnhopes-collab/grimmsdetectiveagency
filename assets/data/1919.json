@@ -64,6 +64,11 @@
         "displayText": "10/9/19 - BROOKLYN DAILY EAGLE",
         "stories": [
           {
+            "headline": "PRESIDENT WILSON COLLAPSES",
+            "fontStyle": "3",
+            "content": "President Woodrow Wilson has been felled by a devastating stroke that has left the nation's leader partially paralyzed and unable to conduct normal executive duties from his White House sickroom. Medical authorities report the Commander-in-Chief's condition remains grave while government officials struggle to maintain normal operations amid constitutional uncertainty. The President's sudden incapacitation throws the federal administration into chaos as Cabinet members grapple with unprecedented questions of leadership succession and governmental continuity."
+          },
+          {
             "headline": "CINCINNATI UPSETS WHITE SOX! REDS CAPTURE WORLD SERIES IN STUNNING TRIUMPH",
             "fontStyle": "3",
             "content": "The Cincinnati Reds have claimed baseball's ultimate prize in a shocking upset victory over heavily favored Chicago, defeating the American League champions five games to three in a series marked by curious White Sox errors and lackluster hitting. Cincinnati's unexpected triumph represents the greatest World Series surprise in recent memory as the underdog National League club outplayed Chicago's star-studded lineup featuring “Shoeless” Joe Jackson and Eddie Cicotte. Baseball experts struggle to explain the White Sox' mysterious collapse against supposedly inferior opposition."
@@ -71,10 +76,25 @@
         ]
       }
     ],
+    "nov": [
+      {
+        "id": "1919-nov-001",
+        "date": "11/15/19",
+        "newspaper": "the-globe",
+        "displayText": "11/15/19 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "DWARVEN MINERS STRIKE! BEARDED UNDERGROUND WORKERS THREATEN NATION'S COAL SUPPLY",
+            "fontStyle": "3",
+            "content": "Thousands of stout dwarven coal miners have abandoned their subterranean workplaces in a nationwide strike that threatens to plunge America into winter darkness and industrial paralysis. The diminutive but determined workers, led by their traditional clan chieftains, demand higher wages and improved safety conditions in the perilous mine shafts where they toil with pick and shovel. Federal authorities fear complete collapse of the nation's fuel supply as these hardy underground folk maintain their stubborn resistance to mine owner demands."
+          }
+        ]
+      }
+    ],
     "dec": [
       {
         "id": "1919-dec-001",
-        "date": "12/15/19",
+        "date": "12/20/19",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "12/20/19 - BROOKLYN DAILY EAGLE",
         "stories": [
@@ -82,6 +102,11 @@
             "headline": "NEW YORK BRACES FOR DRY RULE! SALOONS STOCKPILE DEADLINE NEARS",
             "fontStyle": "6",
             "content": "With national Prohibition only months away, New York City is in a frenzy of preparation. Thousands of saloons are reportedly rushing to dispose of liquor stocks before enforcement begins, while others are attempting to convert into private clubs or “soft drink” establishments. Police expect widespread evasion efforts once the law takes effect. Industry sources warn that a vast underground market is already forming to meet demand once legal supply is cut off."
+          },
+          {
+            "headline": "PALMER RAIDS CRUSH RED MENACE! FEDERAL AGENTS SMASH RADICAL CONSPIRACY",
+            "fontStyle": "6",
+            "content": "Attorney General A. Mitchell Palmer's determined crusade against Bolshevik infiltrators has resulted in massive raids across major cities, netting hundreds of dangerous foreign agitators plotting America's violent overthrow. Federal agents stormed radical meeting halls and suspected communist hideouts, seizing treasonous literature and arresting alien revolutionaries who threaten democratic institutions. Deportation proceedings have commenced against captured Red conspirators as Palmer's relentless campaign protects the nation from anarchist terror and foreign subversion."
           },
           {
             "headline": "RUTH SOLD TO YANKEES! RED SOX TRADE SLUGGING SENSATION FOR $100,000 CASH",
