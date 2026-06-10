@@ -65,19 +65,24 @@
     "sep": [
       {
         "id": "1924-sep-001",
-        "date": "9/3/24",
-        "newspaper": "the-globe",
-        "displayText": "9/3/24 - THE GLOBE",
+        "date": "9/14/24",
+        "newspaper": "new-york-american",
+        "displayText": "9/14/24 - NEW YORK AMERICAN",
         "stories": [
           {
-            "headline": "SCHOOL BOARD APPROVES NEW CURRICULUM",
+            "headline": "“IT GIRL” SCANDALIZES STUDIOS!",
             "fontStyle": "3",
-            "content": "The local school board has voted to implement a modernized curriculum focusing on practical skills and scientific education. The changes will take effect in the upcoming fall semester and represent a significant shift toward progressive educational methods. Teachers will receive additional training during the summer months."
+            "content": "Brooklyn-born sensation Clara Bow has captured Hollywood's attention with her brazenly modern lifestyle and shocking romantic escapades that mirror her daring screen performances. The vivacious actress, dubbed the perfect “flapper girl,” openly flouts conventional morality with her bobbed hair, short skirts, and numerous suitors from film colony's most eligible bachelors. Studio executives simultaneously promote and panic over their newest star, recognizing that Bow's scandalous reputation sells tickets while threatening industry respectability in equal measure."
           },
           {
-            "headline": "FIRE DPT RECEIVES NEW EQUIPMENT",
+            "headline": "STOCK PRICES SOAR TO RECORD HEIGHTS",",
             "fontStyle": "4",
-            "content": "The volunteer fire department has acquired a new steam-powered fire engine, significantly improving the city's firefighting capabilities. The equipment was purchased through community fundraising efforts and municipal bonds. Fire Chief Williams expressed confidence that response times will improve dramatically."
+            "content": "Financial markets continue their spectacular ascent as American industry enjoys unprecedented expansion and profitable investment opportunities multiply daily. Banking houses report enormous trading volumes while optimistic investors pour millions into manufacturing stocks, automobile shares, and revolutionary radio enterprises. Economic experts predict sustained growth as the nation's productive capacity reaches new peaks, making millionaires of shrewd speculators who recognize America's limitless potential for wealth creation."
+          },
+          {
+            "headline": "RADIO CRAZE SWEEPS METROPOLIS",
+            "fontStyle": "4",
+            "content": "New Yorkers embrace the miraculous broadcasting phenomenon as thousands of households install receiving apparatus to enjoy entertainment transmitted through invisible airwaves. Popular programs featuring jazz orchestras, comedy performers, and news broadcasts have transformed evening routines while enterprising merchants report unprecedented demand for wireless sets. The revolutionary communication technology promises to unite the entire nation in shared cultural experiences, bringing distant concerts and speeches directly into American parlors."
           }
         ]
       }
