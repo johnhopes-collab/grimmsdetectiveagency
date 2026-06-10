@@ -57,12 +57,60 @@
         "id": "1920-apr-001",
         "date": "4/2/20",
         "newspaper": "the-globe",
-        "displayText": "4/2/22 - THE GLOBE",
+        "displayText": "4/2/20 - THE GLOBE",
         "stories": [
           {
             "headline": "LITERARY SENSATION EMERGES; “THIS SIDE OF PARADISE” CAPTURES COLLEGIATE GENERATION",
             "fontStyle": "3",
             "content": "Young Princeton graduate F. Scott Fitzgerald has achieved remarkable critical acclaim with his debut novel examining the moral complexities of contemporary university life. Distinguished critics praise the twenty-three-year-old author's penetrating analysis of post-war youth's disillusionment while celebrating his sophisticated prose style. The work's frank portrayal of modern collegiate romance and intellectual questioning has established Fitzgerald as the definitive voice of America's emerging generation, promising a brilliant literary career ahead."
+          }
+        ]
+      },
+      {
+        "id": "1920-apr-002",
+        "date": "4/4/20",
+        "newspaper": "the-globe",
+        "displayText": "4/4/20 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "NOVELIST FITZGERALD WEDS SOUTHERN BELLE; LITERARY COUPLE UNITES AT ST. PATRICK'S",
+            "fontStyle": "3",
+            "content": "Author F. Scott Fitzgerald has married Miss Zelda Sayre of Montgomery, Alabama, in an elegant ceremony at St. Patrick's Cathedral attended by New York's literary establishment. The beautiful Southern socialite, whose vivacious personality reportedly inspired her husband's fictional heroines, brings considerable charm and sophistication to their union. The matrimonial alliance of promising young novelist and accomplished belle represents the perfect embodiment of modern American romance and artistic achievement."
+          }
+        ]
+      }
+    ],
+    "jul": [
+      {
+        "id": "1920-jul-001",
+        "date": "6/1/20",
+        "newspaper": "new-york-american",
+        "displayText": "6/1/22 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "PROHIBITION TAKES EFFECT! CITY SWALLOWED BY BOOZE BAN AS GANGS MOVE TO CONTROL LIQUOR TRADE",
+            "fontStyle": "3",
+            "content": With national Prohibition now in force, federal authorities warn that a vast illegal market for alcohol is rapidly forming across New York. Reports indicate that former gang elements and criminal groups are moving swiftly to seize control of supply routes, storage sites, and distribution networks. Law enforcement officials predict that the ban will transform the underworld, shifting its focus from street crime to large-scale smuggling and illicit commerce."
+          }
+        ]
+      }
+    ],
+    "aug": [
+      {
+        "id": "1920-aug-001",
+        "date": "8/19/20",
+        "newspaper": "the-globe",
+        "displayText": "8/19/20 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "Tennessee Ratification Secures Women’s Suffrage Amendment",
+            "fontStyle": "3",
+            "content": Ratification by the Tennessee legislature has secured the necessary approval of the Nineteenth Amendment to the Constitution, extending the right of suffrage to women throughout the United States. Federal and state officials confirmed that the amendment has now met the constitutional requirements for adoption. The measure follows years of advocacy and legislative effort by suffrage organizations. Election authorities are expected to begin implementing procedures for the inclusion of women voters in upcoming elections under the new constitutional provision."
+          },
+          {
+            "headline": "THE FLAPPER PHENOMENON; NEW WOMAN EMERGES FROM TRADITIONAL CONSTRAINTS",
+            "fontStyle": "3",
+            "content": A revolutionary feminine type has emerged from America's social transformation, exemplified by figures such as Mrs. F. Scott Fitzgerald and prominent Manhattan socialites who embrace unprecedented freedom in dress, behavior, and social engagement. These modern young women, dubbed "flappers" by popular terminology, challenge conventional propriety through shortened hemlines, bobbed hair, and spirited independence. Their influence extends beyond mere fashion, suggesting fundamental changes in feminine roles that may reshape American society's entire social fabric."
           }
         ]
       }
