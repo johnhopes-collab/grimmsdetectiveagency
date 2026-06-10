@@ -104,7 +104,7 @@
     .newspaper-archives-container {
         --cabinet-horizontal-spacing: 0rem;
         --cabinet-vertical-spacing: 0rem;
-        --grid-padding-horizontal: 0.2rem;
+        --grid-padding-horizontal: 0rem;
     }
 }
 
