@@ -39,7 +39,7 @@
         "displayText": "3/15/24 - EVENING MAIL",
         "stories": [
           {
-            "headline": "CONGRESS BATTLES IMMIGRATION TIDE",
+            "headline": "CONGRESS PUTS BRAKES ON IMMIGRATION",
             "fontStyle": "3",
             "content": "Lawmakers engage in heated controversy over proposed legislation dramatically limiting foreign immigration through strict national quotas favoring Northern European nations. Supporters argue America must preserve its Anglo-Saxon character against foreign racial elements. Ellis Island officials report unprecedented anxiety among recent arrivals as Congress considers virtually ending the era of mass immigration."
           }
@@ -54,9 +54,24 @@
         "displayText": "4/21/24 - THE GLOBE",
         "stories": [
           {
-            "headline": "CONGRESS PASSES QUOTA SYSTEM",
+            "headline": "CONGRESS PASSES IMMIGRATION QUOTA",
             "fontStyle": "3",
             "content": "The House and Senate have approved sweeping immigration restrictions establishing severe national quotas that effectively bar most Southern and Eastern Europeans from American shores. The legislation represents a decisive victory for racial preservation advocates. Ellis Island processing stations prepare for dramatic reduction in arrivals as America bars its shores to foreign masses."
+          }
+        ]
+      }
+    ],
+    "jun": [
+      {
+        "id": "1924-apr-001",
+        "date": "6/8/24",
+        "newspaper": "the-globe",
+        "displayText": "6/8/24 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "FITZGERALDS DEPART FOR PARISIAN EXILE - LITERARY LUMINARIES SEEK EUROPEAN INSPIRATION",
+            "fontStyle": "3",
+            "content": "Distinguished novelist F. Scott Fitzgerald and his accomplished wife have established residence on the French Riviera, joining the growing colony of American artists pursuing creative endeavors abroad. The couple's relocation represents a significant loss to New York's cultural landscape, though literary correspondents report they continue working on ambitious new projects while enjoying the Mediterranean climate. Their expatriate venture reflects the broader movement of American intellectuals seeking artistic renewal in European cultural centers."
           }
         ]
       }
