@@ -148,25 +148,15 @@
     ],
     "dec": [
       {
-
-
-
-
-
         "id": "1920-dec-001",
-        "date": "12/20/20",
+        "date": "12/6/20",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "12/20/20 - BROOKLYN DAILY EAGLE",
         "stories": [
           {
-            "headline": "VALENTINO RETURNS",
+            "headline": "OLD-TIME GANG BOSS SHOT DEAD",
             "fontStyle": "6",
-            "content": "The Great Lover makes his triumphant screen comeback in “A Sainted Devil,” displaying the smoldering intensity that has made Rudolph Valentino the world's most celebrated romantic star. Female audiences pack theaters nationwide to witness their idol's latest portrayal of passionate devotion and exotic allure. Despite continuing criticism from masculine quarters, Valentino's box office dominance proves his hypnotic screen presence remains undiminished by recent personal scandals and legal entanglements."
-          },
-          {
-            "headline": "BAVARIAN PUTSCH LEADER RELEASED AS GERMANY WATCHES WITH UNEASE",
-            "fontStyle": "6",
-            "content": "Adolf Hitler, leader of the failed Munich uprising of 1923, has been released from Landsberg Prison after serving a reduced sentence for his role in the attempted Bavarian coup. His early release has drawn sharp attention in Germany and abroad, where officials continue to monitor nationalist agitation amid ongoing economic distress. Hitler’s supporters greeted the news with demonstrations of loyalty, while critics warn that the return of the former agitator may signal renewed unrest in a country still struggling to stabilize after revolution and defeat."
+            "content": "Monk Eastman, once one of the most notorious gang leaders in New York’s underworld, was shot and killed late yesterday in circumstances still under investigation. Eastman, who had been active in earlier gang conflicts before serving time in prison and later entering military service, was considered a relic of the city’s older street-gang era. His death is widely seen as symbolic of the fading generation of openly violent gang leadership now giving way to newer criminal organizations."
           }
         ]
       }
