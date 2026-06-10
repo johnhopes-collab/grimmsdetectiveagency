@@ -1,0 +1,40 @@
+{
+  "year": 1921,
+  "months": {
+    "sep": [
+        {
+        "id": "1921-sep-001",
+        "date": "9/12/21",
+        "newspaper": "new-york-american",
+        "displayText": "9/12/21 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "FATTY ARBUCKLE IN DEATH SCANDAL! HOLLYWOOD STAR ACCUSED IN ACTRESS TRAGEDY",
+            "fontStyle": "2",
+            "content": "Comedy king Roscoe “Fatty” Arbuckle faces manslaughter charges following the mysterious death of starlet Virginia Rappe at a wild San Francisco hotel party. Police report the young actress became violently ill during Arbuckle's Labor Day festivities at the luxurious St. Francis Hotel before dying days later in agony. The rotund comedian, earning millions as one of filmdom's biggest attractions, now stands accused of causing Miss Rappe's demise through brutal assault and debauchery."
+          }
+        ]
+      }
+    ],
+    "oct": [
+      {
+        "id": "1921-oct-001",
+        "date": "10/10/21",
+        "newspaper": "new-york-american",
+        "displayText": "10/10/21 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "BASEBALL SHOCK! WORLD SERIES WAS “FIXED”! GAMBLING KING PIN ALLEGEDLY BEHIND PLOT",
+            "fontStyle": "3",
+            "content": "Explosive testimony and mounting rumors today link the stunning 1919 World Series outcome to an elaborate gambling conspiracy allegedly financed by well-known betting figure Arnold Rothstein, long identified with major poolroom and race-track operations. Investigators claim players may have been approached with large sums to influence the outcome of the championship games. Baseball officials are said to be “deeply alarmed” as public outrage grows over charges that America’s national pastime was corrupted for profit."
+          },
+          {
+            "headline": "ARBUCKLE TRIAL ROCKS HOLLYWOOD! STUDIO BOSSES PANIC AS MORALITY CRUSADE THREATENS FILM INDUSTRY",
+            "fontStyle": "3",
+            "content": "The sensational testimony emerging from Fatty Arbuckle's courtroom battle has sent shockwaves through motion picture palaces nationwide as religious leaders demand wholesale cleanup of movie morals. Studio executives desperately distance themselves from their former golden goose while theater owners report plummeting attendance amid public outrage. Hollywood's reputation lies in ruins as the comedy giant's legal nightmare threatens to destroy America's entire film entertainment empire."
+          }
+        ]
+      }
+    ]
+  }
+}
