@@ -1,63 +1,17 @@
 {
   "year": 1924,
   "months": {
-    "jan": [
+    "aug": [
       {
-        "id": "1924-jan-001",
-        "date": "1/5/24",
-        "newspaper": "brooklyn-daily-eagle",
-        "displayText": "1/5/24 - BROOKLYN DAILY EAGLE",
+        "id": "1924-aug-001",
+        "date": "8/5/24",
+        "newspaper": "evening-mail3",
+        "displayText": "8/5/24 - EVENING MAIL",
         "stories": [
           {
             "headline": "FACTORY WORKERS STRIKE FOR BETTER CONDITIONS",
             "fontStyle": "5",
             "content": "Local factory workers have organized a strike demanding better working conditions and fair wages. The strike began early Monday morning with over 200 workers participating. Union leaders are optimistic about reaching an agreement with management by the end of the week. The workers are specifically demanding shorter hours and improved safety measures in the manufacturing facilities."
-          },
-          {
-            "headline": "NEW BRIDGE CONSTRUCTION APPROVED",
-            "fontStyle": "2",
-            "content": "The city council has approved funding for a new bridge connecting the downtown district to the residential areas. Construction is expected to begin in the spring and will provide much-needed relief to traffic congestion. The project will cost approximately $50,000 and is scheduled for completion by late 1923."
-          }
-        ]
-      },
-      {
-        "id": "1924-jan-002", 
-        "date": "1/12/24",
-        "newspaper": "evening-mail3",
-        "displayText": "1/12/24 - EVENING MAIL",
-        "stories": [
-          {
-            "headline": "LOCAL BASEBALL TEAM WINS CHAMPIONSHIP",
-            "fontStyle": "1",
-            "content": "The hometown baseball team secured victory in yesterday's championship game with a final score of 7-4. Fans gathered in the town square to celebrate the team's first championship win in over a decade. The victory was achieved through exceptional pitching and strategic base running in the final innings."
-          },
-          {
-            "headline": "WEATHER SERVICE PREDICTS HARSH WINTER",
-            "fontStyle": "4",
-            "content": "The National Weather Service has issued predictions for an unusually harsh winter season. Citizens are advised to prepare for heavy snowfall and extended periods of cold weather expected to last through March. Local authorities recommend stocking up on heating fuel and winter supplies."
-          },
-          {
-            "headline": "BRITISH PM DECLARED BANKRUPT",
-            "fontStyle": "6",
-            "content": "The Prime Minister stepped down from office today under heavy criticism from the press."
-          }
-        ]
-      },
-      {
-        "id": "1924-jan-003",
-        "date": "1/19/24", 
-        "newspaper": "new-york-american",
-        "displayText": "1/19/24 - NEW YORK AMERICAN",
-        "stories": [
-          {
-            "headline": "MAYOR ANNOUNCES INFRASTRUCTURE IMPROVEMENTS",
-            "fontStyle": "2",
-            "content": "Mayor Johnson announced a comprehensive plan to improve the city's infrastructure over the next two years. The plan includes road repairs, new streetlights, and improvements to the water system serving the growing population. The initiative represents the largest municipal investment in city services in recent memory."
-          },
-          {
-            "headline": "LOCAL THEATER PRESENTS NEW PRODUCTION",
-            "fontStyle": "6",
-            "content": "The Grand Theatre will present its newest production next month, featuring local actors in a dramatic interpretation of classic literature. Tickets are now available at the box office for weekend performances. The production promises to showcase the finest theatrical talent in the region."
           }
         ]
       }
