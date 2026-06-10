@@ -1,0 +1,80 @@
+{
+  "year": 1919,
+  "months": {
+    "jan": [
+      {
+        "id": "1919-jan-001",
+        "date": "1/25/19",
+        "newspaper": "the-globe",
+        "displayText": "1/18/24 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "LEAGUE OF NATIONS PROPOSED AS PEACE PLAN TAKES SHAPE",
+            "fontStyle": "3",
+            "content": "At the Paris Peace Conference, Allied leaders have agreed in principle to the formation of a League of Nations, a new international body intended to prevent future global conflict through collective security and arbitration. While the proposal is hailed in some quarters as a bold step toward lasting peace, reports indicate growing concern over the severity of the proposed terms for Germany. President Wilson is said to have expressed disapproval of punitive provisions being attached to the settlement, warning that excessive harshness could sow the seeds of future instability even as the League is designed to prevent war."
+          }
+        ]
+      }
+    ],
+    "jun": [
+      {
+        "id": "1919-jun-001",
+        "date": "7/18/24",
+        "newspaper": "the-globe",
+        "displayText": "7/18/24 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "Senate Moves Toward Enforcement of National Prohibition Law",
+            "fontStyle": "3",
+            "content": "The Senate continues consideration of the Volstead enforcement measure, designed to provide administrative procedures and penalties for violations of the recently ratified Prohibition amendment. Supporters of the bill argue that effective enforcement is necessary to give force to the constitutional provision, while opponents raise concerns regarding federal authority and practical implementation. The measure is expected to proceed to further debate in the coming weeks, with wide attention in states where the liquor industry represents a significant commercial interest."
+          }
+        ]
+      }
+    ],
+    "jul": [
+      {
+        "id": "1919-jul-001",
+        "date": "7/18/24",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "7/18/19 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "PEACE TREATY IMPOSED! GERMANY SIGNED TO TERMS AT VERSAILLES UNDER ALLIED HAND",
+            "fontStyle": "3",
+            "content": "Germany has formally signed the Treaty of Versailles, accepting harsh peace terms dictated by the Allied powers in the Hall of Mirrors at Versailles. The agreement places severe restrictions on German military forces, territorial boundaries, and reparations obligations. Officials describe the treaty as a decisive settlement intended to secure lasting peace, though observers note deep resentment within Germany. The war is thus officially concluded, with Europe redrawn under the terms of Allied victory."
+          },
+          {
+            "headline": "VOLSTEAD ACT GAINS STEAM! WET NEW YORK FACES DRY FUTURE AS BOOZE BAN PUSH ADVANCES",
+            "fontStyle": "3",
+            "content": "Washington is ablaze with debate as supporters of the Volstead enforcement bill push forward measures to give teeth to the national Prohibition law. The legislation, designed to enforce the constitutional ban on liquor, is rapidly gaining momentum despite fierce opposition from brewing interests and city officials in wet states. In New York, saloonkeepers and distributors are said to be preparing for sweeping changes that could upend one of the city’s largest industries."
+          },
+          {
+            "headline": "BABE RUTH SHATTERS HOME RUN RECORD! BOSTON SLUGGER REACHES HISTORIC 29TH CIRCUIT CLOUT",
+            "fontStyle": "3",
+            "content": "Boston's Babe Ruth has rewritten baseball's record books, smashing his twenty-ninth home run of the season to eclipse all previous marks for long-distance hitting. The former pitcher's unprecedented power display has revolutionized the national pastime, drawing enormous crowds eager to witness his prodigious drives over outfield barriers. Ruth's historic achievement establishes him as baseball's premier attraction while transforming the game from scientific strategy to thrilling slugging spectacle."
+          }
+        ]
+      }
+    ],
+    "dec": [
+      {
+        "id": "1919-dec-001",
+        "date": "12/15/24",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "12/20/19 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "NEW YORK BRACES FOR DRY RULE! SALOONS STOCKPILE DEADLINE NEARS",
+            "fontStyle": "6",
+            "content": "With national Prohibition only months away, New York City is in a frenzy of preparation. Thousands of saloons are reportedly rushing to dispose of liquor stocks before enforcement begins, while others are attempting to convert into private clubs or “soft drink” establishments. Police expect widespread evasion efforts once the law takes effect. Industry sources warn that a vast underground market is already forming to meet demand once legal supply is cut off."
+          },
+          {
+            "headline": "RUTH SOLD TO YANKEES! RED SOX TRADE SLUGGING SENSATION FOR $100,000 CASH",
+            "fontStyle": "6",
+            "content": "In a stunning transaction that has shocked the baseball world, the Boston Red Sox have sold Babe Ruth's contract to the New York Yankees for the astronomical sum of one hundred twenty-five thousand dollars. Owner Harry Frazee announced the sale will provide necessary funds for theatrical investments while Yankees management celebrates acquiring baseball's greatest gate attraction. Ruth's departure from championship Boston to rebuilding New York marks the most significant player transaction in professional sports history."
+          }
+        ]
+      }
+    ]
+  }
+}
