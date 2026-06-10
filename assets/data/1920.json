@@ -123,6 +123,26 @@
         ]
       }
     ],
+    "may": [
+      {
+        "id": "1920-may-001",
+        "date": "5/20/20",
+        "newspaper": "evening-mail3",
+        "displayText": "5/20/20 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "THE BOLSHEVIK EXPERIMENT: THREE YEARS OF SYSTEMATIC DESTRUCTION OF CIVILIZED ORDER",
+            "fontStyle": "3",
+            "content": "Careful analysis of the Russian revolutionary government since 1917 reveals a methodical dismantling of institutions fundamental to Western democratic society. The Bolshevik leadership has eliminated private property rights, abolished religious instruction, and centralized all economic production under state control through principles directly contrary to constitutional governance. While European intellectuals debate the theoretical merits of collectivist economics, practical evidence suggests these doctrines inevitably require violent suppression of individual liberty. American observers must recognize that such ideological movements, however distant they may appear, possess an inherent expansionist character that challenges the philosophical foundations of our Republic."
+          },
+          {
+            "headline": "THE TRIUMPH OF TEMPERANCE: AN ACTIVIST'S PERSPECTIVE ON NATIONAL REDEMPTION",
+            "fontStyle": "3",
+            "content": "The passing of Prohibition represents an awakening of the American conscience and an answer to the fervent prayers of America's millions, sorely struggling under the horrid vice of King Liquor. Now that the temptation has been legally removed, these wayward souls shall surely abandon their dissolute habits and return to proper family devotion, while saloon-keepers must seek honest employment contributing to society's moral advancement. This righteous legislation will surely transform our nation's character, as men deprived of alcoholic temptation naturally embrace sobriety, industry, and Christian fellowship."
+          }
+        ]
+      }
+    ],
     "jul": [
       {
         "id": "1920-jul-001",
