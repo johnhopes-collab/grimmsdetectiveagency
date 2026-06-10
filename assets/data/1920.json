@@ -52,6 +52,36 @@
         ]
       }
     ],
+    "feb": [
+      {
+        "id": "1920-feb-001",
+        "date": "2/15/20",
+        "newspaper": "new-york-american",
+        "displayText": "2/15/22 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "WOMEN ORGANIZE FOR VOTING POWER! LEAGUE PREPARES FEMININE ELECTORATE FOR NOVEMBER",
+            "fontStyle": "3",
+            "content": "The newly formed League of Women Voters has commenced nationwide efforts to educate America's female citizens in preparation for their historic participation in presidential elections. Distinguished suffrage leaders report establishing chapters across the nation while conducting intensive civic instruction programs covering ballot procedures and candidate evaluation. The organization's systematic approach promises to transform millions of newly enfranchised women into informed political participants capable of wielding unprecedented electoral influence this autumn."
+          }
+        ]
+      }
+    ],
+    "mar": [
+      {
+        "id": "1920-mar-001",
+        "date": "3/19/20",
+        "newspaper": "the-globe",
+        "displayText": "3/19/20 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "SENATE SPURNS WILSON'S LEAGUE! AMERICA REJECTS INTERNATIONAL ENTANGLEMENTS",
+            "fontStyle": "3",
+            "content": "The United States Senate has delivered a crushing defeat to President Wilson's cherished League of Nations proposal, voting decisively against ratification of the Versailles Treaty provisions. Republican senators celebrated their successful resistance to foreign commitments while Democratic leaders mourned the collapse of Wilson's grand design for international cooperation. America's definitive rejection of European political arrangements signals the nation's determination to pursue independent policies free from Old World diplomatic complications."
+          }
+        ]
+      }
+    ],
     "apr": [
       {
         "id": "1920-apr-001",
@@ -73,9 +103,22 @@
         "displayText": "4/4/20 - THE GLOBE",
         "stories": [
           {
-            "headline": "NOVELIST FITZGERALD WEDS SOUTHERN BELLE; LITERARY COUPLE UNITES AT ST. PATRICK'S",
+            "headline": "NOVELIST FITZGERALD WEDS SOUTHERN BELLE",
             "fontStyle": "3",
             "content": "Author F. Scott Fitzgerald has married Miss Zelda Sayre of Montgomery, Alabama, in an elegant ceremony at St. Patrick's Cathedral attended by New York's literary establishment. The beautiful Southern socialite, whose vivacious personality reportedly inspired her husband's fictional heroines, brings considerable charm and sophistication to their union. The matrimonial alliance of promising young novelist and accomplished belle represents the perfect embodiment of modern American romance and artistic achievement."
+          }
+        ]
+      },
+      {
+        "id": "1920-apr-003",
+        "date": "4/14/20",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "4/14/20 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "BABE RUTH DAZZLES IN YANKEE DEBUT! SLUGGER'S ARRIVAL TRANSFORMS NEW YORK BASEBALL",
+            "fontStyle": "3",
+            "content": "The Sultan of Swat has commenced his career in Yankee pinstripes with spectacular displays of power hitting that have electrified Manhattan's baseball enthusiasts beyond all previous excitement levels. Ruth's phenomenal home run abilities promise to revolutionize the American League while establishing New York as baseball's undisputed entertainment capital. Enormous crowds flock to witness the former Boston star's prodigious batting exhibitions, creating unprecedented ticket demand throughout the metropolitan area."
           }
         ]
       }
@@ -85,10 +128,10 @@
         "id": "1920-jul-001",
         "date": "6/1/20",
         "newspaper": "new-york-american",
-        "displayText": "6/1/22 - NEW YORK AMERICAN",
+        "displayText": "6/1/20 - NEW YORK AMERICAN",
         "stories": [
           {
-            "headline": "PROHIBITION TAKES EFFECT! CITY SWALLOWED BY BOOZE BAN AS GANGS MOVE TO CONTROL LIQUOR TRADE",
+            "headline": "CITY SWALLOWED BY BOOZE BAN AS GANGS MOVE TO CONTROL LIQUOR TRADE",
             "fontStyle": "3",
             "content": "With national Prohibition now in force, federal authorities warn that a vast illegal market for alcohol is rapidly forming across New York. Reports indicate that former gang elements and criminal groups are moving swiftly to seize control of supply routes, storage sites, and distribution networks. Law enforcement officials predict that the ban will transform the underworld, shifting its focus from street crime to large-scale smuggling and illicit commerce."
           }
@@ -131,7 +174,7 @@
         "id": "1920-aug-003",
         "date": "8/26/20",
         "newspaper": "new-york-american",
-        "displayText": "8/26/22 - NEW YORK AMERICAN",
+        "displayText": "8/26/20 - NEW YORK AMERICAN",
         "stories": [
           {
             "headline": "WOMEN WIN THE BALLOT! NATION STUNNED AS SOCIAL ORDER IS FLIPPED UPSIDE DOWN",
@@ -142,6 +185,21 @@
             "headline": "BABE BELTS 46TH HOMER! RUTH'S PHENOMENAL SLUGGING PACKS POLO GROUNDS TO CAPACITY",
             "fontStyle": "3",
             "content": "New York's newest baseball sensation has obliterated his own home run record, crushing his forty-sixth circuit blast of the season before a frenzied crowd of forty thousand spectators. Babe Ruth's prodigious power display has transformed the Yankees from also-rans into the city's hottest attraction, with fans jamming every available seat at the Polo Grounds. The Bambino’s incredible slugging exhibition has revolutionized baseball while establishing New York as America's undisputed sporting capital."
+          }
+        ]
+      }
+    ],
+    "sep": [
+      {
+        "id": "1920-sep-001",
+        "date": "9/16/20",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "9/16/20 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "WALL STREET BOMB MASSACRE! ANARCHIST TERROR CLAIMS 38 LIVES IN FINANCIAL DISTRICT",
+            "fontStyle": "6",
+            "content": "A devastating explosion has shattered the heart of America's financial empire as a horse-drawn wagon packed with deadly explosives detonated outside the mighty J.P. Morgan building during peak business hours. The anarchist attack has left thirty-eight citizens dead and hundreds wounded while shattering windows throughout Lower Manhattan's banking district. Federal authorities launch massive manhunt for the foreign terrorists responsible for this unprecedented assault against American capitalism and democratic institutions."
           }
         ]
       }
