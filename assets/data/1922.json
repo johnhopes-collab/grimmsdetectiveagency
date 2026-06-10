@@ -152,6 +152,34 @@
           }
         ]
       }
+    ],
+    "nov": [
+      {
+        "id": "1922-nov-001",
+        "date": "11/27/22",
+        "newspaper": "new-york-american",
+        "displayText": "11/27/22 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "PHARAOH'S TOMB DISCOVERED! CARTER UNEARTHS TUTANKHAMUN'S GOLDEN TREASURE CHAMBERS",
+            "fontStyle": "3",
+            "content": "British archaeologist Howard Carter has penetrated the sealed burial chamber of the boy-king Tutankhamun in Egypt's Valley of the Kings, revealing untold riches that have lain hidden for over three thousand years. The astounding find includes solid gold masks, precious jewels, and mysterious artifacts that dwarf all previous archaeological discoveries in their magnificence and preservation. Carter's sensational breakthrough promises to unlock secrets of ancient Egyptian civilization while speculation mounts about the legendary pharaoh's curse striking those who dare disturb the royal mummy's eternal rest."
+          }
+        ]
+      },
+      {
+        "id": "1922-nov-002",
+        "date": "11/27/22",
+        "newspaper": "evening-mail3",
+        "displayText": "11/27/22 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "ARCHAEOLOGICAL TRIUMPH IN EGYPT: CARTER EXPEDITION LOCATES INTACT PHARAONIC SEPULCHRE",
+            "fontStyle": "3",
+            "content": "The systematic excavations conducted by Mr. Howard Carter in the Valley of the Kings have yielded an extraordinary scientific discovery of unprecedented historical significance. The tomb of Tutankhamun, dating to the Eighteenth Dynasty, has been found substantially undisturbed, providing scholars with an invaluable opportunity to examine authentic funerary practices and material culture of ancient Egypt's New Kingdom period. The methodical cataloguing of artifacts promises to advance our understanding of pharaonic civilization while demonstrating the continued importance of rigorous archaeological methodology in illuminating humanity's distant past."
+          }
+        ]
+      }
     ]
   }
 }
