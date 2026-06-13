@@ -1,17 +1,22 @@
 {
   "year": 1925,
   "months": {
-    "mar": [
+    "feb": [
       {
-        "id": "1925-mar-001",
-        "date": "3/9/25",
-        "newspaper": "brooklyn-daily-eagle",
-        "displayText": "3/9/25 - BROOKLYN DAILY EAGLE",
+        "id": "1925-feb-001",
+        "date": "2/1/25",
+        "newspaper": "new-york-american",
+        "displayText": "2/1/25 - NEW YORK AMERICAN",
         "stories": [
           {
             "headline": "POLICE SEIZE GOBLIN WHISKEY AT DOCKS",
             "fontStyle": "3",
             "content": "Federal agents successfully dismantled a major smuggling operation at Pier 47, seizing hundreds of bottles of illegal liquor from a gang of goblins who escaped into harbor waters. Sergeant Finnegan said the shipment was likely intended for distribution across the New York metropolitan area. Unfortunately, a handful of officers suffered tragic afflictions after testing the evidence, immediately causing them to sprout feathers, fur, and scales as the fairy whiskey triggered horrifying metamorphoses. While some side effects dissipated within hours, two officers still remain missing, and have been reportedly sighted as a talking parrot in Washington Square and an unusually law-abiding gorilla directing traffic near Times Square, respectively."
+          },
+          {
+            "headline": "BABE RUTH REPORTS TO TRAINING CAMP GROTESQUELY OUT OF CONDITION!",
+            "fontStyle": "3",
+            "content": "Baseball's Sultan of Swat has arrived for spring preparation bearing alarming evidence of winter excess. Babe Ruth appears shockingly overweight, winded, and visibly unwell after months of heavy eating and drinking with minimal conditioning. Teammates privately express concern over the slugger's bloated appearance and labored breathing during light exercises. The Bambino's legendary appetites—both culinary and alcoholic—appear to have extracted serious toll on his once-magnificent athletic form. Yankees management maintains optimistic public statements while privately scrambling to restore their star to playable condition before opening day."
           }
         ]
       }
@@ -72,6 +77,19 @@
     "jun": [
       {
         "id": "1925-jun-001",
+        "date": "6/4/25",
+        "newspaper": "new-york-american",
+        "displayText": "6/4/25 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "AILING RUTH HELPLESS AS SENATORS CRUSH YANKEES 8–3! BAMBINO'S MISERY CONTINUES",
+            "fontStyle": "3",
+            "content": "The Yankees suffered another humiliating defeat as Washington Senators demolished them 8–3, with Babe Ruth's feeble performance epitomizing the club's wretched season. The struggling slugger, attempting to play through persistent illness, appeared utterly overmatched against the Senators' formidable pitching rotation. Ruth managed no heroics while Yankees pitching and defense collapsed completely. The once-mighty Bambino shows only occasional flashes of his legendary power, remaining far below peak form. New York's catastrophic campaign continues with their ailing star unable to arrest the downward spiral."
+          }
+        ]
+      },
+      {
+        "id": "1925-jun-002",
         "date": "6/8/25",
         "newspaper": "the-globe",
         "displayText": "6/8/25 - THE GLOBE",
