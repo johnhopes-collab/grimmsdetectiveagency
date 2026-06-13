@@ -254,6 +254,24 @@
     "dec": [
       {
         "id": "1924-dec-001",
+        "date": "12/2/24",
+        "newspaper": "the-globe",
+        "displayText": "12/2/24 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "MEXICO ELECTS CALLES! NEW PRESIDENT PROMISES STRICTER CHURCH REGULATIONS",
+            "fontStyle": "6",
+            "content": "Plutarco Elías Calles has assumed Mexico's presidency, signaling intensified enforcement of anti-clerical constitutional provisions. Reports indicate closure or regulation of Catholic schools in several regions, with some priests facing expulsion or movement restrictions. Catholic resistance movements are forming in response, though observers characterize the conflict as primarily political rather than violent. The church-state struggle threatens to destabilize Mexico's fragile post-revolutionary government. American officials monitor the situation with growing concern as tensions between secular authorities and religious communities escalate along our southern border."
+          },
+          {
+            "headline": "ANTI-CLERICALISM AND MODERNITY: CAN CHURCH AND STATE COEXIST IN THE TWENTIETH CENTURY?",
+            "fontStyle": "6",
+            "content": "The rising tide of anti-clerical sentiment—from Soviet persecution to Mexican constitutional restrictions—reflects growing tension between religious authority and modern governance. Progressive forces argue ecclesiastical privilege obstructs social reform, scientific education, and democratic equality. Yet violent suppression, as witnessed in Russia, produces martyrs rather than enlightenment. Meanwhile, stubborn religious contingents resist any accommodation with contemporary realities, clinging to medieval prerogatives incompatible with pluralistic society. The question confronting civilization: can peaceful evolution occur, or must church and state inevitably clash? Rational compromise requires both sides abandon absolutism. Progress demands neither theocracy nor persecution, but mutual respect within clearly defined boundaries."
+          }
+        ]
+      },
+      {
+        "id": "1924-dec-002",
         "date": "12/20/24",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "12/20/24 - BROOKLYN DAILY EAGLE",
