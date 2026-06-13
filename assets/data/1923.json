@@ -21,6 +21,36 @@
         ]
       }
     ],
+    "feb": [
+      {
+        "id": "1923-feb-001",
+        "date": "2/8/23",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "2/8/23 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "FINANCIAL WIZARD? ORDINARY NEW YORKERS DOUBLE THEIR MONEY IN WEEKS",
+            "fontStyle": "3",
+            "content": "Excitement is growing as working-class New Yorkers report astonishing success with Heinrich Ponanzi's investment scheme. A factory worker claims he doubled two hundred dollars in three months. A clerk says she received promised returns to the penny. Skeptics exist but lack evidence to challenge the operation, as investors continue receiving payments on schedule. Ponanzi's office sees growing traffic as word spreads through local immigrant communities and beyond."
+          }
+        ]
+      }
+    ],
+    "mar": [
+      {
+        "id": "1923-mar-001",
+        "date": "3/17/23",
+        "newspaper": "new-york-american",
+        "displayText": "3/17/23 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "CROWDS SEEK FORTUNE AT PONANZI INVESTMENT OFFICE",
+            "fontStyle": "3",
+            "content": "Long lines now form daily outside Heinrich Ponanzi's East Side Street office as hundreds seek entry into his postal coupon investment program. Is he a fairy? An imp? A dwarf? Whatever the case, the creature's rapid rise from obscurity to financial prominence has captivated New York. Investors arrive carrying cash savings, eager to participate in what many describe as the opportunity of a lifetime. Ponanzi himself greets clients personally, exuding confidence and charm while processing thousands of dollars in new investments daily."
+          }
+        ]
+      }
+    ],
     "apr": [
       {
         "id": "1923-apr-001",
@@ -37,6 +67,26 @@
             "headline": "IRRESPONSIBILE MOTORISTS TERRORIZE STREETS",
             "fontStyle": "3",
             "content": "The motor car epidemic has transformed peaceful thoroughfares into death traps where reckless youth careen through crowded districts at murderous speeds. Last month alone witnessed seventeen pedestrian fatalities while property damage mounts daily from collisions and runaways. Authorities must mandate improved braking systems, speed governors, and driver examinations before this mechanical plague destroys civilized urban life through wholesale carnage and mayhem."
+          },
+          {
+            "headline": "THOUSANDS FLOCK TO NEW INVESTMENT SENSATION; PONANZI BECOMES NEW YORK CELEBRITY",
+            "fontStyle": "3",
+            "content": "Heinrich Ponanzi has become one of New York's most recognized figures as astonishing sums pour into his Securities Exchange Company. Newspapers estimate hundreds of thousands of dollars now under management. The mystery of his method fascinates reporters and investors alike. Ponanzi maintains his formula involves sophisticated international arbitrage that Wall Street has somehow overlooked. His sudden wealth, expressed in expensive automobiles, fine clothing, and plans for palatial residence, seems to validate his claims."
+          }
+        ]
+      }
+    ],
+    "may": [
+      {
+        "id": "1923-may-001",
+        "date": "5/3/23",
+        "newspaper": "new-york-american",
+        "displayText": "5/3/23 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "THE IMP WHO BEATS WALL STREET: PONANZI EMPIRE EXPANDS BEYOND NEW YORK",
+            "fontStyle": "3",
+            "content": "National attention has centered on Heinrich Ponanzi and his investment operations. In April alone, reports suggest hundreds of thousands flowing into the scheme. Financial journalists from Boston and Philadelphia travel to New York to investigate the phenomenon. Ponanzi welcomes scrutiny, offering tours of his offices and detailed explanations of postal coupon mechanics. Investors from across New England now participate. Some observers call him a genius; others remain quietly puzzled."
           }
         ]
       }
@@ -44,6 +94,19 @@
     "jun": [
       {
         "id": "1923-jun-001",
+        "date": "6/5/23",
+        "newspaper": "new-york-american",
+        "displayText": "6/5/23 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "MILLIONS POUR INTO PONANZI INVESTMENT FRENZY; SOME EXPERTS EXPRESS DOUBT",
+            "fontStyle": "3",
+            "content": "The Ponanzi phenomenon reaches fever pitch as millions of dollars flood his New York offices. Crowds block the East Side as investors wait hours for access. Heinrich Ponanzi has become wealthy beyond imagination, purchasing luxury estates and entertaining lavishly. Yet some financial publications quietly question whether sufficient international postal coupons exist to support such massive operations. Ponanzi dismisses criticism, continues paying investors promptly, and announces plans for further expansion."
+          }
+        ]
+      }
+      {
+        "id": "1923-jun-002",
         "date": "6/10/23",
         "newspaper": "the-globe",
         "displayText": "6/10/23 - THE GLOBE",
@@ -77,6 +140,24 @@
             "headline": "Metropolitan Opera Concludes Triumphant Season",
             "fontStyle": "3",
             "content": "The 1922-23 operatic season at the Metropolitan Opera House has drawn to its magnificent conclusion, having presented an exemplary repertoire of classical masterworks performed by the world's most distinguished vocal artists. The season's presentations of Verdi's “Aida,” Puccini's “La Bohème,” Bizet's “Carmen,” and Gounod's “Faust” have maintained the Metropolitan's position as America's premier temple of lyric drama. Distinguished patrons have consistently filled the opera house's gilded boxes and orchestra seats, confirming that serious musical culture continues to flourish among New York's most discerning society despite the era's popular entertainment diversions."
+          },
+          {
+            "headline": "SERIOUS DOUBTS ATTEND THE PONANZI AFFAIR: A CAUTIONARY NOTE ON CREDULITY AND CREATURE COMMERCE",
+            "fontStyle": "3",
+            "content": "The remarkable enthusiasm attending Mr. Heinrich Ponanzi's investment venture warrants sober examination by men of sense. Financial authorities have noted the mathematical impossibility of his postal coupon claims, yet crowds continue their credulous pilgrimage to the Lower East Side. More troubling still are reports of the operator's peculiar physical characteristics: diminutive stature, impish features, and unnatural energy suggesting origins beyond ordinary humanity. History teaches that fairytale creatures engaging in commerce with mortals seldom produce beneficial outcomes. Their transactions invariably involve hidden clauses, supernatural coercion, or outright deception. The present mania bears all hallmarks of enchantment rather than enterprise. Prudent investors would do well to recall ancient wisdom: when creatures of legend offer gold, the price extracted typically exceeds any monetary consideration. We urge extreme caution until authorities conduct thorough investigation into both Mr. Ponzi's methods and his true nature."
+          }
+        ]
+      }
+      {
+        "id": "1923-jul-002",
+        "date": "7/17/23",
+        "newspaper": "new-york-american",
+        "displayText": "7/17/23 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "CAN PONANZI'S INVESTMENT PLAN REALLY WORK? EXPERTS CHALLENGE MATHEMATICS",
+            "fontStyle": "3",
+            "content": "Financial experts publicly question whether Heinrich Ponanzi's investment model is mathematically possible. Analysis suggests the entire global supply of pixie gold could not support the returns Ponanzi claims to generate. The volume of his transactions appears to exceed available bullions by enormous margins. Ponanzi defends his methods vigorously, suggesting critics misunderstand sophisticated international finance. He continues paying investors while promising full transparency. Confidence among participants remains high despite growing skepticism."
           }
         ]
       }
@@ -122,6 +203,49 @@
             "content": "Observers of contemporary manners note with some concern the rapid emergence of the so-called “flapper,” whose abbreviated dress, brisk independence, and enthusiasm for jazz-age entertainments represent a marked departure from established social forms. Respectable households across the country have been positively aghast. Parents are urged to exercise vigilance in guarding daughters against the more dubious influences of jazz music, late-night dancing, and the alarming new habit of cigarette smoking, lest the drawing room become entirely indistinguishable from the dance hall."
           }
         ]
+      },
+      {
+        "id": "1923-aug-003",
+        "date": "8/16/23",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/16/23 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "PONANZI EXPOSED AS RUMPELSTILTSKIN! GRIMM AGENTS FIND SWINDLER ATOP GOLD HOARD",
+            "fontStyle": "3",
+            "content": "Agents from Grimms' Detective Agency raided a warehouse on New York's waterfront today, discovering Heinrich Ponanzi seated atop an enormous pile of gold coins, cackling and spinning straw. When confronted, investigator Matilda Grimm spoke his true name—Rumpelstiltskin—causing him to fly into a rage and stamp his foot through the floorboards. The naming triggered contractual nullification clauses unknown to investors. All funds are expected to be returned. Ponanzi, or rather Rumpelstiltskin, was soon apprehended by authorities, and is now being bound through the power of his name, Mrs. Grimm reports."
+          }
+        ]
+      }
+    ],
+    "sep": [
+      {
+        "id": "1923-sep-001",
+        "date": "9/20/23",
+        "newspaper": "new-york-american",
+        "displayText": "9/20/23 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "RUMPELSTILTSKIN'S PAST REVEALED: MAGICAL CREATURE SWINDLED NEWBORNS, FORTUNES FOR CENTURIES",
+            "fontStyle": "3",
+            "content": "Grand jury investigations uncover Rumpelstiltskin's extensive criminal history across European kingdoms. Records show the creature previously extorted firstborn children from desperate women in exchange for spinning gold. He operated under numerous aliases including “Ponanzi,” “Baldi,” and “Poncy.” Prosecutors trace schemes involving enchanted contracts, supernatural coercion, and exploitation of desperate peasantry dating back several centuries, with several heartbreaking accounts from mothers who nearly surrendered infants."
+          }
+        ]
+      }
+    ],
+    "sep": [
+      {
+        "id": "1923-sep-001",
+        "date": "10/1/23",
+        "newspaper": "the-globe",
+        "displayText": "10/1/23 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "CITY REELING FROM LOWER EAST SIDE FIASCO",
+            "fontStyle": "3",
+            "content": "Thousands of accounts have been left in chaos following the financial manipulations of Mr. Rumpel Stiltskin, who was apprehended by authorities two months ago. Legal proceedings accelerate as prosecutors detail how the elaborate scheme functioned through binding magical contracts and gold transmutation. Analysis confirms no legitimate pixie gold trading ever occurred, only alchemical deception. The term “Rumpelstiltskin scheme” has since emerged as shorthand for fraudulent supernatural operations, and the case is prompting calls for stronger federal oversight of magical creatures engaging in commerce."
+          }
+        ]
       }
     ],
     "nov": [
@@ -147,6 +271,19 @@
             "content": "Authorities in Munich have suppressed an attempted coup led by a former Austrian corporal named Adolf Hitler, along with a coalition of nationalist factions seeking to seize power in Bavaria. The uprising, which briefly saw armed militants attempt to march through the city, collapsed after intervention by police and government forces. Hitler and several associates have been arrested or are being sought. Officials describe the event as a serious but contained threat to the German state, though tensions remain high in the wake of political instability and economic strain."
           }
         ]
+      },
+      {
+        "id": "1923-nov-002",
+        "date": "11/21/23",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "11/21/23 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "RUMPELSTILTSKIN FACES CHARGES IN NEW YORK FEDERAL COURT",
+            "fontStyle": "3",
+            "content": "Rumpelstiltskin began in court today with an explosive outburst. He faces charges of supernatural fraud, contract manipulation, and attempted kidnapping. Trial is scheduled for December, with special precautions planned."
+          }
+        ]
       }
     ],
     "dec": [
@@ -170,6 +307,19 @@
             "headline": "ITALY QUIETED UNDER FASCIST RULE AS ORDER RETURNS TO STREETS",
             "fontStyle": "6",
             "content": "Italy appears to have entered a new phase of uneasy stability under Benito Mussolini’s Fascist government, which now holds firm control over Rome and much of the country. While critics on the left denounce the regime as authoritarian and elements on the right express discomfort with its methods, officials report a marked reduction in strikes, unrest, and political disorder. Many observers note that the new movement has brought order to a previously fractured nation."
+          }
+        ]
+      },
+      {
+        "id": "1923-dec-002",
+        "date": "12/15/23",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "12/15/23 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "HOW RUMPELSTILTSKIN FOOLED THOUSANDS: YEAR-END EXAMINATION OF NEW YORK'S GREATEST MAGICAL SWINDLE",
+            "fontStyle": "3",
+            "content": "As 1923 closes, newspapers examine how an ancient magical being successfully posed as a German immigrant financier. The scheme exploited immigrant communities' desire for rapid wealth and Americans' unfamiliarity with enchanted contract law. Rumpelstiltskin's supernatural charm, gold-spinning abilities, and genuine early payments created powerful credibility. Victims included police officers, businessmen, and working families who unknowingly signed magically binding documents. Citizens are demanding stronger regulation of non-human entities engaging in commerce. The Rumpelstiltskin affair stands as the year's most spectacular cautionary tale involving the supernatural."
           }
         ]
       }
