@@ -1,6 +1,21 @@
 {
   "year": 1925,
   "months": {
+    "mar": [
+      {
+        "id": "1925-mar-001",
+        "date": "3/9/25",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "3/9/25 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "POLICE SEIZE GOBLIN WHISKEY AT DOCKS",
+            "fontStyle": "3",
+            "content": "Federal agents successfully dismantled a major smuggling operation at Pier 47, seizing hundreds of bottles of illegal liquor from a gang of goblins who escaped into harbor waters. Sergeant Finnegan said the shipment was likely intended for distribution across the New York metropolitan area. Unfortunately, a handful of officers suffered tragic afflictions after testing the evidence, immediately causing them to sprout feathers, fur, and scales as the fairy whiskey triggered horrifying metamorphoses. While some side effects dissipated within hours, two officers still remain missing, and have been reportedly sighted as a talking parrot in Washington Square and an unusually law-abiding gorilla directing traffic near Times Square, respectively."
+          }
+        ]
+      }
+    ],
     "apr": [
       {
         "id": "1925-apr-001",
@@ -12,6 +27,11 @@
             "headline": "Comment on New “Jazz Dances” Causes Concern in Society Circles",
             "fontStyle": "3",
             "content": "Society observers report with some alarm the increasing popularity of certain so-called “jazz dances,” including the Charleston and the shimmy, now appearing with regrettable frequency in public dance halls. Etiquette authorities are, in some cases, positively aghast at the energetic and improvised character of these new movements, which appear to dispense entirely with traditional decorum. Parents are urged to exercise discretion in the selection of suitable entertainments for younger participants in society."
+          },
+          {
+            "headline": "COOLIDGE TAX REFORMS FUEL BUSINESS OPTIMISM ACROSS METROPOLIS",
+            "fontStyle": "3",
+            "content": "President Coolidge's proposed tax reductions continue to generate enthusiasm among New York's commercial class, with financial analysts projecting sustained expansion across multiple sectors. The administration's pro-business posture has emboldened investors and entrepreneurs alike, spurring capital ventures throughout the metropolitan region. Notably, the economic climate has proven equally favorable to the city's less conventional enterprises—several establishments catering to non-human clientele report record patronage and expansion plans. Wall Street observers suggest the current legislative environment may sustain prosperity indefinitely, provided fiscal discipline prevails. The confluence of reduced taxation and regulatory forbearance appears poised to benefit all manner of commerce."
           }
         ]
       },
