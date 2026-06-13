@@ -229,6 +229,21 @@
         ]
       }
     ],
+    "nov": [
+      {
+        "id": "1920-nov-001",
+        "date": "11/29/20",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "11/29/20 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "FAIRBANKS THRILLS AS MASKED AVENGER! “THE MARK OF ZORRO” CAPTIVATES MILLIONS",
+            "fontStyle": "6",
+            "content": "Douglas Fairbanks has conquered America's imagination with his dashing portrayal of the mysterious masked swordsman in “The Mark of Zorro.” The athletic star's acrobatic heroics and roguish charm drew enormous crowds during the opening weekend, with audiences cheering his daring leaps and masterful sword-work. Fairbanks transforms the California folk hero into cinema's most exciting adventurer, combining physical prowess with debonair sophistication. Theater managers report unprecedented enthusiasm as the swashbuckling spectacle establishes new standards for action romance. America has found its heroic idol in the shadowy crusader."
+          }
+        ]
+      }
+    ],
     "dec": [
       {
         "id": "1920-dec-001",
