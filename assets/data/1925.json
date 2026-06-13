@@ -138,14 +138,19 @@
       },
       {
         "id": "1925-aug-002",
-        "date": "8/12/25",
+        "date": "8/8/25",
         "newspaper": "new-york-american",
-        "displayText": "8/12/25 - NEW YORK AMERICAN",
+        "displayText": "8/8/25 - NEW YORK AMERICAN",
         "stories": [
           {
             "headline": "ENCHANTED APPLES FLEE SHOPPERS! UPPER WEST SIDE MARKET ERUPTS IN MAGICAL MAYHEM",
             "fontStyle": "5",
             "content": "Chaos descended upon an Upper West Side produce market when enchanted apples sprouted legs and fled terrified customers. The runaway fruit triggered a heated confrontation between an undine vendor and dwarf supplier, each blaming the other for the bewitchment. Shoppers scattered as apples scurried between ankles and under carts. Police arrived to restore order but declined to adjudicate responsibility for the magical disturbance. The remaining inventory has escaped and is still at large."
+          },
+          {
+            "headline": "“THE EAGLE” SOARS! VALENTINO THRILLS AS DASHING RUSSIAN CAVALIER",
+            "fontStyle": "5",
+            "content": "Rudolph Valentino returns to conquer feminine hearts in “The Eagle,” a swashbuckling costume spectacle casting the Latin Lover as a noble Russian officer. Early screenings report the familiar epidemic of fainting spells and rapturous sighs as Valentino dons military regalia and engages in daring swordplay. Critics note the actor's versatility extends beyond desert romance to European adventure, though his magnetic effect upon susceptible audiences remains dangerously potent. Theater managers across the nation brace for renewed hysteria as the screen's most perilous star rides again."
           }
         ]
       },
@@ -189,6 +194,47 @@
             "headline": "GIANT VEGETABLES TERRORIZE MANHATTAN AVENUE! MYSTERIOUS MAGIC SWELLS PRODUCE TO MONSTROUS PROPORTIONS",
             "fontStyle": "2",
             "content": "Vegetable hawkers report their wares ballooning to grotesque sizes overnight in what authorities suspect is fairytale creature mischief. One anonymous vendor claims his carrot swelled to automobile dimensions, while another lost a zucchini to similar enlargement last week. Market regulars insist this is merely the latest vegetable-related disturbance plaguing the district, suggesting a malevolent magical presence has taken residence. Police remain baffled as ordinary produce transforms into unwieldy monsters. Shoppers now eye their purchases with suspicion, fearing tonight's modest turnip may become tomorrow's wagon-sized menace."
+          }
+        ]
+      }
+    ],
+    "nov": [
+      {
+        "id": "1925-nov-001",
+        "date": "11/20/25",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "11/20/25 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "GOBLIN BOOTLEGGERS SPARK WILD BROOKLYN CHASE! MAGIC POTIONS FLY IN HIGH-SPEED SHOOTOUT",
+            "fontStyle": "2",
+            "content": "A harrowing high-speed pursuit erupted through Brooklyn streets yesterday as police chased multiple bootlegging automobiles in a gun battle witnesses describe as employing supernatural weaponry. Several bystanders identified drivers as goblins, trolls, and assorted fairytale creatures hurling magic potions and deploying various chicanery during the frantic chase. Police decline to reveal how the incident concluded, though sources suggest involvement of notorious bootlegging figure Owney Madden. Authorities promise full details in this evening's edition as investigations continue into the magical criminal enterprise terrorizing the borough."
+          }
+        ]
+      },
+      {
+        "id": "1925-nov-002",
+        "date": "11/25/25",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "11/25/25 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "VALENTINO RETURNS TO “SHEIK” ROLE! SEQUEL PRODUCTION BEGINS WITH QUEENS FILMING",
+            "fontStyle": "2",
+            "content": "Production has commenced on “The Son of the Sheik,” Rudolph Valentino's triumphant return to the role that made him cinema's reigning romantic idol. The prestige comeback project promises to deliver everything adoring female audiences demand from their desert chieftain. New York devotees will thrill knowing scenes will be filmed locally at Astoria Studios in Queens—the legendary “Big House” where Hollywood magic meets metropolitan sophistication. Anticipation already builds for what promises to be the Latin Lover's most spectacular performance yet."
+          }
+        ]
+      },
+      {
+        "id": "1925-nov-003",
+        "date": "11/28/25",
+        "newspaper": "new-york-american",
+        "displayText": "11/28/25 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "TROUBLE IN PARADISE? VALENTINO MARRIAGE CRUMBLES AS “SHEIK” SEQUEL BEGINS",
+            "fontStyle": "2",
+            "content": "Whispers circulate through Hollywood circles that Rudolph Valentino's marriage to actress-designer Natacha Rambova has deteriorated beyond repair even as production begins on his comeback vehicle. Sources close to the couple report fierce professional disagreements and prolonged separation, with Rambova's controlling influence over her husband's career allegedly driving the wedge deeper. The Latin Lover maintains stoic public silence while beginning work on “The Son of the Sheik,” but industry insiders suggest divorce appears inevitable despite both parties' reluctance to acknowledge the matrimonial collapse publicly."
           }
         ]
       }
