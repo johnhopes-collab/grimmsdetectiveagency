@@ -1,0 +1,121 @@
+{
+  "year": 1925,
+  "months": {
+    "apr": [
+      {
+        "id": "1925-apr-001",
+        "date": "4/4/25",
+        "newspaper": "evening-mail3",
+        "displayText": "4/4/25 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Comment on New “Jazz Dances” Causes Concern in Society Circles",
+            "fontStyle": "3",
+            "content": "Society observers report with some alarm the increasing popularity of certain so-called “jazz dances,” including the Charleston and the shimmy, now appearing with regrettable frequency in public dance halls. Etiquette authorities are, in some cases, positively aghast at the energetic and improvised character of these new movements, which appear to dispense entirely with traditional decorum. Parents are urged to exercise discretion in the selection of suitable entertainments for younger participants in society."
+          }
+        ]
+      },
+      {
+        "id": "1925-apr-002",
+        "date": "4/16/25",
+        "newspaper": "new-york-american",
+        "displayText": "4/16/25 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "POSSESSED PUPPET TERRORIZES LITTLE ITALY",
+            "fontStyle": "3",
+            "content": "A malevolent marionette has been apprehended after weeks of mischievous mayhem throughout Mulberry Street, where the disobedient wooden figure repeatedly lied to shopkeepers, skipped school, and consorted with disreputable carnival performers. Neighborhood children reported the puppet's nose grew alarmingly during falsehoods while local cats fled whenever the creature appeared, scratching frantically as if pursued by invisible strings. The infamous Grimms Detective Agency, the expert folklorists from Fifth Avenue, assisted police by identifying the entity as a “wish-corruption manifestation” before reducing the rebellious marionette to harmless firewood using ancient European woodcutting techniques and blessed carpenter tools."
+          }
+        ]
+      }
+    ],
+    "may": [
+      {
+        "id": "1925-may-001",
+        "date": "5/22/25",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "5/22/25 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "RUMPELSTILTSKIN PROCLAIMS NAME PROUDLY AS INVESTMENT FIRM EXPANDS; “TURNED NEW LEAF” CLAIMS CREATURE",
+            "fontStyle": "3",
+            "content": "Rumpelstiltskin Investment Firm has opened a second New York office as the magical being embraces his identity openly in legitimate commerce. “I no longer hide who I am, ” Rumpelstiltskin announced at a small reception. “My name once meant deception. Now it represents honest service and financial expertise.” Client testimonials praise his market acumen and transparent practices. The firm now manages portfolios for over two hundred investors, including several who lost money in his 1923 scheme. Regulators report no irregularities. The remarkable transformation from swindler to respected financier appears complete, though some observers remain cautiously watchful."
+          }
+        ]
+      }
+    ],
+    "jun": [
+      {
+        "id": "1925-jun-001",
+        "date": "6/8/25",
+        "newspaper": "the-globe",
+        "displayText": "6/8/25 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "Foxtrot Retains Measure of Respectability in Approved Social Settings",
+            "fontStyle": "3",
+            "content": "While newer forms of dance continue to provoke concern, the foxtrot remains generally acceptable in properly supervised social gatherings. Dance instructors note that, when performed with restraint and adherence to established tempo, it preserves a degree of decorum compatible with respectable society. However, authorities caution that even the foxtrot may be subject to undesirable embellishment if left unchecked, and recommend that chaperoned events maintain proper oversight of all musical entertainments."
+          }
+        ]
+      }
+    ],
+    "jul": [
+      {
+        "id": "1925-jul-001",
+        "date": "7/11/25",
+        "newspaper": "new-york-american",
+        "displayText": "7/11/25 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "“THE KILLER” MADDEN’S NIGHTCLUB GRIP STIRS UNDERWORLD UNEASE! BOOTLEG EMPIRE THREATENS ITALIAN BALANCE",
+            "fontStyle": "3",
+            "content": "Owney “The Killer” Madden is reported to be steadily expanding his control over New York’s nightlife, acquiring a growing chain of nightclubs and Prohibition-era entertainment spots through associates and silent arrangements. His network, now deeply tied to the city’s bootlegging routes, is said to be operating with a reach that extends beyond the West Side and into major liquor distribution channels. Underworld sources claim Madden’s rapid consolidation is causing concern among Italian factions aligned with Giuseppe Masseria and Salvatore Maranzano, as his independent bootlegging structure is said to be upsetting the fragile balance of influence over alcohol supply and protection territories. Observers warn that continued expansion may provoke tension among competing interests seeking stability in the city’s illicit liquor trade."
+          }
+        ]
+      },
+      {
+        "id": "1925-jul-002",
+        "date": "7/18/25",
+        "newspaper": "the-globe",
+        "displayText": "7/18/25 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "MISS VIOLET HARRINGTON MAKES BRILLIANT DEBUT AT WALDORF! SOCIETY ELITE GATHER FOR MAGNATE'S DAUGHTER",
+            "fontStyle": "3",
+            "content": "Real estate magnate Phillip Harrington spared no expense for daughter Violet's introduction to society at the Waldorf-Astoria last evening. A sixteen-piece orchestra provided accompaniment as seven of New York's foremost fashion luminaries attended, including the illustrious Rachel Vanderbilt. The affair proceeded with expected magnificence, though whispers circulated after Eleanor Thornfield arrived without invitation and was politely but firmly asked to depart. Following the brief disruption, festivities continued with characteristic elegance befitting the occasion."
+          }
+        ]
+      }
+    ],
+    "aug": [
+      {
+        "id": "1925-aug-001",
+        "date": "8/5/25",
+        "newspaper": "the-globe",
+        "displayText": "8/5/25 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "MAGNATE'S LUXURY DEVELOPMENT STALLED AT FLUSHING MEADOWS",
+            "fontStyle": "5",
+            "content": "Construction on Phillip Harrington's ambitious “Glen-Car” luxury condominium development in Queens, complete with a roaring waterfall, has ground to an unexpected halt, with workers dismissed and equipment standing idle. The prominent real estate magnate has offered no public explanation for the stoppage of what was to be his crowning achievement. Associates report Harrington has withdrawn from society engagements and appears visibly distressed during rare sightings. Financial observers note the sudden silence is highly uncharacteristic for the normally gregarious developer."
+          }
+        ]
+      }
+    ],
+    "sep": [
+      {
+        "id": "1925-sep-002",
+        "date": "9/12/25",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "9/12/25 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "CURSE BROKEN! ANDERSEN RESCUES ██████ ██████████",
+            "fontStyle": "2",
+            "content": "Celebrated scholar Frederick Andersen has triumphantly dispelled the mysterious affliction that threatened Miss ██████ ██████████ and █████████ █████ with █████████ █████. The dashing academic declared he vanquished the curse through “the power of love and sunlight,” elaborating at length on his methodology to assembled reporters. Miss ██████████ gazed adoringly at her rescuer throughout the impromptu press conference, visibly smitten with the verbose savior. Andersen graciously accepted accolades while discoursing extensively on his unique qualifications for such supernatural interventions, suggesting few others possessed his particular combination of scholarly prowess."
+          }
+        ]
+      }
+    ]
+  }
+}
