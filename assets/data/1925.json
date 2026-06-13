@@ -130,11 +130,37 @@
             "content": "Construction on Phillip Harrington's ambitious “Glen-Car” luxury condominium development in Queens, complete with a roaring waterfall, has ground to an unexpected halt, with workers dismissed and equipment standing idle. The prominent real estate magnate has offered no public explanation for the stoppage of what was to be his crowning achievement. Associates report Harrington has withdrawn from society engagements and appears visibly distressed during rare sightings. Financial observers note the sudden silence is highly uncharacteristic for the normally gregarious developer."
           }
         ]
+      },
+      {
+        "id": "1925-aug-002",
+        "date": "8/12/25",
+        "newspaper": "new-york-american",
+        "displayText": "8/12/25 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "ENCHANTED APPLES FLEE SHOPPERS! UPPER WEST SIDE MARKET ERUPTS IN MAGICAL MAYHEM",
+            "fontStyle": "5",
+            "content": "Chaos descended upon an Upper West Side produce market when enchanted apples sprouted legs and fled terrified customers. The runaway fruit triggered a heated confrontation between an undine vendor and dwarf supplier, each blaming the other for the bewitchment. Shoppers scattered as apples scurried between ankles and under carts. Police arrived to restore order but declined to adjudicate responsibility for the magical disturbance. The remaining inventory has escaped and is still at large."
+          }
+        ]
+      },
+      {
+        "id": "1925-aug-003",
+        "date": "8/13/25",
+        "newspaper": "evening-mail3",
+        "displayText": "8/13/25 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Alleged “Enchanted Apples” Have Upper West Side in Hysteria",
+            "fontStyle": "5",
+            "content": "Reports of ambulatory fruit in an Upper West Side market strain credulity beyond acceptable limits. Sober investigation reveals no credible witnesses of good standing, merely excitable vendors seeking publicity and gullible shoppers prone to sensation. The supposed “enchantment” likely resulted from startled rodents or deliberate fraud perpetrated by unscrupulous merchants. That respectable publications would dignify such transparent nonsense with coverage demonstrates the regrettable decline of journalistic standards. Rational citizens recognize the incident as precisely what it appears: carnival trickery designed to separate the foolish from their coin."
+          }
+        ]
       }
     ],
     "sep": [
       {
-        "id": "1925-sep-002",
+        "id": "1925-sep-001",
         "date": "9/12/25",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "9/12/25 - BROOKLYN DAILY EAGLE",
@@ -143,6 +169,21 @@
             "headline": "CURSE BROKEN! ANDERSEN RESCUES ██████ ██████████",
             "fontStyle": "2",
             "content": "Celebrated scholar Frederick Andersen has triumphantly dispelled the mysterious affliction that threatened Miss ██████ ██████████ and █████████ █████ with █████████ █████. The dashing academic declared he vanquished the curse through “the power of love and sunlight,” elaborating at length on his methodology to assembled reporters. Miss ██████████ gazed adoringly at her rescuer throughout the impromptu press conference, visibly smitten with the verbose savior. Andersen graciously accepted accolades while discoursing extensively on his unique qualifications for such supernatural interventions, suggesting few others possessed his particular combination of scholarly prowess."
+          }
+        ]
+      }
+    ],
+    "oct": [
+      {
+        "id": "1925-oct-001",
+        "date": "10/7/25",
+        "newspaper": "new-york-american",
+        "displayText": "10/7/25 - new-york-american",
+        "stories": [
+          {
+            "headline": "GIANT VEGETABLES TERRORIZE MANHATTAN AVENUE! MYSTERIOUS MAGIC SWELLS PRODUCE TO MONSTROUS PROPORTIONS",
+            "fontStyle": "2",
+            "content": "Vegetable hawkers report their wares ballooning to grotesque sizes overnight in what authorities suspect is fairytale creature mischief. One anonymous vendor claims his carrot swelled to automobile dimensions, while another lost a zucchini to similar enlargement last week. Market regulars insist this is merely the latest vegetable-related disturbance plaguing the district, suggesting a malevolent magical presence has taken residence. Police remain baffled as ordinary produce transforms into unwieldy monsters. Shoppers now eye their purchases with suspicion, fearing tonight's modest turnip may become tomorrow's wagon-sized menace."
           }
         ]
       }
