@@ -173,14 +173,27 @@
             "content": "Brooklyn-born sensation Clara Bow has captured Hollywood's attention with her brazenly modern lifestyle and shocking romantic escapades that mirror her daring screen performances. The vivacious actress, dubbed the perfect “flapper girl,” openly flouts conventional morality with her bobbed hair, short skirts, and numerous suitors from film colony's most eligible bachelors. Studio executives simultaneously promote and panic over their newest star, recognizing that Bow's scandalous reputation sells tickets while threatening industry respectability in equal measure."
           },
           {
+            "headline": "RADIO CRAZE SWEEPS METROPOLIS",
+            "fontStyle": "4",
+            "content": "New Yorkers embrace the miraculous broadcasting phenomenon as thousands of households install receiving apparatus to enjoy entertainment transmitted through invisible airwaves. Popular programs featuring jazz orchestras, comedy performers, and news broadcasts have transformed evening routines while enterprising merchants report unprecedented demand for wireless sets. The revolutionary communication technology promises to unite the entire nation in shared cultural experiences, bringing distant concerts and speeches directly into American parlors."
+          }
+        ]
+      },
+      {
+        "id": "1924-sep-002",
+        "date": "9/22/24",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "9/22/24 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
             "headline": "STOCK PRICES SOAR TO RECORD HEIGHTS",
             "fontStyle": "4",
             "content": "Financial markets continue their spectacular ascent as American industry enjoys unprecedented expansion and profitable investment opportunities multiply daily. Banking houses report enormous trading volumes while optimistic investors pour millions into manufacturing stocks, automobile shares, and revolutionary radio enterprises. Economic experts predict sustained growth as the nation's productive capacity reaches new peaks, making millionaires of shrewd speculators who recognize America's limitless potential for wealth creation."
           },
           {
-            "headline": "RADIO CRAZE SWEEPS METROPOLIS",
-            "fontStyle": "4",
-            "content": "New Yorkers embrace the miraculous broadcasting phenomenon as thousands of households install receiving apparatus to enjoy entertainment transmitted through invisible airwaves. Popular programs featuring jazz orchestras, comedy performers, and news broadcasts have transformed evening routines while enterprising merchants report unprecedented demand for wireless sets. The revolutionary communication technology promises to unite the entire nation in shared cultural experiences, bringing distant concerts and speeches directly into American parlors."
+            "headline": "MAGNIFICENT ROOSEVELT HOTEL OPENS ON 45TH STREET! GRAND CENTRAL LUXURY ARRIVES",
+            "fontStyle": "2",
+            "content": "The Roosevelt Hotel welcomed its first guests yesterday, offering unparalleled elegance for travelers utilizing nearby Grand Central Terminal. An innovative underground passage connects hotel to train station, while revolutionary storefront facades replace traditional lounges along the sidewalk. The gracious French marble and limestone exterior evokes Colonial American grandeur, with meticulously crafted moldings and gold-trimmed interiors recalling Neo-Classical splendor. The crown jewel remains The Palm Room—a two-story oval tearoom crowned by a breathtaking 28-foot sky-mural ceiling, encircled by a dozen stately marbleized pillars. Modern convenience meets timeless sophistication."
           }
         ]
       }
