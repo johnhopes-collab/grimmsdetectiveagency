@@ -214,6 +214,19 @@
             "content": "Vegetable hawkers report their wares ballooning to grotesque sizes overnight in what authorities suspect is fairytale creature mischief. One anonymous vendor claims his carrot swelled to automobile dimensions, while another lost a zucchini to similar enlargement last week. Market regulars insist this is merely the latest vegetable-related disturbance plaguing the district, suggesting a malevolent magical presence has taken residence. Police remain baffled as ordinary produce transforms into unwieldy monsters. Shoppers now eye their purchases with suspicion, fearing tonight's modest turnip may become tomorrow's wagon-sized menace."
           }
         ]
+      },
+      {
+        "id": "1925-oct-002",
+        "date": "10/24/25",
+        "newspaper": "new-york-american",
+        "displayText": "10/24/25 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "YANKEES FINISH DISASTROUS SEASON IN SEVENTH PLACE! RUTH'S WORST CAMPAIGN COMPLETE",
+            "fontStyle": "2",
+            "content": "The Yankees have concluded their catastrophic season in seventh place, marking one of the franchise's most humiliating campaigns. Babe Ruth's performance represents the weakest full season of his storied career, with the once-invincible slugger reduced to shadows of former glory. The Bambino's physical decline and inconsistent play became the season's central tragedy as New York collapsed around their ailing star. Baseball's greatest hero has fallen dramatically from his pedestal. Questions now swirl whether the Sultan of Swat can ever reclaim his legendary form or if excess has permanently destroyed his magnificent abilities."
+          }
+        ]
       }
     ],
     "nov": [
@@ -240,6 +253,11 @@
             "headline": "VALENTINO RETURNS TO “SHEIK” ROLE! SEQUEL PRODUCTION BEGINS WITH QUEENS FILMING",
             "fontStyle": "2",
             "content": "Production has commenced on “The Son of the Sheik,” Rudolph Valentino's triumphant return to the role that made him cinema's reigning romantic idol. The prestige comeback project promises to deliver everything adoring female audiences demand from their desert chieftain. New York devotees will thrill knowing scenes will be filmed locally at Astoria Studios in Queens—the legendary “Big House” where Hollywood magic meets metropolitan sophistication. Anticipation already builds for what promises to be the Latin Lover's most spectacular performance yet."
+          },
+          {
+            "headline": "RUTH SEEKS REDEMPTION THROUGH REST AND MEDICAL CARE! LIFESTYLE EXCESS BLAMED FOR COLLAPSE",
+            "fontStyle": "2",
+            "content": "Babe Ruth has returned to New York seeking recovery through medical attention and extended rest after his disastrous season. Physicians attribute the Bambino's decline to lifestyle excess—the gregarious slugger's well-known appetites for rich food, spirits, and late-night carousing allegedly undermined his once-remarkable constitution. Friends express sympathetic concern for the beloved star while acknowledging his undisciplined habits may have triggered permanent damage. Whispers circulate about possible long-term illness beyond mere overindulgence. The sporting world watches anxiously whether baseball's greatest hero can reform his reckless ways and restore the magnificence that once made him invincible."
           }
         ]
       },
