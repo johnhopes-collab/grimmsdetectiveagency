@@ -1,0 +1,92 @@
+{
+  "year": 1918,
+  "months": {
+    "mar": [
+      {
+        "id": "1918-mar-001",
+        "date": "3/1/18",
+        "newspaper": "the-globe",
+        "displayText": "3/1/18 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "GERMAN PLOT EXPOSED! “ZIMMERMANN NOTE” PROMISES MEXICO U.S. TERRITORY IN WAR BID",
+            "fontStyle": "3",
+            "content": "Washington is electrified by revelation of a secret German message proposing an alliance with Mexico should the United States enter the European war against Germany. The communication, attributed to German Foreign Secretary Arthur Zimmermann, suggests Mexico could recover lost territories in return for hostility toward the United States. Officials describe the disclosure as a grave affront, fueling outrage and strengthening calls for decisive action against Germany’s unrestricted submarine warfare campaign."
+          },
+          {
+            "headline": "Women Hold Demonstration in Support of Suffrage Amendment",
+            "fontStyle": "3",
+            "content": "A large delegation of women assembled yesterday in the vicinity of Fifth Avenue to urge support for the proposed constitutional amendment granting women the right to vote. The demonstration, conducted in an orderly manner, included representatives of various civic and suffrage organizations who carried banners and distributed literature outlining their position. Speakers emphasized arguments relating to democratic representation and civic equality. Police reported no disturbances, and the event concluded peacefully after several addresses were delivered."
+          }
+        ]
+      },
+      {
+        "id": "1918-mar-002",
+        "date": "3/22/18",
+        "newspaper": "the-globe",
+        "displayText": "3/22/18 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "GERMAN HORDES UNLEASH MASSIVE OFFENSIVE! PARIS THREATENED AS KAISER GAMBLES ALL ON WESTERN BREAKTHROUGH",
+            "fontStyle": "3",
+            "content": "Germany has launched its long-feared spring offensive with devastating force, hurling a million troops freed from the Russian front against exhausted Allied lines. Reports indicate significant territorial gains as enemy forces surge forward in the war's most desperate gamble. Paris itself faces potential threat as the German juggernaut advances with terrifying momentum. This represents civilization's darkest hour—yet American divisions now arrive in France by tens of thousands weekly, racing against time to reinforce crumbling defenses. The question haunting Allied capitals: can our doughboys reach the front before German might achieves final breakthrough? The fate of freedom hangs in precarious balance."
+          }
+        ]
+      }
+    ],
+    "apr": [
+      {
+        "id": "1918-apr-001",
+        "date": "4/6/18",
+        "newspaper": "new-york-american",
+        "displayText": "4/6/18 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "UNITED STATES DECLARES WAR ON GERMANY! CONGRESS ACTS AFTER SUBMARINE OUTRAGES",
+            "fontStyle": "3",
+            "content": "The United States has formally entered the European war after Congress approved a declaration of war against Germany, following months of escalating tensions over unrestricted submarine attacks on American shipping. President Wilson has described the conflict as a necessary response to violations of international law and threats to neutral rights. Across the nation, preparations are underway for mobilization as the country joins the Allied powers in what is now a global conflict."
+          }
+        ]
+      }
+    ],
+    "sep": [
+      {
+        "id": "1918-sep-001",
+        "date": "9/10/18",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "9/10/18 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "WAR-TIME QUIET MASKS SHIFTING UNDERWORLD! GANG MEN ENTER SERVICE AS CITY CRIME TAKES NEW FORM",
+            "fontStyle": "3",
+            "content": "While New York remains relatively calm in terms of street gang warfare, police note a marked reorganization of criminal activity during the wartime period. Some known underworld figures have entered military service, while others remain active in the city, shifting their focus toward gambling, waterfront influence, and labor-related rackets. Officials describe the current situation as less openly violent but increasingly organized beneath the surface."
+          },
+          {
+            "headline": "GERMAN-AMERICAN SOCIETIES FACE MEMBERSHIP DECLINE AS TENSIONS MOUNT",
+            "fontStyle": "3",
+            "content": "Local German cultural organizations report dwindling attendance at traditional gatherings as European conflict creates uncomfortable questions about divided loyalties. Liederkranz member Frederick Mueller declared, “We're just as American as anyone else and resent implications otherwise.” Several societies have begun conducting meetings in English rather than German while emphasizing American patriotic activities over Old World customs and traditions."
+          },
+          {
+            "headline": "RED SOX TRIUMPH AGAIN! BOSTON CAPTURES THIRD TITLE IN FOUR SEASONS",
+            "fontStyle": "3",
+            "content": "Boston has claimed another world championship, defeating the Chicago Cubs in six games behind outstanding pitching performances from their veteran staff. Babe Ruth contributed both on the mound and at the plate, extending his World Series pitching streak while delivering crucial hits in key moments. The Red Sox' third championship since 1915 establishes them as baseball's dominant franchise during this remarkable era of sustained excellence."
+          }
+        ]
+      }
+    ],
+    "nov": [
+      {
+        "id": "1918-nov-001",
+        "date": "11/8/17",
+        "newspaper": "evening-mail3",
+        "displayText": "11/8/17 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "PETROGRAD IN RED HANDS - BOLSHEVIKS SEIZE CONTROL AS PROVISIONAL GOVERNMENT FALLS",
+            "fontStyle": "3",
+            "content": "Dispatches from Russia report that Bolshevik forces under Vladimir Lenin have seized key points in Petrograd, including government buildings and communications centers, effectively overthrowing the Provisional Government. Armed workers and soldiers are said to have taken to the streets in support of the uprising, while officials loyal to the former regime are being arrested or driven underground. Observers warn that Russia has entered a new and uncertain phase under radical socialist leadership."
+          }
+        ]
+      },
+  }
+}
