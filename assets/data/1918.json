@@ -1,6 +1,39 @@
 {
   "year": 1918,
   "months": {
+    "mar": [
+      {
+        "id": "1918-mar-001",
+        "date": "3/3/18",
+        "newspaper": "the-globe",
+        "displayText": "3/3/18 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "RUSSIA BETRAYS ALLIES! BOLSHEVIKS SIGN SHAMEFUL PEACE, SURRENDER VAST TERRITORIES TO KAISER",
+            "fontStyle": "3",
+            "content": "Lenin's Bolshevik government has signed a catastrophic peace treaty at Brest-Litovsk, surrendering Poland, Ukraine, Finland, the Baltic provinces, and enormous resources to German control. The treacherous agreement abandons Allied cause entirely, freeing perhaps one million enemy troops for renewed Western Front offensives. Russia loses one-third of its population and agricultural lands in history's most humiliating capitulation. American officials condemn the socialist betrayal as proof of Bolshevik cowardice and disloyalty. Germany now prepares massive spring assaults with forces no longer divided, while our former ally collapses into revolutionary chaos and national disgrace."
+          },
+          {
+            "headline": "Russia's Ceasefire Darkens Allied Prospects",
+            "fontStyle": "3",
+            "content": "The Bolshevik seizure of power portends catastrophe for Allied victory as Russia abandons the war effort entirely. Lenin's radicals seek immediate peace with Germany, releasing vast enemy divisions from Eastern service to concentrate against exhausted Franco-British-American lines. Russia's withdrawal transforms strategic calculations completely—the Central Powers gain perhaps a million troops for renewed Western offensives. America's brave soldiers now face multiplied German strength as our former ally surrenders to socialist madness. The darkest phase of the war approaches as Kaiser's generals prepare massive assaults with forces no longer divided between two fronts."
+          }
+        ]
+      },
+      {
+        "id": "1918-mar-002",
+        "date": "3/22/18",
+        "newspaper": "the-globe",
+        "displayText": "3/22/18 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "GERMAN HORDES UNLEASH MASSIVE OFFENSIVE! PARIS THREATENED AS KAISER GAMBLES ALL ON WESTERN BREAKTHROUGH",
+            "fontStyle": "3",
+            "content": "Germany has launched its long-feared spring offensive with devastating force, hurling a million troops freed from the Russian front against exhausted Allied lines. Reports indicate significant territorial gains as enemy forces surge forward in the war's most desperate gamble. Paris itself faces potential threat as the German juggernaut advances with terrifying momentum. This represents civilization's darkest hour—yet American divisions now arrive in France by tens of thousands weekly, racing against time to reinforce crumbling defenses. The question haunting Allied capitals: can our doughboys reach the front before German might achieves final breakthrough? The fate of freedom hangs in precarious balance."
+          }
+        ]
+      }
+    ],
     "apr": [
       {
         "id": "1918-apr-001",
@@ -39,6 +72,21 @@
         ]
       }
     ],
+    "jul": [
+      {
+        "id": "1918-jul-001",
+        "date": "6/19/18",
+        "newspaper": "the-globe",
+        "displayText": "6/19/18 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "HUNS STOPPED AT MARNE! AMERICAN FORCES CRUCIAL IN HALTING GERMAN ADVANCE",
+            "fontStyle": "3",
+            "content": "The German offensive has been decisively halted at the Marne River as Allied forces, heavily reinforced by fresh American divisions, threw back the Kaiser's desperate thrust toward Paris. Our doughboys distinguished themselves magnificently in fierce combat, proving American fighting spirit equals any in Europe. The tide has turned—Germany's great gamble has failed, exhausting reserves without achieving breakthrough. Allied commanders now prepare counter-offensives as enemy forces retreat from positions gained at enormous cost. The darkest hour has passed. America's sons have helped save France and demonstrated that German militarism faces inevitable defeat."
+          }
+        ]
+      }
+    ],
     "sep": [
       {
         "id": "1918-sep-001",
@@ -67,19 +115,14 @@
     "nov": [
       {
         "id": "1918-nov-001",
-        "date": "11/8/18",
+        "date": "11/1/18",
         "newspaper": "evening-mail3",
-        "displayText": "11/8/18 - EVENING MAIL",
+        "displayText": "11/1/18 - EVENING MAIL",
         "stories": [
           {
-            "headline": "PETROGRAD IN RED HANDS - BOLSHEVIKS SEIZE CONTROL AS PROVISIONAL GOVERNMENT FALLS",
+            "headline": "GERMAN EMPIRE CRUMBLES! ALLIES COLLAPSE, KAISER'S REGIME FACES REVOLUTION AND DEFEAT",
             "fontStyle": "3",
-            "content": "Dispatches from Russia report that Bolshevik forces under Vladimir Lenin have seized key points in Petrograd, including government buildings and communications centers, effectively overthrowing the Provisional Government. Armed workers and soldiers are said to have taken to the streets in support of the uprising, while officials loyal to the former regime are being arrested or driven underground. Observers warn that Russia has entered a new and uncertain phase under radical socialist leadership."
-          },
-          {
-            "headline": "Russia's Ceasefire Darkens Allied Prospects",
-            "fontStyle": "3",
-            "content": "The Bolshevik seizure of power portends catastrophe for Allied victory as Russia abandons the war effort entirely. Lenin's radicals seek immediate peace with Germany, releasing vast enemy divisions from Eastern service to concentrate against exhausted Franco-British-American lines. Russia's withdrawal transforms strategic calculations completely—the Central Powers gain perhaps a million troops for renewed Western offensives. America's brave soldiers now face multiplied German strength as our former ally surrenders to socialist madness. The darkest phase of the war approaches as Kaiser's generals prepare massive assaults with forces no longer divided between two fronts."
+            "content": "Germany's war effort disintegrates as allied nations surrender in rapid succession. Bulgaria has capitulated, the Ottoman Empire seeks armistice, Austria-Hungary dissolves into chaos. Reports from Germany describe mutinies, strikes, and revolutionary unrest as the population turns against Kaiser Wilhelm's discredited regime. Allied forces advance on all fronts against crumbling resistance. The German High Command, recognizing inevitable defeat, has initiated armistice negotiations while the homeland descends into political turmoil. Victory approaches as the Central Powers' coalition collapses completely. Four years of unprecedented carnage near their conclusion as German militarism faces final reckoning."
           }
         ]
       },
