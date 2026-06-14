@@ -170,6 +170,34 @@
             "content": "War has now exploded across Europe as Britain formally declares war on Germany following the German invasion of neutral Belgium. The advance of German forces, described in dispatches as a ruthless march through Belgian territory, has shocked the public and drawn swift condemnation. France is already engaged in full mobilization against German armies, while Austria-Hungary remains at war with Serbia. The conflict now threatens to draw in the entire European continent in a struggle of staggering scale."
           }
         ]
+      },
+      {
+        "id": "1914-aug-005",
+        "date": "8/24/14",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/24/14 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "BRITISH CAVALRY SLAUGHTERED BY MACHINE GUNS",
+            "fontStyle": "3",
+            "content": "Dispatches from Belgium report horrific losses as British cavalry charged German positions at Audregnies during retreat from Mons. The 9th Lancers and 4th Dragoon Guards galloped across open ground into withering machine-gun, rifle, and artillery fire with devastating results. Fields are reportedly littered with fallen horses and riders as modern weaponry proved catastrophically superior to traditional mounted tactics. Military observers express shock at the carnage, noting that cavalry charges—the romantic centerpiece of warfare for centuries—appear rendered obsolete by industrial killing machines. The butchery marks Britain's first major engagement and suggests this war will differ terribly from past conflicts."
+          }
+        ]
+      }
+    ],
+    "sep": [
+      {
+        "id": "1914-sep-001",
+        "date": "9/7/14",
+        "newspaper": "evening-mail3",
+        "displayText": "9/7/14 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "German Advance Halted Outside Paris",
+            "fontStyle": "3",
+            "content": "French and British forces have stopped the German thrust toward Paris in fierce fighting along the Marne River, forcing enemy retreat and saving the French capital from capture. Rather than decisive breakthrough, both sides now attempt to outflank each other northward in what military experts term the “Race to the Sea.“ Each extension of the battle line prompts counter-extension, creating an ever-lengthening front stretching toward the Belgian coast. The swift mobile warfare that characterized August has transformed into desperate maneuvering for positional advantage. Neither side has achieved the quick victory their war plans anticipated."
+          }
+        ]
       }
     ],
     "nov": [
@@ -179,6 +207,11 @@
         "newspaper": "evening-mail3",
         "displayText": "11/30/14 - EVENING MAIL",
         "stories": [
+          {
+            "headline": "Western Front Freezes to Standstill as Trench Network Develops",
+            "fontStyle": "3",
+            "content": "Dispatches from the European battle lines describe a nearly continuous trench system now stretching from the Belgian coast to the Swiss frontier, with neither side able to break through. Machine guns dominate no-man's-land, making large-scale assaults suicidal. Artillery pounds positions relentlessly while attempts at breakthrough fail with appalling casualties. The war of movement has ended, replaced by static siege warfare on unprecedented scale. Soldiers dig deeper as winter approaches, creating elaborate underground fortifications. Military analysts express bewilderment—the conflict has transformed into something utterly different from anticipated swift decisive campaigns. No end appears in sight."
+          },
           {
             "headline": "Police Investigate Killing of William Doyle",
             "fontStyle": "3",
@@ -196,6 +229,21 @@
             "headline": "GIRL LURED DOYLE TO DEATH! POLICE HUNT GANG SLAYERS",
             "fontStyle": "3",
             "content": "William “Little Patsy” Doyle, Hudson Duster chieftain, was shot dead Saturday night after being enticed to a rendezvous by a young woman, detectives believe. The killing ends a bitter war that has drenched the West Side in blood. Police are questioning women and known gang associates while rumors spread that Owney Madden's Gophers have at last settled their score."
+          }
+        ]
+      }
+    ],
+    "dec": [
+      {
+        "id": "1914-dec-001",
+        "date": "12/26/14",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "12/26/14 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "CHRISTMAS MIRACLE IN TRENCHES! ENEMIES EXCHANGE GIFTS, SHARE BRIEF PEACE",
+            "fontStyle": "3",
+            "content": "Extraordinary reports from the Western Front describe spontaneous Christmas truces as soldiers from opposing trenches met in no-man's-land to exchange gifts, sing carols, and share brief humanity. British troops received German Pickelhauben helmets while offering cigarettes and food in return. Officers struggled to maintain military discipline as men who had been killing each other days before played football and showed family photographs. The remarkable fraternization suggests common soldiers harbor no deep hatred despite governments' enmity. Many express hope that such brotherhood may yet produce negotiated peace, though commanders have ordered the informal truces cease immediately."
           }
         ]
       }
