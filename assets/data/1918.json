@@ -1,0 +1,96 @@
+{
+  "year": 1918,
+  "months": {
+    "apr": [
+      {
+        "id": "1918-apr-001",
+        "date": "4/22/18",
+        "newspaper": "new-york-american",
+        "displayText": "4/22/18 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "RED BARON SHOT DOWN! GERMAN ACE MEETS DEATH IN FLAMING WRECKAGE",
+            "fontStyle": "3",
+            "content": "The infamous Manfred von Richthofen, scourge of Allied aviation, has been killed in aerial combat over the Somme Valley after claiming eighty victories against enemy aircraft. The dreaded “Red Baron” crashed behind Allied lines yesterday morning, his crimson triplane riddled with machine gun bullets. Australian ground forces and Royal Air Force pilots both claim credit for destroying Germany's most celebrated flying ace in his final, fatal dogfight."
+          },
+          {
+            "headline": "GERMAN-AMERICAN BANK ADOPTS “CONTINENTAL” NAME",
+            "fontStyle": "3",
+            "content": "The prominent German-American Bank has officially rebranded itself as Continental Bank of New York, removing all references to its ethnic origins amid patriotic uproar. Bank president announced the change reflects the institution's thoroughly American character and commitment to supporting the Liberty Bond campaign. Several German businesses throughout the city have similarly adopted neutral names to avoid harassment from overzealous patriotic organizations."
+          }
+        ]
+      }
+    ],
+    "sep": [
+      {
+        "id": "1918-sep-001",
+        "date": "9/13/18",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "9/13/18 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "AMERICANS STRIKE AT SAINT-MIHIEL! U.S. ARMY SMASHES HUN LINES IN GREAT OFFENSIVE",
+            "fontStyle": "3",
+            "content": "American forces have launched a powerful assault on the Saint-Mihiel salient, driving into entrenched German positions in what military observers describe as one of the first major independent operations of U.S. troops in the European war. Reports from the front speak of fierce fighting as the Huns are forced back under sustained pressure. Allied commanders hail the advance as a significant step in breaking German control of occupied French territory."
+          },
+          {
+            "headline": "GERMAN SOCIETIES STRUGGLE",
+            "fontStyle": "3",
+            "content": "The once-flourishing Liederkranz and Arion societies face extinction as members flee ethnic associations deemed unpatriotic during wartime hysteria. Club treasurer Otto Zimmermann sadly reported, “Our fathers built these organizations to preserve noble traditions, but now we must choose between culture and country.” Many German-American institutions have permanently switched to English-only meetings while donating their extensive libraries of German literature to avoid suspicion from federal authorities."
+          },
+          {
+            "headline": "RED SOX TRIUMPH AGAIN! BOSTON CAPTURES THIRD TITLE IN FOUR SEASONS",
+            "fontStyle": "3",
+            "content": "Boston has claimed another world championship, defeating the Chicago Cubs in six games behind outstanding pitching performances from their veteran staff. Babe Ruth contributed both on the mound and at the plate, extending his World Series pitching streak while delivering crucial hits in key moments. The Red Sox' third championship since 1915 establishes them as baseball's dominant franchise during this remarkable era of sustained excellence."
+          }
+        ]
+      }
+    ],
+    "nov": [
+      {
+        "id": "1918-nov-001",
+        "date": "11/8/18",
+        "newspaper": "evening-mail3",
+        "displayText": "11/8/18 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "PETROGRAD IN RED HANDS - BOLSHEVIKS SEIZE CONTROL AS PROVISIONAL GOVERNMENT FALLS",
+            "fontStyle": "3",
+            "content": "Dispatches from Russia report that Bolshevik forces under Vladimir Lenin have seized key points in Petrograd, including government buildings and communications centers, effectively overthrowing the Provisional Government. Armed workers and soldiers are said to have taken to the streets in support of the uprising, while officials loyal to the former regime are being arrested or driven underground. Observers warn that Russia has entered a new and uncertain phase under radical socialist leadership."
+          },
+          {
+            "headline": "Patriots Demand Proof Of American Loyalty",
+            "fontStyle": "3",
+            "content": "Suspicion mounts against citizens of German heritage as war fever grips the nation following Congress's declaration against the Kaiser's regime. Patriotic organizations call upon German-Americans to demonstrate unwavering loyalty through public renunciation of the Fatherland and enthusiastic support for Liberty Bonds. Community leaders warn that divided allegiance will not be tolerated, declaring that residents must choose between German blood and American soil in this hour of national crisis."
+          }
+        ]
+      },
+      {
+        "id": "1918-nov-002",
+        "date": "11/11/18",
+        "newspaper": "the-globe",
+        "displayText": "11/11/18 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "ARMISTICE SIGNED! GERMANY CAPITULATES AS GUNS FALL SILENT ACROSS EUROPE",
+            "fontStyle": "3",
+            "content": "The Great War has come to an abrupt end with the signing of an armistice between Germany and the Allied powers, bringing four years of devastating conflict to a close. At the eleventh hour, fighting ceased along the Western Front as German forces agreed to lay down arms. Celebrations erupted in Allied capitals as news spread that the Huns had accepted defeat, marking the collapse of Imperial Germany’s war effort and the end of unprecedented bloodshed."
+          }
+        ]
+      },
+      {
+        "id": "1918-nov-003",
+        "date": "11/12/18",
+        "newspaper": "the-globe",
+        "displayText": "11/12/18 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "KAISER FLEES! GERMANY IN CHAOS AS RED THREAT RISES",
+            "fontStyle": "3",
+            "content": "Germany is in turmoil following reports that Kaiser Wilhelm II has abdicated and fled the country amid sweeping revolutionary unrest. With the collapse of imperial authority, radical socialist and communist factions are said to be vying for control in cities already suffering severe food shortages and economic breakdown. Crowds in Berlin have reportedly clashed in the streets as starvation and defeat fuel growing disorder. Allied officials warn that Germany now faces not only defeat, but possible descent into Bolshevik revolution."
+          }
+        ]
+      }
+    ]
+  }
+}
