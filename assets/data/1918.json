@@ -1,6 +1,25 @@
 {
   "year": 1918,
   "months": {
+    "jan": [
+      {
+        "id": "1918-jan-001",
+        "date": "1/3/18",
+        "newspaper": "the-globe",
+        "displayText": "1/3/18 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "WILSON UNVEILS PEACE PLAN! FOURTEEN POINTS OFFER VISION FOR POSTWAR WORLD",
+            "fontStyle": "3",
+            "content": "President Woodrow Wilson addressed Congress yesterday presenting his comprehensive peace program, outlining Fourteen Points for ending the Great War and preventing future conflicts. The visionary proposal demands open diplomacy, freedom of the seas, arms reductions, and establishment of a general association of nations to preserve lasting peace. Wilson's bold framework raises profound questions: Will Germany accept such terms? How will Britain and France respond? The President has articulated America's war aims with unprecedented clarity, offering hope that this catastrophic conflict may yet produce a just and enduring settlement rather than merely sowing seeds for future wars."
+          },
+          {
+            "headline": "200,000 DOUGHBOYS NOW IN EUROPE! DECISIVE YEAR APPROACHES AS AMERICA MOBILIZES",
+            "fontStyle": "3",
+            "content": "Reports indicate approximately 200,000 American troops have successfully crossed the Atlantic despite German U-boat threats, with massive reinforcements scheduled throughout 1918. Military observers predict this year will prove decisive as American industrial and military might fully engages. The home front intensifies sacrifice with meatless and wheatless days, fuel conservation, and price controls enabling our soldiers' victory. Government notices urge citizens to redouble conservation efforts as the nation's full resources deploy toward crushing Prussian militarism. Every sacrifice at home translates to strength at the front. Victory demands total national commitment."
+          }
+        ]
+      },
     "mar": [
       {
         "id": "1918-mar-001",
