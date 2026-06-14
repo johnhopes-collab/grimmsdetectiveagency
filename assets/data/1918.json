@@ -132,6 +132,21 @@
         ]
       }
     ],
+    "oct": [
+      {
+        "id": "1918-jul-001",
+        "date": "10/21/18",
+        "newspaper": "new-york-american",
+        "displayText": "10/21/18 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "WAR HERO RETURNS UNDER CLOUD OF SUSPICION",
+            "fontStyle": "3",
+            "content": "Robert Cavanaugh, scion of the prominent Cavanaugh family, has returned to the family's Connecticut residence following discharge from the front amid disturbing rumors. Sources indicate Cavanaugh survived a massacre that killed his entire platoon, with whispers circulating about suspicious circumstances surrounding the incident. The young officer has reportedly refused to provide coherent explanation for his survival while comrades perished. Military authorities discharged him earlier this month without public comment. The distinguished Cavanaugh family has issued no statement regarding the troubling allegations shadowing their son's return. Questions persist about what transpired in France and why Cavanaugh alone escaped the catastrophe that claimed his men."
+          }
+        ]
+      }
+    ],
     "nov": [
       {
         "id": "1918-nov-001",
