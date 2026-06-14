@@ -1,12 +1,12 @@
 {
-  "year": 1918,
+  "year": 1917,
   "months": {
     "mar": [
       {
-        "id": "1918-mar-001",
-        "date": "3/1/18",
+        "id": "1917-mar-001",
+        "date": "3/1/17",
         "newspaper": "the-globe",
-        "displayText": "3/1/18 - THE GLOBE",
+        "displayText": "3/1/17 - THE GLOBE",
         "stories": [
           {
             "headline": "GERMAN PLOT EXPOSED! “ZIMMERMANN NOTE” PROMISES MEXICO U.S. TERRITORY IN WAR BID",
@@ -21,10 +21,10 @@
         ]
       },
       {
-        "id": "1918-mar-002",
-        "date": "3/22/18",
+        "id": "1917-mar-002",
+        "date": "3/22/17",
         "newspaper": "the-globe",
-        "displayText": "3/22/18 - THE GLOBE",
+        "displayText": "3/22/17 - THE GLOBE",
         "stories": [
           {
             "headline": "GERMAN HORDES UNLEASH MASSIVE OFFENSIVE! PARIS THREATENED AS KAISER GAMBLES ALL ON WESTERN BREAKTHROUGH",
@@ -36,10 +36,10 @@
     ],
     "apr": [
       {
-        "id": "1918-apr-001",
-        "date": "4/6/18",
+        "id": "1917-apr-001",
+        "date": "4/6/17",
         "newspaper": "new-york-american",
-        "displayText": "4/6/18 - NEW YORK AMERICAN",
+        "displayText": "4/6/17 - NEW YORK AMERICAN",
         "stories": [
           {
             "headline": "UNITED STATES DECLARES WAR ON GERMANY! CONGRESS ACTS AFTER SUBMARINE OUTRAGES",
@@ -51,10 +51,10 @@
     ],
     "sep": [
       {
-        "id": "1918-sep-001",
-        "date": "9/10/18",
+        "id": "1917-sep-001",
+        "date": "9/10/17",
         "newspaper": "brooklyn-daily-eagle",
-        "displayText": "9/10/18 - BROOKLYN DAILY EAGLE",
+        "displayText": "9/10/17 - BROOKLYN DAILY EAGLE",
         "stories": [
           {
             "headline": "WAR-TIME QUIET MASKS SHIFTING UNDERWORLD! GANG MEN ENTER SERVICE AS CITY CRIME TAKES NEW FORM",
@@ -76,7 +76,7 @@
     ],
     "nov": [
       {
-        "id": "1918-nov-001",
+        "id": "1917-nov-001",
         "date": "11/8/17",
         "newspaper": "evening-mail3",
         "displayText": "11/8/17 - EVENING MAIL",
