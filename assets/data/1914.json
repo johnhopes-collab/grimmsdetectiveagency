@@ -189,13 +189,18 @@
       {
         "id": "1914-sep-001",
         "date": "9/7/14",
-        "newspaper": "evening-mail3",
-        "displayText": "9/7/14 - EVENING MAIL",
+        "newspaper": "the-globe",
+        "displayText": "9/7/14 - THE GLOBE",
         "stories": [
           {
             "headline": "German Advance Halted Outside Paris",
             "fontStyle": "3",
             "content": "French and British forces have stopped the German thrust toward Paris in fierce fighting along the Marne River, forcing enemy retreat and saving the French capital from capture. Rather than decisive breakthrough, both sides now attempt to outflank each other northward in what military experts term the “Race to the Sea.“ Each extension of the battle line prompts counter-extension, creating an ever-lengthening front stretching toward the Belgian coast. The swift mobile warfare that characterized August has transformed into desperate maneuvering for positional advantage. Neither side has achieved the quick victory their war plans anticipated."
+          },
+          {
+            "headline": "German-Americans Support Germany",
+            "fontStyle": "3",
+            "content": "The European war has exposed complex allegiances within America's polyglot population as German-Americans openly express support for the Fatherland while citizens of British descent feel increasing unease. German cultural societies and newspapers defend the Kaiser's actions, arguing Germany fights defensive war against encirclement by hostile powers. Meanwhile, Anglo-American communities sympathize with Britain's plight and French resistance. The conflict tests America's melting pot ideal as immigrant groups maintain emotional and cultural ties to warring homelands. Most citizens continue favoring neutrality, yet conversations reveal the European catastrophe resonates differently across ethnic communities. The question remains whether such divided sympathies can coexist peacefully within the republic."
           }
         ]
       }
