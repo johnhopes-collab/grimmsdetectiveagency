@@ -112,6 +112,19 @@
     "aug": [
       {
         "id": "1924-aug-001",
+        "date": "8/1/24",
+        "newspaper": "the-globe",
+        "displayText": "8/1/24 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "VANDERBILT'S CIRCE RELEASES AUTUMN LINE! “NEW WOMAN” EMBRACES REVOLUTIONARY STYLE",
+            "fontStyle": "5",
+            "content": "CIRCE Corporation has released its highly anticipated autumn collection, cementing Rachel Vanderbilt's position atop the fashion world. The enchanting Miss Vanderbilt—perpetually trailed by admirers from New York's wealthiest families—announced the line embodies “clothes for the new woman who refuses yesterday's constraints.” The collection employs dozens of fae artisans in what observers praise as enlightened philanthropy alongside commercial brilliance. Advance orders from fashionable women across two continents confirm CIRCE's meteoric rise. Vanderbilt's revolutionary vision continues reshaping how modern women present themselves to the world."
+          }
+        ]
+      },
+      {
+        "id": "1924-aug-002",
         "date": "8/5/24",
         "newspaper": "evening-mail3",
         "displayText": "8/5/24 - EVENING MAIL",
@@ -134,7 +147,7 @@
         ]
       },
       {
-        "id": "1924-aug-002",
+        "id": "1924-aug-003",
         "date": "8/5/24",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "8/5/24 - BROOKLYN DAILY EAGLE",
