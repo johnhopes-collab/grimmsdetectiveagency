@@ -1,0 +1,140 @@
+{
+  "year": 1914,
+  "months": {
+    "may": [
+      {
+        "id": "1914-may-001",
+        "date": "3/6/14",
+        "newspaper": "evening-mail3",
+        "displayText": "3/6/14 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Police Close Several Poolrooms in Midtown Sweep",
+            "fontStyle": "3",
+            "content": "Acting on complaints regarding unlawful betting activity, police yesterday conducted a series of raids on poolrooms in the Midtown district, resulting in the arrest of several operators and the seizure of gambling paraphernalia. Authorities stated that the establishments were part of a broader network of wagering houses catering to sporting events. Among those whose names appeared in connection with leased premises was Arnold Rothstein, identified in property records as a financial backer of certain sporting enterprises. No charges have been brought against him."
+          },
+          {
+            "headline": "Widow Cries for Justice",
+            "fontStyle": "3",
+            "content": "Mrs. Ellen Hartley, long active in the Temperance League and known for her addresses on the evils of strong drink, continues her public work despite what friends describe as a painful tragedy. Her husband, once steady in employment and respected among acquaintances, is reported to have walked off a dock after a year of habitual intemperance, bringing hardship and distress upon the household. Those close to Mrs. Hartley say she endures her burden with quiet fortitude, appearing at meetings with unfailing resolve even after nights of anxiety and disappointment. In her words to fellow members, she speaks not in bitterness, but in earnest hope that no other wife should be left to suffer what she has borne in silence."
+          },
+          {
+            "headline": "GERMAN MUSICAL HERITAGE ENCHANTS MANHATTAN AUDIENCE",
+            "fontStyle": "3",
+            "content": "The renowned Arion Male Chorus delivered a stirring performance of classical German lieder and American patriotic songs before a packed Carnegie Hall audience. Society conductor Wilhelm Steinway led the sixty-voice ensemble through works by Schubert and Brahms before concluding with rousing renditions of “The Star-Spangled Banner.” Proceeds from the evening's concert will support German-American orphanages and educational programs throughout the metropolitan area."
+          }
+        ]
+      },
+      {
+        "id": "1914-may-002",
+        "date": "3/22/14",
+        "newspaper": "new-york-american",
+        "displayText": "3/22/14 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "WEST SIDE GANG WAR FADES AS OLD HOODLUM RIVALRIES COLLAPSE! SLUGGERS TURN TO SHADY BUSINESS RINGS",
+            "fontStyle": "3",
+            "content": "Police reports indicate that the once-feared street battles between Lower East Side and West Side gangs have largely subsided, replaced by quieter but more organized forms of vice. Former gang members are now said to be concentrating on protection rackets, gambling houses, and labor intimidation schemes. Authorities believe arrests, prison sentences, and political pressure have broken up many of the older fighting crews, pushing underworld activity into more structured and profitable channels."
+          }
+        ]
+      }
+    ],
+    "jun": [
+      {
+        "id": "1914-jun-001",
+        "date": "6/29/14",
+        "newspaper": "evening-mail3",
+        "displayText": "6/29/14 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Archduke and Heir to Austro-Hungarian Throne Slain in Sarajevo by Bosnian Nationalists",
+            "fontStyle": "3",
+            "content": "Early cable reports confirm the assassination of Archduke Franz Ferdinand and the Duchess of Hohenberg during an official visit to Sarajevo. The act, attributed to South Slav nationalist conspirators, is regarded in diplomatic dispatches as grave but localized. Nevertheless, correspondents in New York note Vienna’s likely demand for retribution against Serbia, with the possibility of great-power involvement already whispered in European chancelleries."
+          }
+        ]
+      },
+      {
+        "id": "1914-jun-002",
+        "date": "6/29/14",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "6/29/14 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "ARCHDUKE SLAIN! EUROPE ROCKED AS HEIR TO AUSTRIAN THRONE ASSASSINATED IN SARAEVO",
+            "fontStyle": "3",
+            "content": "The Archduke Franz Ferdinand, heir to the Austro-Hungarian throne, has been assassinated in Sarajevo in a brazen attack that has stunned European capitals. Reports indicate the Archduke and his wife were shot while traveling by motorcar during an official visit. The assailant is believed to be linked to nationalist conspirators in the Balkans. Diplomatic observers warn the killing may ignite a wider crisis, as Austria-Hungary is expected to respond forcefully, with tensions already high among the great powers of Europe."
+          }
+        ]
+      }
+    ],
+    "aug": [
+      {
+        "id": "1914-aug-001",
+        "date": "8/3/14",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/3/14 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "EUROPE ON FIRE! GERMANY ATTACKS AS WAR INTENSIFIES",
+            "fontStyle": "3",
+            "content": "Europe stands on the brink of catastrophe as Germany moves against France following the deepening crisis sparked by the assassination of Archduke Franz Ferdinand. After Austria-Hungary’s declaration of war on Serbia, alliances have triggered a chain reaction threatening all major powers. Reports from abroad describe troop mobilizations on an unprecedented scale, with fears mounting that the entire continent may soon be engulfed in conflict involving the German Empire and its adversaries."
+          }
+        ]
+      },
+      {
+        "id": "1914-aug-002",
+        "date": "8/3/14",
+        "newspaper": "evening-mail3",
+        "displayText": "8/3/14 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "European War Engulfs Continent",
+            "fontStyle": "3",
+            "content": "Following Austria-Hungary’s declaration against Serbia and Germany’s subsequent mobilization against Russia and France, Europe has entered a general state of war. New York papers report mounting unease over German military initiatives in Belgium, even as official sentiment in Washington insists upon strict neutrality. Distrust toward German strategic conduct is mounting, though calls for non-intervention remain dominant in American policy circles."
+          }
+        ]
+      },
+      {
+        "id": "1914-aug-003",
+        "date": "8/3/14",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/3/14 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "BRITAIN ENTERS WAR! EMPIRE DECLARES AGAINST HUNS",
+            "fontStyle": "3",
+            "content": "War has now exploded across Europe as Britain formally declares war on Germany following the German invasion of neutral Belgium. The advance of German forces, described in dispatches as a ruthless march through Belgian territory, has shocked the public and drawn swift condemnation. France is already engaged in full mobilization against German armies, while Austria-Hungary remains at war with Serbia. The conflict now threatens to draw in the entire European continent in a struggle of staggering scale."
+          }
+        ]
+      }
+    ],
+    "nov": [
+      {
+        "id": "1914-nov-001",
+        "date": "11/30/14",
+        "newspaper": "evening-mail3",
+        "displayText": "11/30/14 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Investigation Continues in Killing of William Doyle",
+            "fontStyle": "3",
+            "content": "Detectives are continuing their inquiry into the shooting death of William Doyle, known in police records as “Little Patsy” Doyle, who was killed Saturday evening on the West Side. Authorities are examining reports that Doyle may have been induced to attend a meeting before the attack occurred. No arrests have yet been announced. Police officials believe the crime may be connected to a long-standing feud among rival gang elements."
+          }
+        ]
+      },
+      {
+        "id": "1914-nov-002",
+        "date": "11/30/14",
+        "newspaper": "new-york-american",
+        "displayText": "11/30/14 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "GIRL LURED DOYLE TO DEATH! POLICE HUNT GANG SLAYERS",
+            "fontStyle": "3",
+            "content": "William “Little Patsy” Doyle, Hudson Duster chieftain, was shot dead Saturday night after being enticed to a rendezvous by a young woman, detectives believe. The killing ends a bitter war that has drenched the West Side in blood. Police are questioning women and known gang associates while rumors spread that Owney Madden's Gophers have at last settled their score."
+          }
+        ]
+      }
+    ]
+  }
+}
