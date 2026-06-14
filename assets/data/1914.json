@@ -67,9 +67,63 @@
         ]
       }
     ],
+    "jul": [
+      {
+        "id": "1914-jul-001",
+        "date": "7/23/14",
+        "newspaper": "evening-mail3",
+        "displayText": "7/23/14 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Austria Delivers Ultimatum to Serbia - Balnkan Crisis Reaches Critical Juncture",
+            "fontStyle": "3",
+            "content": "Austria-Hungary has issued an extraordinarily harsh ultimatum to Serbia following the assassination of Archduke Franz Ferdinand, demanding sweeping concessions and investigations on Serbian soil. Serbia has accepted most terms but balked at provisions violating national sovereignty. European capitals watch anxiously as the Balkan powder keg threatens to explode into wider conflict. Diplomatic observers note the ultimatum's severity suggests Austria seeks war rather than settlement. Russia has indicated support for fellow Slavic nation Serbia, raising fears the crisis may engulf the Great Powers in unprecedented catastrophe."
+          }
+        ]
+      },
+      {
+        "id": "1914-jul-002",
+        "date": "7/28/14",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "7/28/14 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "WAR DECLARED! AUSTRIA-HUNGARY ATTACKS SERBIA AS EUROPEAN PEACE COLLAPSES",
+            "fontStyle": "3",
+            "content": "Austria-Hungary has formally declared war on Serbia, marking the first official declaration in what threatens to become a general European conflagration. Serbian rejection of certain ultimatum demands triggered the momentous decision as Emperor Franz Joseph's government vows to crush the troublesome Balkan state. Russia has warned against Serbian subjugation while Germany backs Austria's actions. The intricate system of European alliances now threatens to draw multiple empires into conflict. What began as an assassination in Sarajevo has escalated into open warfare with terrifying momentum."
+          }
+        ]
+      },
+      {
+        "id": "1914-jul-003",
+        "date": "7/30/14",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "7/30/14 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "RUSSIA MOBILIZES! CZAR'S ARMIES PREPARE FOR WAR AS CRISIS DEEPENS",
+            "fontStyle": "3",
+            "content": "Russia has ordered full military mobilization in support of Serbia, a move universally understood as preparation for general European war. The Czar's decision commits millions of troops to readiness and places enormous pressure on Austro-Hungary, Germany's ally, which views Russian mobilization as direct threat. Military experts warn that mobilization schedules, once initiated, become virtually irreversible as railways move troops and supplies according to meticulous timetables. Europe stands at the brink as the Great Powers activate war machinery designed for swift decisive action. Diplomatic solutions evaporate as military logic dominates decision-making."
+          }
+        ]
+      }
+    ],
     "aug": [
       {
         "id": "1914-aug-001",
+        "date": "8/1/14",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/1/14 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "GERMANY DECLARES WAR ON RUSSIA!",
+            "fontStyle": "3",
+            "content": "Germany has declared war on Russia, citing the Czar's mobilization as intolerable menace against Austro-Hundary and requiring immediate military response. Kaiser Wilhelm's government views Russian troop movements as preparation for attack and has activated its own war plans accordingly. The German Empire now confronts the vast Russian colossus in what promises to be a titanic struggle. European alliance systems pull additional nations toward the widening conflict as military and diplomatic options narrow dramatically. What diplomats desperately hoped to contain as a Balkan dispute has erupted into Great Power warfare."
+          }
+        ]
+      },
+      {
+        "id": "1914-aug-002",
         "date": "8/3/14",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "8/3/14 - BROOKLYN DAILY EAGLE",
@@ -82,7 +136,7 @@
         ]
       },
       {
-        "id": "1914-aug-002",
+        "id": "1914-aug-003",
         "date": "8/5/14",
         "newspaper": "evening-mail3",
         "displayText": "8/5/14 - EVENING MAIL",
@@ -95,7 +149,7 @@
         ]
       },
       {
-        "id": "1914-aug-003",
+        "id": "1914-aug-004",
         "date": "8/5/14",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "8/5/14 - BROOKLYN DAILY EAGLE",
