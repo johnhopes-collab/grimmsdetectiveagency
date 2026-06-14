@@ -4,6 +4,24 @@
     "apr": [
       {
         "id": "1918-apr-001",
+        "date": "4/6/18",
+        "newspaper": "new-york-american",
+        "displayText": "4/6/18 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "MOB JUSTICE IN ILLINOIS! GERMAN IMMIGRANT HANGED BY PATRIOTIC CROWD",
+            "fontStyle": "3",
+            "content": "Robert Prager, a German immigrant accused of disloyalty, was seized by an enraged mob in Collinsville, Illinois, paraded through town wrapped in an American flag, and hanged despite police intervention. A jury subsequently acquitted all participants, reflecting widespread public sympathy for the vigilantes' patriotic motives. The incident exemplifies actions by self-appointed groups like the American Protective League and local patriotic committees determined to root out suspected enemy sympathizers. Communities across America demonstrate zero tolerance for disloyalty as wartime fervor intensifies. Authorities praise citizen vigilance while urging restraint in identifying potential spies."
+          },
+          {
+            "headline": "GERMAN-AMERICAN BANK ADOPTS “CONTINENTAL” NAME",
+            "fontStyle": "3",
+            "content": "The prominent German-American Bank has officially rebranded itself as Continental Bank of New York, removing all references to its ethnic origins amid patriotic uproar. Bank president announced the change reflects the institution's thoroughly American character and commitment to supporting the Liberty Bond campaign. Several German businesses throughout the city have similarly adopted neutral names to avoid harassment from overzealous patriotic organizations."
+          }
+        ]
+      },
+      {
+        "id": "1918-apr-002",
         "date": "4/22/18",
         "newspaper": "new-york-american",
         "displayText": "4/22/18 - NEW YORK AMERICAN",
