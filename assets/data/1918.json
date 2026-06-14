@@ -169,6 +169,24 @@
             "headline": "KAISER FLEES! GERMANY IN CHAOS AS RED THREAT RISES",
             "fontStyle": "3",
             "content": "Germany is in turmoil following reports that Kaiser Wilhelm II has abdicated and fled the country amid sweeping revolutionary unrest. With the collapse of imperial authority, radical socialist and communist factions are said to be vying for control in cities already suffering severe food shortages and economic breakdown. Crowds in Berlin have reportedly clashed in the streets as starvation and defeat fuel growing disorder. Allied officials warn that Germany now faces not only defeat, but possible descent into Bolshevik revolution."
+          },
+          {
+            "headline": "Bizarre Phenomena Over Fifth Avenue",
+            "fontStyle": "3",
+            "content": "Residents near Fifth Avenue report extraordinary occurrences earlier today, including sudden localized weather disturbances and inexplicable optical phenomena hovering above eastern Central Park. Witnesses describe shimmering lights, unexpected temperature fluctuations, and atmospheric effects defying natural explanation. Police have cordoned off certain areas while investigators examine the disturbances, though authorities provide no official comment regarding supernatural involvement. Several fairytale creature residents have departed the vicinity citing uncomfortable magical pressures. The incidents continue sporadically, leaving neighboring households anxious and mystified. Experts on arcane matters have been consulted privately, though no public statements have been forthcoming regarding the phenomena's origin or potential danger."
+          }
+        ]
+      },
+      {
+        "id": "1918-nov-004",
+        "date": "11/15/18",
+        "newspaper": "the-globe",
+        "displayText": "11/15/18 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "IN MEMORIAM: HIERONYMOUS THEOPHRASTUS GRIMM",
+            "fontStyle": "3",
+            "content": "Hieronymous Theophrastus Grimm, proprietor of Grimms' Detective Agency and New York's tireless defender against supernatural threats, has passed away. The stolid monster hunter devoted decades to protecting citizens from occult dangers, maintaining characteristic discretion about his work. A fervent Catholic and loving father, Grimm found solace playing piano when not pursuing creatures of darkness. Despite years of anti-German war fever, the Agency continued its essential service without complaint. A private funeral was held; circumstances of death remain undisclosed. Surviving him are Matilda, Jacob, and Millicent Grimm, who pledge to continue providing the necessary supernatural protection upon which New York society has come to depend."
           }
         ]
       }
