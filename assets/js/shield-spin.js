@@ -56,17 +56,10 @@
         
         // Revert to static PNG after animation
         setTimeout(() => {
-            // Brief fade out
-            shield.style.opacity = '0';
-            
-            setTimeout(() => {
-                const staticPng = shield.getAttribute('data-static');
-                shield.src = staticPng;
-                shield.style.opacity = '1'; // Fade back in
-                isSpinning = false;
-            }, 300); // Match CSS transition time
-            
-        }, SPIN_DURATION - 300); // Start fade 300ms before GIF ends
+            const staticPng = shield.getAttribute('data-static');
+            shield.src = staticPng;
+            isSpinning = false;
+        }, 1650); 
     }
     
     // Reset tracking
