@@ -9,7 +9,7 @@
     const NUM_ZONES = 5; // Number of vertical hitbox zones
     const TIME_WINDOW = 800; // Milliseconds to complete swipe
     const MIN_ZONES = 3; // Minimum zones to cross for trigger
-    const SPIN_DURATION = 1000; // GIF duration in milliseconds
+    const SPIN_DURATION = 1760; // GIF duration in milliseconds
     
     // State tracking
     let zonesHit = [];
