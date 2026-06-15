@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
             alt: 'Luxe Promo'
         },
         {
+            id: 'radio',
+            path: '/assets/images/sq/radio.png',
+            link: 'https://open.spotify.com/user/31kpt2jtkqnzkbly5jnmrbfzwuyu?si=97f003dbaa1b4417',
+            alt: 'Radio Promo'
+        },
+        {
             id: 'speed',
             path: '/assets/images/sq/sq_g_speed4.png',
             link: 'https://grimmsdetectiveagency.com/archives/cars.html',
