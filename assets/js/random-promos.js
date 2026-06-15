@@ -17,12 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
             alt: 'Metropolis Promo'
         },
         {
-            id: 'grandball',
-            path: '/assets/images/sq/sq_g_grandball2.png',
-            link: 'https://grimmsdetectiveagency.com/archives/music.html', // Replace with actual link
-            alt: 'Grand Ball Promo'
-        },
-        {
             id: 'jazznights',
             path: '/assets/images/sq/sq_g_jazznights2.png',
             link: 'https://grimmsdetectiveagency.com/archives/music.html', // Replace with actual link
