@@ -67,7 +67,7 @@ body {
     pointer-events: all; /* Captures mouse events */
 }
 .sidebar-banner-container { /* NEW HEADER  */ position: absolute; top: 0;    left: 51%; width: 710px; height: auto; transform: translateX(-50%); z-index: 1; } 
-.header-square-container  { /* Radio Promo */ position: absolute; top: 14px; right: 2%; width: 114px; height: auto;                              z-index: 1; }
+.header-square-container  { /* Radio Promo */ position: absolute; top: 14px; right: 2%; width: 112px; height: auto;                              z-index: 1; }
 @media (max-width: 1000px) { .header-square-container  {display: none;}} /* Hides Shield and Desktop Header on mobile */
 @media (max-width: 800px)  { .sidebar-logo-container   {display: none;}}
 @media (max-width: 500px)  { .sidebar-banner-container {display: none;}}
