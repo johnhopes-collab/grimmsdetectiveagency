@@ -57,6 +57,9 @@ body {
 .sidebar-unit             { position: absolute; top: 0; left: 0; width: 100vw; height: 0; z-index: 5; } /* Single z-index for the whole unit */ 
 .sidebar-block            {  width: 100%;    height: auto;    display: block; }
 .sidebar-logo-container   { /* Shield Logo */ position: absolute; top: 21px; left: 0px; width: 130px; height: auto; margin-bottom: -10px;        z-index: 3; cursor: pointer; }
+.sidebar-logo-container .sidebar-block {
+    transition: opacity 0.3s ease-in-out; /* Smooth fade */
+}
 .shield-hitbox {
     position: absolute;
     top: 0;
