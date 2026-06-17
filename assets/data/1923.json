@@ -194,6 +194,24 @@
       {
         "id": "1923-aug-001",
         "date": "8/4/23",
+        "newspaper": "the-globe",
+        "displayText": "8/4/23 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "PRESIDENT HARDING DEAD",
+            "fontStyle": "3",
+            "content": "President Warren G. Harding died suddenly last evening at 7:30 p.m. in his suite at the Palace Hotel in San Francisco, shocking a nation that had been assured only hours earlier that he was recovering from illness. He was 57 years old. The President had been on an extended cross-country speaking tour when he was diagnosed with pneumonia in Seattle on July 28. By August 1, physicians publicly announced he was improving. Then, without warning, the end came. Mrs. Florence Harding was reading to the President when he suddenly collapsed. He died within minutes, likely from a heart attack or stroke. Vice President Calvin Coolidge was visiting his family home in Plymouth Notch, Vermont—a tiny village without electricity—when word reached him after midnight. His father, a notary public, administered the presidential oath of office by the light of a kerosene lamp at 2:47 a.m. The new President then returned to bed before departing for Washington this morning. The nation mourns a genial, popular leader taken far too soon. Harding's body will be transported by train to Washington, where he will lie in state in the Capitol Rotunda before burial in Marion, Ohio."
+          },
+          {
+            "headline": "America Mourns The Loss Of Her President",
+            "fontStyle": "3",
+            "content": "As the nation mourns President Harding's sudden death, ordinary Americans are expressing shock and profound loss at the passing of a man many considered the embodiment of integrity and steady leadership. “There has never been a more upright, respectable man in the White House,” said Thomas McKinley, a shopkeeper from Marion, Ohio, who knew Harding personally. “He took this country out of absolute ruin—Wilson left us with strikes, radicals in the streets, and economic collapse. Mr. Harding restored normalcy and prosperity through sheer decency and honest business sense.” McKinley, who voted for Harding in 1920, said the President's appointments were uniformly excellent and that his administration had been “scandal-free and honorable in every particular.” Memorial services are being planned in communities nationwide."
+          }
+        ]
+      },
+      {
+        "id": "1923-aug-002",
+        "date": "8/4/23",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "8/4/23 - BROOKLYN DAILY EAGLE",
         "stories": [
@@ -210,7 +228,7 @@
         ]
       },
       {
-        "id": "1923-aug-002",
+        "id": "1923-aug-003",
         "date": "8/4/23",
         "newspaper": "evening-mail3",
         "displayText": "8/4/23 - EVENING MAIL",
@@ -233,7 +251,7 @@
         ]
       },
       {
-        "id": "1923-aug-003",
+        "id": "1923-aug-004",
         "date": "8/16/23",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "8/16/23 - BROOKLYN DAILY EAGLE",
