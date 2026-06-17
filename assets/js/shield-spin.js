@@ -7,9 +7,9 @@
     
     // Configuration
     const NUM_ZONES = 5; // Number of vertical hitbox zones
-    const TIME_WINDOW = 1000; // Milliseconds to complete swipe
+    const TIME_WINDOW = 1200; // Milliseconds to complete swipe
     const MIN_ZONES = 2; // Minimum zones to cross for trigger
-    const SPIN_DURATION = 1000; // WebP duration in milliseconds
+    const SPIN_DURATION = 980; // WebP duration in milliseconds
     
     // State tracking
     let zonesHit = [];
