@@ -9,7 +9,7 @@
     const NUM_ZONES = 5; // Number of vertical hitbox zones
     const TIME_WINDOW = 1200; // Milliseconds to complete swipe
     const MIN_ZONES = 2; // Minimum zones to cross for trigger
-    const SPIN_DURATION = 1760; // GIF duration in milliseconds
+    const SPIN_DURATION = 1760; // WebP duration in milliseconds
     
     // State tracking
     let zonesHit = [];
@@ -50,9 +50,9 @@
         
         isSpinning = true;
         
-        // Swap to GIF
+        // Swap to animated WebP
         const spinWebP = shield.getAttribute('data-spin');
-        shield.src = spinWebP + '?t=' + Date.now(); // Cache-bust to restart GIF
+        shield.src = spinWebP + '?t=' + Date.now(); // Cache-bust to restart animation
         
         // Revert to static PNG after animation
         setTimeout(() => {
