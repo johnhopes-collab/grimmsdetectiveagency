@@ -54,6 +54,24 @@
     "apr": [
       {
         "id": "1924-apr-001",
+        "date": "4/7/24",
+        "newspaper": "new-york-american",
+        "displayText": "4/7/24 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "ANDERSEN EXTENDS GENEROUS HAND TO RECLUSIVE PERRAULT HEIR! CELEBRATED AUTHOR RECEIVES NO RESPONSE",
+            "fontStyle": "3",
+            "content": "Frederick Andersen, renowned adventurer and author, paid a visit to the Fifth Avenue Perrault mansion yesterday, graciously offering young Jules Perrault collaboration on his forthcoming volume examining supernatural manifestations. The distinguished Andersen spent considerable time explaining the prestigious opportunity to the orphaned boy, emphasizing how work on such an important scholarly endeavor might prove therapeutic for the grieving heir. Sources indicate the nine-year-old Perrault listened silently before retreating without providing any answer whatsoever. Andersen departed the residence expressing disappointment that his charitable gesture went unacknowledged. The boy's continued isolation troubles society observers who hoped Andersen's celebrated presence might coax the mysterious child from his self-imposed exile."
+          },
+          {
+            "headline": "THIS REPORTER UNCOVERS TRUTH BEHIND LITTLE MERMAID REVUE! SIREN SONG ENSLAVES HARLEM AUDIENCES",
+            "fontStyle": "3",
+            "content": "Your intrepid correspondent ventured into the notorious Little Mermaid Revue to discover what keeps audiences returning night after night—and uncovered shocking truth! The mermaid performers employ actual siren song, their haunting melodies weaving supernatural enchantment over helpless patrons who find themselves compelled to return repeatedly despite dwindling bank accounts and neglected responsibilities. This reporter personally experienced the phenomenon—those unearthly voices penetrate the soul, creating irresistible compulsion to witness the spectacle again and again! Management naturally denies employing magical coercion, claiming merely “exceptional talent,” but the evidence speaks for itself. Dozens of befuddled gentlemen return nightly, unable to explain their obsession. Harlem's most dangerous entertainment venue preys upon the enchanted masses!"
+          }
+        ]
+      },
+      {
+        "id": "1924-apr-002",
         "date": "4/21/24",
         "newspaper": "the-globe",
         "displayText": "4/21/24 - THE GLOBE",
