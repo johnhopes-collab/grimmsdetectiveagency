@@ -1,0 +1,257 @@
+{
+  "year": 1915,
+  "months": {
+    "may": [
+      {
+        "id": "1915-may-001",
+        "date": "3/6/15",
+        "newspaper": "evening-mail3",
+        "displayText": "3/6/15 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Police Close Several Poolrooms in Midtown Sweep",
+            "fontStyle": "3",
+            "content": "Acting on complaints regarding unlawful betting activity, police yesterday conducted a series of raids on poolrooms in the Midtown district, resulting in the arrest of several operators and the seizure of gambling paraphernalia. Authorities stated that the establishments were part of a broader network of wagering houses catering to sporting events. Among those whose names appeared in connection with leased premises was Arnold Rothstein, identified in property records as a financial backer of certain sporting enterprises. No charges have been brought against him."
+          },
+          {
+            "headline": "Widow Cries for Justice",
+            "fontStyle": "3",
+            "content": "Mrs. Ellen Hartley, long active in the Temperance League and known for her addresses on the evils of strong drink, continues her public work despite what friends describe as a painful tragedy. Her husband, once steady in employment and respected among acquaintances, is reported to have walked off a dock after a year of habitual intemperance, bringing hardship and distress upon the household. Those close to Mrs. Hartley say she endures her burden with quiet fortitude, appearing at meetings with unfailing resolve even after nights of anxiety and disappointment. In her words to fellow members, she speaks not in bitterness, but in earnest hope that no other wife should be left to suffer what she has borne in silence."
+          },
+          {
+            "headline": "GERMAN MUSICAL HERITAGE ENCHANTS MANHATTAN AUDIENCE",
+            "fontStyle": "3",
+            "content": "The renowned Arion Male Chorus delivered a stirring performance of classical German lieder and American patriotic songs before a packed Carnegie Hall audience. Society conductor Wilhelm Steinway led the sixty-voice ensemble through works by Schubert and Brahms before concluding with rousing renditions of “The Star-Spangled Banner.” Proceeds from the evening's concert will support German-American orphanages and educational programs throughout the metropolitan area."
+          }
+        ]
+      },
+      {
+        "id": "1915-may-002",
+        "date": "3/22/15",
+        "newspaper": "new-york-american",
+        "displayText": "3/22/15 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "WEST SIDE GANG WAR FADES AS OLD HOODLUM RIVALRIES COLLAPSE! SLUGGERS TURN TO SHADY BUSINESS RINGS",
+            "fontStyle": "3",
+            "content": "Police reports indicate that the once-feared street battles between Lower East Side and West Side gangs have largely subsided, replaced by quieter but more organized forms of vice. Former gang members are now said to be concentrating on protection rackets, gambling houses, and labor intimidation schemes. Authorities believe arrests, prison sentences, and political pressure have broken up many of the older fighting crews, pushing underworld activity into more structured and profitable channels."
+          }
+        ]
+      }
+    ],
+    "jun": [
+      {
+        "id": "1915-jun-001",
+        "date": "6/29/15",
+        "newspaper": "evening-mail3",
+        "displayText": "6/29/15 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Archduke and Heir to Austro-Hungarian Throne Slain in Sarajevo by Bosnian Nationalists",
+            "fontStyle": "3",
+            "content": "Early cable reports confirm the assassination of Archduke Franz Ferdinand and the Duchess of Hohenberg during an official visit to Sarajevo. The act, attributed to South Slav nationalist conspirators, is regarded in diplomatic dispatches as grave but localized. Nevertheless, correspondents in New York note Vienna’s likely demand for retribution against Serbia, with the possibility of great-power involvement already whispered in European chancelleries."
+          }
+        ]
+      },
+      {
+        "id": "1915-jun-002",
+        "date": "6/29/15",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "6/29/15 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "ARCHDUKE SLAIN! EUROPE ROCKED AS HEIR TO AUSTRIAN THRONE ASSASSINATED IN SARAEVO",
+            "fontStyle": "3",
+            "content": "The Archduke Franz Ferdinand, heir to the Austro-Hungarian throne, has been assassinated in Sarajevo in a brazen attack that has stunned European capitals. Reports indicate the Archduke and his wife were shot while traveling by motorcar during an official visit. The assailant is believed to be linked to nationalist conspirators in the Balkans. Diplomatic observers warn the killing may ignite a wider crisis, as Austria-Hungary is expected to respond forcefully, with tensions already high among the great powers of Europe."
+          }
+        ]
+      }
+    ],
+    "jul": [
+      {
+        "id": "1915-jul-001",
+        "date": "7/23/15",
+        "newspaper": "evening-mail3",
+        "displayText": "7/23/15 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Austria Delivers Ultimatum to Serbia - Balnkan Crisis Reaches Critical Juncture",
+            "fontStyle": "3",
+            "content": "Austria-Hungary has issued an extraordinarily harsh ultimatum to Serbia following the assassination of Archduke Franz Ferdinand, demanding sweeping concessions and investigations on Serbian soil. Serbia has accepted most terms but balked at provisions violating national sovereignty. European capitals watch anxiously as the Balkan powder keg threatens to explode into wider conflict. Diplomatic observers note the ultimatum's severity suggests Austria seeks war rather than settlement. Russia has indicated support for fellow Slavic nation Serbia, raising fears the crisis may engulf the Great Powers in unprecedented catastrophe."
+          }
+        ]
+      },
+      {
+        "id": "1915-jul-002",
+        "date": "7/28/15",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "7/28/15 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "WAR DECLARED! AUSTRIA-HUNGARY ATTACKS SERBIA AS EUROPEAN PEACE COLLAPSES",
+            "fontStyle": "3",
+            "content": "Austria-Hungary has formally declared war on Serbia, marking the first official declaration in what threatens to become a general European conflagration. Serbian rejection of certain ultimatum demands triggered the momentous decision as Emperor Franz Joseph's government vows to crush the troublesome Balkan state. Russia has warned against Serbian subjugation while Germany backs Austria's actions. The intricate system of European alliances now threatens to draw multiple empires into conflict. What began as an assassination in Sarajevo has escalated into open warfare with terrifying momentum."
+          }
+        ]
+      },
+      {
+        "id": "1915-jul-003",
+        "date": "7/30/15",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "7/30/15 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "RUSSIA MOBILIZES! CZAR'S ARMIES PREPARE FOR WAR AS CRISIS DEEPENS",
+            "fontStyle": "3",
+            "content": "Russia has ordered full military mobilization in support of Serbia, a move universally understood as preparation for general European war. The Czar's decision commits millions of troops to readiness and places enormous pressure on Austro-Hungary, Germany's ally, which views Russian mobilization as direct threat. Military experts warn that mobilization schedules, once initiated, become virtually irreversible as railways move troops and supplies according to meticulous timetables. Europe stands at the brink as the Great Powers activate war machinery designed for swift decisive action. Diplomatic solutions evaporate as military logic dominates decision-making."
+          },
+          {
+            "headline": "FRANCE REAFFIRMS SUPPORT TO RUSSIA IN EVENT OF WAR",
+            "fontStyle": "3",
+            "content": "France has reaffirmed its sacred alliance with Russia, pledging full support should Germany attack the Czar's empire. The French commitment mirrors Germany's backing of Austria-Hungary, completing the fatal interlocking of European alliances that now drag the continent toward general war. President Poincaré declares France will honor all treaty obligations, ensuring that conflict between Germany and Russia automatically becomes a two-front war. Observers note France may welcome opportunity to avenge humiliating defeat in the Franco-Prussian War and reclaim lost Alsace-Lorraine territories. The alliance system, designed to preserve peace through deterrence, instead seems on track to guarantee catastrophic multi-nation warfare."
+          }
+        ]
+      }
+    ],
+    "aug": [
+      {
+        "id": "1915-aug-001",
+        "date": "8/1/15",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/1/15 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "GERMANY DECLARES WAR ON RUSSIA!",
+            "fontStyle": "3",
+            "content": "Germany has declared war on Russia, citing the Czar's mobilization as intolerable menace against Austro-Hungary and requiring immediate military response. Kaiser Wilhelm's government views Russian troop movements as preparation for attack and has activated its own war plans accordingly. The German Empire now confronts the vast Russian colossus in what promises to be a titanic struggle. European alliance systems pull additional nations toward the widening conflict as military and diplomatic options narrow dramatically. What diplomats desperately hoped to contain as a Balkan dispute has erupted into Great Power warfare."
+          }
+        ]
+      },
+      {
+        "id": "1915-aug-002",
+        "date": "8/3/15",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/3/15 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "EUROPE ON FIRE! GERMANY DECLARES WAR ON FRANCE",
+            "fontStyle": "3",
+            "content": "Europe stands on the brink of catastrophe as Germany moves against France following the deepening crisis sparked by the assassination of Archduke Franz Ferdinand. After Austria-Hungary’s declaration of war on Serbia, alliances have triggered a chain reaction threatening all major powers. Reports from abroad describe troop mobilizations on an unprecedented scale, with fears mounting that the entire continent may soon be engulfed in conflict involving the German Empire and its adversaries."
+          }
+        ]
+      },
+      {
+        "id": "1915-aug-003",
+        "date": "8/5/15",
+        "newspaper": "evening-mail3",
+        "displayText": "8/5/15 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "European War Engulfs Continent",
+            "fontStyle": "3",
+            "content": "Following Austria-Hungary’s declaration against Serbia and Germany’s subsequent declaration of war against Russia and France, Europe has entered a general state of war. New York papers report mounting unease over German military initiatives in Belgium, even as official sentiment in Washington insists upon strict neutrality. Distrust toward German strategic conduct is mounting, though calls for non-intervention remain dominant in American policy circles."
+          },
+          {
+            "headline": "American Public Sentiment Committed to Neutrality in European Conflict",
+            "fontStyle": "3",
+            "content": "As European powers descend into general warfare, the prevailing mood across America reflects profound reluctance to involve the republic in Old World quarrels. Citizens from all walks express gratitude for the Atlantic's protective separation from dynastic feuds and territorial ambitions consuming the continent. Conversations in restaurants, offices, and streetcars reveal widespread consensus: European monarchies have created their own catastrophe through entangling alliances and ancient grudges utterly disconnected from American interests. Few voices advocate involvement in conflicts where no vital national concern exists. The public overwhelmingly favors preserving domestic peace and prosperity over rescuing distant empires from self-inflicted disasters."
+          }
+        ]
+      },
+      {
+        "id": "1915-aug-004",
+        "date": "8/5/15",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/5/15 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "BRITAIN ENTERS WAR! EMPIRE DECLARES AGAINST HUNS",
+            "fontStyle": "3",
+            "content": "War has now exploded across Europe as Britain formally declares war on Germany following the German invasion of neutral Belgium. The advance of German forces, described in dispatches as a ruthless march through Belgian territory, has shocked the public and drawn swift condemnation. France is already engaged in full mobilization against German armies, while Austria-Hungary remains at war with Serbia. The conflict now threatens to draw in the entire European continent in a struggle of staggering scale."
+          }
+        ]
+      },
+      {
+        "id": "1915-aug-005",
+        "date": "8/24/15",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "8/24/15 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "BRITISH CAVALRY SLAUGHTERED BY MACHINE GUNS",
+            "fontStyle": "3",
+            "content": "Dispatches from Belgium report horrific losses as British cavalry charged German positions at Audregnies during retreat from Mons. The 9th Lancers and 4th Dragoon Guards galloped across open ground into withering machine-gun, rifle, and artillery fire with devastating results. Fields are reportedly littered with fallen horses and riders as modern weaponry proved catastrophically superior to traditional mounted tactics. Military observers express shock at the carnage, noting that cavalry charges—the romantic centerpiece of warfare for centuries—appear rendered obsolete by industrial killing machines. The butchery marks Britain's first major engagement and suggests this war will differ terribly from past conflicts."
+          }
+        ]
+      }
+    ],
+    "sep": [
+      {
+        "id": "1915-sep-001",
+        "date": "9/7/15",
+        "newspaper": "the-globe",
+        "displayText": "9/7/15 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "German Advance Halted Outside Paris",
+            "fontStyle": "3",
+            "content": "French and British forces have stopped the German thrust toward Paris in fierce fighting along the Marne River, forcing enemy retreat and saving the French capital from capture. Rather than decisive breakthrough, both sides now attempt to outflank each other northward in what military experts term the “Race to the Sea.“ Each extension of the battle line prompts counter-extension, creating an ever-lengthening front stretching toward the Belgian coast. The swift mobile warfare that characterized August has transformed into desperate maneuvering for positional advantage. Neither side has achieved the quick victory their war plans anticipated."
+          },
+          {
+            "headline": "German-Americans Support Germany",
+            "fontStyle": "3",
+            "content": "The European war has exposed complex allegiances within America's polyglot population as German-Americans openly express support for the Fatherland while citizens of British descent feel increasing unease. German cultural societies and newspapers defend the Kaiser's actions, arguing Germany fights defensive war against encirclement by hostile powers. Meanwhile, Anglo-American communities sympathize with Britain's plight and French resistance. The conflict tests America's unity as immigrant groups maintain emotional and cultural ties to warring homelands. Most citizens continue favoring neutrality, yet conversations reveal the European catastrophe resonates differently across ethnic communities. The question remains whether such divided sympathies can coexist peacefully within the republic."
+          }
+        ]
+      }
+    ],
+    "nov": [
+      {
+        "id": "1915-nov-001",
+        "date": "11/30/15",
+        "newspaper": "evening-mail3",
+        "displayText": "11/30/15 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "Western Front Freezes to Standstill as Trench Network Develops",
+            "fontStyle": "3",
+            "content": "Dispatches from the European battle lines describe a nearly continuous trench system now stretching from the Belgian coast to the Swiss frontier, with neither side able to break through. Machine guns dominate no-man's-land, making large-scale assaults suicidal. Artillery pounds positions relentlessly while attempts at breakthrough fail with appalling casualties. The war of movement has ended, replaced by static siege warfare on unprecedented scale. Soldiers dig deeper as winter approaches, creating elaborate underground fortifications. Military analysts express bewilderment—the conflict has transformed into something utterly different from anticipated swift decisive campaigns. No end appears in sight."
+          },
+          {
+            "headline": "Police Investigate Killing of William Doyle",
+            "fontStyle": "3",
+            "content": "New York police are continuing their inquiry into the shooting death of William Doyle, known in police records as “Little Patsy” Doyle, who was killed Saturday evening on the West Side. Authorities are examining reports that Doyle may have been induced to attend a meeting before the attack occurred. No arrests have yet been announced. Police officials believe the crime may be connected to a long-standing feud among rival gang elements."
+          }
+        ]
+      },
+      {
+        "id": "1915-nov-002",
+        "date": "11/30/15",
+        "newspaper": "new-york-american",
+        "displayText": "11/30/15 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "GIRL LURED DOYLE TO DEATH! POLICE HUNT GANG SLAYERS",
+            "fontStyle": "3",
+            "content": "William “Little Patsy” Doyle, Hudson Duster chieftain, was shot dead Saturday night after being enticed to a rendezvous by a young woman, detectives believe. The killing ends a bitter war that has drenched the West Side in blood. Police are questioning women and known gang associates while rumors spread that Owney Madden's Gophers have at last settled their score."
+          }
+        ]
+      }
+    ],
+    "dec": [
+      {
+        "id": "1915-dec-001",
+        "date": "12/26/15",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "12/26/15 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "CHRISTMAS MIRACLE IN TRENCHES! ENEMIES EXCHANGE GIFTS, SHARE BRIEF PEACE",
+            "fontStyle": "3",
+            "content": "Extraordinary reports from the Western Front describe spontaneous Christmas truces as soldiers from opposing trenches met in no-man's-land to exchange gifts, sing carols, and share brief humanity. British troops received German Pickelhauben helmets while offering cigarettes and food in return. Officers struggled to maintain military discipline as men who had been killing each other days before played football and showed family photographs. The remarkable fraternization suggests common soldiers harbor no deep hatred despite governments' enmity. Many express hope that such brotherhood may yet produce negotiated peace, though commanders have ordered the informal truces cease immediately."
+          }
+        ]
+      }
+    ]
+  }
+}
