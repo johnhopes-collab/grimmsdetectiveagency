@@ -21,6 +21,26 @@
         ]
       }
     ],
+    "mar": [
+      {
+        "id": "1925-feb-001",
+        "date": "3/11/25",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "3/11/25 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "VAMPIRE INVESTMENT BANKER ARRESTED IN WALL STREET SCHEME",
+            "fontStyle": "3",
+            "content": "Federal prosecutors today charged financier Vincent Draculesti with securities fraud after discovering his unprecedented 400-year tenure at J.P. Morgan was achieved through supernatural means. Investigators became suspicious when records showed Draculesti had worked continuously since 1524 without vacation. “We initially thought it was an accounting error,” said District Attorney Morrison. The arrest occurred at noon in a carefully coordinated raid utilizing mirrors, garlic, and several Catholic priests. Tragically, three junior auditors assigned to review Draculesti's portfolios have reportedly gone missing, last seen leaving the office with pale complexions and an inexplicable aversion to sunlight. The remaining staff has been advised to work daylight hours only."
+          },
+          {
+            "headline": "TUDOR CITY PROJECT UNVEILED",
+            "fontStyle": "3",
+            "content": "One of Manhattan's most ambitious residential developments is rapidly transforming a notorious East Side slum into what developers promise will be a “city within a city” for middle-class professionals. Tudor City, under construction on the bluff once known as “Goat Hill,” represents a dramatic reimagining of an area long associated with tenements, slaughterhouses, and industrial squalor overlooking the East River. Developer Fred F. French is erecting a complex of apartment towers in Tudor Revival style, complete with private parks, shops, and restaurants—all designed to house thousands of commuters and office workers in close proximity to Midtown's expanding business district. “We are building a clean, quiet residential enclave elevated above the noise and congestion of the city streets,” French announced at a promotional event last week. The development strategically faces away from the industrial waterfront, with windows oriented toward midtown rather than the river. Real estate observers predict Tudor City will set a new standard for urban living, offering modern amenities and architectural distinction at prices accessible to secretaries, clerks, and junior executives."
+          }
+        ]
+      }
+    ],
     "apr": [
       {
         "id": "1925-apr-001",
