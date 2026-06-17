@@ -126,6 +126,19 @@
     "may": [
       {
         "id": "1920-may-001",
+        "date": "5/16/20",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "5/16/20 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "WILSON ERA DRAWS TO EXHAUSTED CLOSE",
+            "fontStyle": "3",
+            "content": "The exhausted President's term expires in nine months. As the nation prepares for this autumn's presidential contest, President Woodrow Wilson's grand vision lies in ruins. The architect of the League of Nations, felled by a devastating stroke in October 1919, remains largely invisible, his condition shrouded in secrecy. Government business proceeds in constitutional twilight while the country's problems mount. The sharp economic recession currently sweeping the nation has replaced wartime prosperity, and labor strikes convulse major cities, driving fears following the example of the Bolsheviks in Russia. And over all of this looms Wilson's intransigence on the League—his refusal to accept Senate compromises doomed the treaty and left America's peace incomplete. Senator Warren G. Harding of Ohio, the likely Republican nominee, offers a “return to normalcy.” His campaign promises stability over upheaval, prosperity over crusades, limited international commitments over Wilsonian grandeur. The contrast could not be clearer. Wilson sought to remake the world. The voters, it seems, would prefer simply to repair their own country."
+          }
+        ]
+      },
+      {
+        "id": "1920-may-002",
         "date": "5/20/20",
         "newspaper": "evening-mail3",
         "displayText": "5/20/20 - EVENING MAIL",
@@ -232,6 +245,19 @@
     "nov": [
       {
         "id": "1920-nov-001",
+        "date": "11/3/20",
+        "newspaper": "the-globe",
+        "displayText": "11/3/20 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "HARDING WINS IN HISTORIC LANDSLIDE",
+            "fontStyle": "6",
+            "content": "Republican Warren G. Harding captured the presidency in the most overwhelming electoral victory in modern American history, crushing Democratic candidate James M. Cox and bringing eight years of Woodrow Wilson's policies to a devastating end. By midnight, Harding had secured over 400 electoral votes and nearly 60% of the popular vote—an unprecedented margin. Cox carried only the Deep South, losing even his home state of Ohio by more than 200,000 votes. The scale of the defeat represents a thorough repudiation of Wilson's League of Nations and progressive agenda. Voters delivered a clear message: they want peace, prosperity, and what Harding calls “normalcy”—reduced government interference, pro-business policies, and an end to foreign crusades. In his victory speech from Marion, Ohio, the President-elect emphasized his vision of prosperity for all Americans, adding that “even those citizens whom others might consider strange or unusual shall find in this administration a government that judges by character and contribution, not by appearance.” The American people have spoken: they want rest, not revolution."
+          }
+        ]
+      },
+      {
+        "id": "1920-nov-002",
         "date": "11/29/20",
         "newspaper": "brooklyn-daily-eagle",
         "displayText": "11/29/20 - BROOKLYN DAILY EAGLE",
