@@ -45,17 +45,25 @@
     }
     
     // Trigger the spin animation
+    // Trigger the spin animation
     function triggerSpin() {
         if (isSpinning) return;
         
         isSpinning = true;
         
+        console.log('🛡️ SPIN TRIGGERED'); // DEBUG
+        console.log('🛡️ Time:', Date.now()); // DEBUG
+        
         // Swap to animated WebP
         const spinWebP = shield.getAttribute('data-spin');
-        shield.src = spinWebP + '?t=' + Date.now(); // Cache-bust to restart animation
+        console.log('🛡️ WebP URL:', spinWebP); // DEBUG
+        shield.src = spinWebP + '?t=' + Date.now();
+        
+        console.log('🛡️ Image swapped, waiting', SPIN_DURATION, 'ms'); // DEBUG
         
         // Revert to static PNG after animation
         setTimeout(() => {
+            console.log('🛡️ REVERTING TO STATIC'); // DEBUG
             const staticPng = shield.getAttribute('data-static');
             shield.src = staticPng;
             isSpinning = false;
