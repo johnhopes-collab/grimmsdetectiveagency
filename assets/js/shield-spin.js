@@ -51,15 +51,15 @@
         isSpinning = true;
         
         // Swap to GIF
-        const spinGif = shield.getAttribute('data-spin');
-        shield.src = spinGif + '?t=' + Date.now(); // Cache-bust to restart GIF
+        const spinWebP = shield.getAttribute('data-spin');
+        shield.src = spinWebP + '?t=' + Date.now(); // Cache-bust to restart GIF
         
         // Revert to static PNG after animation
         setTimeout(() => {
             const staticPng = shield.getAttribute('data-static');
             shield.src = staticPng;
             isSpinning = false;
-        }, 1650); 
+        }, SPIN_DURATION); 
     }
     
     // Reset tracking
