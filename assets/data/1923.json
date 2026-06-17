@@ -181,7 +181,7 @@
             "headline": "CAN PONANZI'S INVESTMENT PLAN REALLY WORK? EXPERTS CHALLENGE MATHEMATICS",
             "fontStyle": "3",
             "content": "Financial experts publicly question whether Heinrich Ponanzi's investment model is mathematically possible. Analysis suggests the entire global supply of pixie gold could not support the returns Ponanzi claims to generate. The volume of his transactions appears to exceed available bullions by enormous margins. Ponanzi defends his methods vigorously, suggesting critics misunderstand sophisticated international finance. He continues paying investors while promising full transparency. Confidence among participants remains high despite growing skepticism."
-          }
+          },
           {
             "headline": "MYSTERY DEEPENS IN PERRAULT TRAGEDY - QUESTIONS SURROUND LOSS OF FAMED LIBRARY CUSTODIANS",
             "fontStyle": "3",
@@ -340,6 +340,24 @@
             "headline": "ITALY QUIETED UNDER FASCIST RULE AS ORDER RETURNS TO STREETS",
             "fontStyle": "6",
             "content": "Italy appears to have entered a new phase of uneasy stability under Benito Mussolini’s Fascist government, which now holds firm control over Rome and much of the country. While critics on the left denounce the regime as authoritarian and elements on the right express discomfort with its methods, officials report a marked reduction in strikes, unrest, and political disorder. Many observers note that the new movement has brought order to a previously fractured nation."
+          }
+        ]
+      },
+      {
+        "id": "1923-dec-002",
+        "date": "12/15/23",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "12/15/23 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "HOW RUMPELSTILTSKIN FOOLED THOUSANDS: YEAR-END EXAMINATION OF NEW YORK'S GREATEST MAGICAL SWINDLE",
+            "fontStyle": "3",
+            "content": "As 1923 closes, newspapers examine how an ancient magical being successfully posed as a German immigrant financier. The scheme exploited immigrant communities' desire for rapid wealth and Americans' unfamiliarity with enchanted contract law. Rumpelstiltskin's supernatural charm, gold-spinning abilities, and genuine early payments created powerful credibility. Victims included police officers, businessmen, and working families who unknowingly signed magically binding documents. Citizens are demanding stronger regulation of non-human entities engaging in commerce. The Rumpelstiltskin affair stands as the year's most spectacular cautionary tale involving the supernatural."
+          },
+          {
+            "headline": "Perrault Investigation Yields More Questions Than Answers",
+            "fontStyle": "3",
+            "content": "Investigations into the Perrault tragedy have proven inconclusive despite reports of an SOS transmission sent before the ship's disappearance. Maritime authorities can determine neither storm nor mechanical failure as definitive cause. Since the wreck's discovery and emergence of sole surviving heir Jules Perrault—to whom the family's considerable arcane power has transferred—the once-prominent Perrault name has nearly vanished from public life. The young boy maintains absolute seclusion at the family estate, refusing all visitors and correspondence. The legendary Perrault library remains sealed. A family that once graced society's finest gatherings has withdrawn indefinitely into mysterious isolation and grief."
           }
         ]
       }
