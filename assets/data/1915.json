@@ -98,9 +98,9 @@
         "displayText": "5/8/15 - THE GLOBE",
         "stories": [
           {
-            "headline": "LUSITANIA SUNK BY SUBMARINE; 1,260 FEARED DEAD",
+            "headline": "LUSITANIA SUNK; AMERICANS LOST",
             "fontStyle": "3",
-            "content": "The Cunard liner RMS Lusitania has been torpedoed and sunk by a German submarine off the Irish coast, with catastrophic loss of life estimated at 1,260 passengers and crew. The luxury vessel went down within eighteen minutes after being struck without warning, giving victims little chance to reach lifeboats. American citizens are among the dead, provoking outrage and demands for government response. Germany claims the ship carried munitions and constituted legitimate military target, but the magnitude of civilian casualties shocks the civilized world. President Wilson faces enormous pressure to respond forcefully to what many consider an act of barbarism. Will America remain neutral after this atrocity?"
+            "content": "The RMS Lusitania has sunk following torpedo attack by German submarine, carrying an estimated 1,260 passengers and crew to their deaths in the cold Atlantic waters. The great Cunard liner went down in eighteen minutes, affording little time for orderly evacuation. Among the lost are women, children, and citizens of neutral nations including numerous Americans. Survivors describe scenes of desperation as the ship listed severely, preventing launching of many lifeboats. The magnitude of civilian loss represents profound human tragedy regardless of military justifications offered by either side. Families across two continents await confirmation of loved ones' fates as rescue vessels recover the living and the dead."
           }
         ]
       },
@@ -114,6 +114,11 @@
             "headline": "ITALY MOBILIZES FOR WAR! FIRST TROOPS MOVE TOWARD AUSTRIAN FRONTIER",
             "fontStyle": "3",
             "content": "Italian forces have begun mobilizing following formal declaration of war, with first troop movements toward the Austrian frontier observed. Military analysts predict Italian entry may prove decisive in breaking the Central Powers' resistance, opening a crucial southern front that will force enemy redeployment. Germany reacts to Italian mobilization with expressions of betrayal tempered by strategic realism, as Berlin had long suspected Rome's defection despite treaty obligations. Austrian commanders scramble to defend mountainous borders against the new threat. The Allies celebrate gaining a significant partner whose geographic position threatens Austria-Hungary's vulnerable southern territories. The balance of power shifts dramatically."
+          },
+          {
+            "headline": "LUSITANIA SURVIVORS RECOUNT HARROWING ORDEAL; RESCUED PASSENGERS ARRIVE AT QUEENSTOWN",
+            "fontStyle": "3",
+            "content": "Survivors of the Lusitania disaster have reached Queenstown, Ireland, bearing testimony to the horror of the liner's final moments. Passengers describe the sudden impact, the ship's rapid listing, and chaotic struggle to reach lifeboats as water flooded compartments with terrifying speed. Many survivors spent hours in frigid water clinging to debris before rescue vessels arrived. Families separated in the chaos search desperately for missing relatives among the rescued. Medical personnel treat survivors for exposure and injuries while providing comfort to those who witnessed loved ones perish. The accounts reveal both extraordinary courage and heartbreaking loss as ordinary people faced unimaginable catastrophe far from shore."
           }
         ]
       }
@@ -126,7 +131,7 @@
         "displayText": "8/18/15 - BROOKLYN DAILY EAGLE",
         "stories": [
           {
-            "headline": "RUSSIANS IN GREAT RETREAT - WARSAW THREATENED",
+            "headline": "RUSSIANS IN RETREAT - WARSAW THREATENED",
             "fontStyle": "3",
             "content": "German and Austro-Hungarian forces have smashed Russian defenses in the Gorlice-Tarnów Offensive, forcing catastrophic retreat as Warsaw faces imminent capture. The Central Powers have seized vast territories, inflicting hundreds of thousands of casualties upon disorganized Russian armies. Contemporary observers suggest this campaign may prove war-winning, potentially knocking Russia from the conflict entirely. The Czar's forces abandon cities and supplies in headlong flight as German military superiority demonstrates devastating effectiveness. Russia's collapse threatens Allied strategy fundamentally. If the Eastern Front falls, Germany can concentrate overwhelming force westward. The tide appears turning decisively toward Central Powers victory."
           },
