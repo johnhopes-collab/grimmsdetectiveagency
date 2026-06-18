@@ -7,6 +7,7 @@
 
     // Preload the animated WebP
     const spinWebP = shield.getAttribute('data-spin');
+    const staticPng = shield.getAttribute('data-static');
     const preloadImg = new Image();
     preloadImg.src = spinWebP;
 
@@ -14,7 +15,8 @@
     const NUM_ZONES = 5; // Number of vertical hitbox zones
     const TIME_WINDOW = 1200; // Milliseconds to complete swipe
     const MIN_ZONES = 2; // Minimum zones to cross for trigger
-    const COOLDOWN_TIME = 1100; // Minimum time between animations (slightly longer than WebP)
+    const ANIMATION_DURATION = 980; // WebP duration in milliseconds
+    const COOLDOWN_TIME = 1100; // Minimum time between animations
     
     // State tracking
     let zonesHit = [];
@@ -65,29 +67,15 @@
         
         console.log('🛡️ SPIN TRIGGERED');
         
-        // Swap to animated WebP
-        const spinWebP = shield.getAttribute('data-spin');
-        const staticPng = shield.getAttribute('data-static');
-        
-        // Force reload to ensure animation plays from start
+        // Swap to animated WebP immediately
         shield.src = spinWebP + '?t=' + currentTime;
         
-        // Listen for when the image finishes loading and playing
-        const handleAnimationEnd = () => {
-            // Wait for the WebP to complete its single loop
-            setTimeout(() => {
-                console.log('🛡️ REVERTING TO STATIC');
-                shield.src = staticPng;
-                isSpinning = false;
-            }, 1000); // Slightly longer than your 980ms to ensure completion
-        };
-        
-        // If image is already cached, it won't fire 'load', so we need both handlers
-        if (shield.complete) {
-            handleAnimationEnd();
-        } else {
-            shield.addEventListener('load', handleAnimationEnd, { once: true });
-        }
+        // Revert to static after animation completes
+        setTimeout(() => {
+            console.log('🛡️ REVERTING TO STATIC');
+            shield.src = staticPng;
+            isSpinning = false;
+        }, ANIMATION_DURATION);
     }
     
     // Reset tracking
