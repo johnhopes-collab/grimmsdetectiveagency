@@ -4,16 +4,22 @@
     const hitbox = document.getElementById('shield-hitbox');
     
     if (!shield || !hitbox) return; // Safety check
-    
+
+    // Preload the animated WebP
+    const spinWebP = shield.getAttribute('data-spin');
+    const preloadImg = new Image();
+    preloadImg.src = spinWebP;
+
     // Configuration
     const NUM_ZONES = 5; // Number of vertical hitbox zones
     const TIME_WINDOW = 1200; // Milliseconds to complete swipe
     const MIN_ZONES = 2; // Minimum zones to cross for trigger
-    const SPIN_DURATION = 1760; // GIF duration in milliseconds
+    const COOLDOWN_TIME = 1100; // Minimum time between animations (slightly longer than WebP)
     
     // State tracking
     let zonesHit = [];
     let isSpinning = false;
+    let lastSpinTime = 0;
     let firstHitTime = 0;
     
     // Calculate which zone the mouse is in (0 to NUM_ZONES-1)
@@ -46,20 +52,42 @@
     
     // Trigger the spin animation
     function triggerSpin() {
-        if (isSpinning) return;
+        const currentTime = Date.now();
+        
+        // Enforce cooldown to prevent interrupting animations
+        if (isSpinning || (currentTime - lastSpinTime < COOLDOWN_TIME)) {
+            console.log('🛡️ SPIN BLOCKED (cooldown)');
+            return;
+        }
         
         isSpinning = true;
+        lastSpinTime = currentTime;
         
-        // Swap to GIF
-        const spinGif = shield.getAttribute('data-spin');
-        shield.src = spinGif + '?t=' + Date.now(); // Cache-bust to restart GIF
+        console.log('🛡️ SPIN TRIGGERED');
         
-        // Revert to static PNG after animation
-        setTimeout(() => {
-            const staticPng = shield.getAttribute('data-static');
-            shield.src = staticPng;
-            isSpinning = false;
-        }, SPIN_DURATION);
+        // Swap to animated WebP
+        const spinWebP = shield.getAttribute('data-spin');
+        const staticPng = shield.getAttribute('data-static');
+        
+        // Force reload to ensure animation plays from start
+        shield.src = spinWebP + '?t=' + currentTime;
+        
+        // Listen for when the image finishes loading and playing
+        const handleAnimationEnd = () => {
+            // Wait for the WebP to complete its single loop
+            setTimeout(() => {
+                console.log('🛡️ REVERTING TO STATIC');
+                shield.src = staticPng;
+                isSpinning = false;
+            }, 1000); // Slightly longer than your 980ms to ensure completion
+        };
+        
+        // If image is already cached, it won't fire 'load', so we need both handlers
+        if (shield.complete) {
+            handleAnimationEnd();
+        } else {
+            shield.addEventListener('load', handleAnimationEnd, { once: true });
+        }
     }
     
     // Reset tracking
