@@ -125,6 +125,19 @@
     "nov": [
       {
         "id": "1917-nov-001",
+        "date": "11/7/17",
+        "newspaper": "evening-mail3",
+        "displayText": "11/7/17 - EVENING MAIL",
+        "stories": [
+          {
+            "headline": "HYLAN ELECTED MAYOR",
+            "fontStyle": "3",
+            "content": "John F. Hylan, Democratic candidate and standard-bearer of Tammany Hall, was elected Mayor of New York yesterday by a substantial plurality over Mayor John Purroy Mitchel. Returns from all boroughs showed a sweeping victory for the Democratic ticket and the overthrow of the Fusion administration after four years in office."
+          }
+        ]
+      },
+      {
+        "id": "1917-nov-002",
         "date": "11/8/17",
         "newspaper": "evening-mail3",
         "displayText": "11/8/17 - EVENING MAIL",
