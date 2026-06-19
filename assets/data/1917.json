@@ -1,6 +1,21 @@
 {
   "year": 1917,
   "months": {
+    "feb": [
+      {
+        "id": "1917-feb-001",
+        "date": "2/18/17",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "2/18/17 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "FOOD RIOTS ERUPT IN BROOKLYN! WOMEN OVERTURN CARTS PROTESTING SOARING PRICES",
+            "fontStyle": "3",
+            "content": "Angry crowds of women demonstrated violently in Brownsville and neighboring Brooklyn districts, overturning produce carts and marching on city officials demanding relief from soaring food costs. The protestors targeted potatoes, onions, bread, and other staples whose prices have skyrocketed beyond working-class affordability. Organized boycotts accompanied street demonstrations as housewives declared they can no longer feed families under wartime inflation. Police struggled to contain crowds while city officials promised investigations into profiteering. The disturbances reflect mounting working-class fury over economic hardship as European war drives American prices to unprecedented levels. Municipal authorities face difficult questions about controlling speculation and ensuring affordable provisions for struggling neighborhoods."
+          }
+        ]
+      }
+    ],
     "mar": [
       {
         "id": "1917-mar-001",
@@ -19,6 +34,37 @@
             "content": "A large delegation of women assembled yesterday in the vicinity of Fifth Avenue to urge support for the proposed constitutional amendment granting women the right to vote. The demonstration, conducted in an orderly manner, included representatives of various civic and suffrage organizations who carried banners and distributed literature outlining their position. Speakers emphasized arguments relating to democratic representation and civic equality. Police reported no disturbances, and the event concluded peacefully after several addresses were delivered."
           }
         ]
+      },
+      {
+        "id": "1917-mar-002",
+        "date": "3/16/17",
+        "newspaper": "the-globe",
+        "displayText": "3/16/17 - THE GLOBE",
+        "stories": [
+          {
+            "headline": "CZAR ABDICATES",
+            "fontStyle": "3",
+            "content": "Czar Nicholas II has abdicated the Russian throne following massive protests and military unrest, ending the three-century Romanov dynasty in spectacular collapse. A Provisional Government has assumed control, pledging to continue the war against Germany while implementing democratic reforms. The revolutionary upheaval has profound implications for Allied war effort and global politics. New York's substantial Russian émigré community reacts with jubilation and anxiety about Russia's future direction. Revolutionary figures including Leon Trotsky, who recently resided in New York before returning to Russia, feature prominently in speculation about the new government's composition. The fall of Europe's most autocratic regime represents either liberation's triumph or descent into chaos."
+          },
+          {
+            "headline": "New Charges in Charities Funding Controversy",
+            "fontStyle": "3",
+            "content": "Fresh charges have emerged in the ongoing controversy surrounding municipal funding of private charitable institutions. Critics accuse Mayor Mitchel's administration of targeting Catholic orphanages and charities for political purposes through Commissioner John A. Kingsbury's investigations into how millions in city funds are distributed. Reformers counter that entrenched networks distribute public money through political influence rather than merit. The bitter dispute continues generating accusations of religious prejudice, fiscal irresponsibility, and machine politics. The charities controversy remains central to municipal politics as opponents frame the issue as either necessary reform or persecution of Catholic institutions. The battle will likely dominate the upcoming mayoral campaign."
+          }
+        ]
+      },
+      {
+        "id": "1917-mar-003",
+        "date": "3/16/17",
+        "newspaper": "new-york-american",
+        "displayText": "3/16/17 - NEW YORK AMERICAN",
+        "stories": [
+          {
+            "headline": "REVOLUTION TRIUMPHS IN PETROGRAD! CZAR OVERTHROWN AS PEOPLE SEIZE POWER FROM TYRANT",
+            "fontStyle": "3",
+            "content": "The Russian people have risen in glorious revolt, overthrowing the despotic Czar Nicholas and his corrupt regime! Soldiers joined workers in the streets as the Romanov tyranny crumbled before popular fury. The Provisional Government promises freedom, democracy, and continued struggle against German militarism. Communist agitators who lived among us in New York, including the firebrand Leon Trotsky, have returned to shape Russia's destiny. Will the new government bring true liberation or descend into Bolshevik radicalism? The world watches breathlessly as history's most dramatic revolution unfolds."
+          }
+        ]
       }
     ],
     "apr": [
@@ -32,6 +78,21 @@
             "headline": "UNITED STATES DECLARES WAR ON GERMANY! CONGRESS ACTS AFTER SUBMARINE OUTRAGES",
             "fontStyle": "3",
             "content": "The United States has formally entered the European war after Congress approved a declaration of war against Germany, following months of escalating tensions over unrestricted submarine attacks on American shipping. President Wilson has described the conflict as a necessary response to violations of international law and threats to neutral rights. Across the nation, preparations are underway for mobilization as the country joins the Allied powers in what is now a global conflict."
+          }
+        ]
+      }
+    ],
+    "may": [
+      {
+        "id": "1917-may-001",
+        "date": "5/20/17",
+        "newspaper": "brooklyn-daily-eagle",
+        "displayText": "5/20/17 - BROOKLYN DAILY EAGLE",
+        "stories": [
+          {
+            "headline": "TAMMANY CHIEFS PREPARE CAMPAIGN",
+            "fontStyle": "3",
+            "content": "Tammany Hall boss Charles Francis Murphy is orchestrating efforts to recapture municipal government from Mayor Mitchel's reform administration through systematic patronage networks and political appointments. The undisputed chief of the Democratic machine aims to restore Tammany control after years of reform governance. Speculation centers on former judge John Francis Hylan as potential mayoral candidate, with Brooklyn politicians promoting the jurist as Murphy's choice. Reform newspapers warn against returning to machine politics where municipal jobs serve as political rewards and city contracts flow through political advantage. The struggle between civil-service reform and Tammany power will define the coming election as Boss Murphy prepares his forces."
           }
         ]
       }
