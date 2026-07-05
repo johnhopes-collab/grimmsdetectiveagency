@@ -18,3 +18,143 @@
     max-width: 600px;         /* safety cap */
     margin-left: 0; margin-right: 0;
 }}
+
+/* ========================================= */
+/* NEW: Interactive Map Styles - ADD BELOW  */
+/* ========================================= */
+
+.map-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Work within your existing .map-block sizing */
+}
+
+.borough-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Scale with the container */
+    height: auto;
+    pointer-events: none;
+    transition: filter 0.2s ease;
+}
+
+.borough-overlay.active {
+    filter: brightness(1.3) saturate(1.5);
+}
+
+.borough-overlay.hovered {
+    filter: brightness(1.1);
+}
+
+/* Position info panel over your Info-Matic area - adjust these values! */
+.info-panel {
+    position: absolute;
+    right: 5%; /* Percentage-based for responsive design */
+    top: 15%; /* Adjust based on where your Info-Matic screen is */
+    width: 25%; /* Adjust based on your Info-Matic screen width */
+    height: 40%; /* Adjust based on your Info-Matic screen height */
+}
+
+.info-content {
+    padding: 2% 3%;
+    height: 100%;
+    overflow: hidden;
+    color: #00ff00; /* Adjust to match your Info-Matic design */
+    font-family: 'Courier New', monospace;
+    font-size: clamp(10px, 1.2vw, 14px); /* Responsive font size */
+}
+
+/* Text rotation containers */
+.text-rotator {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.description-rotator {
+    position: relative;
+    overflow: hidden;
+    height: 70%; /* Adjust based on available space */
+}
+
+.rotating-text {
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transform: translateY(0);
+    margin: 0;
+    font-size: clamp(12px, 1.4vw, 16px); /* Responsive title size */
+}
+
+.rotating-text.slide-up-out {
+    transform: translateY(-100%);
+}
+
+.rotating-text.slide-up-in {
+    transform: translateY(100%);
+}
+
+.rotating-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transform: translateY(0);
+    padding-right: 8px;
+    font-size: clamp(8px, 1vw, 12px); /* Responsive description size */
+}
+
+.rotating-description.slide-up-out {
+    transform: translateY(-100%);
+}
+
+.rotating-description.slide-up-in {
+    transform: translateY(100%);
+}
+
+/* Responsive scrollbar */
+.rotating-description::-webkit-scrollbar {
+    width: 3px;
+}
+
+.rotating-description::-webkit-scrollbar-track {
+    background: rgba(0,255,0,0.1);
+}
+
+.rotating-description::-webkit-scrollbar-thumb {
+    background: rgba(0,255,0,0.5);
+    border-radius: 2px;
+}
+
+#detection-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: all;
+}
+
+/* Mobile adjustments */
+@media (max-width: 500px) {
+    .info-panel {
+        right: 3%;
+        width: 30%;
+        height: 35%;
+    }
+    
+    .info-content {
+        padding: 1% 2%;
+    }
+    
+    .rotating-text {
+        font-size: 10px;
+    }
+    
+    .rotating-description {
+        font-size: 8px;
+    }
+}
