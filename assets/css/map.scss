@@ -1,0 +1,20 @@
+---
+---
+
+/* CITY MAP Styling 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 */
+.map-block {
+    width: 80vw;              /* viewport-based width CITY MAP*/
+    max-width: 400px;         /* safety cap */
+    margin-left: calc(58% - 40vw); 
+    margin-right: calc(50% - 40vw);
+}
+.image-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (max-width: 500px) { .image-block-breakout {
+    width: 90vw;              /* viewport-based width CITY MAP*/
+    max-width: 600px;         /* safety cap */
+    margin-left: 0; margin-right: 0;
+}}
