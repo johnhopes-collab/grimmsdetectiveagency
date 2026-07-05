@@ -48,9 +48,6 @@ class BoroughDetector {
         this.currentBorough = null;
         this.selectedBorough = null;
         
-        this.titleRotator = document.getElementById('title-rotator');
-        this.descriptionRotator = document.getElementById('description-rotator');
-        
         this.boroughData = {
             'Manhattan': 'The heart of NYC, home to Times Square, Central Park, and Wall Street. This densely packed island is the commercial and cultural center of the city, featuring world-famous landmarks like the Empire State Building, Broadway theaters, and numerous museums.',
             'Brooklyn': 'The most populous borough, known for the Brooklyn Bridge and diverse neighborhoods like Williamsburg, DUMBO, and Park Slope. Brooklyn has transformed from an industrial area into a hub of culture, art, and cuisine.',
@@ -116,6 +113,7 @@ class BoroughDetector {
             }
         }
         
+        // Update hover state and cursor
         if (hoveredBorough !== this.currentBorough) {
             if (this.currentBorough) {
                 this.currentBorough.classList.remove('hovered');
@@ -124,13 +122,8 @@ class BoroughDetector {
             if (hoveredBorough) {
                 hoveredBorough.classList.add('hovered');
                 this.canvas.style.cursor = 'pointer';
-                // Only update description on hover, NOT title
-                this.updateDescription('Click to select this borough');
             } else {
                 this.canvas.style.cursor = 'default';
-                if (!this.selectedBorough) {
-                    this.updateDescription(''); // Clear description when not hovering
-                }
             }
             
             this.currentBorough = hoveredBorough;
@@ -139,14 +132,16 @@ class BoroughDetector {
     
     handleClick(e) {
         if (this.currentBorough) {
+            // Remove previous selection
             if (this.selectedBorough) {
                 this.selectedBorough.classList.remove('active');
             }
             
+            // Set new selection
             this.selectedBorough = this.currentBorough;
             this.selectedBorough.classList.add('active');
             
-            // Update both title and description on click
+            // Update display with new borough info
             this.updateTitle(this.selectedBorough.dataset.borough);
             this.updateDescription(this.boroughData[this.selectedBorough.dataset.borough]);
         }
@@ -158,35 +153,26 @@ class BoroughDetector {
             this.currentBorough = null;
         }
         this.canvas.style.cursor = 'default';
-        
-        if (!this.selectedBorough) {
-            this.updateDescription(''); // Clear description when not hovering and nothing selected
-        } else {
-            // Show selected borough description when mouse leaves
-            this.updateDescription(this.boroughData[this.selectedBorough.dataset.borough]);
-        }
+        // Do nothing to the displayed text - let it stay
     }
     
-    // Separate methods for title and description updates
     updateTitle(newTitle) {
         const titleElement = document.getElementById('borough-name');
         
-        if (newTitle && newTitle !== '') {
-            // Animate out current title
-            titleElement.style.transform = 'translateY(-100%)';
+        // Animate out current title
+        titleElement.style.transform = 'translateY(-100%)';
+        
+        // After animation, update content and animate in
+        setTimeout(() => {
+            titleElement.textContent = newTitle;
+            titleElement.style.transform = 'translateY(100%)';
             
-            // After animation, update content and animate in
+            // Force reflow then animate to normal position
+            titleElement.offsetHeight;
             setTimeout(() => {
-                titleElement.textContent = newTitle;
-                titleElement.style.transform = 'translateY(100%)';
-                
-                // Force reflow then animate to normal position
-                titleElement.offsetHeight;
-                setTimeout(() => {
-                    titleElement.style.transform = 'translateY(0)';
-                }, 10);
-            }, 200);
-        }
+                titleElement.style.transform = 'translateY(0)';
+            }, 10);
+        }, 200);
     }
     
     updateDescription(newDescription) {
