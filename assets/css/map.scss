@@ -65,19 +65,20 @@
     font-size: clamp(10px, 1.2vw, 14px);    
 }
 
-/* Text rotation containers */
 /* Text containers */
 .text-rotator {
     position: relative;
     overflow: hidden;
     height: 30px; /* Fixed height for title box */
     margin-bottom: 8px;
+    left: 25%;
 }
 
 .description-rotator {
+    top: 9%;
     position: relative;
     overflow: hidden;
-    height: 70%; /* Adjust based on available space */
+    height: 100%; /* Adjust based on available space */
 }
 
 #borough-name {
