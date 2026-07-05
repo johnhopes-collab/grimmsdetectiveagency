@@ -14,19 +14,17 @@
     display: block;
 }
 @media (max-width: 500px) { .image-block-breakout {
-    width: 90vw;              /* viewport-based width CITY MAP*/
-    max-width: 600px;         /* safety cap */
+    width: 90vw;
+    max-width: 600px;
     margin-left: 0; margin-right: 0;
 }}
 
-/* ========================================= */
-/* NEW: Interactive Map Styles - ADD BELOW  */
-/* ========================================= */
+/* Interactive Map Styles  */
 
 .map-container {
     position: relative;
     display: inline-block;
-    width: 100%; /* Work within your existing .map-block sizing */
+    width: 100%;
 }
 
 .borough-overlay {
@@ -47,20 +45,19 @@
     filter: brightness(1.2) saturate(1.5);
 }
 
-/* Position info panel over your Info-Matic area - adjust these values! */
 .info-panel {
     position: absolute;
-    right: 8%; /* Percentage-based for responsive design */
-    top: 24%; /* Adjust based on where your Info-Matic screen is */
-    width: 28%; /* Adjust based on your Info-Matic screen width */
-    height: 40%; /* Adjust based on your Info-Matic screen height */
+    right: 8%;
+    top: 24%;
+    width: 28%;
+    height: 40%;
 }
 
 .info-content {
     padding: 2% 3%;
     height: 100%;
     overflow: hidden;
-    color: #000000; /* Black text */
+    color: #000000;
     font-family: 'Courier New', monospace;
     font-size: clamp(10px, 1.2vw, 14px);    
 }
@@ -78,7 +75,7 @@
     top: 9%;
     position: relative;
     overflow: hidden;
-    height: 100%; /* Adjust based on available space */
+    height: 100%;
 }
 
 #borough-name {
@@ -101,18 +98,10 @@
 }
 
 /* Scrollbar styling */
-#borough-description::-webkit-scrollbar {
-    width: 3px;
-}
 
-#borough-description::-webkit-scrollbar-track {
-    background: rgba(0,255,0,0.1);
-}
-
-#borough-description::-webkit-scrollbar-thumb {
-    background: rgba(0,255,0,0.5);
-    border-radius: 2px;
-}
+#borough-description::-webkit-scrollbar { width: 3px; }
+#borough-description::-webkit-scrollbar-track { background: rgba(0,255,0,0.1); }
+#borough-description::-webkit-scrollbar-thumb { background: rgba(0,255,0,0.5); border-radius: 2px; }
 
 #detection-canvas {
     position: absolute;
