@@ -26,12 +26,10 @@ title: '<a href="/archives.html">Archives</a> / Map'
         <div class="info-panel">
             <div class="info-content">
                 <div class="text-rotator" id="title-rotator">
-                    <h3 class="rotating-text" id="borough-name">Select a Borough</h3>
+                    <h3 id="borough-name"></h3> <!-- Starts empty -->
                 </div>
                 <div class="description-rotator" id="description-rotator">
-                    <div class="rotating-description" id="borough-description">
-                        Hover over a borough to see information
-                    </div>
+                    <div id="borough-description"></div> <!-- Starts empty -->
                 </div>
             </div>
         </div>
@@ -41,7 +39,6 @@ title: '<a href="/archives.html">Archives</a> / Map'
 <br>
 
 <script>
-// All the JavaScript code from before goes here
 class BoroughDetector {
     constructor() {
         this.canvas = document.getElementById('detection-canvas');
@@ -62,165 +59,158 @@ class BoroughDetector {
             'Staten Island': 'The most suburban borough, connected to Manhattan by the free Staten Island Ferry. Known for its parks, beaches, and more relaxed pace of life, Staten Island offers a different perspective on NYC living.'
         };
         
-                this.init();
+        this.init();
+    }
+    
+    async init() {
+        await this.setupCanvas();
+        this.setupEventListeners();
+    }
+    
+    async setupCanvas() {
+        if (!this.baseMap.complete) {
+            await new Promise(resolve => {
+                this.baseMap.onload = resolve;
+            });
+        }
+        
+        this.canvas.width = this.baseMap.offsetWidth;
+        this.canvas.height = this.baseMap.offsetHeight;
+        
+        for (let borough of this.boroughs) {
+            if (!borough.complete) {
+                await new Promise(resolve => {
+                    borough.onload = resolve;
+                });
             }
-            
-            async init() {
-                await this.setupCanvas();
-                this.setupEventListeners();
-            }
-            
-            async setupCanvas() {
-                if (!this.baseMap.complete) {
-                    await new Promise(resolve => {
-                        this.baseMap.onload = resolve;
-                    });
-                }
-                
-                this.canvas.width = this.baseMap.offsetWidth;
-                this.canvas.height = this.baseMap.offsetHeight;
-                
-                for (let borough of this.boroughs) {
-                    if (!borough.complete) {
-                        await new Promise(resolve => {
-                            borough.onload = resolve;
-                        });
-                    }
-                }
-            }
-            
-            setupEventListeners() {
-                this.canvas.addEventListener('mousemove', (e) => this.handleMouseMove(e));
-                this.canvas.addEventListener('click', (e) => this.handleClick(e));
-                this.canvas.addEventListener('mouseleave', () => this.handleMouseLeave());
-            }
-            
-            getPixelData(x, y, boroughImg) {
-                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-                this.ctx.drawImage(boroughImg, 0, 0, this.canvas.width, this.canvas.height);
-                
-                const imageData = this.ctx.getImageData(x, y, 1, 1);
-                const alpha = imageData.data[3];
-                
-                return alpha > 0;
-            }
-            
-            handleMouseMove(e) {
-                const rect = this.canvas.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                let hoveredBorough = null;
-                
-                for (let borough of this.boroughs) {
-                    if (this.getPixelData(x, y, borough)) {
-                        hoveredBorough = borough;
-                        break;
-                    }
-                }
-                
-                if (hoveredBorough !== this.currentBorough) {
-                    if (this.currentBorough) {
-                        this.currentBorough.classList.remove('hovered');
-                    }
-                    
-                    if (hoveredBorough) {
-                        hoveredBorough.classList.add('hovered');
-                        this.canvas.style.cursor = 'pointer';
-                        this.updateInfo(hoveredBorough.dataset.borough, false);
-                    } else {
-                        this.canvas.style.cursor = 'default';
-                        if (!this.selectedBorough) {
-                            this.updateInfo('Select a Borough', false);
-                        }
-                    }
-                    
-                    this.currentBorough = hoveredBorough;
-                }
-            }
-            
-            handleClick(e) {
-                if (this.currentBorough) {
-                    if (this.selectedBorough) {
-                        this.selectedBorough.classList.remove('active');
-                    }
-                    
-                    this.selectedBorough = this.currentBorough;
-                    this.selectedBorough.classList.add('active');
-                    
-                    this.updateInfo(this.selectedBorough.dataset.borough, true);
-                }
-            }
-            
-            handleMouseLeave() {
-                if (this.currentBorough) {
-                    this.currentBorough.classList.remove('hovered');
-                    this.currentBorough = null;
-                }
-                this.canvas.style.cursor = 'default';
-                
-                if (!this.selectedBorough) {
-                    this.updateInfo('Select a Borough', false);
-                }
-            }
-            
-            // New method for rotating text animation
-            rotateText(container, newContent, isTitle = false) {
-                const currentElement = container.querySelector(isTitle ? '.rotating-text' : '.rotating-description');
-                
-                // Create new element
-                const newElement = currentElement.cloneNode(false);
-                if (isTitle) {
-                    newElement.textContent = newContent;
-                } else {
-                    newElement.innerHTML = newContent;
-                }
-                
-                // Position new element below viewport
-                newElement.classList.add('slide-up-in');
-                container.appendChild(newElement);
-                
-                // Force reflow
-                newElement.offsetHeight;
-                
-                // Animate out current element
-                currentElement.classList.add('slide-up-out');
-                
-                // Animate in new element
-                setTimeout(() => {
-                    newElement.classList.remove('slide-up-in');
-                }, 10);
-                
-                // Clean up after animation
-                setTimeout(() => {
-                    if (currentElement.parentNode) {
-                        currentElement.parentNode.removeChild(currentElement);
-                    }
-                    newElement.classList.remove('slide-up-out');
-                }, 450); // Slightly longer than CSS transition
-            }
-            
-            updateInfo(boroughName, isSelected) {
-                let descriptionContent;
-                
-                if (isSelected && this.boroughData[boroughName]) {
-                    descriptionContent = this.boroughData[boroughName];
-                } else if (boroughName === 'Select a Borough') {
-                    descriptionContent = 'Hover over a borough to see information';
-                } else {
-                    descriptionContent = 'Click to select this borough';
-                }
-                
-                // Animate title change
-                this.rotateText(this.titleRotator, boroughName, true);
-                
-                // Animate description change
-                this.rotateText(this.descriptionRotator, descriptionContent, false);
+        }
+    }
+    
+    setupEventListeners() {
+        this.canvas.addEventListener('mousemove', (e) => this.handleMouseMove(e));
+        this.canvas.addEventListener('click', (e) => this.handleClick(e));
+        this.canvas.addEventListener('mouseleave', () => this.handleMouseLeave());
+    }
+    
+    getPixelData(x, y, boroughImg) {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        this.ctx.drawImage(boroughImg, 0, 0, this.canvas.width, this.canvas.height);
+        
+        const imageData = this.ctx.getImageData(x, y, 1, 1);
+        const alpha = imageData.data[3];
+        
+        return alpha > 0;
+    }
+    
+    handleMouseMove(e) {
+        const rect = this.canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        let hoveredBorough = null;
+        
+        for (let borough of this.boroughs) {
+            if (this.getPixelData(x, y, borough)) {
+                hoveredBorough = borough;
+                break;
             }
         }
         
-        // Initialize when page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            new BoroughDetector();
-        });
-    </script>
+        if (hoveredBorough !== this.currentBorough) {
+            if (this.currentBorough) {
+                this.currentBorough.classList.remove('hovered');
+            }
+            
+            if (hoveredBorough) {
+                hoveredBorough.classList.add('hovered');
+                this.canvas.style.cursor = 'pointer';
+                // Only update description on hover, NOT title
+                this.updateDescription('Click to select this borough');
+            } else {
+                this.canvas.style.cursor = 'default';
+                if (!this.selectedBorough) {
+                    this.updateDescription(''); // Clear description when not hovering
+                }
+            }
+            
+            this.currentBorough = hoveredBorough;
+        }
+    }
+    
+    handleClick(e) {
+        if (this.currentBorough) {
+            if (this.selectedBorough) {
+                this.selectedBorough.classList.remove('active');
+            }
+            
+            this.selectedBorough = this.currentBorough;
+            this.selectedBorough.classList.add('active');
+            
+            // Update both title and description on click
+            this.updateTitle(this.selectedBorough.dataset.borough);
+            this.updateDescription(this.boroughData[this.selectedBorough.dataset.borough]);
+        }
+    }
+    
+    handleMouseLeave() {
+        if (this.currentBorough) {
+            this.currentBorough.classList.remove('hovered');
+            this.currentBorough = null;
+        }
+        this.canvas.style.cursor = 'default';
+        
+        if (!this.selectedBorough) {
+            this.updateDescription(''); // Clear description when not hovering and nothing selected
+        } else {
+            // Show selected borough description when mouse leaves
+            this.updateDescription(this.boroughData[this.selectedBorough.dataset.borough]);
+        }
+    }
+    
+    // Separate methods for title and description updates
+    updateTitle(newTitle) {
+        const titleElement = document.getElementById('borough-name');
+        
+        if (newTitle && newTitle !== '') {
+            // Animate out current title
+            titleElement.style.transform = 'translateY(-100%)';
+            
+            // After animation, update content and animate in
+            setTimeout(() => {
+                titleElement.textContent = newTitle;
+                titleElement.style.transform = 'translateY(100%)';
+                
+                // Force reflow then animate to normal position
+                titleElement.offsetHeight;
+                setTimeout(() => {
+                    titleElement.style.transform = 'translateY(0)';
+                }, 10);
+            }, 200);
+        }
+    }
+    
+    updateDescription(newDescription) {
+        const descElement = document.getElementById('borough-description');
+        
+        // Animate out current description
+        descElement.style.transform = 'translateY(-100%)';
+        
+        // After animation, update content and animate in
+        setTimeout(() => {
+            descElement.textContent = newDescription;
+            descElement.style.transform = 'translateY(100%)';
+            
+            // Force reflow then animate to normal position
+            descElement.offsetHeight;
+            setTimeout(() => {
+                descElement.style.transform = 'translateY(0)';
+            }, 10);
+        }, 200);
+    }
+}
+
+// Initialize when page loads
+document.addEventListener('DOMContentLoaded', () => {
+    new BoroughDetector();
+});
+</script>
