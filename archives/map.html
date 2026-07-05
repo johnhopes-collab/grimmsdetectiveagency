@@ -12,8 +12,9 @@ title: '<a href="/archives.html">Archives</a> / Map'
         <img class="borough-overlay" id="manhattan" src="{{ site.baseurl }}/assets/images/map/manhattan-overlay2.png" data-borough="Manhattan">
         <img class="borough-overlay" id="brooklyn" src="{{ site.baseurl }}/assets/images/map/brooklyn-overlay2.png" data-borough="Brooklyn">
         <img class="borough-overlay" id="queens" src="{{ site.baseurl }}/assets/images/map/queens-overlay2.png" data-borough="Queens">
-        <img class="borough-overlay" id="bronx" src="{{ site.baseurl }}/assets/images/map/bronx-overlay2.png" data-borough="Bronx">
+        <img class="borough-overlay" id="bronx" src="{{ site.baseurl }}/assets/images/map/bronx-overlay2.png" data-borough="The Bronx">
         <img class="borough-overlay" id="staten-island" src="{{ site.baseurl }}/assets/images/map/staten-island-overlay2.png" data-borough="Staten Island">
+        <img class="borough-overlay" id="jersey-city" src="{{ site.baseurl }}/assets/images/map/jersey-city-overlay2.png" data-borough="Jersey City">
         <!-- Invisible canvas for pixel detection -->
         <canvas id="detection-canvas"></canvas>
         
@@ -48,7 +49,8 @@ class BoroughDetector {
             'Brooklyn': 'The most populous borough, known for the Brooklyn Bridge and diverse neighborhoods like Williamsburg, DUMBO, and Park Slope. Brooklyn has transformed from an industrial area into a hub of culture, art, and cuisine.',
             'Queens': 'The most ethnically diverse area in the world, home to two major airports and Flushing Meadows Corona Park. Queens offers authentic cuisine from virtually every culture, making it a food lover\'s paradise.',
             'The Bronx': 'Home of Yankee Stadium and the Bronx Zoo, rich in culture and history. The birthplace of hip-hop, the Bronx has a vibrant arts scene and is home to the New York Botanical Garden.',
-            'Staten Island': 'Is it really New York? In the 1920s, it was thought of as a semi-rural, out-of-the-way place rather than an integral part of the bustling metropolis. While Manhattan was packed with skyscrapers, theaters, jazz clubs, and immigrants, Staten Island had farms, woodlands, and quiet residential communities, a place where the wealthy went to get away.'
+            'Staten Island': 'Is it really New York? In the 1920s, it was thought of as a semi-rural, out-of-the-way place rather than an integral part of the bustling metropolis. While Manhattan was packed with skyscrapers, theaters, jazz clubs, and immigrants, Staten Island had farms, woodlands, and quiet residential communities, a place where the wealthy went to get away.',
+            'Jersey City': 'At this time it was a gritty, industrial working-class town. It was full of rail yards, docks, warehouses, factories, and shipping terminals. Much of the freight moving into New York passed through Jersey City first. Known for its corrupt political machine run by Frank Hague, who dominated local politics from 1917 into the 1940s.'
         };
         
         this.init();
