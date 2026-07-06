@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrine</title>
+    <style>
+        /* Reset and base styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: serif;
+            background-color: #000000;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Main container for positioned elements */
+        .canvas {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            z-index: 1;
+        }
+		
+        /* Header area */
+        .header-area {
+            position: relative;
+            z-index: 10;
+            width: calc(100% - 40px);
+            margin: 5px auto 0 auto;
+            padding: 10px 40px;
+            background: transparent;
+            border: transparent;
+            text-align: center;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .header-area h1 {
+            color: #fff;
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: glow 7s ease-in-out infinite alternate;
+        }
+
+        /* Centered content area */
+        .content-area {
+            position: relative;
+            z-index: 10;
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 0px 20px;
+            background: transparent;
+            border: transparent;
+            border-radius: 15px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+
+        .content-area h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            /* animation: glow 2s ease-in-out infinite alternate; */
+        }
+
+        .star-marker {
+            position: relative;
+        }
+
+        .star-marker::before {
+            content: "";
+            position: absolute;
+            left: -100px; /* Positions star outside the content area */
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background: url('{{ site.baseurl }}/assets/images/elements/angel-1.png') no-repeat center;
+            background-size: contain;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+		.content-area ul {
+			color: #ffffff;
+		}
+
+		.content-area li {
+			color: #ffffff;
+			line-height: 1.6;
+		}
+		
+        /* Full-width image section */
+        .full-width-image {
+            position: relative;
+            z-index: 10;
+            width: 70%;
+            margin: 0px auto;
+            text-align: center;
+			z-index: 50;
+        }
+        .full-width-image img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        @keyframes glow {
+            from { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 10px #fff; }
+            to { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 30px #fff; }
+        }
+
+        .content-area p {
+            text-align: left;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #ffffff;
+            font-size: 0.8em;
+        }
+
+        /* Positioned elements - customize these! */
+        .floating-element {
+            position: absolute;
+            z-index: 99;
+        }
+
+        .gif-1 {
+            top: 100px;
+            left: 50px;
+            width: 80px;
+            height: 80px;
+            background: url(gif-cup.gif) no-repeat;
+            background-size: cover;
+            animation: bounce 3s ease-in-out infinite;
+        }
+
+        .gif-2 {
+            top: 300px;
+            right: 100px;
+            width: 100px;
+            height: 100px;
+            background: url('https://via.placeholder.com/100x100/4ecdc4/ffffff?text=GIF2') no-repeat;
+            background-size: cover;
+            animation: rotate 4s linear infinite;
+        }
+
+        .gif-3 {
+            bottom: 150px;
+            left: 80px;
+            width: 60px;
+            height: 60px;
+            background: url('https://via.placeholder.com/60x60/45b7d1/ffffff?text=GIF3') no-repeat;
+            background-size: cover;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .gif-4 {
+            top: 1000px;
+            right: 150px;
+            width: 100px;
+            height: 200px;
+            background: url(gif-cup.gif) no-repeat;
+            background-size: cover;
+        }
+
+        .floating-text {
+            top: 140px;
+            right: 50px;
+            color: #ffff00;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-text-2 {
+            top: 1000px;
+            right: 150px;
+            color: #00ff00;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            animation: wiggle 2s ease-in-out infinite;
+        }
+
+        /* Animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.7; }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .content-area {
+                margin: 20px 10px;
+                padding: 20px 15px;
+            }
+            
+            .full-width-image {
+                width: 90%;
+                margin: 20px auto;
+            }
+            
+            .star-marker::before {
+                display: none; /* Hide star on mobile to avoid layout issues */
+            }
+            
+
+
+            .floating-element {
+                display: none; /* Hide floating elements on small screens for better usability */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <!-- Floating/Positioned Elements -->
+        <div class="floating-element gif-4"></div>
+        <div class="floating-element floating-text">Welcome!</div>
+        <div class="floating-element floating-text-2">PAX DOMINI</div>
+
+        <!-- Main Content Area -->
+        <div class="header-area">
+			<h1>✝️ Matilda's Prayer Page ✝️</h1>
+		</div>
+		<!-- Full-width Image Section -->
+		<div class="full-width-image">
+			<img src="{{ site.baseurl }}/assets/images/elements/window.png" alt="Window Image" />
+		</div>
+
+
+        <div class="content-area">
+            <p>Welcome to Matilda's personal shrine for the worship of the living God and the veneration of all His saints. May Our Lord Jesus Christ bless you and keep you.
+                <span style="position: absolute; left: -100px; top: -10px; width: 80px; height: 100px; background: url('{{ site.baseurl }}/assets/images/elements/angel-1.png') no-repeat center; background-size: contain; z-index: 60;"></span>
+			    <span style="position: absolute; right: -100px; top: -10px; width: 80px; height: 100px; background: url('{{ site.baseurl }}/assets/images/elements/angel-1.png') no-repeat center; background-size: contain; z-index: 60; transform: scaleX(-1);"></span>
+            </p>
+			<br><br>
+		</div>
+
+		<div class="full-width-image">
+			<img src="{{ site.baseurl }}/assets/images/elements/window-2.png" alt="Window Image 2" />
+		</div>
+        <div class="content-area">
+            <ul style="text-align: left; margin-left: 20px; margin-bottom: 15px;">
+                <li>Arcade of Saints (St. Jude, St. Joan of Arc, St. Michael)</li>
+                <li>Memento Mori</li>
+                <li>St. Jude</li>
+                <li>St. Joan</li>
+                <li>St. Michael</li>
+            </ul>
+                <span style="position: absolute; left: -100px; top: -10px; width: 50px; height: 400px; background: url('{{ site.baseurl }}/assets/images/elements/w3-L.png') no-repeat center; background-size: contain;"></span>
+			    <span style="position: absolute; right: -100px; top: -10px; width: 50px; height: 400px; background: url('{{ site.baseurl }}/assets/images/elements/w3-R.png') no-repeat center; background-size: contain;"></span>
+        </div>
+
+
+        <div class="content-area">
+		    <span style="position: absolute; left: 70px; top: -10px; width: 500px; height: 70px; background: url('{{ site.baseurl }}/assets/images/elements/divider-1.png') no-repeat center; background-size: contain;"></span>
+			<br>
+			<br>
+			<br>
+			<h1>St. Michael The Archangel</h1>
+			<p><span style="margin-left: 50px;">Guardian of the Catholic Church, Patron Saint of Poor Souls, Police, and Military Personnel</span></p>
+            <p><span style="position: absolute; left: 100px; top: 125px; width: 120px; height: 300px; background: url('{{ site.baseurl }}/assets/images/elements/card-st-michael.png') no-repeat center; background-size: contain;"></span>
+            </p>
+			<div style="width: 45%; margin-left: 45%; padding: 20px; background: rgba(255, 255, 255, 0.1); border: 2px solid #ffffff; border-radius: 10px; margin-bottom: 20px;">
+				<p style="margin: 0 0 10px 0; color: #ffffff; font-size: 0.9em; line-height: 1.4;">
+					St. Michael the Archangel,<br>
+					defend us in battle. <br>
+					Be our protection against the wickedness and snares of the Devil.<br>
+					May God rebuke him, we humbly pray,<br>
+					And do thou, O Prince of the heavenly hosts,<br>
+					by the power of God,<br>
+					cast into hell Satan and all the evil spirits 	who prowl about the world seeking the ruin of souls. Amen.
+				</p>
+			</div>
+			<br>
+			<br>
+        </div>		
+
+        <div class="content-area">
+                <span style="position: absolute; left: -100px; top: -10px; width: 50px; height: 400px; background: url('{{ site.baseurl }}/assets/images/elements/w4-L.png') no-repeat center; background-size: contain;"></span>
+			    <span style="position: absolute; right: -100px; top: -10px; width: 50px; height: 400px; background: url('{{ site.baseurl }}/assets/images/elements/w4-R.png') no-repeat center; background-size: contain;"></span>
+		    <span style="position: absolute; left: 70px; top: -10px; width: 500px; height: 70px; background: url('{{ site.baseurl }}/assets/images/elements/divider-1.png') no-repeat center; background-size: contain;"></span>
+			<br>
+			<br>
+			<br>
+			<h1>St. Joan of Arc</h1>
+			<p><span style="margin-left: 50px;"><i>Born: Jeanne d'Arc, c. 1412 – 30 May 1431</i><span style="margin-left: 30px;">Patron Saint of France</span></p>
+            <p><span style="position: absolute; left: 100px; top: 125px; width: 120px; height: 300px; background: url('{{ site.baseurl }}/assets/images/elements/card-st-joan.png') no-repeat center; background-size: contain;"></span>
+            </p>
+			<div style="width: 45%; margin-left: 45%; padding: 20px; background: rgba(255, 255, 255, 0.1); border: 2px solid #ffffff; border-radius: 10px; margin-bottom: 20px;">
+				<p style="margin: 0 0 10px 0; color: #ffffff; font-size: 0.9em; line-height: 1.4;">
+					Glorious St. Joan of Arc,<br>
+					filled with compassion for those
+					who invoke you,<br>
+					with love for those who suffer,<br>
+					heavily laden with
+					the weight of my troubles,<br>
+					I kneel at your feet and humbly beg you
+					to take my present
+					need under your special protection ...<br>
+					(mention here).<br>
+					Vouchsafe to recommend it
+					to the Blessed Virgin Mary,<br>
+					and lay it before the throne of Jesus.<br>
+					Cease not to intercede for me until
+					my request is granted.<br>
+					Above all, obtain for me the grace to
+					one day meet God face to face, and
+					with you and Mary and all the angels
+					and saints, praise Him
+					through all eternity.<br>
+					O most powerful Saint Joan, do not
+					let me lose my soul, but obtain for
+					me the grace of winning my ways to
+					heaven, forever and ever. Amen.
+				</p>
+			</div>
+			<br>
+			<br>
+        </div>		
+		
+        <div class="content-area">
+		    <span style="position: absolute; left: 70px; top: -10px; width: 500px; height: 70px; background: url('{{ site.baseurl }}/assets/images/elements/divider-1.png') no-repeat center; background-size: contain;"></span>
+			<br>
+			<br>
+			<br>
+			<h1>St. Jude Thaddeus</h1>
+			<p><span style="margin-left: 50px;"><i>Apostle of Jesus Christ, Martyr</i><span style="margin-left: 30px;">Patron Saint of Lost Causes, the Sick, and Desperate Situations</span></p>
+            <p><span style="position: absolute; left: 100px; top: 145px; width: 140px; height: 300px; background: url('{{ site.baseurl }}/assets/images/elements/card-st-jude.png') no-repeat center; background-size: contain;"></span>
+            </p>
+			<div style="width: 45%; margin-left: 45%; padding: 20px; background: rgba(255, 255, 255, 0.1); border: 2px solid #ffffff; border-radius: 10px; margin-bottom: 20px;">
+				<p style="margin: 0 0 10px 0; color: #ffffff; font-size: 0.9em; line-height: 1.4;">
+					St. Jude, glorious Apostle,<br>
+					faithful servant and friend
+					of Jesus, the name of the traitor
+					has caused you to be forgotten
+					by many, but the true Church
+					invokes you universally as the
+					Patron of things despaired of;<br>
+					pray for me, who am so
+					miserable; pray for me, that
+					finally I may receive the
+					consolations and the succor of
+					Heaven in all my necessities,<br>
+					tribulations and sufferings,<br>
+					particularly<br>
+					(here make your request), <br>
+					and that I may bless
+					God with the Elect throughout
+					Eternity. Amen.
+				</p>
+			</div>
+			<br>
+			<br>
+        </div>			
+
+        <div class="content-area">
+			<span style="position: absolute; left: 70px; top: -10px; width: 500px; height: 70px; background: url('{{ site.baseurl }}/assets/images/elements/divider-1.png') no-repeat center; background-size: contain;"></span>
+			<br><br>
+            <p>
+                <span style="position: absolute; left: -130px; top: 0px; width: 140px; height: 400px; background: url('{{ site.baseurl }}/assets/images/elements/w50-L.png') no-repeat center; background-size: contain;"></span>
+			    <span style="position: absolute; right: -130px; top: 0px; width: 140px; height: 400px; background: url('{{ site.baseurl }}/assets/images/elements/w50-R.png') no-repeat center; background-size: contain; transform: scaleX(-1);"></span>
+            </p>
+			<h1>Sanctified Links</h1>
+			<ul style="color: #ffffff; margin-left: 20px; list-style-type: disc; font-size: 0.8em;">
+				<li style="margin-bottom: 10px; display: flex; align-items: baseline;">
+					<strong style="min-width: 200px;"><a href="https://www.ewtn.com/" style="color: #ff00ff;">EWTN</a></strong>
+					<span style="font-weight: normal;">Catholic news, prayers, and other services</span>
+				</li>
+				<li style="margin-bottom: 10px; display: flex; align-items: baseline;">
+					<strong style="min-width: 200px;"><a href="https://www.etsy.com/shop/BaritusCatholic" style="color: #ff00ff;">BaritusCatholic Online Shop</a></strong>
+					<span style="font-weight: normal;">Stickers and apparel</span>
+				</li>
+				<li style="margin-bottom: 10px; display: flex; align-items: baseline;">
+					<strong style="min-width: 200px;"><a href="https://angeluspress.org/" style="color: #ff00ff;">Angelus Press</a></strong>
+					<span style="font-weight: normal;">Bibles and reading material</span>
+				</li>
+				<li style="margin-bottom: 10px; display: flex; align-items: baseline;">
+					<strong style="min-width: 200px;"><a href="https://www.etsy.com/listing/1122835933/the-latinenglish-booklet-missal-booklet?ls=s&ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=red+book+latin+mass&ref=sr_gallery-1-1&pro=1&sts=1&content_source=3d488fe9-c4ea-4bff-901c-8823907afcb3%253ALT80c8fcf039e6e67544b6f36ec9e62edeff07304b&organic_search_click=1&logging_key=3d488fe9-c4ea-4bff-901c-8823907afcb3%3ALT80c8fcf039e6e67544b6f36ec9e62edeff07304b" style="color: #ff00ff;">Latin Mass Red Missal Booklet</a></strong>
+					<span style="font-weight: normal;">Guide to the Tridentine Mass</span>
+				</li>
+			</ul>
+		</div>
+
+		<div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin: 40px -50vw; text-align: center;">
+			<img src="{{ site.baseurl }}/assets/images/elements/w99.png" alt="Full Width Image" style="width: 100%; height: auto; display: block;">
+		</div>
+
+    </div>
+</body>
+</html>
