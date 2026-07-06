@@ -9,14 +9,16 @@ title: '<a href="/archives.html">Archives</a> / Map'
 <div class="map-block">
     <div class="map-container">
         <img id="base-map" src="{{ site.baseurl }}/assets/images/map/nyc-map.png" alt="NYC Map with Info-Matic">
+
+        <!-- Invisible canvas for pixel detection -->
+        <canvas id="detection-canvas"></canvas>
+        
         <img class="borough-overlay" id="manhattan" src="{{ site.baseurl }}/assets/images/map/manhattan-overlay2.png" data-borough="Manhattan">
         <img class="borough-overlay" id="brooklyn" src="{{ site.baseurl }}/assets/images/map/brooklyn-overlay2.png" data-borough="Brooklyn">
         <img class="borough-overlay" id="queens" src="{{ site.baseurl }}/assets/images/map/queens-overlay2.png" data-borough="Queens">
         <img class="borough-overlay" id="bronx" src="{{ site.baseurl }}/assets/images/map/bronx-overlay2.png" data-borough="The Bronx">
         <img class="borough-overlay" id="staten-island" src="{{ site.baseurl }}/assets/images/map/staten-island-overlay2.png" data-borough="Staten Island">
         <img class="borough-overlay" id="jersey-city" src="{{ site.baseurl }}/assets/images/map/jersey-city-overlay2.png" data-borough="Jersey City">
-        <!-- Invisible canvas for pixel detection -->
-        <canvas id="detection-canvas"></canvas>
         
         <!-- Info panel -->
         <div class="info-panel">
