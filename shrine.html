@@ -67,9 +67,7 @@
             /* animation: glow 2s ease-in-out infinite alternate; */
         }
 
-        .star-marker {
-            position: relative;
-        }
+        .star-marker { position: relative; }
 
         .star-marker::before {
             content: "";
@@ -83,14 +81,8 @@
             animation: pulse 3s ease-in-out infinite;
         }
 
-		.content-area ul {
-			color: #ffffff;
-		}
-
-		.content-area li {
-			color: #ffffff;
-			line-height: 1.6;
-		}
+		.content-area ul { color: #ffffff; }
+		.content-area li { color: #ffffff; line-height: 1.6; }
 		
         /* Full-width image section */
         .full-width-image {
@@ -225,23 +217,14 @@
                 padding: 20px 15px;
             }
             
-            .full-width-image {
-                width: 90%;
-                margin: 20px auto;
-            }
+            .full-width-image { width: 90%; margin: 20px auto; }
             
-            .star-marker::before {
-                display: none; /* Hide star on mobile to avoid layout issues */
-            }
-            
-
-
-            .floating-element {
-                display: none; /* Hide floating elements on small screens for better usability */
-            }
+            .star-marker::before { display: none; }
+            .floating-element { display: none; }
         }
     </style>
 </head>
+	
 <body>
     <div class="canvas">
         <!-- Floating/Positioned Elements -->
@@ -249,14 +232,9 @@
         <div class="floating-element floating-text">Welcome!</div>
         <div class="floating-element floating-text-2">PAX DOMINI</div>
 
-        <!-- Main Content Area -->
-        <div class="header-area">
-			<h1>✝️ Matilda's Prayer Page ✝️</h1>
-		</div>
-		<!-- Full-width Image Section -->
-		<div class="full-width-image">
-			<img src="{{ site.baseurl }}/assets/images/elements/window.png" alt="Window Image" />
-		</div>
+        <!-- Header -->
+        <div class="header-area"> <h1>✝️ Matilda's Prayer Page ✝️</h1> </div>
+		<div class="full-width-image"> 	<img src="{{ site.baseurl }}/assets/images/elements/window.png" alt="Window Image" /> </div>
 
 
         <div class="content-area">
