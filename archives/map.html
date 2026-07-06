@@ -15,10 +15,10 @@ title: '<a href="/archives.html">Archives</a> / Map'
         <img class="borough-overlay" id="bronx" src="{{ site.baseurl }}/assets/images/map/bronx-overlay2.png" data-borough="The Bronx">
         <img class="borough-overlay" id="staten-island" src="{{ site.baseurl }}/assets/images/map/staten-island-overlay2.png" data-borough="Staten Island">
         <img class="borough-overlay" id="jersey-city" src="{{ site.baseurl }}/assets/images/map/jersey-city-overlay2.png" data-borough="Jersey City">
-        <!-- Invisible canvas for pixel detection v -->
+        <!-- Invisible canvas for pixel detection -->
         <canvas id="detection-canvas"></canvas>
         
-        <!-- Info panel  -->
+        <!-- Info panel -->
         <div class="info-panel">
             <div class="info-content">
                 <div class="text-rotator" id="title-rotator">
@@ -112,12 +112,15 @@ class BoroughDetector {
         
         // Update hover state and cursor
         if (hoveredBorough !== this.currentBorough) {
-            if (this.currentBorough) {
+            if (this.currentBorough && !this.currentBorough.classList.contains('active')) {
                 this.currentBorough.classList.remove('hovered');
             }
             
             if (hoveredBorough) {
-                hoveredBorough.classList.add('hovered');
+                // Only add hover class if it's not already selected
+                if (!hoveredBorough.classList.contains('active')) {
+                    hoveredBorough.classList.add('hovered');
+                }
                 this.canvas.style.cursor = 'pointer';
             } else {
                 this.canvas.style.cursor = 'default';
@@ -138,6 +141,9 @@ class BoroughDetector {
             this.selectedBorough = this.currentBorough;
             this.selectedBorough.classList.add('active');
             
+            // Remove hover class from the now-selected borough since active takes precedence
+            this.selectedBorough.classList.remove('hovered');
+            
             // Update display with new borough info
             this.updateTitle(this.selectedBorough.dataset.borough);
             this.updateDescription(this.boroughData[this.selectedBorough.dataset.borough]);
@@ -145,12 +151,11 @@ class BoroughDetector {
     }
     
     handleMouseLeave() {
-        if (this.currentBorough) {
+        if (this.currentBorough && !this.currentBorough.classList.contains('active')) {
             this.currentBorough.classList.remove('hovered');
-            this.currentBorough = null;
         }
+        this.currentBorough = null;
         this.canvas.style.cursor = 'default';
-        // Do nothing to the displayed text - let it stay
     }
     
     updateTitle(newTitle) {
