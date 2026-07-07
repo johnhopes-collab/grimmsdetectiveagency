@@ -1,0 +1,113 @@
+---
+---
+
+/* AT Index - 1 1 1 1 1 1 1 1 1*/
+
+/* ARCHIVE - AT Index 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 */
+.at-index-header {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d9c8a9;
+    font-weight: bold;
+    background-color: rgba(94, 44, 4, 0.1);
+    padding: 8px;
+    border-radius: 4px;
+}
+.at-index-header-type { width: 80px; flex-shrink: 0; }
+.at-index-header-name { flex-grow: 1; }
+.at-index-container   { font-family: 'Arial', sans-serif; font-size: 11px; line-height: 1.3; }
+.at-index-row         { display: flex;        margin-bottom: 4px;           align-items: flex-start; }
+.at-index-number      { width: 80px;          flex-shrink: 0;               font-weight: bold;    color: var(--button-brown); }
+.at-index-name        { flex-grow: 1; position: relative; }
+.at-index-tale        { cursor: help; text-decoration: underline dotted; }
+.at-index-tale-no-desc { cursor: help; }
+.at-index-tale, .at-index-tale-no-desc { position: relative; } /* AT INDEX DESCRIPTIONS */
+.at-index-tale[title]:hover:after, /* Hide the default browser tooltip */
+.at-index-tale-no-desc[title]:hover:after { content: none; }
+.at-index-tale:hover:before, /* Custom tooltip */
+.at-index-tale-no-desc:hover:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: #f5f1e8; /* Manila/cream background */
+    color: #333;
+    padding: 12px 16px;
+    border-radius: 6px; border: 2px solid var(--button-brown);
+    box-shadow: 0 4px 12px rgba(94, 44, 4, 0.3);
+    font-size: 12px;
+    line-height: 1.4;
+    max-width: 400px;
+    width: max-content;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: normal;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    margin-left: 8px;
+}
+.at-index-tale:hover:before, .at-index-tale-no-desc:hover:before { opacity: 1; }
+.at-index-tale:hover:after, .at-index-tale-no-desc:hover:after { /* Tooltip arrow */
+    content: '';
+    position: absolute;
+    top: 50%; left: 100%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-right-color: var(--button-brown);
+    z-index: 1001;
+    margin-left: 2px;
+}
+@media (max-width: 500px) { /* Adjust positioning for mobile - switch back to above on small screens */
+    .at-index-tale:hover:before,
+    .at-index-tale-no-desc:hover:before {
+        top: auto; bottom: 100%; left: 50%;
+        transform: translateX(-50%);
+        max-width: 250px;
+        margin-left: 0; margin-bottom: 8px;
+    }
+    .at-index-tale:hover:after,
+    .at-index-tale-no-desc:hover:after {
+        top: auto; bottom: 100%; left: 50%;
+        transform: translateX(-50%);
+        border-right-color: transparent;
+        border-top-color: var(--button-brown);
+        margin-left: 0;
+        margin-bottom: 2px;
+    }
+}
+
+
+
+
+/* Grimm Tales Header - extends AT Index styling - 12 12 12 12 12 12 12 12 12*/
+.grimm-header {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d9c8a9;
+    font-weight: bold;
+    background-color: rgba(94, 44, 4, 0.1);
+    padding: 8px;
+    border-radius: 4px;
+}
+.grimm-header-khm     { width: 16px; text-align: right; }
+.grimm-header-english { flex-grow: 1; text-align: center; padding-left: 30px;  /* Space from KHM column */ padding-right: 0px; /* Space from German column */ }
+.grimm-header-german  { flex-grow: 1; text-align: left;   padding-right: 15px; /* Space from ATU column */ }
+.grimm-header-atu     { width: 60px; flex-shrink: 0; }
+.grimm-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    font-size: 11px;
+    line-height: 1.3;
+    margin-top: -15px; }
+.grimm-data-table tbody tr:hover { background-color: rgba(94, 44, 4, 0.05); }
+.grimm-data-table td { padding: 4px 8px; vertical-align: top; border-bottom: 1px solid rgba(217, 200, 169, 0.2); }
+.grimm-khm-cell     { width: 10px; font-weight: bold; color: var(--button-brown); text-align: right; padding-right: 15px; }
+.grimm-english-cell { width: calc((100% - 140px) / 2); }
+.grimm-german-cell  { width: calc((100% - 140px) / 2); font-style: italic; color: #555; }
+.grimm-atu-cell     { width: 60px; font-weight: bold; color: var(--button-brown); text-align: lef
