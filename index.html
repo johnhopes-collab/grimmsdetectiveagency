@@ -26,7 +26,7 @@ title: Front Desk
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 // Load and display updates
-fetch('assets/data/updates.json')
+fetch('updates.json')
   .then(response => response.json())
   .then(updates => {
     const feedContainer = document.getElementById('updates-feed');
@@ -44,15 +44,21 @@ fetch('assets/data/updates.json')
       const updateDiv = document.createElement('div');
       updateDiv.className = 'update-entry';
       
+      // Parse markdown to HTML
+      const parsedText = marked.parse(update.text);
+      
       let html = `
         <span class="update-date">${update.date}</span>
-        <div class="update-text">${update.text}</div>
+        <div class="update-content">
+          <div class="update-text">${parsedText}</div>
       `;
       
       // Add image if present
       if (update.image) {
         html += `<img src="${update.image}" alt="Update image" class="update-image">`;
       }
+      
+      html += `</div>`; // Close update-content
       
       updateDiv.innerHTML = html;
       feedContainer.appendChild(updateDiv);
@@ -64,4 +70,3 @@ fetch('assets/data/updates.json')
       '<div class="loading">Failed to load updates.</div>';
   });
 </script>
-
