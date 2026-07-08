@@ -21,3 +21,44 @@ title: Front Desk
 <hr>
 <img src="{{ site.baseurl }}/assets/images/1-vintagereading.jpg" alt="Reading Poster" style="display: block; width: 50%; margin: 0 auto; border: none;">
 
+<script>
+// Load and display updates
+fetch('updates.json')
+  .then(response => response.json())
+  .then(updates => {
+    const feedContainer = document.getElementById('updates-feed');
+    
+    if (updates.length === 0) {
+      feedContainer.innerHTML = '<div class="loading">No updates yet...</div>';
+      return;
+    }
+    
+    // Clear loading message
+    feedContainer.innerHTML = '';
+    
+    // Render each update
+    updates.forEach(update => {
+      const updateDiv = document.createElement('div');
+      updateDiv.className = 'update-entry';
+      
+      let html = `
+        <span class="update-date">${update.date}</span>
+        <div class="update-text">${update.text}</div>
+      `;
+      
+      // Add image if present
+      if (update.image) {
+        html += `<img src="${update.image}" alt="Update image" class="update-image">`;
+      }
+      
+      updateDiv.innerHTML = html;
+      feedContainer.appendChild(updateDiv);
+    });
+  })
+  .catch(error => {
+    console.error('Error loading updates:', error);
+    document.getElementById('updates-feed').innerHTML = 
+      '<div class="loading">Failed to load updates.</div>';
+  });
+</script>
+
