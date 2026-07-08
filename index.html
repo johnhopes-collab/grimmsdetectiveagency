@@ -26,7 +26,7 @@ title: Front Desk
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 // Load and display updates
-fetch('updates.json')
+fetch('assets/data/updates.json')
   .then(response => response.json())
   .then(updates => {
     const feedContainer = document.getElementById('updates-feed');
