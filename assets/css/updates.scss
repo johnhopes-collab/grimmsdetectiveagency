@@ -6,14 +6,14 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 */
-
+/* Updates Container - Retro 2000s Style */
 .updates-container {
-  background-color: #f9f3e9;
+  background-color: #d4c4a8; /* Creamy brown background */
   border: 2px solid #5e2c04;
   box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
   max-width: 600px;
   margin: 20px auto;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .updates-header {
@@ -28,7 +28,7 @@
 }
 
 #updates-feed {
-  padding: 0;
+  padding: 12px;
   max-height: 500px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -36,32 +36,40 @@
 
 /* Individual Update Entries */
 .update-entry {
-  padding: 12px;
-  border-bottom: 1px dotted #bc9e68;
-  font-size: 11px;
-  line-height: 1.6;
-  color: #5e2c04;
+  margin-bottom: 16px;
 }
 
 .update-entry:last-child {
-  border-bottom: none;
-}
-
-.update-entry:hover {
-  background-color: rgba(188, 158, 104, 0.1);
+  margin-bottom: 0;
 }
 
 .update-date {
-  color: #bc9e68;
+  color: #5e2c04;
   font-weight: bold;
   font-size: 10px;
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  margin-left: 2px;
   letter-spacing: 0.5px;
 }
 
+.update-content {
+  background-color: #f9f3e9; /* Lighter beige for post boxes */
+  border: 1px solid #bc9e68;
+  padding: 10px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #5e2c04;
+  box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15);
+}
+
+.update-content:hover {
+  border-color: #5e2c04;
+  box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25);
+}
+
 .update-text {
-  margin: 6px 0;
+  margin: 0;
   word-wrap: break-word;
 }
 
@@ -71,9 +79,6 @@
   height: auto;
   border: 1px solid #bc9e68;
   display: block;
-  image-rendering: pixelated; /* Extra retro feel for scaled images */
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
 }
 
 /* Custom Scrollbar for that 2000s vibe */
@@ -82,7 +87,7 @@
 }
 
 #updates-feed::-webkit-scrollbar-track {
-  background: #f9f3e9;
+  background: #d4c4a8;
   border-left: 1px solid #bc9e68;
 }
 
@@ -98,14 +103,21 @@
 .loading {
   padding: 20px;
   text-align: center;
-  color: #bc9e68;
+  color: #5e2c04;
   font-size: 11px;
 }
-
 
 /* Markdown styling within updates */
 .update-text p {
   margin: 6px 0;
+}
+
+.update-text p:first-child {
+  margin-top: 0;
+}
+
+.update-text p:last-child {
+  margin-bottom: 0;
 }
 
 .update-text strong {
