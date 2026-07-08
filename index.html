@@ -21,9 +21,10 @@ title: Front Desk
 <hr>
 <img src="{{ site.baseurl }}/assets/images/1-vintagereading.jpg" alt="Reading Poster" style="display: block; width: 50%; margin: 0 auto; border: none;">
 
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
 // Load and display updates
-fetch('updates.json')
+fetch('assets/data/updates.json')
   .then(response => response.json())
   .then(updates => {
     const feedContainer = document.getElementById('updates-feed');
