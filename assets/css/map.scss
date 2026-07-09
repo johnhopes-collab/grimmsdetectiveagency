@@ -37,16 +37,6 @@ pointer-events: none;
 transition: filter 0.2s ease;
 }
 
-@media (max-width: 500px) {
-    .borough-overlay {
-        // Example - adjust based on your actual map dimensions
-        width: 120%; // if mobile map is wider
-        height: 80%; // if mobile map is shorter
-        object-fit: none;
-        object-position: top left;
-    }
-}
-
 /* Hover state - lighter effect */
 .borough-overlay.hovered {
     filter: brightness(1.15) saturate(1.2);
