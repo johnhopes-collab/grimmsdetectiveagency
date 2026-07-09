@@ -105,6 +105,14 @@ class BoroughDetector {
             }
         }
     }
+
+    handleResize() {
+        // Debounce resize to avoid excessive recalculations
+        clearTimeout(this.resizeTimeout);
+        this.resizeTimeout = setTimeout(() => {
+            this.setupCanvas();
+        }, 250);
+    }
     
     setupEventListeners() {
         this.canvas.addEventListener('mousemove', (e) => this.handleMouseMove(e));
