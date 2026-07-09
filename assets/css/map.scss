@@ -122,15 +122,33 @@
 /* Mobile adjustments */
 @media (max-width: 500px) {
     .info-panel {
-        right: 10%;
-        width: 80%;
+        left: 10%;
+        width: 85%;
         height: 35%;
-        top: 54%;
+        top: 71%;
+    }
+
+    .info-content {
+        padding: 2% 3%;
+        height: 80%;
+        overflow: hidden;
+        color: #000000;
+        font-family: 'Courier New', monospace;
+        font-size: clamp(10px, 1.2vw, 14px);    
     }
     
     .info-content {
-        padding: 1% 2%;
+        padding: 1% 1%;
     }
+
+    .text-rotator {
+        position: relative;
+        overflow: hidden;
+        height: 30px; /* Fixed height for title box */
+        margin-bottom: 2px;
+        left: 25%;
+    }
+
     
     .rotating-text {
         font-size: 10px;
