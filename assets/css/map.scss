@@ -31,10 +31,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
+    width: auto;  /* Changed from 100% */
+    height: 100%; /* Scale to map height */
+    max-width: none; /* Allow it to extend naturally */
     pointer-events: none;
     transition: filter 0.2s ease;
+    object-fit: none; /* Don't distort the image */
+    object-position: top left; /* Anchor to top-left */
 }
 
 /* Hover state - lighter effect */
