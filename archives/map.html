@@ -8,7 +8,9 @@ title: '<a href="/archives.html">Archives</a> / Map'
 
 <div class="map-block">
     <div class="map-container">
-        <img id="base-map" src="{{ site.baseurl }}/assets/images/map/nyc-map.png" alt="NYC Map with Info-Matic">
+
+        <source media="(max-width: 500px)" srcset="{{ site.baseurl }}/assets/images/map/mobiletest.png">
+        <img id="base-map" src="{{ site.baseurl }}/assets/images/map/nyc-map.png" alt="NYC Map">
 
         <!-- Invisible canvas for pixel detection -->
         <canvas id="detection-canvas"></canvas>
