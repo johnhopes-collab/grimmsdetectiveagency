@@ -172,4 +172,12 @@
     max-width: 700px;
   }
 
+
+  #updates-feed {
+    padding: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
 }
