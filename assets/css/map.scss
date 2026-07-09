@@ -98,7 +98,7 @@
     position: relative;
     transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
     transform: translateY(0);
-    font-size: clamp(8px, 1vw, 12px);
+    font-size: 0.94em;
     overflow-y: auto;
     height: 100%;
     padding-right: 8px;
