@@ -14,12 +14,35 @@ title: '<a href="/archives.html">Archives</a> / Map'
         <!-- Invisible canvas for pixel detection -->
         <canvas id="detection-canvas"></canvas>
         
-        <img class="borough-overlay" id="manhattan" src="{{ site.baseurl }}/assets/images/map/manhattan-overlay2.png" data-borough="Manhattan">
-        <img class="borough-overlay" id="brooklyn" src="{{ site.baseurl }}/assets/images/map/brooklyn-overlay2.png" data-borough="Brooklyn">
-        <img class="borough-overlay" id="queens" src="{{ site.baseurl }}/assets/images/map/queens-overlay2.png" data-borough="Queens">
-        <img class="borough-overlay" id="bronx" src="{{ site.baseurl }}/assets/images/map/bronx-overlay2.png" data-borough="The Bronx">
-        <img class="borough-overlay" id="staten-island" src="{{ site.baseurl }}/assets/images/map/staten-island-overlay2.png" data-borough="Staten Island">
-        <img class="borough-overlay" id="jersey-city" src="{{ site.baseurl }}/assets/images/map/jersey-city-overlay2.png" data-borough="Jersey City">
+        <picture>
+            <source media="(max-width: 500px)" srcset="{{ site.baseurl }}/assets/images/map/mobile-manhattan.png">
+            <img class="borough-overlay" id="manhattan" src="{{ site.baseurl }}/assets/images/map/manhattan-overlay2.png" data-borough="Manhattan">
+        </picture>
+        
+        <picture>
+            <source media="(max-width: 500px)" srcset="{{ site.baseurl }}/assets/images/map/mobile-brooklyn.png">
+            <img class="borough-overlay" id="brooklyn" src="{{ site.baseurl }}/assets/images/map/brooklyn-overlay2.png" data-borough="Brooklyn">
+        </picture>
+        
+        <picture>
+            <source media="(max-width: 500px)" srcset="{{ site.baseurl }}/assets/images/map/mobile-queens.png">
+            <img class="borough-overlay" id="queens" src="{{ site.baseurl }}/assets/images/map/queens-overlay2.png" data-borough="Queens">
+        </picture>
+        
+        <picture>
+            <source media="(max-width: 500px)" srcset="{{ site.baseurl }}/assets/images/map/mobile-bronx.png">
+            <img class="borough-overlay" id="bronx" src="{{ site.baseurl }}/assets/images/map/bronx-overlay2.png" data-borough="The Bronx">
+        </picture>
+        
+        <picture>
+            <source media="(max-width: 500px)" srcset="{{ site.baseurl }}/assets/images/map/mobile-staten-island.png">
+            <img class="borough-overlay" id="staten-island" src="{{ site.baseurl }}/assets/images/map/staten-island-overlay2.png" data-borough="Staten Island">
+        </picture>
+        
+        <picture>
+            <source media="(max-width: 500px)" srcset="{{ site.baseurl }}/assets/images/map/mobile-jersey-city.png">
+            <img class="borough-overlay" id="jersey-city" src="{{ site.baseurl }}/assets/images/map/jersey-city-overlay2.png" data-borough="Jersey City">
+        </picture>
         
         <!-- Info panel -->
         <div class="info-panel">
