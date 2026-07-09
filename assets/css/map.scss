@@ -121,6 +121,13 @@
 
 /* Mobile adjustments */
 @media (max-width: 500px) {
+    .map-block {
+        width: 95vw;
+        max-width: 700px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    
     .info-panel {
         left: 10%;
         width: 85%;
