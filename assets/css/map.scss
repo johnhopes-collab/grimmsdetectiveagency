@@ -66,7 +66,6 @@
     overflow: hidden;
     color: #000000;
     font-family: 'Courier New', monospace;
-    font-size: clamp(10px, 1.2vw, 14px);    
 }
 
 /* Text containers */
@@ -98,7 +97,7 @@
     position: relative;
     transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
     transform: translateY(0);
-    font-size: 0.94em;
+    font-size: 0.75em;
     overflow-y: auto;
     height: 100%;
     padding-right: 8px;
