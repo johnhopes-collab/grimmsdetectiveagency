@@ -3,12 +3,12 @@ layout: default
 title: Book 1
 ---
 <style>
-     .bookcontainer { display: flex; align-items: flex-start; gap: 20px; }
-     .bookcontainer img { max-width: 300px; width: 100%; height: auto; }
+     .bookcontainer { display: flex; align-items: flex-start; gap: 20px; width: 97%; }
+     .bookcontainer img { max-width: 300px; width: 100%; height: auto; margin-top: 20px; margin-left: 30px; }
      .blurb { flex: 1; }
-     @media (max-width: 768px) {
-         .bookcontainer { flex-direction: column; text-align: left /* Optional */ }
-         .bookcontainer img { max-width: 100%; }
+     @media (max-width: 501px) {
+         .bookcontainer { flex-direction: column; text-align: left ; width: 100%; /* Optional */ }
+         .bookcontainer img { max-width: 100%; margin-top: 0px; margin-left: 0px; }
      }
 </style>
 
