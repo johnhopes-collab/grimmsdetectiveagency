@@ -37,10 +37,13 @@
 /* Individual Update Entries */
 .update-entry {
   margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #bc9e68; /* Horizontal divider */
 }
 
 .update-entry:last-child {
   margin-bottom: 0;
+  border-bottom: none; /* Remove divider from last post */
 }
 
 .update-date {
