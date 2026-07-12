@@ -2,21 +2,36 @@
 layout: default
 title: Book 1
 ---
-
-
 <style>
-     .left-profile { float: left;  width: 405px; height: 405px; margin: 0 0 0 0; }
+     .bookcontainer { display: flex; align-items: center; gap: 20px; }
+     .bookcontainer img { max-width: 300px; width: 100%; height: auto; }
+     .blurb { flex: 1; }
+     @media (max-width: 768px) {
+         .bookcontainer { flex-direction: column; text-align: left /* Optional */ }
+         .bookcontainer img { max-width: 100%; }
+     }
 </style>
+
 
 <h2><i>Agency Grimm</i> - <strong>Case File A-10541: <i>No Snooze Button for the Wicked</i></strong></h2>
 <img src="{{ site.baseurl }}/assets/images/big-ad4.png"
      alt="Big Ad"
      class="resizing-image">
 <hr><br>
-<img src="{{ site.baseurl }}/assets/images/big-ad4.png" alt="Big Promo" class="left-profile">	
-<h3>ONCE UPON A TIME IN NEW YORK...</h3>
-<p style="margin-left: 10px;">The Grimm siblings didn't set out to be the city’s most unusual detective agency, but when you’re descended from famous folklorists and can spot a hob hiding in your hatbox, certain career paths choose you.</p>
-<p style="margin-left: 10px;">Now they’re tracking a series of bewildering disappearances across Jazz Age New York—cases where the evidence reads like a twisted fairytale. Sharp-witted Matilda suspects an old-world pattern. Her brother Jacob sees only criminals to beat up. And their sister Milly… well, she’s distracted by the speakeasy owner who might be a suspect.</p>
-<p style="margin-left: 10px;">Between deciphering ancient texts, dodging trigger-happy mobsters, and crashing high society galas, the Grimms are racing against time as the list of missing persons grows. Something wicked from the oldest stories has found new hunting grounds in the city that never sleeps—and it’s developing quite an appetite.</p>
+
+
+
+<div class="bookcontainer">
+    <img src="{{ site.baseurl }}/assets/images/big-ad4.png" alt="Big Promo">
+    <div class="blurb">
+     <h3>ONCE UPON A TIME IN NEW YORK...</h3>
+     <p>The Grimm siblings didn't set out to be the city’s most unusual detective agency, but when you’re descended from famous folklorists and can spot a hob hiding in your hatbox, certain career paths choose you.</p>
+     <p>Now they’re tracking a series of bewildering disappearances across Jazz Age New York—cases where the evidence reads like a twisted fairytale. Sharp-witted Matilda suspects an old-world pattern. Her brother Jacob sees only criminals to beat up. And their sister Milly… well, she’s distracted by the speakeasy owner who might be a suspect.</p>
+     <p>Between deciphering ancient texts, dodging trigger-happy mobsters, and crashing high society galas, the Grimms are racing against time as the list of missing persons grows. Something wicked from the oldest stories has found new hunting grounds in the city that never sleeps—and it’s developing quite an appetite.</p>
+    </div>
+</div>
+
+
+
 <br>
 <h2><a href="https://www.amazon.com/Agency-Grimm-10541-Snooze-Button/dp/B0H8B4CKYR/">→ Click here to order your case report today</a></h2>
