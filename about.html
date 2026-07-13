@@ -3,7 +3,8 @@ layout: default
 title: About Us
 ---
 <style>
-     .portrait-image   { display: block; margin: 0 auto; height: auto; background: none; border: none; box-shadow: none; padding: 0; }
+     .portrait-image   { display: block; margin: 0 auto; max-width: 60%; height: auto; background: none; border: none; box-shadow: none; padding: 0; }
+	@media (max-width: 500px) { .portrait-image   { display: block; margin: 0 auto; max-width: 100%; height: auto; background: none; border: none; box-shadow: none; padding: 0; }}
 </style>
 
 <h2>The Case Files</h2>
@@ -12,24 +13,7 @@ title: About Us
 
 <img src="{{ site.baseurl }}/assets/images/portrait3.png"
      alt="Family Portrait"
-     class="resizing-image"
-     style="width: 60%;">
-
-<br><br>
-
-
-<picture>
-    <source
-        media="(max-width: 501px)"
-        srcset="{{ site.baseurl }}/assets/images/portrait3.png"
-        style="max-width: 100%;">
-
-    <img
-        src="{{ site.baseurl }}/assets/images/portrait3.png"
-        alt="Family Portrait"
-        class="portrait-image"
-        style="max-width: 60%;">
-</picture>
+     class="portrait-image">
 
 <p>The Grimm siblings are bound together by the precedent set by the original Brothers Grimm a hundred years ago: to solve the strange, to document the miraculous, to banish the monstrous. For the Grimms, the most powerful forces aren't witches or warlocks, but the power of faith and family. The <strong>Case Files</strong> document their journey in the second half of the 1920s, a series that will appeal to fans of urban fantasy, philology nerds, and the contemporary Catholic experience.</p>
 
