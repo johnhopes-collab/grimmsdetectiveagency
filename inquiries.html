@@ -3,12 +3,48 @@ layout: default
 title: Inquiries
 ---
 
+<style>
+  form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover { background: #555; }
+</style>
+
 <h2>A Telegram Away</h2>
 <p>Is there a hob in your hatbox? A troll you can't take? Is your mirror speaking in nursery rhymes? When fairytales manifest in the concrete jungle, Grimms' Detective Agency is your first and last line of defense.</p> 
 				
 <p>Send us a telegram and we will reach out to you. No case too enchanted, no mystery too magical.</p>
 
 <p style="text-indent: 3em;"> Please send all business inquiries or otherwise to our secretary at: <a href="mailto:phoebe@grimmsdetectiveagency.com">phoebe@grimmsdetectiveagency.com</a></p>
+
+
+<form action="https://formspree.io/f/mzdnbyro" method="POST">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
 
 <br><br>
 		<h2>Testimonials</h2>
