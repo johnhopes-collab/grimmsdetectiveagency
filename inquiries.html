@@ -14,6 +14,7 @@ title: Inquiries
 	    text-transform: uppercase;
 	}
 	.contact-box {
+    	position: relative;
 	    max-width: 700px;
 	    margin: 50px auto;
 	    padding: 24px 28px;
@@ -76,6 +77,21 @@ title: Inquiries
 	    text-transform: uppercase;
 	}
 	.contact-form button:hover { background: #7a3a08; }
+	.success-popup {
+	    display: none;
+	    position: absolute;
+	    left: 50%;
+	    top: 40%;
+	    transform: translate(-50%, -50%);
+	    background: #5e2c04;
+	    color: white;
+	    padding: 18px 30px;
+	    border-radius: 6px;
+	    font-family: "Special Elite", monospace;
+	    font-size: 18px;
+	    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+	    z-index: 1000;
+	}
 </style>
 
 
@@ -88,7 +104,8 @@ title: Inquiries
 
 <div class="contact-box">
 	<div class="form-title">Telegram Submission Form</div>
-	<form class="contact-form"
+	<form id="telegramForm"
+		  class="contact-form"
 	      action="https://formspree.io/f/mzdnbyro"
 	      method="POST">
 	
@@ -114,66 +131,97 @@ title: Inquiries
 	    <div class="button-row">
 	        <button type="submit">Send Telegram</button>
 	    </div>
-	
 	</form>
+	<div id="telegramSuccess" class="success-popup">
+	    Telegram Sent!
+	</div>
 </div>
 
 <br><br>
 		<h2>Testimonials</h2>
 		<section class="testimonials-container"> 
 			<div class="testimonial-wrapper">
-			<div class="testimonial">
-				<blockquote>
-				"After my third husband turned into a literal pig at our wedding reception, I was at my wits' end. The Grimms not only reversed the transformation but discovered my mother-in-law was a witch. She's now a lovely decorative garden gnome on my terrace. Five stars!"
-				</blockquote>
-				<cite>— Mrs. Elizabeth Rothschild, Upper East Side</cite>
-			</div>
+				<div class="testimonial">
+					<blockquote>
+					"After my third husband turned into a literal pig at our wedding reception, I was at my wits' end. The Grimms not only reversed the transformation but discovered my mother-in-law was a witch. She's now a lovely decorative garden gnome on my terrace. Five stars!"
+					</blockquote>
+					<cite>— Mrs. Elizabeth Rothschild, Upper East Side</cite>
+				</div>
 			</div>
 
 			<div class="testimonial-wrapper">
-			<div class="testimonial">
-				<blockquote>
-				"When my reflection started giving stock market tips that bankrupted me, the Grimms tracked down the cursed mirror to my ex-wife's cousin. Jacob Grimm threw it from my penthouse window. I lost the mirror but kept my sanity. Mostly."
-				</blockquote>
-				<cite>— J.P. Morgan Jr.</cite>
-			</div>    
+				<div class="testimonial">
+					<blockquote>
+					"When my reflection started giving stock market tips that bankrupted me, the Grimms tracked down the cursed mirror to my ex-wife's cousin. Jacob Grimm threw it from my penthouse window. I lost the mirror but kept my sanity. Mostly."
+					</blockquote>
+					<cite>— J.P. Morgan Jr.</cite>
+				</div>    
 			</div>                  
 
 			<div class="testimonial-wrapper">
-			<div class="testimonial">
-				<blockquote>
-				"My stepsisters hired the Grimms to find their missing shoes. Instead, those detectives proved I was the rightful owner of our family estate. Awkward Thanksgiving ahead, but worth it! P.S. Matilda Grimm terrifies me in ways I find confusing."
-				</blockquote>
-				<cite>— Ella G., Harlem</cite>
-			</div>   
+				<div class="testimonial">
+					<blockquote>
+					"My stepsisters hired the Grimms to find their missing shoes. Instead, those detectives proved I was the rightful owner of our family estate. Awkward Thanksgiving ahead, but worth it! P.S. Matilda Grimm terrifies me in ways I find confusing."
+					</blockquote>
+					<cite>— Ella G., Harlem</cite>
+				</div>   
 			</div>
                       
 			<div class="testimonial-wrapper">
-			<div class="testimonial">
-				<blockquote>
-				"Grimms removed a wolf from my grandmother's bed. Matilda made a coat from him that still terrifies the neighborhood children. 10/10 service, though the bloodstains on my quilt never came out."		
-                </blockquote>
-				<cite>— Helga H., Greenwich Village</cite>
-			</div>   
+				<div class="testimonial">
+					<blockquote>
+					"Grimms removed a wolf from my grandmother's bed. Matilda made a coat from him that still terrifies the neighborhood children. 10/10 service, though the bloodstains on my quilt never came out."		
+	                </blockquote>
+					<cite>— Helga H., Greenwich Village</cite>
+				</div>   
 			</div>
 
 			<div class="testimonial-wrapper">
-			<div class="testimonial">
-				<blockquote>
-				"Expect a lawsuit, Grimm."
-				</blockquote>
-				<cite>— Rachel Vanderbilt, Fifth Avenue</cite>
-			</div>   
+				<div class="testimonial">
+					<blockquote>
+					"Expect a lawsuit, Grimm."
+					</blockquote>
+					<cite>— Rachel Vanderbilt, Fifth Avenue</cite>
+				</div>   
 			</div>
 
 			<div class="testimonial-wrapper">
-			<div class="testimonial">
-				<blockquote>
-				"Dear Miss Grimm, it has come to my attention that you have borrowed a second class relic from St. Patrick's. I would appreciate its return sooner than later."
-				</blockquote>
-				<cite>— Fr. O'Malley</cite>
-			</div>   
+				<div class="testimonial">
+					<blockquote>
+					"Dear Miss Grimm, it has come to my attention that you have borrowed a second class relic from St. Patrick's. I would appreciate its return sooner than later."
+					</blockquote>
+					<cite>— Fr. O'Malley</cite>
+				</div>   
 			</div>
 			
 		</section>
 
+<script>
+const form = document.getElementById('telegramForm');
+const popup = document.getElementById('telegramSuccess');
+
+form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+
+    if (response.ok) {
+        form.reset();
+
+        popup.style.display = 'block';
+
+        setTimeout(() => {
+            popup.style.display = 'none';
+        }, 3000);
+
+    } else {
+        alert("There was a problem sending your telegram.");
+    }
+});
+</script>
