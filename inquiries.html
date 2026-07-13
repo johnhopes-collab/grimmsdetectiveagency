@@ -5,33 +5,51 @@ title: Inquiries
 
 <style>
 	.contact-box {
-	    max-width: 650px;
+	    max-width: 700px;
 	    margin: 50px auto;
-	    padding: 30px;
+	    padding: 24px 28px;
 	    border: 1px solid #ddd;
 	    border-radius: 8px;
 	    background: #fff;
 	}
-	
-	.contact-form 	{ display: flex; flex-direction: column; gap: 14px; }
-	.form-row 		{ display: flex; align-items: center; gap: 12px; }
-	.contact-form label { width: 70px; color: #5e2c04; font-weight: bold; }
-	
+	.contact-form {
+	    display: flex;
+	    flex-direction: column;
+	    gap: 14px;
+	    font-family: Georgia, serif;
+	    font-size: 14px;
+	}
+	.top-row 		{ display: flex; gap: 24px; }
+	.field-group 	{ display: flex; align-items: center; flex: 1;	}
+	.field-group label {
+	    margin-right: 8px;
+	    color: #5e2c04;
+	    font-weight: bold;
+	    white-space: nowrap;
+	}
 	.contact-form input {
 	    flex: 1;
-	    padding: 5px 8px;
-	    height: 28px;
-	    font-size: 15px;
+	    height: 24px;
+	    padding: 3px 6px;
+	    font-size: 13px;
 	    border: 1px solid #aaa;
 	    border-radius: 4px;
 	}
+	.message-label {
+	    display: block;
+	    margin-bottom: 6px;
+	    color: #5e2c04;
+	    font-weight: bold;
+	}
 	.contact-form textarea {
 	    width: 100%;
-	    padding: 8px;
-	    font-size: 15px;
+	    height: 140px;
+	    padding: 6px;
+	    font-size: 13px;
 	    border: 1px solid #aaa;
 	    border-radius: 4px;
-	    resize: vertical;
+	    resize: none;
+	    box-sizing: border-box;
 	}
 	
 	.button-row { text-align: right; }
@@ -40,11 +58,11 @@ title: Inquiries
 	    background: #5e2c04;
 	    color: white;
 	    border: none;
-	    padding: 7px 18px;
+	    padding: 6px 16px;
 	    border-radius: 4px;
 	    cursor: pointer;
-	    font-size: 14px;
-	    font-family: "Courier New", Courier, monospace; /* Typewriter font */
+	    font-size: 13px;
+	    font-family: "Courier New", Courier, monospace;
 	    letter-spacing: 1px;
 	    text-transform: uppercase;
 	}
@@ -59,23 +77,34 @@ title: Inquiries
 
 <p style="text-indent: 3em;"> Please send all business inquiries or otherwise to our secretary at: <a href="mailto:phoebe@grimmsdetectiveagency.com">phoebe@grimmsdetectiveagency.com</a></p>
 
-<div class="contact-box">	
-	<form class="contact-form" action="https://formspree.io/f/mzdnbyro" method="POST">
-	    <div class="form-row">
-	        <label for="name">Name</label>
-	        <input type="text" id="name" name="name" required>
+<div class="contact-box">
+	<form class="contact-form"
+	      action="https://formspree.io/f/mzdnbyro"
+	      method="POST">
+	
+	    <div class="top-row">
+	
+	        <div class="field-group">
+	            <label for="name">Name</label>
+	            <input type="text" id="name" name="name" required>
+	        </div>
+	
+	        <div class="field-group">
+	            <label for="email">Email</label>
+	            <input type="email" id="email" name="email" required>
+	        </div>
+	
 	    </div>
-	    <div class="form-row">
-	        <label for="email">Email Address</label>
-	        <input type="email" id="email" name="email" required>
-	    </div>
+	
 	    <div>
-	        <label for="message">Message</label><br>
-	        <textarea id="message" name="message" rows="8" required> </textarea>
+	        <label class="message-label" for="message">Message</label>
+	        <textarea id="message" name="message" required></textarea>
 	    </div>
+	
 	    <div class="button-row">
 	        <button type="submit">Send Telegram</button>
 	    </div>
+	
 	</form>
 </div>
 
