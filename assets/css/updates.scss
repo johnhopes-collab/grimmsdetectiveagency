@@ -79,7 +79,7 @@
 
 .update-image {
   margin-top: 8px;
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   border: 1px solid #bc9e68;
   display: block;
@@ -183,5 +183,7 @@
     overflow-y: auto;
     overflow-x: hidden;
   }
+  
+  .update-image {    max-width: 100%;  }
   
 }
