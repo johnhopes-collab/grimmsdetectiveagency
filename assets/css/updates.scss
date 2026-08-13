@@ -50,6 +50,33 @@
   font-stretch: condensed;
 }
 
+/* Date header container */
+.update-date-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.update-date {
+  color: #5e2c04;
+  font-weight: bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  font-stretch: condensed;
+  margin: 0; /* Remove previous margin */
+}
+
+.update-time-ago {
+  color: #bc9e68;
+  font-weight: bold;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+
 .update-content {
   background-color: #f9f3e9; /* Lighter beige for post boxes */
   border: 1px solid #bc9e68;
@@ -114,7 +141,9 @@
 
 /* == MOBILE - Mobile Display - both portrait and landscape - MOBILE DISPLAY == */
 @media (max-width: 500px) {
-  .updates-container { max-width: 700px; }
-  #updates-feed      { padding: 5px; max-height: 200px; overflow-y: auto; overflow-x: hidden; }
-  .update-image      { max-width: 100%;  }
+  .updates-container  { max-width: 700px; }
+  #updates-feed       { padding: 5px; max-height: 200px; overflow-y: auto; overflow-x: hidden; }
+  .update-image       { max-width: 100%;  }
+  .update-date-header { flex-direction: column; align-items: flex-start; }
+  .update-time-ago    { font-size: 0.65rem; margin-top: 2px;  }
 }
