@@ -4,7 +4,6 @@ title: Front Desk
 ---
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/updates.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/js/updates-time-ago.js">
 
 <h2>Welcome to the Agency</h2>
 <p>You've reached the front desk of the Grimms' Detective Agency, specialists in cases of the strange and peculiar. We handle investigations others can't touch... or simply won't.</p>
@@ -23,7 +22,62 @@ title: Front Desk
 <hr>
 <img src="{{ site.baseurl }}/assets/images/1-vintagereading.jpg" alt="Reading Poster" style="display: block; width: 50%; margin: 0 auto; border: none;">
 
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script
+
+<script>
+/**
+ * Calculate how long ago a date was, using retro-style categories
+ */
+function getTimeAgo(isoDateString) {
+  const postDate = new Date(isoDateString);
+  const today = new Date();
+  
+  // Reset times to midnight for accurate day calculations
+  postDate.setHours(0, 0, 0, 0);
+  today.setHours(0, 0, 0, 0);
+  
+  const diffTime = today - postDate;
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  
+  // Days categories
+  if (diffDays === 0) return "Today";
+  if (diffDays === 1) return "Yesterday";
+  if (diffDays === 2) return "2 Days Ago";
+  if (diffDays === 3) return "3 Days Ago";
+  if (diffDays === 4) return "4 Days Ago";
+  if (diffDays === 5) return "5 Days Ago";
+  if (diffDays >= 6 && diffDays <= 13) return "Last Week";
+  if (diffDays >= 14 && diffDays <= 20) return "2 Weeks Ago";
+  if (diffDays >= 21 && diffDays <= 29) return "3 Weeks Ago";
+  
+  // Month calculations
+  const diffMonths = (today.getFullYear() - postDate.getFullYear()) * 12 
+                     + (today.getMonth() - postDate.getMonth());
+  
+  if (diffMonths === 1) return "1 Month Ago";
+  if (diffMonths === 2) return "2 Months Ago";
+  if (diffMonths === 3) return "3 Months Ago";
+  if (diffMonths === 4) return "4 Months Ago";
+  if (diffMonths === 5) return "5 Months Ago";
+  if (diffMonths === 6) return "6 Months Ago";
+  if (diffMonths === 7) return "7 Months Ago";
+  if (diffMonths === 8) return "8 Months Ago";
+  if (diffMonths === 9) return "9 Months Ago";
+  if (diffMonths === 10) return "10 Months Ago";
+  if (diffMonths === 11) return "11 Months Ago";
+  
+  // Year calculations
+  const diffYears = today.getFullYear() - postDate.getFullYear();
+  
+  if (diffYears === 1) return "Last Year";
+  if (diffYears === 2) return "2 Years Ago";
+  if (diffYears === 3) return "3 Years Ago";
+  if (diffYears > 3) return "3+ Years Ago";
+  
+  return "Recently"; // Fallback
+}
+
+  
 <script>
 // Load and display updates
 fetch('assets/data/updates.json')
