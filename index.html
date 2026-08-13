@@ -50,7 +50,6 @@ title: Front Desk
     // Month calculations
     const diffMonths = (today.getFullYear() - postDate.getFullYear()) * 12 
                        + (today.getMonth() - postDate.getMonth());
-    
     if (diffMonths === 1) return "1 Month Ago";
     if (diffMonths === 2) return "2 Months Ago";
     if (diffMonths === 3) return "3 Months Ago";
@@ -62,20 +61,15 @@ title: Front Desk
     if (diffMonths === 9) return "9 Months Ago";
     if (diffMonths === 10) return "10 Months Ago";
     if (diffMonths === 11) return "11 Months Ago";
-    
     // Year calculations
     const diffYears = today.getFullYear() - postDate.getFullYear();
-    
     if (diffYears === 1) return "Last Year";
     if (diffYears === 2) return "2 Years Ago";
     if (diffYears === 3) return "3 Years Ago";
     if (diffYears > 3) return "3+ Years Ago";
-    
     return "Recently"; // Fallback
 }
-</script>
-  
-<script>
+
 // Load and display updates
 fetch('assets/data/updates.json')
   .then(response => response.json())
