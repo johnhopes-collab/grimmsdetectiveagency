@@ -93,9 +93,12 @@ fetch('assets/data/updates.json')
       const parsedText = marked.parse(update.text);
       
       let html = `
-        <span class="update-date">${update.date}</span>
+        <div class="update-date-header">               // ✅ NEW - wrapper div
+          <span class="update-date">${update.date}</span>
+          ${timeAgo ? `<span class="update-time-ago">${timeAgo}</span>` : ''}
+        </div>
         <div class="update-content">
-          <div class="update-text">${parsedText}</div>
+        <div class="update-text">${parsedText}</div>
       `;
       
       // Add image if present
