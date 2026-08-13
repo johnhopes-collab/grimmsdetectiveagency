@@ -2,11 +2,7 @@
 ---
 
 /* Updates Container - Retro 2000s Style */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-*/
-/* Updates Container - Retro 2000s Style */
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
 .updates-container {
   background-color: #d4c4a8; /* Creamy brown background */
   border: 2px solid #5e2c04;
@@ -41,10 +37,7 @@
   border-bottom: 1px solid #bc9e68; /* Horizontal divider */
 }
 
-.update-entry:last-child {
-  margin-bottom: 0;
-  border-bottom: none; /* Remove divider from last post */
-}
+.update-entry:last-child { margin-bottom: 0; border-bottom: none; /* Remove divider from last post */ }
 
 .update-date {
   color: #5e2c04;
@@ -67,15 +60,8 @@
   box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15);
 }
 
-.update-content:hover {
-  border-color: #5e2c04;
-  box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25);
-}
-
-.update-text {
-  margin: 0;
-  word-wrap: break-word;
-}
+.update-content:hover { border-color: #5e2c04; box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25); }
+.update-text          { margin: 0; word-wrap: break-word; }
 
 .update-image {
   margin-top: 8px;
@@ -86,23 +72,10 @@
 }
 
 /* Custom Scrollbar for that 2000s vibe */
-#updates-feed::-webkit-scrollbar {
-  width: 12px;
-}
-
-#updates-feed::-webkit-scrollbar-track {
-  background: #d4c4a8;
-  border-left: 1px solid #bc9e68;
-}
-
-#updates-feed::-webkit-scrollbar-thumb {
-  background: #bc9e68;
-  border: 1px solid #5e2c04;
-}
-
-#updates-feed::-webkit-scrollbar-thumb:hover {
-  background: #5e2c04;
-}
+#updates-feed::-webkit-scrollbar             { width: 12px; }
+#updates-feed::-webkit-scrollbar-track       { background: #d4c4a8; border-left: 1px solid #bc9e68; }
+#updates-feed::-webkit-scrollbar-thumb       { background: #bc9e68; border: 1px solid #5e2c04; }
+#updates-feed::-webkit-scrollbar-thumb:hover { background: #5e2c04; }
 
 .loading {
   padding: 20px;
@@ -112,46 +85,16 @@
 }
 
 /* Markdown styling within updates */
-.update-text p {
-  margin: 6px 0;
-}
+.update-text p              { margin: 6px 0; }
+.update-text p:first-child  { margin-top: 0; }
+.update-text p:last-child   { margin-bottom: 0; }
 
-.update-text p:first-child {
-  margin-top: 0;
-}
-
-.update-text p:last-child {
-  margin-bottom: 0;
-}
-
-.update-text strong {
-  font-weight: bold;
-  color: #5e2c04;
-}
-
-.update-text em {
-  font-style: italic;
-  color: #5e2c04;
-}
-
-.update-text a {
-  color: #bc9e68;
-  text-decoration: underline;
-}
-
-.update-text a:hover {
-  color: #5e2c04;
-  background-color: #bc9e68;
-}
-
-.update-text ul, .update-text ol {
-  margin: 6px 0;
-  padding-left: 20px;
-}
-
-.update-text li {
-  margin: 3px 0;
-}
+.update-text strong               { font-weight: bold; color: #5e2c04; }
+.update-text em                   { font-style: italic; color: #5e2c04; }
+.update-text a                    { color: #bc9e68; text-decoration: underline; }
+.update-text a:hover              { color: #5e2c04; background-color: #bc9e68; }
+.update-text ul, .update-text ol  { margin: 6px 0; padding-left: 20px; }
+.update-text li                   {  margin: 3px 0; }
 
 .update-text code {
   background-color: rgba(188, 158, 104, 0.2);
@@ -171,19 +114,7 @@
 
 /* == MOBILE - Mobile Display - both portrait and landscape - MOBILE DISPLAY == */
 @media (max-width: 500px) {
-  
-  .updates-container {
-    max-width: 700px;
-  }
-
-
-  #updates-feed {
-    padding: 5px;
-    max-height: 200px;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  
-  .update-image {    max-width: 100%;  }
-  
+  .updates-container { max-width: 700px; }
+  #updates-feed      { padding: 5px; max-height: 200px; overflow-y: auto; overflow-x: hidden; }
+  .update-image      { max-width: 100%;  }
 }
