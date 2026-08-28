@@ -6,29 +6,47 @@ title: Front Desk
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/updates.css">
 
 <style>
-/* SCOPED STYLES - Only affects the retro text display component */
-.retro-text-container {
-    background-color: #d4c4a8; /* Creamy brown background */
-    border: 1px solid #5e2c04;
-    box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
+/* SCOPED STYLES - Retro text display with tab-style header */
+.retro-text-wrapper {
+    position: relative;
     max-width: 680px;
-    width: calc(100% + 30px); /* Extend beyond text-box padding (25px * 2) */
+    width: calc(100% + 30px);
     margin: -10px -15px 20px 0px;
-    font-family: 'Georgia', serif; 
-    font-size: 0.719rem; 
-    display: block;
 }
 
-.retro-text-header {
+/* Tab-style header - positioned on the right */
+.retro-text-tab {
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: #bc9e68;
     color: #5e2c04;
     padding: 2px 12px;
     font-size: 9px;
     font-weight: bold;
     letter-spacing: 2px;
-    border-bottom: 2px solid #5e2c04;
-    text-align: left;
-    margin: 0;
+    border: 1px solid #5e2c04;
+    border-bottom: none;
+    font-family: 'Georgia', serif;
+    z-index: 2;
+    /* Tab styling */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: 2px -2px 0px rgba(94, 44, 4, 0.2);
+    min-width: 120px; /* Adjust tab width as needed */
+    text-align: center;
+}
+
+/* Main content container - starts below the tab */
+.retro-text-container {
+    background-color: #d4c4a8;
+    border: 1px solid #5e2c04;
+    box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
+    margin-top: 18px; /* Space for the tab */
+    font-family: 'Georgia', serif;
+    font-size: 0.719rem;
+    position: relative;
+    z-index: 1;
 }
 
 .retro-text-content {
@@ -95,6 +113,20 @@ title: Front Desk
 </style>
 
 <h2 style="line-height: 1; margin-top:-15px;">News & Updates</h2>
+
+<div class="retro-text-wrapper">
+    <div class="retro-text-tab">AUGUST 27th, 2026</div>
+    <div class="retro-text-container">
+        <div class="retro-text-content">
+                <div class="retro-text-display">
+                    <img src="{{ site.baseurl }}/assets/updates/260827-promo.png" alt="Reading Poster" style="display: block; width: 70%; margin: -28px auto; border: none;">
+                </div>
+                <p>We are proud to announce that <i>Agency Grimm</i> will officially be partnering with <strong>Regina Caeli Parish</strong> and we will be hosting a booth at their <strong>2026 Fall Festival</strong>! We will be co-hosting with <strong><a href="linktr.ee/genp">Gen Ponce Books</a></strong>, an up-and-coming Catholic author, at Booth 15. For all you Texans, come check us out for case files, bookmarks, and other limited-time merch.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="retro-text-container">
     <div class="retro-text-header">
         AUGUST 27th, 2026
