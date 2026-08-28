@@ -6,6 +6,10 @@ title: Front Desk
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/updates.css">
 
 <style>
+    .text-box h2.h2alt {
+    color: var(--button-brown);
+        line-height: 1; margin-top:-15px;
+}
 /* SCOPED STYLES - Retro text display with tab-style header */
 .retro-text-wrapper {
     position: relative;
@@ -72,32 +76,18 @@ title: Front Desk
     font-family: "Courier New", Courier, monospace;
 }
 
-.retro-text-display:hover {
-    border-color: #5e2c04;
-    box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25);
-}
+.retro-text-display:hover { border-color: #5e2c04; box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25); }
 
 /* Custom Scrollbar for that 2000s vibe */
-.retro-text-content::-webkit-scrollbar {
-    width: 12px;
-}
-
-.retro-text-content::-webkit-scrollbar-track {
-    background: #d4c4a8;
-    border-left: 1px solid #bc9e68;
-}
-
-.retro-text-content::-webkit-scrollbar-thumb {
-    background: #bc9e68;
-    border: 1px solid #5e2c04;
-}
-
-.retro-text-content::-webkit-scrollbar-thumb:hover {
-    background: #5e2c04;
-}
+.retro-text-content::-webkit-scrollbar { width: 12px; }
+.retro-text-content::-webkit-scrollbar-track {background: #d4c4a8;border-left: 1px solid #bc9e68;}
+.retro-text-content::-webkit-scrollbar-thumb { background: #bc9e68; border: 1px solid #5e2c04;}
+.retro-text-content::-webkit-scrollbar-thumb:hover { background: #5e2c04;}
 
 /* Mobile Display */
 @media (max-width: 500px) {
+    .text-box h2.h2alt { color: var(--button-brown); line-height: 1; margin-top: 0px;}
+
     .retro-text-container {
       max-width: 700px;
       max-width: none;
@@ -114,7 +104,7 @@ title: Front Desk
 }
 </style>
 
-<h2 style="line-height: 1; margin-top:-15px;">News & Updates</h2>
+<h2 class="h2alt">News & Updates</h2>
 
 <div class="retro-text-wrapper">
     <div class="retro-text-tab">AUGUST 27th, 2026</div>
