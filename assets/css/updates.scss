@@ -5,7 +5,7 @@
 /* old rule @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
 .updates-container {
   background-color: #d4c4a8;
-  border: 2px solid #5e2c04;
+  border: 1px solid #5e2c04;
   box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
   max-width: none; /* Remove the max-width constraint */
   width: calc(100% + 30px); /* Extend beyond text-box padding (25px * 2) */
@@ -18,10 +18,11 @@
   background-color: #bc9e68;
   color: #5e2c04;
   padding: 2px 12px;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: bold;
   letter-spacing: 2px;
   border-bottom: 2px solid #5e2c04;
+  font-family: 'Georgia', serif;
   text-align: left;
 }
 
