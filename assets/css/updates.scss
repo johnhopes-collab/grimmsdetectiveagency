@@ -8,8 +8,8 @@
   border: 2px solid #5e2c04;
   box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
   max-width: none; /* Remove the max-width constraint */
-  width: calc(100% + 50px); /* Extend beyond text-box padding (25px * 2) */
-  margin: 20px -25px; /* Negative margin to counteract text-box padding */
+  width: calc(100% + 40px); /* Extend beyond text-box padding (25px * 2) */
+  margin: 20px -20px; /* Negative margin to counteract text-box padding */
   font-family: "Courier New", Courier, monospace;
   position: relative; /* Ensure proper positioning */
 }
