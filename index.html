@@ -5,6 +5,151 @@ title: Front Desk
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/updates.css">
 
+    <style>
+
+        .index-container {
+            background-color: #d4c4a8; /* Creamy brown background */
+            border: 2px solid #5e2c04;
+            box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
+            max-width: 680px;
+            margin: 20px auto;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .index-header {
+            background-color: #bc9e68;
+            color: #5e2c04;
+            padding: 6px 12px;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #5e2c04;
+            text-align: left;
+        }
+
+        .index-content {
+            padding: 12px;
+        }
+
+        /* Styled Text Area */
+        .styled-textarea {
+            background-color: #f9f3e9; /* Lighter beige for text box */
+            border: 1px solid #bc9e68;
+            padding: 10px;
+            font-size: 11px;
+            line-height: 1.6;
+            color: #401c00;
+            box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15);
+            width: 100%;
+            min-height: 200px;
+            max-height: 350px;
+            resize: vertical;
+            font-family: "Courier New", Courier, monospace;
+            box-sizing: border-box;
+        }
+
+        .styled-textarea:hover {
+            border-color: #5e2c04;
+            box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25);
+        }
+
+        .styled-textarea:focus {
+            outline: none;
+            border-color: #5e2c04;
+            box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.4);
+            background-color: #faf6ec;
+        }
+
+        /* Custom Scrollbar for that 2000s vibe */
+        .styled-textarea::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        .styled-textarea::-webkit-scrollbar-track {
+            background: #d4c4a8;
+            border-left: 1px solid #bc9e68;
+        }
+
+        .styled-textarea::-webkit-scrollbar-thumb {
+            background: #bc9e68;
+            border: 1px solid #5e2c04;
+        }
+
+        .styled-textarea::-webkit-scrollbar-thumb:hover {
+            background: #5e2c04;
+        }
+
+        /* Button styling to match the theme */
+        .styled-button {
+            background-color: #bc9e68;
+            border: 2px solid #5e2c04;
+            color: #5e2c04;
+            padding: 6px 12px;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: "Courier New", Courier, monospace;
+            cursor: pointer;
+            margin-top: 8px;
+            box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.3);
+        }
+
+        .styled-button:hover {
+            background-color: #5e2c04;
+            color: #bc9e68;
+            box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.5);
+        }
+
+        .styled-button:active {
+            box-shadow: inset 1px 1px 0px rgba(94, 44, 4, 0.5);
+        }
+
+        /* Display area for the text */
+        .index-display-area {
+            background-color: #f9f3e9;
+            border: 1px solid #bc9e68;
+            padding: 10px;
+            font-size: 11px;
+            line-height: 1.6;
+            color: #401c00;
+            box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15);
+            margin-top: 12px;
+            min-height: 50px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* Mobile Display */
+        @media (max-width: 500px) {
+            .textbox-container {
+                max-width: 700px;
+                margin: 10px;
+            }
+            
+            .index-content {
+                padding: 8px;
+            }
+            
+            .styled-textarea {
+                min-height: 150px;
+                max-height: 250px;
+            }
+        }
+    </style>
+
+    <div class="index-container">
+        <div class="index-header">
+          News and Updates
+        </div>
+        <div class="index-content">
+            <textarea class="styled-textarea" id="textInput" placeholder="Type your text here... This text box uses the same retro 2000s styling as your updates widget!">
+Welcome to my styled text box!
+
+        </div>
+
+              
+<br>
+<hr>
 <h2>Welcome to the Agency</h2>
 <p>You've reached the front desk of the Grimms' Detective Agency, specialists in cases of the strange and peculiar. We handle investigations others can't touch... or simply won't.</p>
 <p>A variety of past case reports are available for review at our <a href="/casefiles.html"><strong>Case Files</strong></a> section. To contact us, please consider sending us a telegram at our <a href="/inquiries.html"><strong>Inquiries</strong></a> page, or for a deeper look into the world of the Grimms, take a peek into the <a href="/archives.html"><strong>Archives</strong></a> and discover more about your favorite characters and their most intriguing cases. The files are being organized, the holy water is being refilled, and the tea brewed to standards that would impress even the intrepid Gervaise. Until then, please make yourself at home.</p>
