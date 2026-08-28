@@ -6,6 +6,18 @@ title: Front Desk
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/updates.css">
 
 <style>
+
+.news-heading {  
+    line-height: 1; margin-top:-15px;
+    background-color: rgb(249, 243, 233); border: 1px solid #d9c8a9; padding: 25px; border-radius: 5px; box-sizing: border-box;  color: var(--button-brown); }
+    
+
+@media (max-width: 500px) {
+    .news-heading {
+        line-height: 1.6; 
+    }
+}
+    
 /* SCOPED STYLES - Only affects the retro text display component */
 .retro-text-container {
     background-color: #d4c4a8; /* Creamy brown background */
@@ -94,7 +106,7 @@ title: Front Desk
 }
 </style>
 
-<h2 style="line-height: 1; margin-top:-15px;">News & Updates</h2>
+<news-heading>News & Updates</news-heading>
 <div class="retro-text-container">
     <div class="retro-text-header">
         AUGUST 27th, 2026
