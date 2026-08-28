@@ -5,148 +5,111 @@ title: Front Desk
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/updates.css">
 
-    <style>
+<style>
+/* SCOPED STYLES - Only affects the retro text display component */
+.retro-text-container {
+    background-color: #d4c4a8; /* Creamy brown background */
+    border: 2px solid #5e2c04;
+    box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
+    max-width: 680px;
+    margin: 20px auto;
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+}
 
-        .index-container {
-            background-color: #d4c4a8; /* Creamy brown background */
-            border: 2px solid #5e2c04;
-            box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
-            max-width: 680px;
-            margin: 20px auto;
-            font-family: "Courier New", Courier, monospace;
-        }
+.retro-text-header {
+    background-color: #bc9e68;
+    color: #5e2c04;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #5e2c04;
+    text-align: left;
+    margin: 0;
+}
 
-        .index-header {
-            background-color: #bc9e68;
-            color: #5e2c04;
-            padding: 6px 12px;
-            font-size: 11px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            border-bottom: 2px solid #5e2c04;
-            text-align: left;
-        }
+.retro-text-content {
+    padding: 12px;
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
-        .index-content {
-            padding: 12px;
-        }
+/* Main text display area */
+.retro-text-display {
+    background-color: #f9f3e9; /* Lighter beige for text area */
+    border: 1px solid #bc9e68;
+    padding: 10px;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #401c00;
+    box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15);
+    white-space: pre-line; /* Preserves line breaks you put in HTML */
+    word-wrap: break-word;
+    font-family: "Courier New", Courier, monospace;
+}
 
-        /* Styled Text Area */
-        .styled-textarea {
-            background-color: #f9f3e9; /* Lighter beige for text box */
-            border: 1px solid #bc9e68;
-            padding: 10px;
-            font-size: 11px;
-            line-height: 1.6;
-            color: #401c00;
-            box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15);
-            width: 100%;
-            min-height: 200px;
-            max-height: 350px;
-            resize: vertical;
-            font-family: "Courier New", Courier, monospace;
-            box-sizing: border-box;
-        }
+.retro-text-display:hover {
+    border-color: #5e2c04;
+    box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25);
+}
 
-        .styled-textarea:hover {
-            border-color: #5e2c04;
-            box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25);
-        }
+/* Custom Scrollbar for that 2000s vibe */
+.retro-text-content::-webkit-scrollbar {
+    width: 12px;
+}
 
-        .styled-textarea:focus {
-            outline: none;
-            border-color: #5e2c04;
-            box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.4);
-            background-color: #faf6ec;
-        }
+.retro-text-content::-webkit-scrollbar-track {
+    background: #d4c4a8;
+    border-left: 1px solid #bc9e68;
+}
 
-        /* Custom Scrollbar for that 2000s vibe */
-        .styled-textarea::-webkit-scrollbar {
-            width: 12px;
-        }
+.retro-text-content::-webkit-scrollbar-thumb {
+    background: #bc9e68;
+    border: 1px solid #5e2c04;
+}
 
-        .styled-textarea::-webkit-scrollbar-track {
-            background: #d4c4a8;
-            border-left: 1px solid #bc9e68;
-        }
+.retro-text-content::-webkit-scrollbar-thumb:hover {
+    background: #5e2c04;
+}
 
-        .styled-textarea::-webkit-scrollbar-thumb {
-            background: #bc9e68;
-            border: 1px solid #5e2c04;
-        }
+/* Mobile Display */
+@media (max-width: 500px) {
+    .retro-text-container {
+        max-width: 700px;
+        margin: 10px;
+    }
+    
+    .retro-text-content {
+        padding: 8px;
+        max-height: 250px;
+    }
+}
+</style>
 
-        .styled-textarea::-webkit-scrollbar-thumb:hover {
-            background: #5e2c04;
-        }
-
-        /* Button styling to match the theme */
-        .styled-button {
-            background-color: #bc9e68;
-            border: 2px solid #5e2c04;
-            color: #5e2c04;
-            padding: 6px 12px;
-            font-size: 11px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            font-family: "Courier New", Courier, monospace;
-            cursor: pointer;
-            margin-top: 8px;
-            box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.3);
-        }
-
-        .styled-button:hover {
-            background-color: #5e2c04;
-            color: #bc9e68;
-            box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.5);
-        }
-
-        .styled-button:active {
-            box-shadow: inset 1px 1px 0px rgba(94, 44, 4, 0.5);
-        }
-
-        /* Display area for the text */
-        .index-display-area {
-            background-color: #f9f3e9;
-            border: 1px solid #bc9e68;
-            padding: 10px;
-            font-size: 11px;
-            line-height: 1.6;
-            color: #401c00;
-            box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15);
-            margin-top: 12px;
-            min-height: 50px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-
-        /* Mobile Display */
-        @media (max-width: 500px) {
-            .textbox-container {
-                max-width: 700px;
-                margin: 10px;
-            }
+<div class="retro-text-container">
+    <div class="retro-text-header">
+        AUGUST 27th, 2026
+    </div>
+    <div class="retro-text-content">
+        <div class="retro-text-display">
+            Welcome to my website!
             
-            .index-content {
-                padding: 8px;
-            }
+            This is a styled text box that matches your updates widget design.
             
-            .styled-textarea {
-                min-height: 150px;
-                max-height: 250px;
-            }
-        }
-    </style>
-
-<h2>News & Updates</h2>
-    <div class="index-container">
-        <div class="index-header">
-AUGUST 27th, 2026
+            Features:
+            • Same retro 2000s styling as your updates widget
+            • Creamy brown background with dark borders
+            • Custom scrollbars if text gets long
+            • Fully responsive design
+            
+            You can edit this text directly in the HTML by changing the content inside the retro-text-display div!
+            
+            Add line breaks, format however you want. This text will stay exactly as you write it in the code.
         </div>
-        <div class="index-content">
-            <textarea class="styled-textarea" id="textInput" placeholder="Type your text here... This text box uses the same retro 2000s styling as your updates widget!">
-                </textarea>
-        </div>
-</div>               
+    </div>
+</div>          
 
               
 <br>
