@@ -51,6 +51,14 @@ title: Front Desk
     z-index: 1;
 }
 
+.retro-text-tab .tab-label {
+    display: none;
+}
+
+.retro-text-tab .tab-date {
+    display: inline;
+}
+
 .retro-text-container {
     background-color: #d4c4a8;
     border: 1px solid #5e2c04;
@@ -92,14 +100,23 @@ title: Front Desk
     .retro-text-wrapper { max-width: none; width: 102vw; margin: 0px -32px; position: relative; font-size: 0.6rem; }
     .retro-text-content { padding: 0px; max-height: none; }
     .retro-text-display { padding: 0px}
-    .retro-text-tab     { min-width: 102vw; text-align: right;}
+    .retro-text-tab     { 
+        min-width: 102vw;
+        width: 102vw;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: initial;   }
+    .retro-text-tab .tab-label { text-align: left; }
+    .retro-text-tab .tab-date  { text-align: right; }
 }
 </style>
 
 <h2 class="h2alt">News & Updates</h2>
 
 <div class="retro-text-wrapper">
-    <div class="retro-text-tab">AUGUST 27th, 2026</div>
+    <div class="retro-text-tab">  <span class="tab-label">Updates</span> <span class="tab-date">AUGUST 27th, 2026</span> </div>
         <div class="retro-text-container">
             <div class="retro-text-content">
                     <div class="retro-text-display">
