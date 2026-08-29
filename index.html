@@ -6,6 +6,18 @@ title: Front Desk
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/updates.css">
 
 <style>
+    
+.social-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.social-buttons img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+    
 .text-box h2.h2alt { color: var(--button-brown); line-height: 1; margin-top:-5px; }
 .topped-image {
     display: block;
@@ -16,7 +28,6 @@ title: Front Desk
     border: none;
 }
     
-/* SCOPED STYLES - Retro text display with tab-style header */
 .retro-text-wrapper {
     position: relative;
     max-width: 680px;
@@ -24,7 +35,6 @@ title: Front Desk
     margin: -10px -15px 20px 0px;
 }
 
-/* Tab-style header - positioned on the right */
 .retro-text-tab {
     position: absolute;
     top: 0;
@@ -49,7 +59,6 @@ title: Front Desk
     z-index: 1;
 }
 
-/* Main content container - starts below the tab */
 .retro-text-container {
     background-color: #d4c4a8;
     border: 1px solid #5e2c04;
@@ -61,20 +70,9 @@ title: Front Desk
     z-index: 2;
 }
 
-.retro-text-content {
-    padding: 5px 12px 12px 12px;
-    max-height: 350px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
+.retro-text-content { padding: 5px 12px 12px 12px; max-height: 350px; overflow-y: auto; overflow-x: hidden; }
+.retro-text-blurb   { padding: 0px 25px  0px 25px; margin: -3px 0px -10px 0px; font-size: 10.5px; }
 
-.retro-text-blurb {
-    padding: 0px 25px 0px 25px;
-  margin: -3px 0px -10px 0px;
-  font-size: 10.5px;
-}
-
-/* Main text display area */
 .retro-text-display {
     background-color: #f9f3e9; /* Lighter beige for text area */
     border: 1px solid #bc9e68;
@@ -96,16 +94,9 @@ title: Front Desk
 
 /* Mobile Display */
 @media (max-width: 500px) {
-    .text-box h2.h2alt { color: var(--button-brown); line-height: 1; margin-top: 0px;}
-    .topped-image {        width: 95%;        margin: -15px auto;    }
-
-    .retro-text-wrapper {
-      max-width: none;
-      width: 100vw;
-      margin: 30px -32px;
-      position: relative;
-      font-size: 0.6rem; 
-    }
+    .text-box h2.h2alt  { color: var(--button-brown); line-height: 1; margin-top: 0px;}
+    .topped-image       { width: 95%; margin: -15px auto; }
+    .retro-text-wrapper { max-width: none; width: 100vw; margin: 30px -32px; position: relative; font-size: 0.6rem; }
     .retro-text-content { padding: 0px; max-height: none; }
     .retro-text-display { padding: 0px}
     .retro-text-tab     { min-width: 100vw; }
@@ -127,6 +118,14 @@ title: Front Desk
             </div>
         </div>
     </div>
+<div class="social-buttons">
+    <a href="https://www.facebook.com/profile.php?id=61591873812707" target="_blank">
+        <img src="{{ site.baseurl }}/assets/images/1-fb.png" alt="Facebook">
+    </a>
+    <a href="https://www.amazon.com/Agency-Grimm-10541-Snooze-Button/dp/B0H8B4CKYR/" target="_blank">
+        <img src="{{ site.baseurl }}/assets/images/1-amazon.png" alt="Amazon">
+    </a>
+</div>
 <br>
 <hr>
 <h2>Welcome to the Agency</h2>
