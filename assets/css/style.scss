@@ -173,6 +173,14 @@ a img { border: none; outline: none;}
 .text-box { background-color: rgb(249, 243, 233); border: 1px solid #d9c8a9; padding: 15px 25px 25px 25px; border-radius: 5px; line-height: 1.6; color: #333; margin: 0; box-sizing: border-box; }
 .text-box h2 { color: var(--button-brown); margin-top: 0; }
 
+.separator {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: 2rem auto;
+    object-fit: contain;
+}
+
 /*=== Footer styling - FOOTER 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 ===*/
 .site-footer {
     width: 100%;
