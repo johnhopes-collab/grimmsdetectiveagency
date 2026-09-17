@@ -15,7 +15,7 @@
       "name": "Boggarts",
       "subtype": null,
       "distribution": "Northern England, particularly Lancashire and Yorkshire; also reported in the Scottish Borders",
-      "description": "Small, often invisible domestic entities exhibiting strong territorial attachment to households, farms, or specific landscape features. Typically benign when propitiated with offerings, but known to relocate with human families and retaliate through poltergeist-like disturbances if neglected or insulted. Shapeshifting ability is widely reported, though most manifestations are described as shaggy, brown, and roughly humanoid.",
+      "description": "A catch-all term for English ambivalent or malevolent solitary sprites. The name is typically applied to encountered sprites when they exhibit a malevolent nature. Morphology is highly variable. The 1902 Saga-book of the Viking Club describes one specimen as 'a squat hairy man, strong as a six year old horse, and with arms almost as long as tacklepoles.' Other accounts describe more completely beast-like forms. The Boggart of Longar Hede, recorded in Yorkshire, was said to be a fearsome creature the size of a calf, with long shaggy hair and eyes like saucers. Behavioral patterns trend toward territorial antagonism: boggarts are blamed for spoiled food, overturned furniture, frightened livestock, and unexplained noises. Not to be confused with domestic hobgoblins, which are generally more benign.",
       "subentries": []
     },
     {
@@ -86,6 +86,146 @@
           "description": "Diminutive, mischievous entities endemic to southwestern England. Frequently depicted with insectoid wings and reported to lead travelers astray, steal small objects, and dance in rings on moorland. Population density appears highest in coastal and upland regions. Interactions are generally non-lethal but persistently annoying, and propitiation with milk or small offerings is traditionally recommended."
         }
       ]
+    }
+    {
+      "id": "hobgoblins",
+      "displayText": "Hobgoblins",
+      "name": "Hobgoblins",
+      "subtype": null,
+      "distribution": "British Isles, Germany, Scandinavia; associated with hearths, farms, and households",
+      "description": "A class of domestic sprites, or genius loci, bound to a particular house, farm, or hearth. Categorically distinct from goblins proper: hobgoblins are typically mischievous and occasionally helpful, but not usually evil. However, they are easily annoyed and may become frightening or dangerous when offended. Puck and Robin Goodfellow are the most famous literary examples. Propitiation typically involves small offerings of food or drink, most commonly milk or cream. Note that 'hob' in this context derives from the hearth, not from any goblin affiliation.",
+      "subentries": [
+        {
+          "id": "brownies",
+          "displayText": "→ Brownies",
+          "name": "Brownies",
+          "subtype": "Hobgoblins",
+          "distribution": "Scotland and Northern England",
+          "description": "Nocturnal household sprites that perform domestic labor—threshing, churning, cleaning—in exchange for small offerings of milk, porridge, or honey. Appearances vary but are consistently described as small, brown-skinned, and shaggy. Brownies abandon households where they are offered clothing or payment, an idiosyncratic behavioral trait that has frustrated countless ethnographic attempts at incentivization. Amiable when tolerated, but known to retaliate with escalating mischief if their work is criticized or their offerings neglected."
+        },
+        {
+          "id": "heinzelmaennchen",
+          "displayText": "→ Heinzelmännchen",
+          "name": "Heinzelmännchen",
+          "subtype": "Hobgoblins",
+          "distribution": "Cologne, Germany; reported throughout the Rhineland",
+          "description": "Diligent domestic sprites of Cologne, famed for performing the city's trades—carpentry, baking, tailoring—during the night, allowing citizens to sleep while work completed itself. Local legend holds the entire population departed permanently after a tailor's wife scattered peas on the stairs, causing the sprites to slip and fall. Subsequent attempts to lure them back have failed. The Heinzelmännchen serve as a cautionary case study in habitat disruption."
+        },
+        {
+          "id": "hobs",
+          "displayText": "→ Hobs",
+          "name": "Hobs",
+          "subtype": "Hobgoblins",
+          "distribution": "Northern England, particularly Yorkshire, Lancashire, and Northumberland",
+          "description": "Hearth-bound sprites of Northern England, often associated with a specific farm or hall, from which they derive their name. Hobs occupy a behavioral middle ground between helpful brownies and more volatile boggarts. They are intensely loyal to their chosen household and its inhabitants, but hostile to intruders and negligent servants. Reports describe them as small, hairy, and occasionally naked; efforts to clothe them generally result in offense. Migration occurs only when a household collapses or the hob's patience is exhausted."
+        },
+        {
+          "id": "kobolds",
+          "displayText": "→ Kobolds",
+          "name": "Kobolds",
+          "subtype": "Hobgoblins",
+          "distribution": "Germany, particularly mines, ships, and households of Lower Saxony and Bavaria",
+          "description": "German domestic and subterranean sprites divided into three ecological groups: household kobolds, mine kobolds, and ship kobolds. Capable of beneficial service but quick to anger, and known for antagonistic pranks when slighted. Mine kobolds are implicated in both mineral disclosure and fatal cave-ins; ship kobolds similarly alternate between navigation assistance and sabotage. The cobalt element may derive its name from kobold-associated ores, though this etymology is speculative."
+        },
+        {
+          "id": "tomtes",
+          "displayText": "→ Tomtes",
+          "name": "Tomtes",
+          "subtype": "Hobgoblins",
+          "distribution": "Scandinavia, especially Sweden and Norway; farmsteads and rural dwellings",
+          "description": "Solitary farmstead sprites of Scandinavia, characteristically depicted as small, bearded, and wearing a pointed red cap. The tomte serves as protector of the farm and its livestock, but enforces strict codes of conduct among the human household. Offerings traditionally include porridge with butter on Christmas Eve. Tomtes are territorial and capable of lethal retaliation against mistreatment of animals or desecration of the farmstead. Modernization has driven local populations to fragment, with urban sightings increasingly rare."
+        }
+      ]
+    },
+    {
+      "id": "dragons",
+      "displayText": "Dragons",
+      "name": "Dragons",
+      "subtype": null,
+      "distribution": "Nearly global; concentrations vary from the British Isles and Scandinavia to East Asia",
+      "description": "Large reptilian or serpentine entities of uncertain phylogenetic origin. Morphology varies considerably across cultural regions: European specimens are typically winged, fire-breathing, and quadrupedal; East Asian forms are often aquatic, wingless, and associated with weather phenomena. Behavior ranges from dormant hoarding to active predation. The near-universal distribution of dragon mythology, including among cultures with no historical contact, raises unresolved questions about convergent folklore evolution or a common Paleolithic origin.",
+      "subentries": []
+    },
+    {
+      "id": "dullahans",
+      "displayText": "Dullahans",
+      "name": "Dullahans",
+      "subtype": null,
+      "distribution": "Ireland, particularly rural and remote districts; also reported in Scotland",
+      "description": "Headless equestrian beings of Irish folklore, often identified as harbingers of death. The dullahan carries its own severed head, frequently held aloft or tucked under one arm. Reported features include a broad grin, wildly swiveling eyes, and a whip of human spinal column. Mounted on a black horse and sometimes driving a coach, the dullahan travels roads at high speed; when the head calls out a name, that individual is said to die. Neither locked gates nor closed doors impede passage, and iron does not offer the same protection it does against other entities.",
+      "subentries": []
+    },
+    {
+      "id": "dwarfs",
+      "displayText": "Dwarfs",
+      "name": "Dwarfs",
+      "subtype": null,
+      "distribution": "Scandinavia and Germanic Europe; associated with mountains, caves, and subterranean forges",
+      "description": "Short-statured subterranean artisans of Norse and Germanic myth, renowned for metallurgy, stonework, and the forging of legendary weapons and artifacts. Formerly believed to be indistinguishable from dark elves, with whom they share habitat and temperament. Dwarfs are frequently described as greedy, capable of great craftsmanship under contract, and dangerous if cheated. Notable cultural exports include Mjölnir, Draupnir, and various cursed treasures. Contemporary sightings are exceedingly rare and questionably attributed to coincident mining populations.",
+      "subentries": []
+    },
+    {
+      "id": "giants",
+      "displayText": "Giants",
+      "name": "Giants",
+      "subtype": null,
+      "distribution": "Global; prominent in European, Near Eastern, and indigenous American traditions",
+      "description": "A polyphyletic grouping of oversized humanoid beings, ranging from dim-witted ogres to primordial cosmic entities. European giants are frequently associated with the construction of megalithic structures and dramatic landscape features, implying a now-extinct engineering capacity. In Scandinavian tradition, the jötnar are primordial forces predating and opposing the gods. Most populations are reported as extinct or diminished, often due to divine or human intervention. The dietary preference for humans, while frequently alleged, is inconsistently documented.",
+      "subentries": []
+    },
+    {
+      "id": "gnomes",
+      "displayText": "Gnomes",
+      "name": "Gnomes",
+      "subtype": null,
+      "distribution": "Central and Northern Europe; originally Switzerland, the Alps, and Germany",
+      "description": "Small earth-dwelling entities associated with subterranean spaces, mineral deposits, and the guardianship of buried treasure. First systematically described by Paracelsus in the 16th century as earth elementals of the elemental classification system. Gnomes are reportedly capable of passing through solid earth as humans move through air. Modern garden statues represent a drastic departure from the reportedly serious and taciturn disposition of wild specimens. Authentic encounter reports are scarce and complicated by obvious ornamentation biases.",
+      "subentries": []
+    },
+    {
+      "id": "goblins",
+      "displayText": "Goblins",
+      "name": "Goblins",
+      "subtype": null,
+      "distribution": "Global; the most widely encountered sprite taxon across all inhabited regions",
+      "description": "A catch-all term for sprites of a mischievous or malevolent nature, encompassing boggarts and a vast array of other regional varieties. Goblins are the most commonly encountered sprite taxa worldwide, and their extreme phenotypic and behavioral diversity has defeated most attempts at systematic classification. Specific recurring types, such as boggarts, can be identified, but the broader category remains a taxonomic dumping ground. Goblins are generally small, grotesque, and antagonistic, though accounts vary from benign pranksters to genuinely dangerous predators.",
+      "subentries": []
+    },
+    {
+      "id": "imps",
+      "displayText": "Imps",
+      "name": "Imps",
+      "subtype": null,
+      "distribution": "Europe, especially the British Isles and Germany; increasingly Mediterranean in later medieval accounts",
+      "description": "Small demonic or semi-demonic beings, frequently characterized as minor devils or witch familiars. Imps are typically mischievous rather than outright destructive, but their moral orientation is presumed negative. Medieval and early modern witch trial records frequently name imps as familiar spirits sent to carry out errands of maleficia. Unlike goblins, imps are almost never helpful or ambivalent, occupying the more consistently malevolent end of the small sprite spectrum. The term is often used imprecisely as a synonym for various other small troublesome entities.",
+      "subentries": []
+    },
+    {
+      "id": "incubi-succubi",
+      "displayText": "Incubi, Succubi",
+      "name": "Incubi, Succubi",
+      "subtype": null,
+      "distribution": "Europe, the Near East, and the Mediterranean; reported globally with regional variation",
+      "description": "Sexual predators of the spirit world, categorized as incubi (male) and succubi (female). Both are reported to seduce or assault sleeping humans, with the succubus variably described as an independent entity or an incubus that has assumed female form to collect reproductive material. Nightmares are frequently attributed to the pressure of an incubus on the sleeper's chest. Church authorities have long debated whether such visitations are demonic, somatic, or psychological in nature. The demonologist's taxonomy distinguishes them from humans, animals, and lesser spirits, but the distinction remains contested in field conditions.",
+      "subentries": []
+    },
+    {
+      "id": "kelpies",
+      "displayText": "Kelpies",
+      "name": "Kelpies",
+      "subtype": null,
+      "distribution": "Scotland, especially the Highlands and Orkney; inland lochs and rivers",
+      "description": "Malevolent aquatic shape-shifters of Scotland, most commonly manifesting as horses at the water's edge. A kelpie's hide is reported to be adhesive, such that anyone who mounts cannot dismount, whereupon the creature carries them into the water and drowns them. Kelpies are also known to appear as handsome young people to lure victims. Running water is a reliable diagnostic, as kelpies cannot cross it. The warning against unsolicited equine contact near lochs is among the earliest recorded safety protocols in the Highlands.",
+      "subentries": []
+    },
+    {
+      "id": "leprechauns",
+      "displayText": "Leprechauns",
+      "name": "Leprechauns",
+      "subtype": null,
+      "distribution": "Ireland, particularly Munster and Leinster; reported in isolated rural districts",
+      "description": "Solitary, diminutive shoemakers of Irish folklore, frequently depicted as old men in green coats who guard buried treasure. Leprechauns are industrious, suspicious, and fond of drink and practical jokes. The classic method of extracting a leprechaun's treasure involves capture and unbroken eye contact, a technique that perennially fails in field conditions due to human blinking. Despite popular perception, leprechauns are not friendly; they are cranky, capricious, and perfectly willing to humiliate or financially ruin captors. The distinction from Clurichaunidae is one of sobriety, habitat, and temperament.",
+      "subentries": []
     }
   ]
 }
