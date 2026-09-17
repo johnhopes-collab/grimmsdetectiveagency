@@ -39,11 +39,11 @@
   padding-bottom: 16px;
   border-bottom: 1px solid #bc9e68; /* Horizontal divider */
   display: grid;
-  gap: 8px;
+  gap: 0px;
   grid-template-areas: 
     "header header"
     "avatar content";
-  grid-template-columns: 70px 1fr;
+  grid-template-columns: 44px 1fr;
 }
 
 /* Avatar styling using ::before on update-entry */
@@ -51,10 +51,10 @@
   content: '';
   display: block;
   grid-area: avatar;
-  width: 52px;
-  height: 52px;
+  width: 34px;
+  height: 34px;
   background: url('{{ site.baseurl }}/assets/updates/avatar-icon.png') center/cover;
-  border-radius: 50%;
+  margin-left: 0.25rem;
 }
 
 
