@@ -1,74 +1,93 @@
+```json
 {
   "entries": [
     {
-      "id": "apple",
-      "displayText": "Apple",
-      "name": "Apple",
+      "id": "beastmen",
+      "displayText": "Beastmen",
+      "name": "Beastmen",
       "subtype": null,
-      "distribution": "Temperate regions worldwide, particularly North America, Europe, and Asia",
-      "description": "The apple is a deciduous tree in the rose family best known for its sweet, pomaceous fruit. Originating in Central Asia, apples have been cultivated for thousands of years and spread throughout the world. The fruit is typically round, with colors ranging from bright red to yellow and green. Apples are consumed fresh, used in cooking and baking, and pressed into cider. Rich in fiber and vitamin C, they have become one of the most widely cultivated tree fruits globally.",
+      "distribution": "Global; regional variants documented across Eurasia, Africa, and the Americas",
+      "description": "A paraphyletic grouping of humanoid entities exhibiting facultative or involuntary zoomorphism, including lycanthropes, skin-changers, and other therianthropic forms. Classification remains contentious due to high phenotypic variability, unreliable eyewitness accounts, and the tendency of specimens to revert to baseline human morphology under observation. Often associated with lunar cycles, inherited curses, or ritual transmission.",
       "subentries": []
     },
     {
-      "id": "banana",
-      "displayText": "Banana",
-      "name": "Banana",
+      "id": "boggarts",
+      "displayText": "Boggarts",
+      "name": "Boggarts",
       "subtype": null,
-      "distribution": "Tropical regions worldwide, native to Southeast Asia and South Pacific",
-      "description": "Bananas are elongated, edible fruits produced by several kinds of large herbaceous flowering plants in the genus Musa. Despite their tree-like appearance, banana plants are actually giant herbs. The fruit develops in hanging clusters, with individual bananas called fingers. Bananas are one of the most important food crops globally, particularly in tropical regions. They are rich in potassium, vitamin B6, and carbohydrates. The fruit is typically consumed fresh but can also be cooked, dried, or processed into various food products.",
+      "distribution": "Northern England, particularly Lancashire and Yorkshire; also reported in the Scottish Borders",
+      "description": "Small, often invisible domestic entities exhibiting strong territorial attachment to households, farms, or specific landscape features. Typically benign when propitiated with offerings, but known to relocate with human families and retaliate through poltergeist-like disturbances if neglected or insulted. Shapeshifting ability is widely reported, though most manifestations are described as shaggy, brown, and roughly humanoid.",
       "subentries": []
     },
     {
-      "id": "berry",
-      "displayText": "Berry",
-      "name": "Berry",
+      "id": "centaurs",
+      "displayText": "Centaurs",
+      "name": "Centaurs",
       "subtype": null,
-      "distribution": "Worldwide, in various climates from temperate to tropical regions",
-      "description": "In botanical terms, a berry is a fleshy fruit produced from a single ovary. True berries include grapes, tomatoes, and bananas. However, in common usage, the term refers to small, pulpy, edible fruits typically juicy, rounded, brightly colored, sweet or sour, and lacking a stone or pit. Berries are important food sources for both humans and wildlife. They are rich in antioxidants, vitamins, and fiber. Many berries grow on bushes or low plants and have been gathered from wild sources and cultivated since ancient times.",
+      "distribution": "Greece and surrounding Mediterranean, particularly Thessaly and Arcadia",
+      "description": "Bipedal-equine chimeras endemic to the Hellenic biogeographic zone. Reported social structures range from feral raiding bands to isolated scholarly individuals, most notably the educator Chiron. Taxonomic placement remains unresolved due to dual morphology and the absence of viable specimens for dissection. Historically associated with uncivilized behavior, though this may reflect observer bias rather than actual ethology.",
+      "subentries": []
+    },
+    {
+      "id": "changelings",
+      "displayText": "Changelings",
+      "name": "Changelings",
+      "subtype": null,
+      "distribution": "Western and Northern Europe, especially Ireland, Scotland, Scandinavia, and Germany",
+      "description": "Alleged simulacra substituted for human infants by fairy agents. Frequently described as a 'fetch'—a bundle of sticks, wax effigy, or enchanted object simply glamoured into the appearance of the abducted child. Reported symptoms include failure to thrive, unusual vocalizations, precocious knowledge, and sudden behavioral change. Diagnosis historically unreliable and often confounded by infant mortality and congenital conditions.",
+      "subentries": []
+    },
+    {
+      "id": "clurichauns",
+      "displayText": "Clurichauns",
+      "name": "Clurichauns",
+      "subtype": null,
+      "distribution": "Ireland, particularly Munster and Connacht; occasionally reported in wine cellars elsewhere",
+      "description": "Nocturnal cellar-dwelling hominins of Hibernia. Morphologically similar to Leprechaunidae but distinguished by pronounced ethanol tolerance and protective behavior toward wine, ale, and spirit stores. Rarely observed in a sober state, which complicates reliable field documentation. Generally solitary and territorial, though cooperative behavior has been reported during severe cellar infestations.",
+      "subentries": []
+    },
+    {
+      "id": "courtly-fairies",
+      "displayText": "Courtly Fairies",
+      "name": "Courtly Fairies",
+      "subtype": null,
+      "distribution": "Western Europe, especially the British Isles, France, and Scandinavia",
+      "description": "A social taxon of fairies organized into hierarchical courts with formal protocols, seasonal processions, and treaty-like interactions with human populations. Includes both benevolent (Seelie) and malevolent (Unseelie) factions, though these categories are unstable and subject to political realignment. Encounters are governed by elaborate rules of hospitality, gift exchange, and prohibition, violation of which carries severe consequences.",
       "subentries": [
         {
-          "id": "blackberry",
-          "displayText": "→ Blackberry",
-          "name": "Blackberry",
-          "subtype": "Berry",
-          "distribution": "Native to Europe, northwestern Africa, and western Asia; naturalized in Americas and Oceania",
-          "description": "Blackberries are edible fruits produced by several species in the Rubus genus. These aggregate fruits consist of many small drupelets joined together. When ripe, they are dark purple to black in color. Blackberries grow on thorny bushes or trailing vines and have been valued both as wild foraged fruits and cultivated crops. They are rich in vitamin C, vitamin K, and dietary fiber. The berries can be consumed fresh, made into preserves, baked into desserts, or processed into wine and liqueurs."
+          "id": "elves",
+          "displayText": "→ Elves",
+          "name": "Elves",
+          "subtype": "Courtly Fairies",
+          "distribution": "Scandinavia, particularly Norway, Sweden, Denmark, and Iceland",
+          "description": "Secretive humanoid tribes of Scandinavia, historically associated with mounds, remote forests, and the realm of Álfheimr. Known for exceptional longevity, craftsmanship, and occasional abduction of humans for purposes ranging from labor to companionship. Populations are described as beautiful and luminous, though dangerous when offended. Modern sightings remain sparse and are complicated by high rates of misidentification with ordinary reclusive humans."
         },
         {
-          "id": "blueberry",
-          "displayText": "→ Blueberry",
-          "name": "Blueberry",
-          "subtype": "Berry",
-          "distribution": "Native to North America; now cultivated in temperate regions worldwide",
-          "description": "Blueberries are perennial flowering plants with blue or purple berries from the Vaccinium section Cyanococcus. These small, round berries are characterized by their distinctive blue color and sweet taste. Native Americans used wild blueberries extensively and shared their knowledge with European colonists. Today, blueberries are cultivated commercially and prized for their high antioxidant content, particularly anthocyanins. They are consumed fresh, frozen, or processed into various food products and are considered a superfood due to their nutritional benefits."
+          "id": "huldras",
+          "displayText": "→ Huldras",
+          "name": "Huldras",
+          "subtype": "Courtly Fairies",
+          "distribution": "Scandinavia, especially Norway and Sweden; forested and mountainous regions",
+          "description": "Female forest-dwelling entities of Fennoscandia. Distinguished by a vestigial bovine tail or a hollow dorsal cavity, features typically concealed during interactions with humans. Generally benign and even amorous, but dangerous if offended or if the anatomical anomaly is remarked upon. Frequently reported engaging in courtship with human males, with outcomes ranging from marriage to disappearance."
         },
         {
-          "id": "strawberry",
-          "displayText": "→ Strawberry",
-          "name": "Strawberry",
-          "subtype": "Berry",
-          "distribution": "Temperate regions worldwide; cultivated varieties descended from North and South American species",
-          "description": "Despite its name, the strawberry is not a true berry in botanical terms but rather an aggregate accessory fruit. The red, fleshy part is actually the enlarged receptacle, while the true fruits are the tiny seeds on the surface. Strawberries have been consumed since ancient times, with modern garden varieties arising from crosses between American species. They are widely cultivated for their characteristic aroma, bright red color, and sweet taste. Rich in vitamin C and manganese, strawberries are enjoyed fresh, in desserts, or processed into preserves and other products."
+          "id": "sidhe",
+          "displayText": "→ Sidhe",
+          "name": "Sidhe",
+          "subtype": "Courtly Fairies",
+          "distribution": "Ireland and Scotland; associated with mounds (sídhe) and otherworldly courts",
+          "description": "Collective term for the aristocratic fairy folk of Gaelic tradition, often euphemistically called the 'Good People' or 'Little People.' This is the population most commonly referenced by the generic term 'fairies,' frequently depicted with gossamer wings and organized into Seelie and Unseelie courts. The Erlkönig is a notable Unseelie sovereign associated with fatal encounters. Despite the benign euphemism, documented interactions range from beneficent patronage to lethal abduction."
+        },
+        {
+          "id": "pixies",
+          "displayText": "→ Pixies",
+          "name": "Pixies",
+          "subtype": "Courtly Fairies",
+          "distribution": "Cornwall and Devon, England; also reported in Somerset",
+          "description": "Diminutive, mischievous entities endemic to southwestern England. Frequently depicted with insectoid wings and reported to lead travelers astray, steal small objects, and dance in rings on moorland. Population density appears highest in coastal and upland regions. Interactions are generally non-lethal but persistently annoying, and propitiation with milk or small offerings is traditionally recommended."
         }
       ]
-    },
-    {
-      "id": "orange",
-      "displayText": "Orange",
-      "name": "Orange",
-      "subtype": null,
-      "distribution": "Tropical and subtropical regions worldwide; originated in Southeast Asia",
-      "description": "The orange is a citrus fruit belonging to the Rutaceae family. It is a hybrid between pomelo and mandarin, cultivated for thousands of years. The fruit is spherical with a tough, aromatic peel and sweet, juicy flesh divided into segments. Oranges are one of the most widely cultivated fruit crops in the world. They are an excellent source of vitamin C and are consumed fresh, juiced, or used in various culinary applications. The peel contains aromatic oils used in flavoring and perfumery. Sweet oranges account for approximately 70% of all citrus production.",
-      "subentries": []
-    },
-    {
-      "id": "pear",
-      "displayText": "Pear",
-      "name": "Pear",
-      "subtype": null,
-      "distribution": "Temperate regions of Europe, North Africa, and Asia; now cultivated worldwide",
-      "description": "The pear is a species of tree in the rose family that produces a distinctive pomaceous fruit. Pears are typically characterized by their rounded base that tapers toward the stem, though some varieties are more apple-shaped. The flesh is usually sweet with a slightly grainy texture. Pears have been cultivated since ancient times and are mentioned in early European literature. There are thousands of varieties worldwide, ranging from crisp to soft, and from green to yellow to red in color. Rich in dietary fiber and vitamin C, pears are consumed fresh, canned, dried, or fermented into perry, an alcoholic beverage similar to cider.",
-      "subentries": []
     }
   ]
 }
+```
