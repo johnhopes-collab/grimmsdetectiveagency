@@ -164,7 +164,7 @@
 /* == MOBILE - Mobile Display - both portrait and landscape - MOBILE DISPLAY == */
 @media (max-width: 500px) {
   .updates-container  { max-width: 700px; font-size: 0.6rem; }
-  #updates-feed       { padding: 5px; max-height: 250px; overflow-y: auto; overflow-x: hidden; }
+  #updates-feed       { padding: 5px; max-height: 300px; overflow-y: auto; overflow-x: hidden; }
   .update-image       { max-width: 100%;  }
   
   /* MOBILE GRID LAYOUT - Avatar moves to header area */
