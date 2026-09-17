@@ -227,236 +227,6 @@
       "description": "Solitary, diminutive shoemakers of Irish folklore, frequently depicted as old men in green coats who guard buried treasure. Leprechauns are industrious, suspicious, and fond of drink and practical jokes. The classic method of extracting a leprechaun's treasure involves capture and unbroken eye contact, a technique that perennially fails in field conditions due to human blinking. Despite popular perception, leprechauns are not friendly; they are cranky, capricious, and perfectly willing to humiliate or financially ruin captors. The distinction from Clurichaunidae is one of sobriety, habitat, and temperament.",
       "subentries": []
     },
-
-{
-  "entries": [
-    {
-      "id": "beastmen",
-      "displayText": "Beastmen",
-      "name": "Beastmen",
-      "subtype": null,
-      "distribution": "Global; regional variants documented across Eurasia, Africa, and the Americas",
-      "description": "A paraphyletic grouping of humanoid entities exhibiting facultative or involuntary zoomorphism, including lycanthropes, skin-changers, and other therianthropic forms. Classification remains contentious due to high phenotypic variability, unreliable eyewitness accounts, and the tendency of specimens to revert to baseline human morphology under observation. Often associated with lunar cycles, inherited curses, or ritual transmission.",
-      "subentries": []
-    },
-    {
-      "id": "boggarts",
-      "displayText": "Boggarts",
-      "name": "Boggarts",
-      "subtype": null,
-      "distribution": "Northern England, particularly Lancashire and Yorkshire; also reported in the Scottish Borders",
-      "description": "A catch-all term for English ambivalent or malevolent solitary sprites. The name is typically applied to encountered sprites when they exhibit a malevolent nature. Morphology is highly variable. The 1902 Saga-book of the Viking Club describes one specimen as 'a squat hairy man, strong as a six year old horse, and with arms almost as long as tacklepoles.' Other accounts describe more completely beast-like forms. The Boggart of Longar Hede, recorded in Yorkshire, was said to be a fearsome creature the size of a calf, with long shaggy hair and eyes like saucers. Behavioral patterns trend toward territorial antagonism: boggarts are blamed for spoiled food, overturned furniture, frightened livestock, and unexplained noises. Not to be confused with domestic hobgoblins, which are generally more benign.",
-      "subentries": []
-    },
-    {
-      "id": "centaurs",
-      "displayText": "Centaurs",
-      "name": "Centaurs",
-      "subtype": null,
-      "distribution": "Greece and surrounding Mediterranean, particularly Thessaly and Arcadia",
-      "description": "Bipedal-equine chimeras endemic to the Hellenic biogeographic zone. Reported social structures range from feral raiding bands to isolated scholarly individuals, most notably the educator Chiron. Taxonomic placement remains unresolved due to dual morphology and the absence of viable specimens for dissection. Historically associated with uncivilized behavior, though this may reflect observer bias rather than actual ethology.",
-      "subentries": []
-    },
-    {
-      "id": "changelings",
-      "displayText": "Changelings",
-      "name": "Changelings",
-      "subtype": null,
-      "distribution": "Western and Northern Europe, especially Ireland, Scotland, Scandinavia, and Germany",
-      "description": "Alleged simulacra substituted for human infants by fairy agents. Frequently described as a 'fetch'—a bundle of sticks, wax effigy, or enchanted object simply glamoured into the appearance of the abducted child. Reported symptoms include failure to thrive, unusual vocalizations, precocious knowledge, and sudden behavioral change. Diagnosis historically unreliable and often confounded by infant mortality and congenital conditions.",
-      "subentries": []
-    },
-    {
-      "id": "clurichauns",
-      "displayText": "Clurichauns",
-      "name": "Clurichauns",
-      "subtype": null,
-      "distribution": "Ireland, particularly Munster and Connacht; occasionally reported in wine cellars elsewhere",
-      "description": "Nocturnal cellar-dwelling hominins of Hibernia. Morphologically similar to Leprechaunidae but distinguished by pronounced ethanol tolerance and protective behavior toward wine, ale, and spirit stores. Rarely observed in a sober state, which complicates reliable field documentation. Generally solitary and territorial, though cooperative behavior has been reported during severe cellar infestations.",
-      "subentries": []
-    },
-    {
-      "id": "courtly-fairies",
-      "displayText": "Courtly Fairies",
-      "name": "Courtly Fairies",
-      "subtype": null,
-      "distribution": "Western Europe, especially the British Isles, France, and Scandinavia",
-      "description": "A social taxon of fairies organized into hierarchical courts with formal protocols, seasonal processions, and treaty-like interactions with human populations. Includes both benevolent (Seelie) and malevolent (Unseelie) factions, though these categories are unstable and subject to political realignment. Encounters are governed by elaborate rules of hospitality, gift exchange, and prohibition, violation of which carries severe consequences.",
-      "subentries": [
-        {
-          "id": "elves",
-          "displayText": "→ Elves",
-          "name": "Elves",
-          "subtype": "Courtly Fairies",
-          "distribution": "Scandinavia, particularly Norway, Sweden, Denmark, and Iceland",
-          "description": "Secretive humanoid tribes of Scandinavia, historically associated with mounds, remote forests, and the realm of Álfheimr. Known for exceptional longevity, craftsmanship, and occasional abduction of humans for purposes ranging from labor to companionship. Populations are described as beautiful and luminous, though eminently dangerous when offended. Modern sightings remain sparse and are complicated by high rates of misidentification with ordinary reclusive humans."
-        },
-        {
-          "id": "huldras",
-          "displayText": "→ Huldras",
-          "name": "Huldras",
-          "subtype": "Courtly Fairies",
-          "distribution": "Scandinavia, especially Norway and Sweden; forested and mountainous regions",
-          "description": "Female forest-dwelling entities of Fennoscandia. Distinguished by a vestigial bovine tail or a hollow dorsal cavity, features typically concealed during interactions with humans. Generally benign and even amorous, but dangerous if offended or if the anatomical anomaly is remarked upon. Frequently reported engaging in courtship with human males, with outcomes ranging from marriage to disappearance."
-        },
-        {
-          "id": "sidhe",
-          "displayText": "→ Sidhe",
-          "name": "Sidhe",
-          "subtype": "Courtly Fairies",
-          "distribution": "Ireland and Scotland; associated with mounds (sídhe) and otherworldly courts",
-          "description": "Collective term for the aristocratic fairy folk of Gaelic tradition, often euphemistically called the 'Good People' or 'Little People.' This is the population most commonly referenced by the generic term 'fairies,' frequently depicted with gossamer wings and organized into Seelie and Unseelie courts. The Erlkönig is a notable Unseelie sovereign associated with fatal encounters. Despite the benign euphemism, documented interactions range from beneficent patronage to lethal abduction."
-        },
-        {
-          "id": "pixies",
-          "displayText": "→ Pixies",
-          "name": "Pixies",
-          "subtype": "Courtly Fairies",
-          "distribution": "Cornwall and Devon, England; also reported in Somerset",
-          "description": "Diminutive, mischievous entities endemic to southwestern England. Frequently depicted with insectoid wings and reported to lead travelers astray, steal small objects, and dance in rings on moorland. Population density appears highest in coastal and upland regions. Interactions are generally non-lethal but persistently annoying, and propitiation with milk or small offerings is traditionally recommended."
-        }
-      ]
-    },
-    {
-      "id": "hobgoblins",
-      "displayText": "Hobgoblins",
-      "name": "Hobgoblins",
-      "subtype": null,
-      "distribution": "British Isles, Germany, Scandinavia; associated with hearths, farms, and households",
-      "description": "A class of domestic sprites, or genius loci, bound to a particular house, farm, or hearth. Categorically distinct from goblins proper: hobgoblins are typically mischievous and occasionally helpful, but not usually evil. However, they are easily annoyed and may become frightening or dangerous when offended. Puck and Robin Goodfellow are the most famous literary examples. Propitiation typically involves small offerings of food or drink, most commonly milk or cream. Note that 'hob' in this context derives from the hearth, not from any goblin affiliation.",
-      "subentries": [
-        {
-          "id": "brownies",
-          "displayText": "→ Brownies",
-          "name": "Brownies",
-          "subtype": "Hobgoblins",
-          "distribution": "Scotland and Northern England",
-          "description": "Nocturnal household sprites that perform domestic labor—threshing, churning, cleaning—in exchange for small offerings of milk, porridge, or honey. Appearances vary but are consistently described as small, brown-skinned, and shaggy. Brownies abandon households where they are offered clothing or payment, an idiosyncratic behavioral trait that has frustrated countless ethnographic attempts at incentivization. Amiable when tolerated, but known to retaliate with escalating mischief if their work is criticized or their offerings neglected."
-        },
-        {
-          "id": "heinzelmaennchen",
-          "displayText": "→ Heinzelmännchen",
-          "name": "Heinzelmännchen",
-          "subtype": "Hobgoblins",
-          "distribution": "Cologne, Germany; reported throughout the Rhineland",
-          "description": "Diligent domestic sprites of Cologne, famed for performing the city's trades—carpentry, baking, tailoring—during the night, allowing citizens to sleep while work completed itself. Local legend holds the entire population departed permanently after a tailor's wife scattered peas on the stairs, causing the sprites to slip and fall. Subsequent attempts to lure them back have failed. The Heinzelmännchen serve as a cautionary case study in habitat disruption."
-        },
-        {
-          "id": "hobs",
-          "displayText": "→ Hobs",
-          "name": "Hobs",
-          "subtype": "Hobgoblins",
-          "distribution": "Northern England, particularly Yorkshire, Lancashire, and Northumberland",
-          "description": "Hearth-bound sprites of Northern England, often associated with a specific farm or hall, from which they derive their name. Hobs occupy a behavioral middle ground between helpful brownies and more volatile boggarts. They are intensely loyal to their chosen household and its inhabitants, but hostile to intruders and negligent servants. Reports describe them as small, hairy, and occasionally naked; efforts to clothe them generally result in offense. Migration occurs only when a household collapses or the hob's patience is exhausted."
-        },
-        {
-          "id": "kobolds",
-          "displayText": "→ Kobolds",
-          "name": "Kobolds",
-          "subtype": "Hobgoblins",
-          "distribution": "Germany, particularly mines, ships, and households of Lower Saxony and Bavaria",
-          "description": "German domestic and subterranean sprites divided into three ecological groups: household kobolds, mine kobolds, and ship kobolds. Capable of beneficial service but quick to anger, and known for antagonistic pranks when slighted. Mine kobolds are implicated in both mineral disclosure and fatal cave-ins; ship kobolds similarly alternate between navigation assistance and sabotage. The cobalt element may derive its name from kobold-associated ores, though this etymology is speculative."
-        },
-        {
-          "id": "tomtes",
-          "displayText": "→ Tomtes",
-          "name": "Tomtes",
-          "subtype": "Hobgoblins",
-          "distribution": "Scandinavia, especially Sweden and Norway; farmsteads and rural dwellings",
-          "description": "Solitary farmstead sprites of Scandinavia, characteristically depicted as small, bearded, and wearing a pointed red cap. The tomte serves as protector of the farm and its livestock, but enforces strict codes of conduct among the human household. Offerings traditionally include porridge with butter on Christmas Eve. Tomtes are territorial and capable of lethal retaliation against mistreatment of animals or desecration of the farmstead. Modernization has driven local populations to fragment, with urban sightings increasingly rare."
-        }
-      ]
-    },
-    {
-      "id": "dragons",
-      "displayText": "Dragons",
-      "name": "Dragons",
-      "subtype": null,
-      "distribution": "Nearly global; concentrations vary from the British Isles and Scandinavia to East Asia",
-      "description": "Large reptilian or serpentine entities of uncertain phylogenetic origin. Morphology varies considerably across cultural regions: European specimens are typically winged, fire-breathing, and quadrupedal; East Asian forms are often aquatic, wingless, and associated with weather phenomena. Behavior ranges from dormant hoarding to active predation. The near-universal distribution of dragon mythology, including among cultures with no historical contact, raises unresolved questions about convergent folklore evolution or a common Paleolithic origin.",
-      "subentries": []
-    },
-    {
-      "id": "dullahans",
-      "displayText": "Dullahans",
-      "name": "Dullahans",
-      "subtype": null,
-      "distribution": "Ireland, particularly rural and remote districts; also reported in Scotland",
-      "description": "Headless equestrian beings of Irish folklore, often identified as harbingers of death. The dullahan carries its own severed head, frequently held aloft or tucked under one arm. Reported features include a broad grin, wildly swiveling eyes, and a whip made of human spinal column. Mounted on a black horse and sometimes driving a coach, the dullahan travels roads at high speed; when the head calls out a name, that individual is said to die. Neither locked gates nor closed doors impede passage, and iron does not offer the same protection it does against other entities.",
-      "subentries": []
-    },
-    {
-      "id": "dwarfs",
-      "displayText": "Dwarfs",
-      "name": "Dwarfs",
-      "subtype": null,
-      "distribution": "Scandinavia and Germanic Europe; associated with mountains, caves, and subterranean forges",
-      "description": "Short-statured subterranean artisans of Norse and Germanic myth, renowned for metallurgy, stonework, and the forging of legendary weapons and artifacts. Formerly believed to be indistinguishable from dark elves, with whom they share habitat and temperament. Dwarfs are frequently described as greedy, capable of great craftsmanship under contract, and dangerous if cheated. Notable cultural exports include Mjölnir, Draupnir, and various cursed treasures. Contemporary sightings are exceedingly rare and questionably attributed to coincident mining populations.",
-      "subentries": []
-    },
-    {
-      "id": "giants",
-      "displayText": "Giants",
-      "name": "Giants",
-      "subtype": null,
-      "distribution": "Global; prominent in European, Near Eastern, and indigenous American traditions",
-      "description": "A polyphyletic grouping of oversized humanoid beings, ranging from dim-witted ogres to primordial cosmic entities. European giants are frequently associated with the construction of megalithic structures and dramatic landscape features, implying a now-extinct engineering capacity. In Scandinavian tradition, the jötnar are primordial forces predating and opposing the gods. Most populations are reported as extinct or diminished, often due to divine or human intervention. The dietary preference for humans, while frequently alleged, is inconsistently documented.",
-      "subentries": []
-    },
-    {
-      "id": "gnomes",
-      "displayText": "Gnomes",
-      "name": "Gnomes",
-      "subtype": null,
-      "distribution": "Central and Northern Europe; originally Switzerland, the Alps, and Germany",
-      "description": "Small earth-dwelling entities associated with subterranean spaces, mineral deposits, and the guardianship of buried treasure. First systematically described by Paracelsus in the 16th century as earth elementals of the elemental classification system. Gnomes are reportedly capable of passing through solid earth as humans move through air. Modern garden statues represent a drastic departure from the reportedly serious and taciturn disposition of wild specimens. Authentic encounter reports are scarce and complicated by obvious ornamentation biases.",
-      "subentries": []
-    },
-    {
-      "id": "goblins",
-      "displayText": "Goblins",
-      "name": "Goblins",
-      "subtype": null,
-      "distribution": "Global; the most widely encountered sprite taxon across all inhabited regions",
-      "description": "A catch-all term for sprites of a mischievous or malevolent nature, encompassing boggarts and a vast array of other regional varieties. Goblins are the most commonly encountered sprite taxa worldwide, and their extreme phenotypic and behavioral diversity has defeated most attempts at systematic classification. Specific recurring types, such as boggarts, can be identified, but the broader category remains a taxonomic dumping ground. Goblins are generally small, grotesque, and antagonistic, though accounts vary from benign pranksters to genuinely dangerous predators.",
-      "subentries": []
-    },
-    {
-      "id": "imps",
-      "displayText": "Imps",
-      "name": "Imps",
-      "subtype": null,
-      "distribution": "Europe, especially the British Isles and Germany; increasingly Mediterranean in later medieval accounts",
-      "description": "Small demonic or semi-demonic beings, frequently characterized as minor devils or witch familiars. Imps are typically mischievous rather than outright destructive, but their moral orientation is presumed negative. Medieval and early modern witch trial records frequently name imps as familiar spirits sent to carry out errands of maleficia. Unlike goblins, imps are almost never helpful or ambivalent, occupying the more consistently malevolent end of the small sprite spectrum. The term is often used imprecisely as a synonym for various other small troublesome entities.",
-      "subentries": []
-    },
-    {
-      "id": "incubi-succubi",
-      "displayText": "Incubi, Succubi",
-      "name": "Incubi, Succubi",
-      "subtype": null,
-      "distribution": "Europe, the Near East, and the Mediterranean; reported globally with regional variation",
-      "description": "Sexual predators of the spirit world, categorized as incubi (male) and succubi (female). Both are reported to seduce or assault sleeping humans, with the succubus variably described as an independent entity or an incubus that has assumed female form to collect reproductive material. Nightmares are frequently attributed to the pressure of an incubus on the sleeper's chest. Church authorities have long debated whether such visitations are demonic, somatic, or psychological in nature. The demonologist's taxonomy distinguishes them from humans, animals, and lesser spirits, but the distinction remains contested in field conditions.",
-      "subentries": []
-    },
-    {
-      "id": "kelpies",
-      "displayText": "Kelpies",
-      "name": "Kelpies",
-      "subtype": null,
-      "distribution": "Scotland, especially the Highlands and Orkney; inland lochs and rivers",
-      "description": "Malevolent aquatic shape-shifters of Scotland, most commonly manifesting as horses at the water's edge. A kelpie's hide is reported to be adhesive, such that anyone who mounts cannot dismount, whereupon the creature carries them into the water and drowns them. Kelpies are also known to appear as handsome young people to lure victims. Running water is a reliable diagnostic, as kelpies cannot cross it. The warning against unsolicited equine contact near lochs is among the earliest recorded safety protocols in the Highlands.",
-      "subentries": []
-    },
-    {
-      "id": "leprechauns",
-      "displayText": "Leprechauns",
-      "name": "Leprechauns",
-      "subtype": null,
-      "distribution": "Ireland, particularly Munster and Leinster; reported in isolated rural districts",
-      "description": "Solitary, diminutive shoemakers of Irish folklore, frequently depicted as old men in green coats who guard buried treasure. Leprechauns are industrious, suspicious, and fond of drink and practical jokes. The classic method of extracting a leprechaun's treasure involves capture and unbroken eye contact, a technique that perennially fails in field conditions due to human blinking. Despite popular perception, leprechauns are not friendly; they are cranky, capricious, and perfectly willing to humiliate or financially ruin captors. The distinction from Clurichaunidae is one of sobriety, habitat, and temperament.",
-      "subentries": []
-    },
     {
       "id": "nixies",
       "displayText": "Nixies",
@@ -474,6 +244,115 @@
       "distribution": "Greece and the wider Mediterranean; each subgroup associated with specific natural features",
       "description": "Female nature spirits of Greco-Roman tradition, classified by habitat into dryads (trees), naiads (fresh water), oreads (mountains), nereids (seas), and other regional variants. Nymphs are generally immortal or extremely long-lived but often bound to the natural feature they inhabit, such that a felled tree or drained spring proves fatal. Known for beauty, musicality, and occasional vengeance against human trespassers or offenders. Large portions of the classical corpus consist of cautionary tales about mortals who failed to show nymphs proper respect.",
       "subentries": []
-    }
+    },
+,
+    {
+      "id": "ogres",
+      "displayText": "Ogres",
+      "name": "Ogres",
+      "subtype": null,
+      "distribution": "Europe, North Africa, and the Near East; often associated with isolated wilderness or castles",
+      "description": "Large, coarse, man-eating humanoids of European and Near Eastern folklore. Ogres are distinguished from giants by their smaller size and from trolls by their lack of regenerative or petrifaction traits. Reported behavior includes guarding fortified dwellings, hoarding wealth, and devouring unwary travelers or children. Intellect is typically low, and heroes routinely defeat ogres through trickery rather than force. The term is sometimes applied loosely to any oversized anthropophagous entity, contributing to taxonomic confusion with neighboring categories.",
+      "subentries": []
+    },
+    {
+      "id": "pucks-goodfellows",
+      "displayText": "Pucks, Goodfellows",
+      "name": "Pucks, Goodfellows",
+      "subtype": null,
+      "distribution": "England, particularly the Midlands and southern counties; also reported in Wales",
+      "description": "A specific class of English hobgoblin known for shape-shifting, household service, and leading travelers astray at night. Robin Goodfellow is the most famous specimen, alternately helping with domestic chores and misleading wanderers with false lights and confused paths. Pucks perform labor in exchange for milk and bread but are more volatile than brownies and more playful than boggarts. The name 'Puck' predates its Shakespearean usage and appears in medieval records as a generic term for a troublesome spirit. The category is not synonymous with all hobgoblins, but represents a distinct English subspecies.",
+      "subentries": []
+    },
+    {
+      "id": "redcaps",
+      "displayText": "Redcaps",
+      "name": "Redcaps",
+      "subtype": null,
+      "distribution": "Scottish Borders, particularly ruined castles and watchtowers",
+      "description": "Murderous goblins of the Anglo-Scottish border, named for the blood-soaked caps they are said to dip in their victims' wounds. Redcaps are described as small, old, and extremely fast despite appearing feeble, often wearing iron-shod boots. They are among the few sprite species that cannot be placated, only fled or killed. The requirement that the cap remain wet with fresh blood imposes a metabolic constraint that has led researchers to speculate about an obligate hematophagy. Ruined border fortifications remain the primary habitat, and local guides continue to warn against unsupervised exploration.",
+      "subentries": []
+    },
+    {
+      "id": "satyrs-fauns",
+      "displayText": "Satyrs/Fauns",
+      "name": "Satyrs/Fauns",
+      "subtype": null,
+      "distribution": "Greece, Italy, and the wider Mediterranean; forests and rural districts",
+      "description": "Equine- or caprine-legged male nature spirits of Greco-Roman tradition, closely associated with the god Dionysus/Bacchus and characterized by pronounced libido, musicality, and love of wine. Satyrs are the older Greek type, originally horse-like and wild; fauns are the Roman variant, typically goat-like and somewhat more domesticated. Both are reported in mixed-gender groups (satyresses exist but are less frequently attested), and both are prone to pursuing nymphs and human women with mixed results. Silenus, the tutor of Dionysus, is the most famous individual specimen.",
+      "subentries": []
+    },
+    {
+      "id": "selkies",
+      "displayText": "Selkies",
+      "name": "Selkies",
+      "subtype": null,
+      "distribution": "Scotland, especially Orkney and Shetland; also Ireland, Iceland, and the Faroe Islands",
+      "description": "Shapeshifting seal-folk of the North Atlantic, capable of shedding their sealskins to assume human form. The loss or theft of the sealskin binds the selkie to land and to the thief, a recurring dynamic that typically ends in the selkie recovering the skin and returning to the sea, often abandoning shore-bound offspring in the process. Selkies are not predatory toward humans, making them comparatively benign among aquatic shapeshifters. Hybrid offspring are reported to display webbed digits and an affinity for the sea. The species has generated a substantial body of tragic ballad literature.",
+      "subentries": []
+    },
+    {
+      "id": "sphynxes",
+      "displayText": "Sphynxes",
+      "name": "Sphynxes",
+      "subtype": null,
+      "distribution": "Egypt, Greece, and the Near East; associated with temples, tombs, and crossroads",
+      "description": "Composite beings with leonine bodies and human heads, appearing independently in both Egyptian and Greek traditions with significantly different temperaments. Egyptian sphinxes are typically male, royal, and protective, guarding temples and tombs. The Greek Sphinx is female, predatory, and riddling, most famously waylaying travelers at Thebes and devouring those who failed her puzzle. The riddle of the Sphinx remains the most famous recorded specimen interaction. Artistic representation vastly exceeds eyewitness testimony, and the category may represent an early example of monumental architectural symbolism rather than a biological population.",
+      "subentries": []
+    },
+    {
+      "id": "spriggans",
+      "displayText": "Spriggans",
+      "name": "Spriggans",
+      "subtype": null,
+      "distribution": "Cornwall, England; associated with megalithic sites, cairns, and barrows",
+      "description": "Cornish guardian sprites of megalithic sites, reported as small, wizened, and grotesque in their resting state, but capable of inflating to giant size when provoked. Spriggans are strongly associated with buried treasure and are said to punish any theft or disturbance of graves. Behavior includes collapsing mine shafts, destroying crops, and hurling rocks at intruders. They are frequently described as the ghosts of ancient giants, which would account for their unusual size-shifting ability. The species is rarely reported outside Cornwall, and even within the county, sighting frequency has declined sharply with the cessation of tin mining.",
+      "subentries": []
+    },
+    {
+      "id": "story-specific-creatures",
+      "displayText": "Story-Specific Creatures",
+      "name": "Story-Specific Creatures",
+      "subtype": null,
+      "distribution": "Varies by narrative provenance; most commonly Europe, but reported globally",
+      "description": "A residual category for entities that appear in only one recorded narrative and cannot be reliably confirmed as members of any established taxon. Examples include Goldilocks' Three Bears, Little Red Riding Hood's wolf (disputed, see Beastmen), and the various singular antagonists of folktale and fairy tale. This category is methodologically necessary, as the narrative record contains many once-attested creatures that have never been reported a second time. Some researchers argue these represent misidentified known species, individual aberrations, or purely literary inventions. Classification should be considered provisional and subject to revision upon the appearance of corroborating reports.",
+      "subentries": []
+    },
+    {
+      "id": "sylphs",
+      "displayText": "Sylphs",
+      "name": "Sylphs",
+      "subtype": null,
+      "distribution": "Europe; originally the Alps and surrounding regions, later reported across the continent",
+      "description": "Air elementals first described by Paracelsus in the 16th century, alongside gnomes, undines, and salamanders. Sylphs are reported as insubstantial, wind-associated beings of extreme beauty and no fixed physical form, residing in high-altitude environments. They are generally unreported in folklore predating Paracelsus, which has led to classification as a literary or alchemical invention that subsequently entered popular tradition. The term has been loosely applied to various aerial spirits, and contaminated by literary usage. Field verification remains impossible due to the difficulty of distinguishing sylphs from ordinary wind phenomena.",
+      "subentries": []
+    },
+    {
+      "id": "undines",
+      "displayText": "Undines",
+      "name": "Undines",
+      "subtype": null,
+      "distribution": "Europe, particularly Germany and France; freshwater systems and seacoasts",
+      "description": "Water elementals first codified by Paracelsus in the 16th century. Undines are reported as female water-spirits, often indistinguishable from nixies, mermaids, or naiads in field accounts. A distinctive trait is the claim that an undine can gain a soul by marrying a human man, a theme most famously developed in the 1811 novella 'Undine' by Friedrich de la Motte Fouqué. The category overlaps heavily with indigenous water-spirit traditions, making clean taxonomic separation impossible. The operatic and balletic corpus derived from undine narratives exceeds the total weight of reliable encounter reports.",
+      "subentries": []
+    },
+    {
+      "id": "vampires",
+      "displayText": "Vampires",
+      "name": "Vampires",
+      "subtype": null,
+      "distribution": "Eastern and Southern Europe, particularly the Balkans, Greece, and Romania; now reported globally",
+      "description": "Revenant blood-drinkers, typically originating from improperly buried corpses or individuals who died under cursed circumstances. Reported traits include nocturnal activity, aversion to sunlight, garlic, and Christian symbols, and the capacity to drain life from the living. Standard elimination procedures involve staking, decapitation, or cremation, with extensive regional variation. The modern vampire is heavily contaminated by literary and cinematic popularization; field accounts from the Balkans describe bloated, ruddy corpses rather than pale aristocrats. Historical mass panics, such as those in 18th-century Serbia, provide the most substantial documentation of alleged outbreaks.",
+      "subentries": []
+    },
+    {
+      "id": "woodwoses-green-men",
+      "displayText": "Woodwoses, Green Men",
+      "name": "Woodwoses, Green Men",
+      "subtype": null,
+      "distribution": "Europe, especially England, Germany, and the Alpine regions; forests and wilderness areas",
+      "description": "Wild or sylvan humanoids, typically depicted as nude, hirsute, and bearing a club or branch, representing the untamed forest beyond human civilization. The woodwose (also 'wodewose' or 'wild man') appears widely in medieval art, heraldry, and festival costume, though genuine encounter reports are scarce and late. The Green Man is a related but distinct motif, usually a foliate human face or head composed of leaves and vines, almost exclusively known from church carvings and architectural ornament. Researchers debate whether the Green Man represents an authentic folkloric entity or a purely decorative motif. The category is further complicated by probable conflation with bear-men, forest hermits, and feral humans.",
+      "subentries": []
+    }    
   ]
 }
