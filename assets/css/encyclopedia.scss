@@ -39,6 +39,15 @@
 
 /* Encyclopedia Viewer Styles */
 
+/* Scaling wrapper */
+.encyclopedia-wrapper {
+    transform: scale(0.85);
+    transform-origin: top center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: -60px; /* Adjust negative margin to compensate for scaled-down height */
+}
+
 .encyclopedia-viewer {
     width: 610px;
     height: 380px;
@@ -211,7 +220,7 @@
 }
 
 /* Mobile Responsive Styles */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .encyclopedia-viewer {
         width: 330px;
         height: 640px;
@@ -254,5 +263,10 @@
     
     .encyclopedia-viewer .year-display { 
         display: none; 
+    }
+    
+    .encyclopedia-wrapper {
+        transform: scale(1); /* Full size on mobile */
+        margin-bottom: 0;
     }
 }
