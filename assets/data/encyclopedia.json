@@ -1,36 +1,74 @@
 {
   "entries": [
     {
-      "id": "fruit-001",
+      "id": "apple",
       "displayText": "Apple",
       "name": "Apple",
-      "subtype": "Malus domestica",
-      "distribution": "Temperate regions worldwide, particularly abundant in North America, Europe, and parts of Asia",
-      "description": "A sweet, edible fruit produced by an apple tree. Apples have been cultivated for thousands of years in Asia and Europe and were brought to North America by European colonists. The fruit typically has red, green, or yellow skin with white flesh. Apples are consumed fresh, used in cooking and baking, and processed into juice, cider, and vinegar. They are an excellent source of dietary fiber and vitamin C, and contain various beneficial antioxidants."
+      "subtype": null,
+      "distribution": "Temperate regions worldwide, particularly North America, Europe, and Asia",
+      "description": "The apple is a deciduous tree in the rose family best known for its sweet, pomaceous fruit. Originating in Central Asia, apples have been cultivated for thousands of years and spread throughout the world. The fruit is typically round, with colors ranging from bright red to yellow and green. Apples are consumed fresh, used in cooking and baking, and pressed into cider. Rich in fiber and vitamin C, they have become one of the most widely cultivated tree fruits globally.",
+      "subentries": []
     },
     {
-      "id": "fruit-002",
+      "id": "banana",
       "displayText": "Banana",
       "name": "Banana",
-      "subtype": "Musa species",
-      "distribution": "Native to tropical Southeast Asia; now cultivated throughout tropical and subtropical regions worldwide",
-      "description": "An elongated, edible fruit produced by several kinds of large herbaceous flowering plants in the genus Musa. The fruit is variable in size, color, and firmness, but typically elongated and curved, with soft flesh rich in starch covered with a rind which may be green, yellow, red, purple, or brown when ripe. Bananas are a major food crop in many tropical countries and are the world's most exported fresh fruit. They are rich in potassium, vitamin B6, and provide quick energy through their natural sugars."
+      "subtype": null,
+      "distribution": "Tropical regions worldwide, native to Southeast Asia and South Pacific",
+      "description": "Bananas are elongated, edible fruits produced by several kinds of large herbaceous flowering plants in the genus Musa. Despite their tree-like appearance, banana plants are actually giant herbs. The fruit develops in hanging clusters, with individual bananas called fingers. Bananas are one of the most important food crops globally, particularly in tropical regions. They are rich in potassium, vitamin B6, and carbohydrates. The fruit is typically consumed fresh but can also be cooked, dried, or processed into various food products.",
+      "subentries": []
     },
     {
-      "id": "fruit-003",
+      "id": "berry",
+      "displayText": "Berry",
+      "name": "Berry",
+      "subtype": null,
+      "distribution": "Worldwide, in various climates from temperate to tropical regions",
+      "description": "In botanical terms, a berry is a fleshy fruit produced from a single ovary. True berries include grapes, tomatoes, and bananas. However, in common usage, the term refers to small, pulpy, edible fruits typically juicy, rounded, brightly colored, sweet or sour, and lacking a stone or pit. Berries are important food sources for both humans and wildlife. They are rich in antioxidants, vitamins, and fiber. Many berries grow on bushes or low plants and have been gathered from wild sources and cultivated since ancient times.",
+      "subentries": [
+        {
+          "id": "blackberry",
+          "displayText": "→ Blackberry",
+          "name": "Blackberry",
+          "subtype": "Berry",
+          "distribution": "Native to Europe, northwestern Africa, and western Asia; naturalized in Americas and Oceania",
+          "description": "Blackberries are edible fruits produced by several species in the Rubus genus. These aggregate fruits consist of many small drupelets joined together. When ripe, they are dark purple to black in color. Blackberries grow on thorny bushes or trailing vines and have been valued both as wild foraged fruits and cultivated crops. They are rich in vitamin C, vitamin K, and dietary fiber. The berries can be consumed fresh, made into preserves, baked into desserts, or processed into wine and liqueurs."
+        },
+        {
+          "id": "blueberry",
+          "displayText": "→ Blueberry",
+          "name": "Blueberry",
+          "subtype": "Berry",
+          "distribution": "Native to North America; now cultivated in temperate regions worldwide",
+          "description": "Blueberries are perennial flowering plants with blue or purple berries from the Vaccinium section Cyanococcus. These small, round berries are characterized by their distinctive blue color and sweet taste. Native Americans used wild blueberries extensively and shared their knowledge with European colonists. Today, blueberries are cultivated commercially and prized for their high antioxidant content, particularly anthocyanins. They are consumed fresh, frozen, or processed into various food products and are considered a superfood due to their nutritional benefits."
+        },
+        {
+          "id": "strawberry",
+          "displayText": "→ Strawberry",
+          "name": "Strawberry",
+          "subtype": "Berry",
+          "distribution": "Temperate regions worldwide; cultivated varieties descended from North and South American species",
+          "description": "Despite its name, the strawberry is not a true berry in botanical terms but rather an aggregate accessory fruit. The red, fleshy part is actually the enlarged receptacle, while the true fruits are the tiny seeds on the surface. Strawberries have been consumed since ancient times, with modern garden varieties arising from crosses between American species. They are widely cultivated for their characteristic aroma, bright red color, and sweet taste. Rich in vitamin C and manganese, strawberries are enjoyed fresh, in desserts, or processed into preserves and other products."
+        }
+      ]
+    },
+    {
+      "id": "orange",
       "displayText": "Orange",
       "name": "Orange",
-      "subtype": "Citrus × sinensis",
-      "distribution": "Originally from Southeast Asia; now grown commercially in tropical and subtropical climates worldwide, with major production in Brazil, the United States, and Mediterranean countries",
-      "description": "A citrus fruit belonging to the Rutaceae family, the orange is a hybrid between pomelo and mandarin. The fruit typically has a bright orange rind and segmented, juicy flesh. Oranges are one of the most popular fruits globally, prized for their high vitamin C content and sweet-tart flavor. They are consumed fresh, juiced, or used in cooking and baking. The peel contains aromatic oils used in flavoring and perfumery. Sweet oranges account for approximately 70% of global citrus production."
+      "subtype": null,
+      "distribution": "Tropical and subtropical regions worldwide; originated in Southeast Asia",
+      "description": "The orange is a citrus fruit belonging to the Rutaceae family. It is a hybrid between pomelo and mandarin, cultivated for thousands of years. The fruit is spherical with a tough, aromatic peel and sweet, juicy flesh divided into segments. Oranges are one of the most widely cultivated fruit crops in the world. They are an excellent source of vitamin C and are consumed fresh, juiced, or used in various culinary applications. The peel contains aromatic oils used in flavoring and perfumery. Sweet oranges account for approximately 70% of all citrus production.",
+      "subentries": []
     },
     {
-      "id": "fruit-004",
+      "id": "pear",
       "displayText": "Pear",
       "name": "Pear",
-      "subtype": "Pyrus communis",
-      "distribution": "Native to coastal and mildly temperate regions of Europe, North Africa, and Asia; now cultivated in temperate zones worldwide",
-      "description": "A sweet, mild fruit with a distinctive bell shape produced by trees of the genus Pyrus. The flesh is typically white to cream-colored, and the texture can range from crisp to soft and juicy depending on ripeness and variety. Unlike most fruits, pears ripen best off the tree. They have been cultivated for over 3,000 years and come in thousands of varieties. Pears are an excellent source of dietary fiber and vitamin C, and contain beneficial plant compounds with anti-inflammatory properties. They are enjoyed fresh, poached, baked, or preserved."
+      "subtype": null,
+      "distribution": "Temperate regions of Europe, North Africa, and Asia; now cultivated worldwide",
+      "description": "The pear is a species of tree in the rose family that produces a distinctive pomaceous fruit. Pears are typically characterized by their rounded base that tapers toward the stem, though some varieties are more apple-shaped. The flesh is usually sweet with a slightly grainy texture. Pears have been cultivated since ancient times and are mentioned in early European literature. There are thousands of varieties worldwide, ranging from crisp to soft, and from green to yellow to red in color. Rich in dietary fiber and vitamin C, pears are consumed fresh, canned, dried, or fermented into perry, an alcoholic beverage similar to cider.",
+      "subentries": []
     }
   ]
 }
