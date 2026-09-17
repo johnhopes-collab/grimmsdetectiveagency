@@ -70,10 +70,7 @@
     overflow-x: hidden;
 }
 
-.encyclopedia-viewer .entry-accordion {
-    display: flex;
-    flex-direction: column;
-}
+.encyclopedia-viewer .entry-accordion { display: flex; flex-direction: column; }
 
 .encyclopedia-viewer .entry-tab {
     position: relative;
@@ -91,14 +88,8 @@
     background-color: white;
 }
 
-.encyclopedia-viewer .entry-item:hover {
-    background-color: #e8e8e8;
-}
-
-.encyclopedia-viewer .subentry-list {
-    padding-left: 0;
-    background-color: white;
-}
+.encyclopedia-viewer .entry-item:hover { background-color: #e8e8e8; }
+.encyclopedia-viewer .subentry-list { padding-left: 0; background-color: white; }
 
 .encyclopedia-viewer .subentry-item {
     padding: 6px 12px 6px 24px;
@@ -110,14 +101,8 @@
     background-color: white;
 }
 
-.encyclopedia-viewer .subentry-item:hover {
-    background-color: #f0f0f0;
-}
-
-.encyclopedia-viewer .subentry-item:last-child {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 2px;
-}
+.encyclopedia-viewer .subentry-item:hover { background-color: #f0f0f0; }
+.encyclopedia-viewer .subentry-item:last-child { margin-bottom: 0px; }
 
 /* Right Panel - Encyclopedia Display Area */
 .encyclopedia-viewer .right-panel {
@@ -149,9 +134,7 @@
     font-family: 'Times New Roman', serif;
 }
 
-.encyclopedia-viewer .entry-section {
-    margin-bottom: 15px;
-}
+.encyclopedia-viewer .entry-section { margin-bottom: 15px; }
 
 .encyclopedia-viewer .entry-field-label {
     font-size: 0.7rem;
