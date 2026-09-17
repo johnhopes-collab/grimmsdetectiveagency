@@ -152,8 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
     new EncyclopediaViewer();
     
     // Set up collapsible toggle
-    const toggle = document.getElementById('fruit-toggle');
-    const content = document.getElementById('fruit-content');
+    const toggle = document.getElementById('enc-toggle');
+    const content = document.getElementById('enc-content');
     
     if (toggle && content) {
         toggle.addEventListener('click', () => {
