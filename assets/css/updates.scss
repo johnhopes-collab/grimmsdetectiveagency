@@ -31,6 +31,9 @@
   max-height: 350px;
   overflow-y: auto;
   overflow-x: hidden;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  scroll-snap-type: none; /* Disable snap behavior */
+
 }
 
 /* Individual Update Entries */
