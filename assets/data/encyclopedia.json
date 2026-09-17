@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "id": "fruit-001",
+      "displayText": "Apple",
+      "name": "Apple",
+      "subtype": "Malus domestica",
+      "distribution": "Temperate regions worldwide, particularly abundant in North America, Europe, and parts of Asia",
+      "description": "A sweet, edible fruit produced by an apple tree. Apples have been cultivated for thousands of years in Asia and Europe and were brought to North America by European colonists. The fruit typically has red, green, or yellow skin with white flesh. Apples are consumed fresh, used in cooking and baking, and processed into juice, cider, and vinegar. They are an excellent source of dietary fiber and vitamin C, and contain various beneficial antioxidants."
+    },
+    {
+      "id": "fruit-002",
+      "displayText": "Banana",
+      "name": "Banana",
+      "subtype": "Musa species",
+      "distribution": "Native to tropical Southeast Asia; now cultivated throughout tropical and subtropical regions worldwide",
+      "description": "An elongated, edible fruit produced by several kinds of large herbaceous flowering plants in the genus Musa. The fruit is variable in size, color, and firmness, but typically elongated and curved, with soft flesh rich in starch covered with a rind which may be green, yellow, red, purple, or brown when ripe. Bananas are a major food crop in many tropical countries and are the world's most exported fresh fruit. They are rich in potassium, vitamin B6, and provide quick energy through their natural sugars."
+    },
+    {
+      "id": "fruit-003",
+      "displayText": "Orange",
+      "name": "Orange",
+      "subtype": "Citrus × sinensis",
+      "distribution": "Originally from Southeast Asia; now grown commercially in tropical and subtropical climates worldwide, with major production in Brazil, the United States, and Mediterranean countries",
+      "description": "A citrus fruit belonging to the Rutaceae family, the orange is a hybrid between pomelo and mandarin. The fruit typically has a bright orange rind and segmented, juicy flesh. Oranges are one of the most popular fruits globally, prized for their high vitamin C content and sweet-tart flavor. They are consumed fresh, juiced, or used in cooking and baking. The peel contains aromatic oils used in flavoring and perfumery. Sweet oranges account for approximately 70% of global citrus production."
+    },
+    {
+      "id": "fruit-004",
+      "displayText": "Pear",
+      "name": "Pear",
+      "subtype": "Pyrus communis",
+      "distribution": "Native to coastal and mildly temperate regions of Europe, North Africa, and Asia; now cultivated in temperate zones worldwide",
+      "description": "A sweet, mild fruit with a distinctive bell shape produced by trees of the genus Pyrus. The flesh is typically white to cream-colored, and the texture can range from crisp to soft and juicy depending on ripeness and variety. Unlike most fruits, pears ripen best off the tree. They have been cultivated for over 3,000 years and come in thousands of varieties. Pears are an excellent source of dietary fiber and vitamin C, and contain beneficial plant compounds with anti-inflammatory properties. They are enjoyed fresh, poached, baked, or preserved."
+    }
+  ]
+}
