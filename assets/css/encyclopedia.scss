@@ -1,0 +1,257 @@
+---
+---
+
+/* Custom Font Definitions */
+@font-face {
+    font-family: 'BulletinGothic';
+    src: url('{{ site.baseurl }}/assets/fonts/BulletinGothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINCondensed';
+    src: url('{{ site.baseurl }}/assets/fonts/DIN_Condensed.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LibreBodoni';
+    src: url('{{ site.baseurl }}/assets/fonts/LibreBodoni-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NarrowRegular';
+    src: url('{{ site.baseurl }}/assets/fonts/narrow1-rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('{{ site.baseurl }}/assets/fonts/Playfair.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Encyclopedia Viewer Styles */
+
+.encyclopedia-viewer {
+    width: 610px;
+    height: 380px;
+    background-image: url('{{ site.baseurl }}/archives/images/main-frame.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 51%; 
+    transform: translateX(-50%); 
+}
+
+/* Left Panel - Entry List Area */
+.encyclopedia-viewer .left-panel {
+    position: absolute;
+    left: 28px;  
+    top: 30px;   
+    width: 245px; 
+    height: 260px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.encyclopedia-viewer .entry-accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.encyclopedia-viewer .entry-tab {
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.encyclopedia-viewer .entry-header {
+    width: 227px;
+    padding: 8px 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    user-select: none;
+    transition: background-color 0.2s ease;
+    font-family: 'Times New Roman', serif;
+}
+
+.encyclopedia-viewer .entry-header:hover {
+    background-color: #e8e8e8;
+}
+
+.encyclopedia-viewer .entry-header.has-subentries::after {
+    content: '▼';
+    float: right;
+    font-size: 10px;
+    transition: transform 0.3s ease;
+}
+
+.encyclopedia-viewer .entry-header.has-subentries.expanded::after {
+    transform: rotate(-180deg);
+}
+
+.encyclopedia-viewer .subentry-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    transition: max-height 0.3s ease;
+}
+
+.encyclopedia-viewer .subentry-content.active {
+    max-height: 300px;
+}
+
+.encyclopedia-viewer .subentry-list {
+    padding-left: 0;
+}
+
+.encyclopedia-viewer .entry-item {
+    padding: 6px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    font-size: 0.75rem;
+    transition: background-color 0.2s ease;
+    font-family: 'Times New Roman', serif;
+    background-color: white;
+}
+
+.encyclopedia-viewer .entry-item:hover {
+    background-color: #f0f0f0;
+}
+
+.encyclopedia-viewer .subentry-item {
+    padding: 6px 12px 6px 24px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    font-size: 0.7rem;
+    transition: background-color 0.2s ease;
+    font-family: 'Times New Roman', serif;
+    background-color: #fafafa;
+}
+
+.encyclopedia-viewer .subentry-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Right Panel - Encyclopedia Display Area */
+.encyclopedia-viewer .right-panel {
+    position: absolute;
+    left: 304px;  
+    top: 28px;    
+    width: 282px; 
+    height: 327px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.encyclopedia-viewer .encyclopedia-content {
+    background-image: url('{{ site.baseurl }}/archives/images/blank-bg.png');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    padding: 20px;
+    min-height: 100%;
+}
+
+.encyclopedia-viewer .entry-name {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #333;
+    font-family: 'Times New Roman', serif;
+}
+
+.encyclopedia-viewer .entry-section {
+    margin-bottom: 15px;
+}
+
+.encyclopedia-viewer .entry-field-label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+    font-family: 'Times New Roman', serif;
+}
+
+.encyclopedia-viewer .entry-field-content {
+    font-size: 0.65rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #000;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+/* Year Display (shows "ENC") */
+.encyclopedia-viewer .year-display {
+    position: absolute;
+    left: 128px;  
+    top: 313px;   
+    height: 35px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 900px) {
+    .encyclopedia-viewer {
+        width: 330px;
+        height: 640px;
+        background-image: url('{{ site.baseurl }}/archives/images/mobile-frame.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        left: 50%;
+    }
+    
+    /* Left Panel - Entry List Area */
+    .encyclopedia-viewer .left-panel {
+        position: absolute;
+        left: 28px;  
+        top: 394px;
+        width: 275px; 
+        height: 220px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    
+    .encyclopedia-viewer .entry-header {
+        width: 255px;
+    }
+    
+    /* Right Panel - Encyclopedia Display Area */
+    .encyclopedia-viewer .right-panel {
+        position: absolute;
+        left: 28px;  
+        top: 28px;    
+        width: 275px; 
+        height: 327px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .encyclopedia-viewer .entry-field-content {
+        font-size: 0.7rem;
+    }
+    
+    .encyclopedia-viewer .year-display { 
+        display: none; 
+    }
+}
