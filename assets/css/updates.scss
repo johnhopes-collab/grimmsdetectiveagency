@@ -160,12 +160,24 @@
   font-style: italic;
 }
 
-
 /* == MOBILE - Mobile Display - both portrait and landscape - MOBILE DISPLAY == */
 @media (max-width: 500px) {
   .updates-container  { max-width: 700px; font-size: 0.6rem; }
   #updates-feed       { padding: 5px; max-height: 200px; overflow-y: auto; overflow-x: hidden; }
   .update-image       { max-width: 100%;  }
+  
+  /* MOBILE GRID LAYOUT - Avatar moves to header area */
+  .update-entry {
+    grid-template-areas: 
+      "avatar header"
+      "content content";
+    grid-template-columns: 44px 1fr;
+    gap: 8px 8px;
+  }
+  
+  .update-entry::before {
+    margin-left: 0.29rem;
+  }
   
   /* Keep date header as flex but within grid cell */
   .update-date-header { 
@@ -176,6 +188,4 @@
   }
   
   .update-time-ago    { font-size: 0.65rem; margin-top: 2px; }
-
-
 }
