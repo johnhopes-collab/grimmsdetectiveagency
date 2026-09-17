@@ -99,6 +99,9 @@ class EncyclopediaViewer {
 
     displayEncyclopediaEntry(entry) {
         const rightPanel = document.getElementById('encyclopedia-display');
+
+        // Reset scroll position to top
+        rightPanel.scrollTop = 0;
         
         // Create the encyclopedia content
         const encyclopediaContent = document.createElement('div');
