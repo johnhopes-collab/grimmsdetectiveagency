@@ -94,7 +94,10 @@ class NewspaperArchive {
 
     displayNewspaperIssue(issue) {
         const rightPanel = document.getElementById('newspaper-display');
-        
+
+        // Reset scroll position to top
+        rightPanel.scrollTop = 0;
+
         // Create the newspaper content
         const newspaperContent = document.createElement('div');
         newspaperContent.className = 'newspaper-content';
