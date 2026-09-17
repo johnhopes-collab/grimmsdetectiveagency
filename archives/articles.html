@@ -11,7 +11,25 @@ title: '<a href="/archives.html">Archives</a> / FAIRYTALES'
         border: none !important; box-shadow: none !important; padding: 0 !important;">
 <h3>Index of Fairytale Creatures</h3>
 <p>The following is a list of fairytale creatures that have been identified by the Agency. This list is by no means complete, but represents a growing catalogue of known types encountered within the geographical areas of Europe and North America, and do not extend to those creatures encountered in other parts of the world.</p>        <ul style="margin-left: 5px;">
-                <li><strong>Beastmen (shifters, werewolves, etc.)</strong></li>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/encyclopedia.css">
+
+<div class="encyclopedia-container">
+    <div class="left-panel">
+        <div class="entries-list" id="encyclopedia-entries">
+            <!-- Entries will be populated by JavaScript -->
+        </div>
+    </div>
+    
+    <div class="right-panel" id="encyclopedia-display">
+        <!-- Encyclopedia entry content will appear here -->
+    </div>
+    
+    <div class="enc-label" id="enc-text">ENC</div>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/encyclopedia.js"></script>
+    
+    <li><strong>Beastmen (shifters, werewolves, etc.)</strong></li>
                 <li><strong>Boggarts</strong></li>
                 <li><strong>Centaurs</strong></li>
                 <li><strong>Changelings</strong></li>
