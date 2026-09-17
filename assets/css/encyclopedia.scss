@@ -1,40 +1,74 @@
 ---
 ---
 
-/* Custom Font Definitions */
-@font-face {
-    font-family: 'BulletinGothic';
-    src: url('{{ site.baseurl }}/assets/fonts/BulletinGothic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+/* Collapsible Encyclopedia Section */
+.encyclopedia-collapsible {
+    margin: 20px 0;
 }
 
-@font-face {
-    font-family: 'DINCondensed';
-    src: url('{{ site.baseurl }}/assets/fonts/DIN_Condensed.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+.encyclopedia-toggle {
+    background: linear-gradient(to bottom, #d4a574, #c49563);
+    border: 2px solid #a67c52;
+    border-radius: 12px;
+    padding: 15px 25px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-@font-face {
-    font-family: 'LibreBodoni';
-    src: url('{{ site.baseurl }}/assets/fonts/LibreBodoni-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+.encyclopedia-toggle:hover {
+    background: linear-gradient(to bottom, #ddb280, #cea86f);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-@font-face {
-    font-family: 'NarrowRegular';
-    src: url('{{ site.baseurl }}/assets/fonts/narrow1-rg.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+.encyclopedia-toggle .toggle-text {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2c1810;
 }
 
-@font-face {
-    font-family: 'Playfair';
-    src: url('{{ site.baseurl }}/assets/fonts/Playfair.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+.encyclopedia-toggle .toggle-arrow {
+    font-size: 1rem;
+    color: #2c1810;
+    transition: transform 0.3s ease;
+}
+
+.encyclopedia-toggle.active .toggle-arrow {
+    transform: rotate(-180deg);
+}
+
+.encyclopedia-collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background-color: #f5e6d3;
+    border-radius: 0 0 12px 12px;
+    margin-top: -2px;
+}
+
+.encyclopedia-collapsible-content.active {
+    max-height: 2000px; /* Adjust if your content is taller */
+}
+
+.encyclopedia-description {
+    padding: 20px 25px 10px 25px;
+    font-family: 'Times New Roman', serif;
+    color: #2c1810;
+}
+
+.encyclopedia-description p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.encyclopedia-wrapper {
+    padding: 20px 0 30px 0;
 }
 
 /* Encyclopedia Viewer Styles */
@@ -227,5 +261,17 @@
     .encyclopedia-wrapper {
         transform: scale(1); /* Full size on mobile */
         margin-bottom: 0;
+    }
+    
+    .encyclopedia-toggle .toggle-text {
+        font-size: 1.1rem;
+    }
+    
+    .encyclopedia-toggle {
+        padding: 12px 20px;
+    }
+    
+    .encyclopedia-description {
+        padding: 15px 20px 10px 20px;
     }
 }
