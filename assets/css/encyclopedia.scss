@@ -77,57 +77,31 @@
 
 .encyclopedia-viewer .entry-tab {
     position: relative;
-    margin-bottom: 1px;
-    line-height: 1.3;
+    margin-bottom: 2px;
 }
 
-.encyclopedia-viewer .entry-header {
-    width: 227px;
-    padding: 6px 12px;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
+.encyclopedia-viewer .entry-item {
+    padding: 8px 12px;
     cursor: pointer;
-    font-weight: normal;  /* Changed from bold */
-    font-size: 0.7rem;    /* Changed from 14px */
-    color: #333;
-    user-select: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.85rem;
+    font-weight: bold;
     transition: background-color 0.2s ease;
     font-family: 'Times New Roman', serif;
+    background-color: #f5f5f5;
 }
 
-
-.encyclopedia-viewer .entry-header:hover {
+.encyclopedia-viewer .entry-item:hover {
     background-color: #e8e8e8;
-}
-
-.encyclopedia-viewer .entry-header.has-subentries::after {
-    content: '▼';
-    float: right;
-    font-size: 10px;
-    transition: transform 0.3s ease;
-}
-
-.encyclopedia-viewer .entry-header.has-subentries.expanded::after {
-    transform: rotate(-180deg);
-}
-
-.encyclopedia-viewer .subentry-content {
-    max-height: 0;
-    overflow: hidden;
-    background-color: white;
-    transition: max-height 0.3s ease;
-}
-
-.encyclopedia-viewer .subentry-content.active {
-    max-height: 300px;
 }
 
 .encyclopedia-viewer .subentry-list {
     padding-left: 0;
+    background-color: white;
 }
 
-.encyclopedia-viewer .entry-item {
-    padding: 6px 12px;
+.encyclopedia-viewer .subentry-item {
+    padding: 6px 12px 6px 24px;
     cursor: pointer;
     border-bottom: 1px solid #eee;
     font-size: 0.75rem;
@@ -136,22 +110,13 @@
     background-color: white;
 }
 
-.encyclopedia-viewer .entry-item:hover {
-    background-color: #f0f0f0;
-}
-
-.encyclopedia-viewer .subentry-item {
-    padding: 6px 12px 6px 24px;
-    cursor: pointer;
-    border-bottom: 1px solid #eee;
-    font-size: 0.7rem;
-    transition: background-color 0.2s ease;
-    font-family: 'Times New Roman', serif;
-    background-color: #fafafa;
-}
-
 .encyclopedia-viewer .subentry-item:hover {
     background-color: #f0f0f0;
+}
+
+.encyclopedia-viewer .subentry-item:last-child {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2px;
 }
 
 /* Right Panel - Encyclopedia Display Area */
