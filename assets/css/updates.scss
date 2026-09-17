@@ -46,6 +46,18 @@
   grid-template-columns: 70px 1fr;
 }
 
+/* Avatar styling using ::before on update-entry */
+.update-entry::before {
+  content: '';
+  display: block;
+  grid-area: avatar;
+  width: 52px;
+  height: 52px;
+  background: url('assets/images/default-avatar.png') center/cover;
+  border-radius: 50%;
+}
+
+
 .update-entry:last-child { margin-bottom: 0; border-bottom: none; /* Remove divider from last post */ }
 
 .update-date {
@@ -95,16 +107,6 @@
   color: #401c00;
   box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15);
   grid-area: content;
-}
-
-.update-content::before {
-  content: '';
-  display: block; 
-  grid-area: avatar;
-  width: 62px;
-  height: 62px;
-  background: url('{{ site.baseurl }}/assets/updates/avatar-62x62.png') center/cover;
-  flex-shrink: 0;
 }
 
 .update-content:hover { border-color: #5e2c04; box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25); }
