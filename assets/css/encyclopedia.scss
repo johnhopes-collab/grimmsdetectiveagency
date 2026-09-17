@@ -10,7 +10,7 @@
     background: linear-gradient(to bottom, #d4a574, #c49563);
     border: 2px solid #a67c52;
     border-radius: 12px;
-    padding: 15px 25px;
+    padding: 5px 15px;
     cursor: pointer;
     user-select: none;
     display: flex;
@@ -26,8 +26,8 @@
 }
 
 .encyclopedia-toggle .toggle-text {
-    font-family: 'Times New Roman', serif;
-    font-size: 1.3rem;
+    font-family: 'Georgia', serif;
+    font-size: 0.719rem;
     font-weight: bold;
     color: #2c1810;
 }
@@ -47,8 +47,9 @@
     overflow: hidden;
     transition: max-height 0.5s ease;
     background-color: #f5e6d3;
-    border-radius: 0 0 12px 12px;
     margin-top: -2px;
+    border: 2px solid #a67c52;
+    border-radius: 12px;
 }
 
 .encyclopedia-collapsible-content.active {
@@ -56,14 +57,14 @@
 }
 
 .encyclopedia-description {
-    padding: 20px 25px 10px 25px;
+    padding: 10px 25px 2px 25px;
     font-family: 'Times New Roman', serif;
     color: #2c1810;
 }
 
 .encyclopedia-description p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.7rem;
     line-height: 1.6;
 }
 
