@@ -53,7 +53,7 @@
   grid-area: avatar;
   width: 52px;
   height: 52px;
-  background: url('assets/images/default-avatar.png') center/cover;
+  background: url('{{ site.baseurl }}/assets/updates/avatar-icon.png') center/cover;
   border-radius: 50%;
 }
 
