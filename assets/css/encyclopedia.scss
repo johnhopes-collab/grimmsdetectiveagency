@@ -48,12 +48,12 @@
     transition: max-height 0.5s ease;
     background-color: #f5e6d3;
     margin-top: -2px;
-    border: 2px solid #a67c52;
-    border-radius: 12px;
 }
 
 .encyclopedia-collapsible-content.active {
     max-height: 2000px; /* Adjust if your content is taller */
+    border: 2px solid #a67c52;
+    border-radius: 12px;
 }
 
 .encyclopedia-description {
