@@ -6,9 +6,9 @@ class EncyclopediaViewer {
         this.init();
     }
 
-    async init() {
-        await this.loadEncyclopediaData();
-        this.populateEntries();
+    init() {
+        // Load the encyclopedia data
+        this.loadEncyclopediaData();
     }
 
     async loadEncyclopediaData() {
@@ -18,6 +18,7 @@ class EncyclopediaViewer {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             this.encyclopediaData = await response.json();
+            this.populateEntries();
         } catch (error) {
             console.error('Error loading encyclopedia data:', error);
             this.showError();
@@ -25,93 +26,148 @@ class EncyclopediaViewer {
     }
 
     populateEntries() {
-        if (!this.encyclopediaData || !this.encyclopediaData.entries) return;
+        if (!this.encyclopediaData) return;
 
-        const entriesList = document.getElementById('encyclopedia-entries');
-        entriesList.innerHTML = '';
+        const accordion = document.getElementById('entry-accordion');
+        accordion.innerHTML = '';
 
         this.encyclopediaData.entries.forEach(entry => {
-            const entryItem = document.createElement('div');
-            entryItem.className = 'entry-item';
-            entryItem.textContent = entry.displayText;
-            entryItem.dataset.entryId = entry.id;
+            const entryTab = document.createElement('div');
+            entryTab.className = 'entry-tab';
 
-            entryItem.addEventListener('click', () => {
-                this.displayEntry(entry);
-                this.setActiveEntry(entryItem);
+            // Create header for main entry
+            const entryHeader = document.createElement('div');
+            entryHeader.className = 'entry-header';
+            if (entry.subentries && entry.subentries.length > 0) {
+                entryHeader.classList.add('has-subentries');
+            }
+            entryHeader.textContent = entry.displayText;
+            
+            // Main entry is clickable
+            entryHeader.addEventListener('click', (e) => {
+                if (entry.subentries && entry.subentries.length > 0) {
+                    // Toggle subentries
+                    e.stopPropagation();
+                    const subentryContent = entryTab.querySelector('.subentry-content');
+                    subentryContent.classList.toggle('active');
+                    entryHeader.classList.toggle('expanded');
+                } else {
+                    // Display the entry itself
+                    this.displayEncyclopediaEntry(entry);
+                }
             });
 
-            entriesList.appendChild(entryItem);
-        });
+            entryTab.appendChild(entryHeader);
 
-        // Display first entry by default
-        if (this.encyclopediaData.entries.length > 0) {
-            this.displayEntry(this.encyclopediaData.entries[0]);
-            entriesList.firstChild.classList.add('active');
-        }
+            // If there are subentries, create them
+            if (entry.subentries && entry.subentries.length > 0) {
+                const subentryContent = document.createElement('div');
+                subentryContent.className = 'subentry-content';
+
+                const subentryList = document.createElement('div');
+                subentryList.className = 'subentry-list';
+
+                // Add the parent entry as clickable
+                const parentItem = document.createElement('div');
+                parentItem.className = 'subentry-item';
+                parentItem.textContent = `→ ${entry.displayText} (General)`;
+                parentItem.addEventListener('click', () => {
+                    this.displayEncyclopediaEntry(entry);
+                });
+                subentryList.appendChild(parentItem);
+
+                // Add subentries
+                entry.subentries.forEach(subentry => {
+                    const subentryItem = document.createElement('div');
+                    subentryItem.className = 'subentry-item';
+                    subentryItem.textContent = subentry.displayText;
+                    
+                    subentryItem.addEventListener('click', () => {
+                        this.displayEncyclopediaEntry(subentry);
+                    });
+
+                    subentryList.appendChild(subentryItem);
+                });
+
+                subentryContent.appendChild(subentryList);
+                entryTab.appendChild(subentryContent);
+            }
+
+            accordion.appendChild(entryTab);
+        });
     }
 
-    setActiveEntry(selectedItem) {
-        // Remove active class from all entries
-        document.querySelectorAll('.entry-item').forEach(item => {
-            item.classList.remove('active');
-        });
-        
-        // Add active class to selected entry
-        selectedItem.classList.add('active');
-    }
-
-    displayEntry(entry) {
+    displayEncyclopediaEntry(entry) {
         const rightPanel = document.getElementById('encyclopedia-display');
-
+        
         // Create the encyclopedia content
         const encyclopediaContent = document.createElement('div');
         encyclopediaContent.className = 'encyclopedia-content';
 
-        // Create entry name (right-aligned headline)
+        // Create entry name (right-aligned header)
         const nameDiv = document.createElement('div');
         nameDiv.className = 'entry-name';
         nameDiv.textContent = entry.name;
         encyclopediaContent.appendChild(nameDiv);
 
-        // Create subtype field
-        const subtypeField = this.createField('Subtype', entry.subtype);
-        encyclopediaContent.appendChild(subtypeField);
+        // Create subtype section (if exists)
+        if (entry.subtype) {
+            const subtypeSection = document.createElement('div');
+            subtypeSection.className = 'entry-section';
 
-        // Create distribution field
-        const distributionField = this.createField('Distribution', entry.distribution);
-        encyclopediaContent.appendChild(distributionField);
+            const subtypeLabel = document.createElement('div');
+            subtypeLabel.className = 'entry-field-label';
+            subtypeLabel.textContent = 'Subtype:';
 
-        // Create description field
-        const descriptionField = this.createField('Description', entry.description);
-        encyclopediaContent.appendChild(descriptionField);
+            const subtypeContent = document.createElement('div');
+            subtypeContent.className = 'entry-field-content';
+            subtypeContent.textContent = entry.subtype;
+
+            subtypeSection.appendChild(subtypeLabel);
+            subtypeSection.appendChild(subtypeContent);
+            encyclopediaContent.appendChild(subtypeSection);
+        }
+
+        // Create distribution section
+        const distributionSection = document.createElement('div');
+        distributionSection.className = 'entry-section';
+
+        const distributionLabel = document.createElement('div');
+        distributionLabel.className = 'entry-field-label';
+        distributionLabel.textContent = 'Distribution:';
+
+        const distributionContent = document.createElement('div');
+        distributionContent.className = 'entry-field-content';
+        distributionContent.textContent = entry.distribution;
+
+        distributionSection.appendChild(distributionLabel);
+        distributionSection.appendChild(distributionContent);
+        encyclopediaContent.appendChild(distributionSection);
+
+        // Create description section
+        const descriptionSection = document.createElement('div');
+        descriptionSection.className = 'entry-section';
+
+        const descriptionLabel = document.createElement('div');
+        descriptionLabel.className = 'entry-field-label';
+        descriptionLabel.textContent = 'Description:';
+
+        const descriptionContent = document.createElement('div');
+        descriptionContent.className = 'entry-field-content';
+        descriptionContent.textContent = entry.description;
+
+        descriptionSection.appendChild(descriptionLabel);
+        descriptionSection.appendChild(descriptionContent);
+        encyclopediaContent.appendChild(descriptionSection);
 
         // Clear right panel and add new content
         rightPanel.innerHTML = '';
         rightPanel.appendChild(encyclopediaContent);
     }
 
-    createField(label, content) {
-        const fieldDiv = document.createElement('div');
-        fieldDiv.className = 'entry-field';
-
-        const labelDiv = document.createElement('div');
-        labelDiv.className = 'field-label';
-        labelDiv.textContent = label;
-
-        const contentDiv = document.createElement('div');
-        contentDiv.className = 'field-content';
-        contentDiv.textContent = content;
-
-        fieldDiv.appendChild(labelDiv);
-        fieldDiv.appendChild(contentDiv);
-
-        return fieldDiv;
-    }
-
     showError() {
         const rightPanel = document.getElementById('encyclopedia-display');
-        rightPanel.innerHTML = '<div style="padding: 20px; color: #8b0000;">Error loading encyclopedia data. Please try again later.</div>';
+        rightPanel.innerHTML = '<div class="encyclopedia-content"><div class="entry-name">Error</div><div class="entry-field-content">Unable to load encyclopedia data.</div></div>';
     }
 }
 
