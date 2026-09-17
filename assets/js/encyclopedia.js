@@ -25,77 +25,50 @@ class EncyclopediaViewer {
         }
     }
 
-    populateEntries() {
-        if (!this.encyclopediaData) return;
+populateEntries() {
+    if (!this.encyclopediaData) return;
 
-        const accordion = document.getElementById('entry-accordion');
-        accordion.innerHTML = '';
+    const accordion = document.getElementById('entry-accordion');
+    accordion.innerHTML = '';
 
-        this.encyclopediaData.entries.forEach(entry => {
-            const entryTab = document.createElement('div');
-            entryTab.className = 'entry-tab';
+    this.encyclopediaData.entries.forEach(entry => {
+        const entryTab = document.createElement('div');
+        entryTab.className = 'entry-tab';
 
-            // Create header for main entry
-            const entryHeader = document.createElement('div');
-            entryHeader.className = 'entry-header';
-            if (entry.subentries && entry.subentries.length > 0) {
-                entryHeader.classList.add('has-subentries');
-            }
-            entryHeader.textContent = entry.displayText;
-            
-            // Main entry is clickable
-            entryHeader.addEventListener('click', (e) => {
-                if (entry.subentries && entry.subentries.length > 0) {
-                    // Toggle subentries
-                    e.stopPropagation();
-                    const subentryContent = entryTab.querySelector('.subentry-content');
-                    subentryContent.classList.toggle('active');
-                    entryHeader.classList.toggle('expanded');
-                } else {
-                    // Display the entry itself
-                    this.displayEncyclopediaEntry(entry);
-                }
+        // Create main entry item
+        const mainEntryItem = document.createElement('div');
+        mainEntryItem.className = 'entry-item';
+        mainEntryItem.textContent = entry.displayText;
+        
+        mainEntryItem.addEventListener('click', () => {
+            this.displayEncyclopediaEntry(entry);
+        });
+
+        entryTab.appendChild(mainEntryItem);
+
+        // If there are subentries, display them (always visible)
+        if (entry.subentries && entry.subentries.length > 0) {
+            const subentryList = document.createElement('div');
+            subentryList.className = 'subentry-list';
+
+            entry.subentries.forEach(subentry => {
+                const subentryItem = document.createElement('div');
+                subentryItem.className = 'subentry-item';
+                subentryItem.textContent = subentry.displayText;
+                
+                subentryItem.addEventListener('click', () => {
+                    this.displayEncyclopediaEntry(subentry);
+                });
+
+                subentryList.appendChild(subentryItem);
             });
 
-            entryTab.appendChild(entryHeader);
+            entryTab.appendChild(subentryList);
+        }
 
-            // If there are subentries, create them
-            if (entry.subentries && entry.subentries.length > 0) {
-                const subentryContent = document.createElement('div');
-                subentryContent.className = 'subentry-content';
-
-                const subentryList = document.createElement('div');
-                subentryList.className = 'subentry-list';
-
-                // Add the parent entry as clickable
-                const parentItem = document.createElement('div');
-                parentItem.className = 'subentry-item';
-                parentItem.textContent = `→ ${entry.displayText} (General)`;
-                parentItem.addEventListener('click', () => {
-                    this.displayEncyclopediaEntry(entry);
-                });
-                subentryList.appendChild(parentItem);
-
-                // Add subentries
-                entry.subentries.forEach(subentry => {
-                    const subentryItem = document.createElement('div');
-                    subentryItem.className = 'subentry-item';
-                    subentryItem.textContent = subentry.displayText;
-                    
-                    subentryItem.addEventListener('click', () => {
-                        this.displayEncyclopediaEntry(subentry);
-                    });
-
-                    subentryList.appendChild(subentryItem);
-                });
-
-                subentryContent.appendChild(subentryList);
-                entryTab.appendChild(subentryContent);
-            }
-
-            accordion.appendChild(entryTab);
-        });
-    }
+        accordion.appendChild(entryTab);
+    });
+}
 
     displayEncyclopediaEntry(entry) {
         const rightPanel = document.getElementById('encyclopedia-display');
