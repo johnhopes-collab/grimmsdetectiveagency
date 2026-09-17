@@ -150,4 +150,15 @@ populateEntries() {
 // Initialize the encyclopedia when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     new EncyclopediaViewer();
+    
+    // Set up collapsible toggle
+    const toggle = document.getElementById('fruit-toggle');
+    const content = document.getElementById('fruit-content');
+    
+    if (toggle && content) {
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            content.classList.toggle('active');
+        });
+    }
 });
