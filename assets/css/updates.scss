@@ -99,6 +99,7 @@
 
 .update-content::before {
   content: '';
+  display: block; 
   grid-area: avatar;
   width: 62px;
   height: 62px;
