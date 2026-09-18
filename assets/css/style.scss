@@ -345,10 +345,10 @@ a img { border: none; outline: none;}
 /* ARCHIVE - Navigation Cards - ARCHIVE CARDS 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 */
 .archive-nav-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     padding: 15px 0;
-    max-width: 360px;
+    max-width: 560px;
     margin: 0 auto;
 }
 .archive-card {
