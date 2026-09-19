@@ -10,15 +10,7 @@ title: Front Desk
 .social-buttons     { display: flex; justify-content: flex-start; gap: 10px; }
 .social-buttons img { height: 40px; width: auto; display: block; }
 .text-box h2.h2alt  { color: var(--button-brown); line-height: 1; margin-top:-5px; }
-    
-.topped-image {
-    display: block;
-    width: 70%;
-    max-width: 100%;
-    height: auto;
-    margin: -28px auto;
-    border: none;
-}
+.topped-image       { display: block; width: 70%; max-width: 100%; height: auto; margin: -28px auto; border: none; }
     
 .retro-text-wrapper {
     position: relative;
@@ -45,31 +37,25 @@ title: Front Desk
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
-    min-width: 120px; /* Adjust tab width as needed */
+    min-width: 120px;
     text-align: center;
     margin-top: -19px;
     z-index: 1;
 }
 
-.retro-text-tab .tab-label {
-    display: none;
-}
-
-.retro-text-tab .tab-date {
-    display: inline;
-}
+.retro-text-tab .tab-label { display: none; }
+.retro-text-tab .tab-date  { display: inline; }
 
 .retro-text-container {
     background-color: #d4c4a8;
     border: 1px solid #5e2c04;
     box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
-    margin-top: 14px; /* Space for the tab */
+    margin-top: 14px; 
     font-family: 'Georgia', serif;
     font-size: 0.719rem;
     position: relative;
     z-index: 2;
 }
-
 .retro-text-content { padding: 5px 12px 12px 12px; max-height: 350px; overflow-y: auto; overflow-x: hidden; }
 .retro-text-blurb   { padding: 0px 25px  0px 25px; margin: -3px 0px -10px 0px; font-size: 10.5px; }
 
@@ -91,7 +77,6 @@ title: Front Desk
 .retro-text-content::-webkit-scrollbar-track {background: #d4c4a8;border-left: 1px solid #bc9e68;}
 .retro-text-content::-webkit-scrollbar-thumb { background: #bc9e68; border: 1px solid #5e2c04;}
 .retro-text-content::-webkit-scrollbar-thumb:hover { background: #5e2c04;}
-
 .vintage-poster1 { display: block; width: 50%; margin: 0 auto; border: none; }
 
 
@@ -111,16 +96,8 @@ title: Front Desk
         justify-content: space-between;
         align-items: center;
         text-align: initial;   }
-
-    .retro-text-tab .tab-label {
-        display: inline;
-        text-align: left;
-    }
-
-    .retro-text-tab .tab-date {
-        display: inline;
-        text-align: right;
-    }
+    .retro-text-tab .tab-label { display: inline; text-align: left; }
+    .retro-text-tab .tab-date { display: inline; text-align: right; }
     .vintage-poster1 {     width: 90%;  }
 }
 </style>
@@ -155,15 +132,20 @@ title: Front Desk
 <p>A variety of past case reports are available for review at our <a href="/casefiles.html"><strong>Case Files</strong></a> section. To contact us, please consider sending us a telegram at our <a href="/inquiries.html"><strong>Inquiries</strong></a> page, or for a deeper look into the world of the Grimms, take a peek into the <a href="/archives.html"><strong>Archives</strong></a> and discover more about your favorite characters and their most intriguing cases. The files are being organized, the holy water is being refilled, and the tea brewed to standards that would impress even the intrepid Gervaise. Until then, please make yourself at home.</p>
 <p>Yours truly,</p>
 <p>The Agency</p>
+
 <img class="separator" src="assets/images/separator-victorian-1.png" alt="Separator">
+
 <div class="updates-container">
   <div class="updates-header">PAST UPDATES</div>
   <div id="updates-feed">
     <div class="loading">Loading updates...</div>
   </div>
 </div>
+
 <img class="separator" src="assets/images/separator-victorian-1.png" alt="Separator">
+
 <img class="vintage-poster1" src="{{ site.baseurl }}/assets/images/1-vintagereading.jpg" alt="Reading Poster">
+
 <img class="separator" src="assets/images/separator-victorian-2.png" alt="Separator">
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
