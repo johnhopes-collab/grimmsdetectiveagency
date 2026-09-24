@@ -153,6 +153,7 @@ a img { border: none; outline: none;}
     letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transform: translateX(1%);
 }
 .sidebar-unit, .page-title-bar-wrapper { transform: scale(1); } /* Synchronize scaling - both elements scale together */
 .page-title a { color: inherit; /* Same color as title text */ text-decoration: underline; /* Underlined */ }
