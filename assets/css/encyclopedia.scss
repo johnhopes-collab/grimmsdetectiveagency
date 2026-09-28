@@ -170,6 +170,39 @@
     font-family: 'Times New Roman', serif;
 }
 
+.encyclopedia-viewer .entry-subspecies {
+    text-align: right;
+    font-size: 0.65rem;
+    font-style: italic;
+    color: #000;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #333;
+    font-family: 'Times New Roman', serif;
+}
+
+.encyclopedia-viewer .entry-field-inline {
+    font-size: 0.65rem;
+    line-height: 1.5;
+    color: #000;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.encyclopedia-viewer .entry-field-inline .entry-field-label {
+    display: inline;
+    font-weight: bold;
+    margin-right: 0;
+    font-size: 0.7rem;
+    color: #333;
+    font-family: 'Times New Roman', serif;
+}
+
+.encyclopedia-viewer .entry-field-inline .entry-field-content {
+    display: inline;
+    margin: 0;
+}
+
 .encyclopedia-viewer .entry-section { margin-bottom: 15px; }
 
 .encyclopedia-viewer .entry-field-label {
