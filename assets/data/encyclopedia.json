@@ -147,14 +147,14 @@
           "subtype": "Hobgoblin",
           "size": null,
           "distribution": "Cologne, Germany; reported throughout the Rhineland",
-          "description": "Diligent domestic sprites of Cologne, famed for performing the city's trades—carpentry, baking, tailoring—during the night, allowing citizens to sleep while work completed itself. Local legend holds the entire population departed permanently after a tailor's wife scattered peas on the stairs, causing the sprites to slip and fall. Subsequent attempts to lure them back have failed. The Heinzelmännchen serve as a cautionary case study in habitat disruption.",
+          "description": "Diligent domestic sprites of Cologne, famed for performing the city's trades during the night, such as carpentry, baking, and tailoring, allowing citizens to sleep while work completed itself. Local legend holds the entire population departed permanently after a tailor's wife scattered peas on the stairs, causing the sprites to slip and fall. Subsequent attempts to lure them back have failed. The Heinzelmännchen serve as a cautionary case study in habitat disruption.",
           "weaknesses": null
         },
         {
           "id": "hobs",
           "displayText": "→ Hobs",
           "name": "Hobs",
-          "subspecies": "Faeicus hobgoblensis",
+          "subspecies": "Faeicus hobensis",
           "subtype": "Hobgoblin",
           "size": null,
           "distribution": "Northern England, particularly Yorkshire, Lancashire, and Northumberland",
