@@ -91,15 +91,11 @@ title: Front Desk
     
 .newsletter-wrapper {
   --newsletter-width: 400px;
-  position: absolute;
-  width: var(--newsletter-width);
-  height: calc(var(--newsletter-width) * 219 / 1067);
+  position: relative;
+  height: 20px;
   overflow: visible; /* Changed from hidden to visible */
-  
-  /* Position it below the newsletter-pre image */
-  top: 100%; /* Start right below the trigger */
   left: 0;
-  margin-top: -10px; /* Adjust this to overlap/gap as needed */
+  margin-top: -20px; /* Adjust this to overlap/gap as needed */
   z-index: 10;
 }
 
