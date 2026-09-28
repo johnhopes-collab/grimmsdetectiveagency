@@ -81,28 +81,17 @@ title: Front Desk
 /* =======Newsletter Widget============= */
     
 .newsletter-wrapper {
-  --newsletter-width: 300px;
-
+--newsletter-width: 400px;
   position: relative;
-
   width: var(--newsletter-width);
   height: calc(var(--newsletter-width) * 219 / 1067);
-
-  margin: -10px auto 20px;
-
   overflow: hidden;
 }
 
 .newsletter-widget {
   position: absolute;
-
-  width: 1067px;
-  height: 219px;
-
-  transform-origin: top left;
-  transform: scale(
-    calc(var(--newsletter-width) / 1067)
-  );
+  width: 400px;
+  height: 81px;
 }
 .newsletter-background {
   position: absolute;
@@ -111,20 +100,38 @@ title: Front Desk
   height: 100%;
   display: block;
   pointer-events: none;
-  object-fit: fill; /* Add this to stretch the image */
 }
 .newsletter-form          {  position: absolute;  inset: 0; }
-.newsletter-input-wrapper {  position: absolute;  left: 57px;  top: 120px;  width: 736px;  height: 53px; }
+.newsletter-input-wrapper { position: absolute;
+  left: 17px;
+  top: 40px;
+  width: 282px;
+  height: 33px; }
 .newsletter-email         {  position: absolute;  left: 0;  top: 0;  width: 100%;  height: 100%;  box-sizing: border-box;  border: none;  outline: none;  background: transparent;  padding: 0;  font: inherit;  color: #000;  z-index: 2; }
 .newsletter-placeholder   {  position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: contain; object-position: left center; pointer-events: none; z-index: 3; }
 .newsletter-email:focus + .newsletter-placeholder, .newsletter-email:not(:placeholder-shown) + .newsletter-placeholder {  display: none; }
 .newsletter-message       {  position: absolute;  inset: 0;  display: none;  align-items: center;  z-index: 4;  font-family: inherit;  font-size: 18px;  font-weight: normal;  color: #000;  white-space: nowrap; }
 .newsletter-message.visible {  display: flex; }
 
+.newsletter-button {
+  position: absolute;
+  left: 307px;  /* 820 * (400/1067) ≈ 307 */
+  top: 41px;    /* 110 * (400/1067) ≈ 41 */
+  width: 79px;  /* 211 * (400/1067) ≈ 79 */
+  height: 27px; /* 73 * (400/1067) ≈ 27 */
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 5;
+}
+
+
 .newsletter-button-image {
-  display: block;
-  width: 211px;
-  height: 73px;
+display: block;
+  width: 81px;
+  height: auto;
   pointer-events: none;
 }
 
