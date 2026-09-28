@@ -104,7 +104,15 @@ title: Front Desk
     calc(var(--newsletter-width) / 1067)
   );
 }
-.newsletter-background    { position: absolute;  inset: 0;  width: 1067px;  height: 219px;  display: block;  pointer-events: none; }
+.newsletter-background {
+  position: absolute;
+  inset: 0;
+  /* Remove: width: 1067px; height: 219px; */
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
 .newsletter-form          {  position: absolute;  inset: 0; }
 .newsletter-input-wrapper {  position: absolute;  left: 57px;  top: 120px;  width: 736px;  height: 53px; }
 .newsletter-email         {  position: absolute;  left: 0;  top: 0;  width: 100%;  height: 100%;  box-sizing: border-box;  border: none;  outline: none;  background: transparent;  padding: 0;  font: inherit;  color: #000;  z-index: 2; }
@@ -113,18 +121,12 @@ title: Front Desk
 .newsletter-message       {  position: absolute;  inset: 0;  display: none;  align-items: center;  z-index: 4;  font-family: inherit;  font-size: 18px;  font-weight: normal;  color: #000;  white-space: nowrap; }
 .newsletter-message.visible {  display: flex; }
 
-.newsletter-button {
-  position: absolute;
-  left: 820px;
-  top: 110px;
-  width: 211px;
-  height: 73px;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  z-index: 5;
+.newsletter-button-image {
+  display: block;
+  /* Remove fixed dimensions - let it fill the button */
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
 .newsletter-button-image { display: block; width: 211px; height: 73px; pointer-events: none; }
