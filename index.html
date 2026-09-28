@@ -105,11 +105,18 @@ title: Front Desk
     cursor: pointer;
     z-index: 5;
 }
+.newsletter-button-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.05s ease;
+}
 
-.newsletter-button-image { display: block; width: 100%; pointer-events: none; }
-.newsletter-button:hover .newsletter-button-image { content: url("{{ site.baseurl }}/assets/images/2-newsletter-button-hover.png"); }
-.newsletter-button:active .newsletter-button-image { content: url("{{ site.baseurl }}/assets/images/2-newsletter-button-pressed.png"); }
-
+.newsletter-button-image.button-default { position: relative; opacity: 1; }
 
 /* Mobile Display */
 @media (max-width: 500px) {
@@ -186,7 +193,9 @@ title: Front Desk
                     </div>
                     
                     <button id="newsletter-submit" class="newsletter-button" type="submit" aria-label="Send">
-                        <img class="newsletter-button-image" src="{{ site.baseurl }}/assets/images/2-newsletter-button-default.png" alt="Send">
+                        <img class="newsletter-button-image button-default" src="{{ site.baseurl }}/assets/images/2-newsletter-button-default.png" alt="Send">
+                        <img class="newsletter-button-image button-hover" src="{{ site.baseurl }}/assets/images/2-newsletter-button-hover.png" alt="" aria-hidden="true">
+                        <img class="newsletter-button-image button-pressed" src="{{ site.baseurl }}/assets/images/2-newsletter-button-pressed.png" alt="" aria-hidden="true">
                     </button>
                 </div>
             </div>
@@ -327,23 +336,65 @@ document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.getElementById("newsletter-email");
   const placeholder = document.querySelector(".newsletter-placeholder");
   const button = document.getElementById("newsletter-submit");
-  const buttonImage = document.querySelector(".newsletter-button-image");
   const message = document.getElementById("newsletter-message");
 
   const workerUrl =
     "https://newsletter-signup.mail-hopes-john.workers.dev/";
 
   /*
-   * Hide the custom placeholder when the field
-   * receives focus.
+   * Preload button state images
+   */
+  const buttonImages = {
+    default: button.querySelector('.button-default'),
+    hover: button.querySelector('.button-hover'),
+    pressed: button.querySelector('.button-pressed')
+  };
+
+  /*
+   * Button state management
+   */
+  function setButtonState(state) {
+    Object.keys(buttonImages).forEach(key => {
+      if (buttonImages[key]) {
+        buttonImages[key].style.opacity = key === state ? '1' : '0';
+      }
+    });
+  }
+
+  // Hover effects
+  button.addEventListener('mouseenter', function () {
+    if (!button.disabled) {
+      setButtonState('hover');
+    }
+  });
+
+  button.addEventListener('mouseleave', function () {
+    setButtonState('default');
+  });
+
+  // Press effects
+  button.addEventListener('mousedown', function () {
+    if (!button.disabled) {
+      setButtonState('pressed');
+    }
+  });
+
+  button.addEventListener('mouseup', function () {
+    if (!button.disabled) {
+      // Check if mouse is still over button
+      setButtonState('hover');
+    }
+  });
+
+  /*
+   * Hide the custom placeholder when the field receives focus.
    */
   emailInput.addEventListener("focus", function () {
     placeholder.style.display = "none";
   });
 
   /*
-   * Bring the placeholder back if the user leaves
-   * the field empty.
+   * Bring the placeholder back if the user leaves the field empty.
    */
   emailInput.addEventListener("blur", function () {
     if (!emailInput.value.trim()) {
@@ -357,9 +408,6 @@ document.addEventListener("DOMContentLoaded", function () {
   button.addEventListener("click", async function () {
     const email = emailInput.value.trim();
 
-    /*
-     * Basic client-side validation.
-     */
     if (!email || !emailInput.checkValidity()) {
       message.textContent = "Please Enter a Valid Email Address.";
       message.classList.add("visible");
@@ -367,10 +415,8 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    /*
-     * Prevent duplicate clicks while submitting.
-     */
     button.disabled = true;
+    setButtonState('default');
 
     message.classList.remove("visible");
     message.textContent = "";
@@ -378,11 +424,9 @@ document.addEventListener("DOMContentLoaded", function () {
     try {
       const response = await fetch(workerUrl, {
         method: "POST",
-
         headers: {
           "Content-Type": "application/json"
         },
-
         body: JSON.stringify({
           email: email
         })
@@ -393,30 +437,19 @@ document.addEventListener("DOMContentLoaded", function () {
       if (data.success && data.status === "added") {
         message.textContent = "Added to the Mailing List!";
         message.classList.add("visible");
-
         emailInput.value = "";
         placeholder.style.display = "none";
-
-      } else if (
-        data.success &&
-        data.status === "already_subscribed"
-      ) {
+      } else if (data.success && data.status === "already_subscribed") {
         message.textContent = "This Address is Already Subscribed.";
         message.classList.add("visible");
-
       } else {
-        message.textContent =
-          "Something Went Wrong. Please Try Again.";
+        message.textContent = "Something Went Wrong. Please Try Again.";
         message.classList.add("visible");
       }
-
     } catch (error) {
       console.error("Newsletter signup error:", error);
-
-      message.textContent =
-        "Something Went Wrong. Please Try Again.";
+      message.textContent = "Something Went Wrong. Please Try Again.";
       message.classList.add("visible");
-
     } finally {
       button.disabled = false;
     }
