@@ -107,11 +107,11 @@ title: Front Desk
 .newsletter-background {
   position: absolute;
   inset: 0;
-  /* Remove: width: 1067px; height: 219px; */
   width: 100%;
   height: 100%;
   display: block;
   pointer-events: none;
+  object-fit: fill; /* Add this to stretch the image */
 }
 .newsletter-form          {  position: absolute;  inset: 0; }
 .newsletter-input-wrapper {  position: absolute;  left: 57px;  top: 120px;  width: 736px;  height: 53px; }
@@ -123,9 +123,8 @@ title: Front Desk
 
 .newsletter-button-image {
   display: block;
-  /* Remove fixed dimensions - let it fill the button */
-  width: 100%;
-  height: 100%;
+  width: 211px;
+  height: 73px;
   pointer-events: none;
 }
 
