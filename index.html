@@ -385,36 +385,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-/*
- * Hide the custom placeholder when the field receives focus and clear any error messages.
- */
-emailInput.addEventListener("focus", function () {
-  placeholder.style.display = "none";
-  // Clear any existing error messages
-  if (message.classList.contains("visible")) {
-    message.classList.remove("visible");
-    message.textContent = "";
-  }
-});
+  /*
+   * Hide the custom placeholder when the field receives focus.
+   */
+  emailInput.addEventListener("focus", function () {
+    placeholder.style.display = "none";
+  });
 
-/*
- * Bring the placeholder back if the user leaves the field empty.
- */
-emailInput.addEventListener("blur", function () {
-  if (!emailInput.value.trim()) {
-    placeholder.style.display = "";
-  }
-});
-
-/*
- * Clear error message when user starts typing
- */
-emailInput.addEventListener("input", function () {
-  if (message.classList.contains("visible")) {
-    message.classList.remove("visible");
-    message.textContent = "";
-  }
-});
+  /*
+   * Bring the placeholder back if the user leaves the field empty.
+   */
+  emailInput.addEventListener("blur", function () {
+    if (!emailInput.value.trim()) {
+      placeholder.style.display = "";
+    }
+  });
 
   /*
    * Submit newsletter signup.
