@@ -6,9 +6,37 @@ title: Front Desk
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/updates.css">
 
 <style>
-    
-.social-buttons     { display: flex; justify-content: flex-start; gap: 10px; }
-.newsletter-trigger {  position: relative;  display: inline-block;  top: -12px; left:90px }
+
+/* Container with flex wrap */
+.social-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.social-buttons     {     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+ }
+
+/* Newsletter section - contains both trigger and widget */
+.newsletter-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.newsletter-trigger {
+    position: relative;
+    display: inline-block;
+    top: -12px; /* Extends above the baseline */
+    margin-bottom: -12px; /* Compensates for the negative top */
+    z-index: 1;
+}
+
 .social-buttons img { }
 .text-box h2.h2alt  { color: var(--button-brown); line-height: 1; margin-top:-5px; }
 .topped-image       { display: block; width: 70%; max-width: 100%; height: auto; margin: -28px auto; border: none; }
@@ -79,44 +107,45 @@ title: Front Desk
 .vintage-poster1 { display: block; width: 50%; margin: 0 auto; border: none; }
 
 
+
 /* =======Newsletter Widget============= */
-    
+
 .newsletter-wrapper {
-  --newsletter-width: 400px;
-  position: relative;
-  height: 20px;
-  overflow: visible; /* Changed from hidden to visible */
-  left: 170px;
-  margin-top: -30px; /* Adjust this to overlap/gap as needed */
-  z-index: 10;
+    --newsletter-width: 400px;
+    position: relative;
+    width: var(--newsletter-width);
+    height: calc(var(--newsletter-width) * 219 / 1067);
+    margin-top: -10px; /* Adjust overlap with trigger image */
+    z-index: 10;
 }
 
-.newsletter-widget {  position: absolute;  width: 380px;  height: 37px;}
-.newsletter-background {  position: absolute;  inset: 0;  width: 100%;  height: 100%;  display: block;  pointer-events: none; }
-.newsletter-form          {  position: absolute;  inset: 0; }
-.newsletter-input-wrapper { position: absolute;  left: 17px;  top: 28px;  width: 215px;  height: 23px; }
-.newsletter-email         {  position: absolute;  left: 0;  top: 0;  width: 100%;  height: 100%;  box-sizing: border-box;  border: none;  outline: none;  background: transparent;  padding: 0;  font: inherit;  color: #000;  z-index: 2; }
-.newsletter-placeholder   {  position: absolute; left: 0; top: 6px; width: 60%; height: auto; object-fit: contain; object-position: left center; pointer-events: none; z-index: 3; }
-.newsletter-message       {  position: absolute;  inset: 0;  display: none;  align-items: center;  z-index: 4;  font-family: inherit;  font-size: 18px;  font-weight: normal;  color: #000;  white-space: nowrap; }
-.newsletter-message.visible {  display: flex; }
+.newsletter-widget { position: absolute; width: 380px; height: 37px; }
+.newsletter-background { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
+.newsletter-form { position: absolute; inset: 0; }
+.newsletter-input-wrapper { position: absolute; left: 17px; top: 28px; width: 215px; height: 23px; }
+.newsletter-email { position: absolute; left: 0; top: 0; width: 100%; height: 100%; box-sizing: border-box; border: none; outline: none; background: transparent; padding: 0; font: inherit; color: #000; z-index: 2; }
+.newsletter-placeholder { position: absolute; left: 0; top: 6px; width: 60%; height: auto; object-fit: contain; object-position: left center; pointer-events: none; z-index: 3; }
+.newsletter-message { position: absolute; inset: 0; display: none; align-items: center; z-index: 4; font-family: inherit; font-size: 18px; font-weight: normal; color: #000; white-space: nowrap; }
+.newsletter-message.visible { display: flex; }
 
 .newsletter-button {
-  position: absolute;
-  left: 237px;  /* 820 * (400/1067) ≈ 307 */
-  top: 27px;    /* 110 * (400/1067) ≈ 41 */
-  width: 62px;  /* 211 * (400/1067) ≈ 79 */
-  height: 27px; /* 73 * (400/1067) ≈ 27 */
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  z-index: 5;
+    position: absolute;
+    left: 237px;
+    top: 27px;
+    width: 62px;
+    height: 27px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 5;
 }
 
-.newsletter-button-image {  display: block;  width: 100%; pointer-events: none; }
-.newsletter-button:hover .newsletter-button-image {  content: url("{{ site.baseurl }}/assets/images/2-newsletter-button-hover.png"); }
-.newsletter-button:active .newsletter-button-image {  content: url("{{ site.baseurl }}/assets/images/2-newsletter-button-pressed.png"); }
+.newsletter-button-image { display: block; width: 100%; pointer-events: none; }
+.newsletter-button:hover .newsletter-button-image { content: url("{{ site.baseurl }}/assets/images/2-newsletter-button-hover.png"); }
+.newsletter-button:active .newsletter-button-image { content: url("{{ site.baseurl }}/assets/images/2-newsletter-button-pressed.png"); }
+
 
 /* Mobile Display */
 @media (max-width: 500px) {
@@ -141,7 +170,21 @@ title: Front Desk
     .newsletter-widget { width: 100%; height: auto; aspect-ratio: 1067 / 219; }
     .newsletter-background { width: 100%; height: 100%; }
     .newsletter-form { transform-origin: top left;  transform: scale(calc(100vw / 1067)); width: 1067px; height: 219px; }
+
+    .social-buttons-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
+    .newsletter-section {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .newsletter-wrapper {
+        --newsletter-width: min(400px, 100%);
+    }
+
 }
 </style>
 
@@ -161,33 +204,37 @@ title: Front Desk
         </div>
     </div>
 
-<div class="social-buttons">
-    <a href="https://www.facebook.com/profile.php?id=61591873812707" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/1-fb.png" alt="Facebook" style="height: 40px; ">
-    </a>
-    <a href="https://www.amazon.com/Agency-Grimm-10541-Snooze-Button/dp/B0H8B4CKYR/" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/1-amazon.png" alt="Amazon" style="height: 40px; ">
-    </a>
-    <a class="newsletter-trigger">
-        <img src="{{ site.baseurl }}/assets/images/2-newsletter-pre.png" alt="Newsletter" style="height: 20px; ">
-    </a>
-</div>
+<div class="social-buttons-container">
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/profile.php?id=61591873812707" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/1-fb.png" alt="Facebook" style="height: 40px;">
+        </a>
+        <a href="https://www.amazon.com/Agency-Grimm-10541-Snooze-Button/dp/B0H8B4CKYR/" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/1-amazon.png" alt="Amazon" style="height: 40px;">
+        </a>
+    </div>
 
-<div class="newsletter-wrapper">
-    <div class="newsletter-widget">
-      <img class="newsletter-background" src="{{ site.baseurl }}/assets/images/2-newsletter-background.png" alt="">
-    
-      <div class="newsletter-form">
-        <div class="newsletter-input-wrapper">
-          <input id="newsletter-email" class="newsletter-email" type="email" autocomplete="email" aria-label="Your email address">
-          <img class="newsletter-placeholder" src="{{ site.baseurl }}/assets/images/2-newsletter-your-email-address.png" alt="" aria-hidden="true">
-          <div id="newsletter-message" class="newsletter-message" aria-live="polite"></div>
+    <div class="newsletter-section">
+        <a class="newsletter-trigger">
+            <img src="{{ site.baseurl }}/assets/images/2-newsletter-pre.png" alt="Newsletter" style="height: 20px;">
+        </a>
+        <div class="newsletter-wrapper">
+            <div class="newsletter-widget">
+                <img class="newsletter-background" src="{{ site.baseurl }}/assets/images/2-newsletter-background.png" alt="">
+                
+                <div class="newsletter-form">
+                    <div class="newsletter-input-wrapper">
+                        <input id="newsletter-email" class="newsletter-email" type="email" autocomplete="email" aria-label="Your email address">
+                        <img class="newsletter-placeholder" src="{{ site.baseurl }}/assets/images/2-newsletter-your-email-address.png" alt="" aria-hidden="true">
+                        <div id="newsletter-message" class="newsletter-message" aria-live="polite"></div>
+                    </div>
+                    
+                    <button id="newsletter-submit" class="newsletter-button" type="submit" aria-label="Send">
+                        <img class="newsletter-button-image" src="{{ site.baseurl }}/assets/images/2-newsletter-button-default.png" alt="Send">
+                    </button>
+                </div>
+            </div>
         </div>
-    
-        <button id="newsletter-submit" class="newsletter-button" type="submit" aria-label="Send">
-          <img class="newsletter-button-image" src="{{ site.baseurl }}/assets/images/2-newsletter-button-default.png" alt="Send">
-        </button>
-      </div>
     </div>
 </div>
 
