@@ -72,70 +72,122 @@ populateEntries() {
 
     displayEncyclopediaEntry(entry) {
         const rightPanel = document.getElementById('encyclopedia-display');
-
+    
         // Reset scroll position to top
         rightPanel.scrollTop = 0;
         
         // Create the encyclopedia content
         const encyclopediaContent = document.createElement('div');
         encyclopediaContent.className = 'encyclopedia-content';
-
+    
         // Create entry name (right-aligned header)
         const nameDiv = document.createElement('div');
         nameDiv.className = 'entry-name';
         nameDiv.textContent = entry.name;
         encyclopediaContent.appendChild(nameDiv);
-
-        // Create subtype section (if exists)
+    
+        // Create subspecies (if exists) - italicized, right-aligned, no label
+        if (entry.subspecies) {
+            const subspeciesDiv = document.createElement('div');
+            subspeciesDiv.className = 'entry-subspecies';
+            subspeciesDiv.textContent = entry.subspecies;
+            encyclopediaContent.appendChild(subspeciesDiv);
+        } else {
+            // Add divider if no subspecies
+            const divider = document.createElement('div');
+            divider.style.borderBottom = '2px solid #333';
+            divider.style.marginBottom = '8px';
+            encyclopediaContent.appendChild(divider);
+        }
+    
+        // Create subtype and size on same line
+        const subtypeSizeLine = document.createElement('div');
+        subtypeSizeLine.className = 'entry-field-inline';
+        
         if (entry.subtype) {
-            const subtypeSection = document.createElement('div');
-            subtypeSection.className = 'entry-section';
-
-            const subtypeLabel = document.createElement('div');
+            const subtypeLabel = document.createElement('span');
             subtypeLabel.className = 'entry-field-label';
-            subtypeLabel.textContent = 'Subtype:';
-
-            const subtypeContent = document.createElement('div');
+            subtypeLabel.textContent = 'Subtype: ';
+            
+            const subtypeContent = document.createElement('span');
             subtypeContent.className = 'entry-field-content';
             subtypeContent.textContent = entry.subtype;
-
-            subtypeSection.appendChild(subtypeLabel);
-            subtypeSection.appendChild(subtypeContent);
-            encyclopediaContent.appendChild(subtypeSection);
+            
+            subtypeSizeLine.appendChild(subtypeLabel);
+            subtypeSizeLine.appendChild(subtypeContent);
         }
-
-        // Create distribution section
-        const distributionSection = document.createElement('div');
-        distributionSection.className = 'entry-section';
-
-        const distributionLabel = document.createElement('div');
+        
+        if (entry.size) {
+            if (entry.subtype) {
+                // Add spacing between subtype and size
+                const spacer = document.createTextNode('   ');
+                subtypeSizeLine.appendChild(spacer);
+            }
+            
+            const sizeLabel = document.createElement('span');
+            sizeLabel.className = 'entry-field-label';
+            sizeLabel.textContent = 'Size: ';
+            
+            const sizeContent = document.createElement('span');
+            sizeContent.className = 'entry-field-content';
+            sizeContent.textContent = entry.size;
+            
+            subtypeSizeLine.appendChild(sizeLabel);
+            subtypeSizeLine.appendChild(sizeContent);
+        }
+        
+        encyclopediaContent.appendChild(subtypeSizeLine);
+    
+        // Create distribution section (inline)
+        const distributionDiv = document.createElement('div');
+        distributionDiv.className = 'entry-field-inline';
+        
+        const distributionLabel = document.createElement('span');
         distributionLabel.className = 'entry-field-label';
-        distributionLabel.textContent = 'Distribution:';
-
-        const distributionContent = document.createElement('div');
+        distributionLabel.textContent = 'Distribution: ';
+        
+        const distributionContent = document.createElement('span');
         distributionContent.className = 'entry-field-content';
         distributionContent.textContent = entry.distribution;
-
-        distributionSection.appendChild(distributionLabel);
-        distributionSection.appendChild(distributionContent);
-        encyclopediaContent.appendChild(distributionSection);
-
-        // Create description section
-        const descriptionSection = document.createElement('div');
-        descriptionSection.className = 'entry-section';
-
-        const descriptionLabel = document.createElement('div');
+        
+        distributionDiv.appendChild(distributionLabel);
+        distributionDiv.appendChild(distributionContent);
+        encyclopediaContent.appendChild(distributionDiv);
+    
+        // Create description section (inline)
+        const descriptionDiv = document.createElement('div');
+        descriptionDiv.className = 'entry-field-inline';
+        
+        const descriptionLabel = document.createElement('span');
         descriptionLabel.className = 'entry-field-label';
-        descriptionLabel.textContent = 'Description:';
-
-        const descriptionContent = document.createElement('div');
+        descriptionLabel.textContent = 'Description: ';
+        
+        const descriptionContent = document.createElement('span');
         descriptionContent.className = 'entry-field-content';
         descriptionContent.textContent = entry.description;
-
-        descriptionSection.appendChild(descriptionLabel);
-        descriptionSection.appendChild(descriptionContent);
-        encyclopediaContent.appendChild(descriptionSection);
-
+        
+        descriptionDiv.appendChild(descriptionLabel);
+        descriptionDiv.appendChild(descriptionContent);
+        encyclopediaContent.appendChild(descriptionDiv);
+    
+        // Create weaknesses section (if exists, inline)
+        if (entry.weaknesses) {
+            const weaknessesDiv = document.createElement('div');
+            weaknessesDiv.className = 'entry-field-inline';
+            
+            const weaknessesLabel = document.createElement('span');
+            weaknessesLabel.className = 'entry-field-label';
+            weaknessesLabel.textContent = 'Weaknesses: ';
+            
+            const weaknessesContent = document.createElement('span');
+            weaknessesContent.className = 'entry-field-content';
+            weaknessesContent.textContent = entry.weaknesses;
+            
+            weaknessesDiv.appendChild(weaknessesLabel);
+            weaknessesDiv.appendChild(weaknessesContent);
+            encyclopediaContent.appendChild(weaknessesDiv);
+        }
+    
         // Clear right panel and add new content
         rightPanel.innerHTML = '';
         rightPanel.appendChild(encyclopediaContent);
