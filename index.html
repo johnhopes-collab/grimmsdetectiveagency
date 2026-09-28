@@ -79,9 +79,8 @@ title: Front Desk
 
 
 /* =======Newsletter Widget============= */
-
-.newsletter-wrapper       { position: relative; max-width: 300px; margin: -10px auto 20px; }
-.newsletter-widget        { position: relative; width: 1067px; height: 219px; max-width: 100%; overflow: hidden; margin: 0 auto; }
+    
+.newsletter-widget        {  position: relative;  width: 300px;  height: calc(300px * 219 / 1067);  overflow: hidden;  margin: 0 auto; }
 .newsletter-background    { position: absolute;  inset: 0;  width: 1067px;  height: 219px;  display: block;  pointer-events: none; }
 .newsletter-form          {  position: absolute;  inset: 0; }
 .newsletter-input-wrapper {  position: absolute;  left: 57px;  top: 120px;  width: 736px;  height: 53px; }
@@ -160,7 +159,6 @@ title: Front Desk
     </a>
 </div>
 
-<div class="newsletter-wrapper">
     <div class="newsletter-widget">
       <img  class="newsletter-background" src="{{ site.baseurl }}/assets/images/2-newsletter-bg.png"  alt=""  >
     
@@ -176,7 +174,6 @@ title: Front Desk
         </button>
       </div>
     </div>
-</div>
 
 <br>
 <hr>
