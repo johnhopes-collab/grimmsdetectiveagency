@@ -193,7 +193,7 @@
       "subtype": null,
       "size": "Typically 45'' from head to tail",
       "distribution": "Throughout the Eurasian Continent",
-      "description": "Large reptilian or serpentine entities of uncertain phylogenetic origin. Morphology varies considerably across cultural regions: European specimens are typically winged, fire-breathing, and quadrupedal; East Asian forms are often aquatic, wingless, and associated with weather phenomena. Behavior ranges from dormant hoarding to active predation. The near-universal distribution of dragon mythology, including among cultures with no historical contact, raises unresolved questions about convergent folklore evolution or a common Paleolithic origin.",
+      "description": "Large reptilian or serpentine entities of uncertain phylogenetic origin. Morphology varies considerably across cultural regions: European specimens are typically winged, fire-breathing, and quadrupedal; East Asian forms are often aquatic, wingless, and associated with weather phenomena. Behavior ranges from dormant hoarding to active predation. The near-universal distribution of dragon mythology, including among cultures with no historical contact, raises unresolved questions about convergent Paleolithic origin.",
       "weaknesses": "The belly or underside is often reported as the least-protected part of a dragon, especially because its back is covered in scales or armor. Monster hunters may need to get past the dragon's teeth and fire to strike a vulnerable area. Dragons are also historically very receptive to sacramentals and prayer, with St. George's legend being the famous example.",
       "subentries": []
     },
@@ -217,7 +217,7 @@
       "subtype": null,
       "size": "3-4 ft",
       "distribution": "Scandinavia and Germanic Europe; associated with mountains, caves, and subterranean forges",
-      "description": "Short-statured subterranean artisans of Norse and Germanic myth, renowned for metallurgy, stonework, and the forging of legendary weapons and artifacts. Formerly believed to be indistinguishable from dark elves, with whom they share habitat and temperament. Dwarfs are frequently described as greedy, capable of great craftsmanship under contract, and dangerous if cheated. Notable cultural exports include Mjölnir, Draupnir, and various cursed treasures. Contemporary sightings are exceedingly rare and questionably attributed to coincident mining populations.",
+      "description": "Short-statured subterranean artisans of Norse and Germanic myth, renowned for metallurgy, stonework, and the forging of legendary weapons and artifacts. Formerly believed to be indistinguishable from dark elves, with whom they share habitat and temperament. Dwarfs are frequently described as greedy, capable of great craftsmanship under contract, and dangerous if cheated. Notable cultural exports include Mjölnir, Draupnir, and various cursed treasures.",
       "weaknesses": "Though Dwarfs are typically sturdy as rock and physically impenetrable, they are extremely proud and greedy creatures. A Dwarf's cleverness may be circumvented by driving it into a rage by insulting its handicraft, or goaded into submission with the promise of gold or jewels.",
       "subentries": []
     },
@@ -229,7 +229,7 @@
       "subtype": null,
       "size": "10-30 ft",
       "distribution": "Global; prominent in European, Near Eastern, and indigenous American traditions",
-      "description": "A polyphyletic grouping of oversized humanoid beings, ranging from dim-witted ogres to primordial cosmic entities. European giants are frequently associated with the construction of megalithic structures and dramatic landscape features, implying a now-extinct engineering capacity. In Scandinavian tradition, the jötnar are primordial forces predating and opposing the gods. Most populations are reported as extinct or diminished, often due to divine or human intervention. The dietary preference for humans, while frequently alleged, is inconsistently documented.",
+      "description": "A polyphyletic grouping of oversized humanoid beings, ranging from dim-witted ogres to primordial cosmic entities. European giants are frequently associated with the construction of megalithic structures and dramatic landscape features, implying a now-extinct engineering capacity. In Scandinavian tradition, the jötnar are primordial forces predating and opposing the gods. Most populations are reported as extinct or diminished, often due to divine or human intervention. The dietary preference for humans is frequently attested.",
       "weaknesses": "Their dim-witted stupidity and clumsiness. However, if a person is caught within their grasp, all bets are off.",
       "subentries": []
     },
@@ -241,7 +241,7 @@
       "subtype": null,
       "size": "2-3 ft (w/ hat)",
       "distribution": "Central and Northern Europe; originally Switzerland, the Alps, and Germany",
-      "description": "Small earth-dwelling entities associated with subterranean spaces, mineral deposits, and the guardianship of buried treasure. First systematically described by Paracelsus in the 16th century as earth elementals of the elemental classification system. Gnomes are reportedly capable of passing through solid earth as humans move through air. Modern garden statues represent a drastic departure from the reportedly serious and taciturn disposition of wild specimens. Authentic encounter reports are scarce and complicated by obvious ornamentation biases.",
+      "description": "Small earth-dwelling entities associated with subterranean spaces, mineral deposits, and the guardianship of buried treasure. First systematically described by Paracelsus in the 16th century as earth elementals of the elemental classification system. Gnomes are reportedly capable of passing through solid earth as humans move through air.",
       "weaknesses": "Gnomes have no attested weaknesses, though they remain susceptible to sacramentals, and their small size makes them easy to carry, throw, or punt.",
       "subentries": []
     },
@@ -433,7 +433,7 @@
       "subtype": null,
       "size": "5 ft",
       "distribution": "Europe; originally the Alps and surrounding regions, later reported across the continent",
-      "description": "Air elementals first described by Paracelsus in the 16th century, alongside gnomes, undines, and salamanders. Sylphs are reported as insubstantial, wind-associated beings of extreme beauty and no fixed physical form, residing in high-altitude environments. They are generally unreported in folklore predating Paracelsus, which has led to classification as a literary or alchemical invention that subsequently entered popular tradition. The term has been loosely applied to various aerial spirits, and contaminated by literary usage. Field verification remains impossible due to the difficulty of distinguishing sylphs from ordinary wind phenomena.",
+      "description": "Air elementals first described by Paracelsus in the 16th century, alongside gnomes, undines, and salamanders. Sylphs are reported as insubstantial, wind-associated beings of extreme beauty and no fixed physical form, residing in high-altitude environments. The term has been loosely applied to various aerial spirits, and contaminated by literary usage. Field verification remains difficult due to the difficulty of distinguishing sylphs from ordinary wind phenomena.",
       "weaknesses": null,
       "subentries": []
     },
@@ -457,7 +457,7 @@
       "subtype": null,
       "size": "5-6 ft",
       "distribution": "Eastern and Southern Europe, particularly the Balkans, Greece, and Romania; now reported globally",
-      "description": "Revenant blood-drinkers, typically originating from improperly buried corpses or individuals who died under cursed circumstances. Reported traits include nocturnal activity, aversion to sunlight, garlic, and Christian symbols, and the capacity to drain life from the living. Standard elimination procedures involve staking, decapitation, or cremation, with extensive regional variation. The modern vampire is heavily contaminated by literary and cinematic popularization; field accounts from the Balkans describe bloated, ruddy corpses rather than pale aristocrats. Historical mass panics, such as those in 18th-century Serbia, provide the most substantial documentation of alleged outbreaks.",
+      "description": "Revenant blood-drinkers, typically originating from improperly buried corpses or individuals who died under cursed circumstances. Reported traits include nocturnal activity, aversion to sunlight, garlic, and Christian symbols, and the capacity to drain life from the living. Standard elimination procedures involve staking, decapitation, or cremation, with extensive regional variation. The modern vampire is heavily contaminated by literary and cinematic popularization; field accounts from the Balkans describe bloated, ruddy corpses rather than pale aristocrats. Historical mass panics, such as those in 18th-century Serbia, provide the most substantial documentation of outbreaks.",
       "weaknesses": "Crosses, sacramentals in general, and sunlight. They may also not enter homes without explicit invitation.",
       "subentries": []
     },
@@ -469,7 +469,7 @@
       "subtype": null,
       "size": "3-4 ft",
       "distribution": "Europe, especially England, Germany, and the Alpine regions; forests and wilderness areas",
-      "description": "Wild or sylvan humanoids, typically depicted as nude, hirsute, and bearing a club or branch, representing the untamed forest beyond human civilization. The woodwose (also 'wodewose' or 'wild man') appears widely in medieval art, heraldry, and festival costume, though genuine encounter reports are scarce and late. The Green Man is a related but distinct motif, usually a foliate human face or head composed of leaves and vines, almost exclusively known from church carvings and architectural ornament. Researchers debate whether the Green Man represents an authentic folkloric entity or a purely decorative motif. The category is further complicated by probable conflation with bear-men, forest hermits, and feral humans.",
+      "description": "Wild or sylvan humanoids, typically depicted as nude, hirsute, and bearing a club or branch, representing the untamed forest beyond human civilization. The woodwose (also 'wodewose' or 'wild man') appears widely in medieval art, heraldry, and festival costume, though genuine encounter reports are scarce and late. The Green Man is a related but distinct motif, usually a foliate human face or head composed of leaves and vines, profusely represented in medieval church carvings and architectural ornament. The category is further complicated by probable conflation with bear-men, forest hermits, and feral humans.",
       "weaknesses": null,
       "subentries": []
     }    
