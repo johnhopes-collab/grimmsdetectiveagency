@@ -401,6 +401,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+/*
+ * Clear error message when user starts typing or focuses the input
+ */
+emailInput.addEventListener("input", function () {
+  if (message.classList.contains("visible")) {
+    message.classList.remove("visible");
+    message.textContent = "";
+  }
+});
+
+emailInput.addEventListener("focus", function () {
+  placeholder.style.display = "none";
+  // Also clear error message on focus
+  if (message.classList.contains("visible")) {
+    message.classList.remove("visible");
+    message.textContent = "";
+  }
+});
+
   /*
    * Submit newsletter signup.
    */
