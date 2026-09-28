@@ -131,24 +131,16 @@ title: Front Desk
     .retro-text-tab .tab-date { display: inline; text-align: right; }
     .vintage-poster1 { width: 90%; }
     .note-block      { display: none; }
-    .newsletter-widget { width: 100%; height: auto; aspect-ratio: 1067 / 219; }
+    .newsletter-widget { width: 100%; height: 33px; aspect-ratio: 1067 / 219; }
     .newsletter-background { width: 100%; height: 100%; }
-    .newsletter-form { transform-origin: top left;  transform: scale(calc(100vw / 1067)); width: 1067px; height: 219px; }
+    .newsletter-form { transform-origin: top left;  width: 100%; height: 33px; }
 
-    .social-buttons-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .newsletter-section {
-        width: 100%;
-        max-width: 400px;
-    }
-    
-    .newsletter-wrapper {
-        --newsletter-width: min(400px, 100%);
-    }
-
+    .social-buttons-container {  flex-direction: column;  align-items: flex-start; }
+    .newsletter-section       { width: 100%;  max-width: 400px; margin: 20px 0 40px; }
+    .newsletter-wrapper       { --newsletter-width: min(400px, 100%); }
+    .newsletter-input-wrapper { width: 220px; }
+    .newsletter-placeholder   { width: 70%; }
+    .newsletter-button        { left: 246px; }
 }
 </style>
 
