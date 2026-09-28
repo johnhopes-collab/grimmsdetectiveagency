@@ -7,37 +7,10 @@ title: Front Desk
 
 <style>
 
-/* Container with flex wrap */
-.social-buttons-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.social-buttons     {     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
- }
-
-/* Newsletter section - contains both trigger and widget */
-.newsletter-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.newsletter-trigger {
-    position: relative;
-    display: inline-block;
-    top: -14px; /* Extends above the baseline */
-    margin-bottom: -6px; /* Compensates for the negative top */
-    z-index: 1;
-    left: 68px;
-}
-
+.social-buttons-container {    display: flex;    flex-wrap: wrap;    align-items: flex-start;    gap: 20px; }
+.social-buttons     {     display: flex;    justify-content: flex-start;    align-items: center;    gap: 10px; }
+.newsletter-section {    position: relative;    display: flex;    flex-direction: column;    align-items: flex-start; }
+.newsletter-trigger {    position: relative;    display: inline-block;    top: -14px;    margin-bottom: -6px;    z-index: 1;    left: 85px; }
 .social-buttons img { }
 .text-box h2.h2alt  { color: var(--button-brown); line-height: 1; margin-top:-5px; }
 .topped-image       { display: block; width: 70%; max-width: 100%; height: auto; margin: -28px auto; border: none; }
@@ -45,8 +18,6 @@ title: Front Desk
 .note-block img     { display: block;   width: 200px; }
 
 .retro-text-wrapper { position: relative; max-width: 680px; margin: -10px auto 20px; }
-    
-
 .retro-text-tab {
     position: absolute;
     top: 0;
@@ -111,15 +82,7 @@ title: Front Desk
 
 /* =======Newsletter Widget============= */
 
-.newsletter-wrapper {
-    --newsletter-width: 400px;
-    position: relative;
-    width: var(--newsletter-width);
-    height: calc(var(--newsletter-width) * 219 / 1067);
-    margin-top: -12px; /* Adjust overlap with trigger image */
-    z-index: 10;
-}
-
+.newsletter-wrapper {    --newsletter-width: 400px;    position: relative;    width: var(--newsletter-width);    height: calc(var(--newsletter-width) * 219 / 1067);    margin-top: -12px;    z-index: 10; }
 .newsletter-widget { position: absolute; width: 370px; height: 32px; }
 .newsletter-background { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
 .newsletter-form { position: absolute; inset: 0; }
@@ -217,7 +180,7 @@ title: Front Desk
 
     <div class="newsletter-section">
         <a class="newsletter-trigger">
-            <img src="{{ site.baseurl }}/assets/images/2-newsletter-pre.png" alt="Newsletter" style="height: 20px;">
+            <img src="{{ site.baseurl }}/assets/images/2-newsletter-pre.png" alt="Newsletter" style="height: 17px;">
         </a>
         <div class="newsletter-wrapper">
             <div class="newsletter-widget">
