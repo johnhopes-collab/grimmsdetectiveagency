@@ -386,10 +386,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   /*
-   * Hide the custom placeholder when the field receives focus.
+   * Hide the custom placeholder when the field receives focus and clear any messages.
    */
   emailInput.addEventListener("focus", function () {
     placeholder.style.display = "none";
+    
+    // Clear any existing messages when user focuses to start typing
+    if (message.classList.contains("visible")) {
+      message.classList.remove("visible");
+      message.textContent = "";
+    }
   });
 
   /*
@@ -401,25 +407,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-/*
- * Clear error message when user starts typing or focuses the input
- */
-emailInput.addEventListener("input", function () {
-  if (message.classList.contains("visible")) {
-    message.classList.remove("visible");
-    message.textContent = "";
-  }
-});
-
-emailInput.addEventListener("focus", function () {
-  placeholder.style.display = "none";
-  // Also clear error message on focus
-  if (message.classList.contains("visible")) {
-    message.classList.remove("visible");
-    message.textContent = "";
-  }
-});
-
   /*
    * Submit newsletter signup.
    */
@@ -429,7 +416,7 @@ emailInput.addEventListener("focus", function () {
     if (!email || !emailInput.checkValidity()) {
       message.textContent = "Please Enter a Valid Email Address.";
       message.classList.add("visible");
-      emailInput.focus();
+      emailInput.blur(); // Remove focus so no cursor shows
       return;
     }
 
@@ -456,18 +443,22 @@ emailInput.addEventListener("focus", function () {
         message.textContent = "Added to the Mailing List!";
         message.classList.add("visible");
         emailInput.value = "";
-        placeholder.style.display = "none";
+        emailInput.blur(); // Remove focus
+        placeholder.style.display = ""; // Show placeholder since field is empty
       } else if (data.success && data.status === "already_subscribed") {
         message.textContent = "This Address is Already Subscribed.";
         message.classList.add("visible");
+        emailInput.blur(); // Remove focus
       } else {
         message.textContent = "Something Went Wrong. Please Try Again.";
         message.classList.add("visible");
+        emailInput.blur(); // Remove focus
       }
     } catch (error) {
       console.error("Newsletter signup error:", error);
       message.textContent = "Something Went Wrong. Please Try Again.";
       message.classList.add("visible");
+      emailInput.blur(); // Remove focus
     } finally {
       button.disabled = false;
     }
