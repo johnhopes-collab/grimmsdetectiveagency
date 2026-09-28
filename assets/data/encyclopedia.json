@@ -438,6 +438,74 @@
       "subentries": []
     },
     {
+      "id": "troll",
+      "displayText": "Troll",
+      "name": "Troll",
+      "subspecies": "Gigantus",
+      "subtype": null,
+      "size": null,
+      "distribution": "Northern Europe",
+      "description": "A class of giant often associated with rock, dimwitted, and consciously pagan.",
+      "weaknesses": "Typically the only way to defeat a troll is through trickery, due to their dim intelligence and irascable nature. Sunlight instantly and often permanently petrifies a troll. Additionally, sacramentals remain effective, especially blessed church bells. Large enough bells are said to be able to instantly turn trolls to stone.",
+      "subentries": [
+        {
+          "id": "hilltroll",
+          "displayText": "→ Hill Troll",
+          "name": "Hill Troll",
+          "subspecies": "Gigantus collis",
+          "subtype": "Troll",
+          "size": "10–12 ft",
+          "distribution": "Northern Europe; rolling hills",
+          "description": "The smallest of the "true" giants. They are extremely dense, with skin like packed clay and hair like dry grass. They are often stooped, with arms that reach past their knees, perfect for hauling boulders.",
+          "weaknesses": null
+        },
+        {
+          "id": "bauershilltroll",
+          "displayText": "→ Bauer's Hill Troll",
+          "name": "Bauer's Hill Troll",
+          "subspecies": "Gigantus collis Bauericus",
+          "subtype": "Troll",
+          "size": "8-12 ft",
+          "distribution": "Northern Europe; rolling hills, moorlands, and hollow fairy mounds",
+          "description": "Distinctly 'fleshy' but distorted. Huge, pendulous noses (traditionally used to smell gold or Christian blood), thick limbs, and skin like cured leather. They often have wild, haystack-like hair. They are the 'scavengers' of the giant world. In folklore, they are famous for stealing from farms, not out of a grand plan but because they are hungry and curious.",
+          "weaknesses": null
+        },
+        {
+          "id": "foresttroll",
+          "displayText": "→ Forest Troll",
+          "name": "Forest Troll",
+          "subspecies": "Gigantus kittelensis",
+          "subtype": "Troll",
+          "size": "20-40 ft",
+          "distribution": "Northern Europe; rolling hills, deep forest",
+          "description": "Massive and often possessing a tail that looks like a bundle of dead sticks. The kittelensis does not possess standard skin. Its epidermis is a thick, cork-like substance that supports the growth of Lichenes and Bryophyta. A mature specimen can support an entire micro-ecosystem of squirrels and owls on its shoulders. They are the masters of the utmark (the wilderness), known to mimic trees so perfectly that a logger might sink an axe into their leg before realizing his mistake. Named in honor of the nautralist T. Kittelsen, whose 'surprising, if somewhat harrowing, sketches from the 1880s provided the first accurate morphology of the arboreal-mimic types.'",
+          "weaknesses": null
+        },
+        {
+          "id": "mountaintroll",
+          "displayText": "→ Mountain Troll",
+          "name": "Mountain Troll",
+          "subspecies": "Gigantus antiquus",
+          "subtype": "Troll",
+          "size": "50+ ft",
+          "distribution": "Northern Europe; mounanous areas",
+          "description": "The 'World-Builders' from Norse myth (like Ymir). At these heights, taxonomical representation tends to overlap with giants. Also known as the Mountain Giant.",
+          "weaknesses": null
+        },
+        {
+          "id": "seatroll",
+          "displayText": "→ Sea Troll",
+          "name": "Sea Troll",
+          "subspecies": "Gigantus maris",
+          "subtype": "Troll",
+          "size": "15-30 ft",
+          "distribution": "Scandinavia; fjords",
+          "description": "A rubbery, cetacean-like hide covered in barnacles and long strands of bladderwrack. They often have multiple limbs or vestigial heads, a common feature in the weirder coastal troll legends. They inhabit the 'Liminal Zones' (where the sea meets the cliffs). They are the only troll species documented to be able to withstand the sun, provided they remain partially submerged in the cold brine.",
+          "weaknesses": null
+        }
+      ]
+    },
+    {
       "id": "undines",
       "displayText": "Undines",
       "name": "Undines",
