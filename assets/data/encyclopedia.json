@@ -7,7 +7,7 @@
       "subspecies": "Vitis guardianus",
       "subtype": null,
       "size": "4-7'', remarkably varied",
-      "distribution": "Global; regional variants documented across Eurasia, Africa, and the Americas",
+      "distribution": "Global",
       "description": "A paraphyletic grouping of humanoid entities exhibiting facultative or involuntary zoomorphism, including lycanthropes, skin-changers, and other therianthropic forms. Classification remains contentious due to high phenotypic variability, unreliable eyewitness accounts, and the tendency of specimens to revert to baseline human morphology under observation. Often associated with lunar cycles, inherited curses, or ritual transmission.",
       "weaknesses": "In many cases, such creatures are susceptible to the usual means of disposing of or deterring beasts, though those beast-folk who are so under the compulsion of a curse, such as werewolf, may be impervious to all but specific substances outlined in the setting of their curse. Without knowledge of the specific curse and its circumstances, it may be impossible to physically overpower such a creature.",
       "subentries": []
@@ -19,7 +19,7 @@
       "subspecies": null,
       "subtype": null,
       "size": "4-7''",
-      "distribution": "Northern England, particularly Lancashire and Yorkshire; also reported in the Scottish Borders",
+      "distribution": "Northern England",
       "description": "A catch-all term for English ambivalent or malevolent solitary sprites. The name is typically applied to encountered sprites when they exhibit a malevolent nature. Morphology is highly variable. The 1902 Saga-book of the Viking Club describes one specimen as 'a squat hairy man, strong as a six year old horse, and with arms almost as long as tacklepoles.' Other accounts describe more completely beast-like forms. The Boggart of Longar Hede, recorded in Yorkshire, was said to be a fearsome creature the size of a calf, with long shaggy hair and eyes like saucers. Behavioral patterns trend toward territorial antagonism: boggarts are blamed for spoiled food, overturned furniture, frightened livestock, and unexplained noises. Not to be confused with domestic hobgoblins, which are generally more benign.",
       "weaknesses": null,
       "subentries": []
@@ -31,7 +31,7 @@
       "subspecies": "Centaurus sylvianus",
       "subtype": null,
       "size": "4-7''",
-      "distribution": "Greece and surrounding Mediterranean, particularly Thessaly and Arcadia",
+      "distribution": "Greece and surrounding Mediterranean",
       "description": "Bipedal-equine chimeras endemic to the Hellenic biogeographic zone. Reported social structures range from feral raiding bands to isolated scholarly individuals, most notably the educator Chiron. Taxonomic placement remains unresolved due to dual morphology and the absence of viable specimens for dissection. Historically associated with uncivilized behavior, though this may reflect observer bias rather than actual ethology.",
       "weaknesses": null,
       "subentries": []
@@ -43,7 +43,7 @@
       "subspecies": "Faeicus generis",
       "subtype": null,
       "size": null,
-      "distribution": "Western and Northern Europe, especially Ireland, Scotland, Scandinavia, and Germany",
+      "distribution": "Western and Northern Europe",
       "description": "Alleged simulacra substituted for human infants by fairy agents. Frequently described as a 'fetch'—a bundle of sticks, wax effigy, or enchanted object simply glamoured into the appearance of the abducted child. Reported symptoms include failure to thrive, unusual vocalizations, precocious knowledge, and sudden behavioral change. Diagnosis historically unreliable and often confounded by infant mortality and congenital conditions.",
       "weaknesses": null,
       "subentries": []
@@ -67,7 +67,7 @@
       "subspecies": "Faeicus",
       "subtype": null,
       "size": null,
-      "distribution": "Western Europe, especially the British Isles, France, and Scandinavia",
+      "distribution": "Western Europe",
       "description": "A social taxon of fairies organized into hierarchical courts with formal protocols, seasonal processions, and treaty-like interactions with human populations. Includes both benevolent (Seelie) and malevolent (Unseelie) factions, though these categories are unstable and subject to political realignment. Encounters are governed by elaborate rules of hospitality, gift exchange, and prohibition, violation of which carries severe consequences.",
       "weaknesses": null,
       "subentries": [
@@ -78,7 +78,7 @@
           "subspecies": "Faeicus generis",
           "subtype":  "Courtly Fairies",
           "size": null,  
-          "distribution": "Scandinavia, particularly Norway, Sweden, Denmark, and Iceland",
+          "distribution": "Scandinavia, Germany",
           "description": "Secretive humanoid tribes of Scandinavia, historically associated with mounds, remote forests, and the realm of Álfheimr. Known for exceptional longevity, craftsmanship, and occasional abduction of humans for purposes ranging from labor to companionship. Populations are described as beautiful and luminous, though dangerous when offended. Modern sightings remain sparse and are complicated by high rates of misidentification with ordinary reclusive humans.",
           "weaknesses": null
         },
@@ -89,7 +89,7 @@
           "subspecies": "Faeicus generis",
           "subtype":  "Courtly Fairies",
           "size": null,  
-          "distribution": "Scandinavia, especially Norway and Sweden; forested and mountainous regions",
+          "distribution": "Scandinavia",
           "description": "Female forest-dwelling entities of Fennoscandia. Distinguished by a vestigial bovine tail or a hollow dorsal cavity, features typically concealed during interactions with humans. Generally benign and even amorous, but dangerous if offended or if the anatomical anomaly is remarked upon. Frequently reported engaging in courtship with human males, with outcomes ranging from marriage to disappearance.",
           "weaknesses": null
         },
@@ -100,7 +100,7 @@
           "subspecies": "Faeicus generis",
           "subtype":  "Courtly Fairies",
           "size": null,  
-          "distribution": "Ireland and Scotland; associated with mounds (sídhe) and otherworldly courts",
+          "distribution": "British Isles",
           "description": "Collective term for the aristocratic fairy folk of Gaelic tradition, often euphemistically called the 'Good People' or 'Little People.' This is the population most commonly referenced by the generic term 'fairies,' frequently depicted with gossamer wings and organized into Seelie and Unseelie courts. The Erlkönig is a notable Unseelie sovereign associated with fatal encounters. Despite the benign euphemism, documented interactions range from beneficent patronage to lethal abduction.",
           "weaknesses": null
         },
@@ -135,7 +135,7 @@
           "subspecies": "Faeicus hobgoblensis",
           "subtype": "Hobgoblin",
           "size": null,
-          "distribution": "Scotland and Northern England",
+          "distribution": "Scotland and Northern England; farmsteads and rural dwellings",
           "description": "Nocturnal household sprites that perform domestic labor—threshing, churning, cleaning—in exchange for small offerings of milk, porridge, or honey. Appearances vary but are consistently described as small, brown-skinned, and shaggy. Brownies abandon households where they are offered clothing or payment, an idiosyncratic behavioral trait that has frustrated countless ethnographic attempts at incentivization. Amiable when tolerated, but known to retaliate with escalating mischief if their work is criticized or their offerings neglected.",
           "weaknesses": null
         },
@@ -146,7 +146,7 @@
           "subspecies": "Faeicus hobgoblensis",
           "subtype": "Hobgoblin",
           "size": null,
-          "distribution": "Cologne, Germany; reported throughout the Rhineland",
+          "distribution": "Cologne, Germany; mainly urban, reported throughout the Rhineland",
           "description": "Diligent domestic sprites of Cologne, famed for performing the city's trades during the night, such as carpentry, baking, and tailoring, allowing citizens to sleep while work completed itself. Local legend holds the entire population departed permanently after a tailor's wife scattered peas on the stairs, causing the sprites to slip and fall. Subsequent attempts to lure them back have failed. The Heinzelmännchen serve as a cautionary case study in habitat disruption.",
           "weaknesses": null
         },
@@ -157,8 +157,8 @@
           "subspecies": "Faeicus hobensis",
           "subtype": "Hobgoblin",
           "size": null,
-          "distribution": "Northern England, particularly Yorkshire, Lancashire, and Northumberland",
-          "description": "Hearth-bound sprites of Northern England, often associated with a specific farm or hall, from which they derive their name. Hobs occupy a behavioral middle ground between helpful brownies and more volatile boggarts. They are intensely loyal to their chosen household and its inhabitants, but hostile to intruders and negligent servants. Reports describe them as small, hairy, and occasionally naked; efforts to clothe them generally result in offense. Migration occurs only when a household collapses or the hob's patience is exhausted.",
+          "distribution": "Northern England; farmsteads and rural dwellings",
+          "description": "Hearth-bound sprites often associated with a specific farm or hall, from which they derive their name. Hobs occupy a behavioral middle ground between helpful brownies and more volatile boggarts. They are intensely loyal to their chosen household and its inhabitants, but hostile to intruders and negligent servants. Reports describe them as small, hairy, and occasionally naked; efforts to clothe them generally result in offense. Migration occurs only when a household collapses or the hob's patience is exhausted.",
           "weaknesses": null
         },
         {
@@ -179,7 +179,7 @@
           "subspecies": "Faeicus hobgoblensis",
           "subtype": "Hobgoblin",
           "size": null,
-          "distribution": "Scandinavia, especially Sweden and Norway; farmsteads and rural dwellings",
+          "distribution": "Scandinavia; farmsteads and rural dwellings",
           "description": "Solitary farmstead sprites of Scandinavia, characteristically depicted as small, bearded, and wearing a pointed red cap. The tomte serves as protector of the farm and its livestock, but enforces strict codes of conduct among the human household. Offerings traditionally include porridge with butter on Christmas Eve. Tomtes are territorial and capable of lethal retaliation against mistreatment of animals or desecration of the farmstead. Modernization has driven local populations to fragment, with urban sightings increasingly rare.",
           "weaknesses": null
         }
@@ -192,7 +192,7 @@
       "subspecies": "Draco draco",
       "subtype": null,
       "size": "Typically 45'' from head to tail",
-      "distribution": "Nearly global; concentrations vary from the British Isles and Scandinavia to East Asia",
+      "distribution": "Throughout the Eurasian Continent",
       "description": "Large reptilian or serpentine entities of uncertain phylogenetic origin. Morphology varies considerably across cultural regions: European specimens are typically winged, fire-breathing, and quadrupedal; East Asian forms are often aquatic, wingless, and associated with weather phenomena. Behavior ranges from dormant hoarding to active predation. The near-universal distribution of dragon mythology, including among cultures with no historical contact, raises unresolved questions about convergent folklore evolution or a common Paleolithic origin.",
       "weaknesses": "The belly or underside is often reported as the least-protected part of a dragon, especially because its back is covered in scales or armor. Monster hunters may need to get past the dragon's teeth and fire to strike a vulnerable area. Dragons are also historically very receptive to sacramentals and prayer, with St. George's legend being the famous example.",
       "subentries": []
