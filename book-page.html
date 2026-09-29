@@ -3,50 +3,169 @@ layout: default
 title: CASE FILE A-10541
 ---
 <style>
-.bookcontainer     { display: flex; align-items: flex-start; gap: 20px; width: 97%; }
-.bookcontainer img { max-width: 300px; width: 100%; height: auto; margin-top: 20px; margin-left: 30px; }
+<style>
+.bookcontainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 97%;
+}
+
+.bookcontainer img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+/* =========================
+   BLURB
+   ========================= */
 
 .blurb {
     flex: 1;
+    position: relative;
+    z-index: 0;
+
+    /* The actual background — completely solid */
     background: #443a2e;
-    border: 8px solid transparent;
+
+    /* Creates room for the faux border */
     border-radius: 14px;
+    padding: 18px 22px;
+
+    color: #fff;
+    line-height: 1.55;
+
+    /*
+     * The border's dark bottom/right shadow.
+     * Kept separate from the border itself.
+     */
+    box-shadow:
+        4px 5px 0 rgba(20, 15, 10, 0.85);
+}
+
+/* =========================
+   FAUX GRADIENT BORDER
+   ========================= */
+
+.blurb::before {
+    content: "";
+    position: absolute;
+
+    /* Extend behind the content box */
+    inset: -8px;
+
+    border-radius: 20px;
+
+    /*
+     * Three layers:
+
+     * 1. Radial highlight:
+     *    brightest around the middle of the top edge.
+
+     * 2. Main vertical gradient:
+     *    light at top → darker at bottom.
+
+     * 3. Dark outline:
+     *    gives the whole thing a slightly aged,
+     *    dimensional edge.
+     */
     background:
         radial-gradient(
-            ellipse 55% 35% at 50% 0%,
+            ellipse 55% 32% at 50% 0%,
             #d2c49f 0%,
-            #c0af85 35%,
-            transparent 75%
-        ) border-box,
+            #c0af85 30%,
+            rgba(192, 175, 133, 0) 72%
+        ),
         linear-gradient(
             to bottom,
             #c0af85 0%,
-            #b5a477 28%,
-            #a08e67 62%,
+            #b8a87c 25%,
+            #a6946b 58%,
             #96845e 100%
-        ) border-box,
-        #443a2e padding-box;
+        );
+
+    /*
+     * Dark outline around the outside of the gradient.
+     */
     box-shadow:
-        4px 5px 0 rgba(25, 19, 13, 0.85),
-        /* bright inner bevel */
-        inset 0 2px 2px rgba(255, 255, 255, 0.22),
-        /* dark lower bevel */
-        inset 0 -3px 4px rgba(20, 15, 10, 0.65),
-        /* subtle side depth */
-        inset 2px 0 3px rgba(255, 255, 255, 0.08),
-        inset -2px 0 3px rgba(20, 15, 10, 0.45);
-    color: #fff;
-    padding: 18px 22px;
-    line-height: 1.55;
+        0 0 0 1px #776746;
+
+    z-index: -1;
+    pointer-events: none;
 }
 
-.blurb-image { display: block; width: 200px; max-width: 100%; height: auto; margin: 0 auto 18px auto; }
+/* =========================
+   INNER BEVEL
+   ========================= */
+
+.blurb::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    border-radius: 14px;
+
+    pointer-events: none;
+
+    /*
+     * This doesn't change the brown background.
+     * It simply puts a subtle light/dark bevel
+     * along the inside edge.
+     */
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.16),
+        inset 2px 0 3px rgba(255, 255, 255, 0.06),
+        inset 0 -3px 4px rgba(18, 13, 9, 0.55),
+        inset -2px 0 3px rgba(18, 13, 9, 0.35);
+
+    z-index: 1;
+}
+
+/* =========================
+   BLURB IMAGE
+   ========================= */
+
+.blurb-image {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto 18px auto;
+
+    border: 3px solid #96845e;
+
+    box-shadow:
+        inset 1px 1px 0 rgba(255, 255, 255, 0.25),
+        3px 3px 0 rgba(25, 19, 13, 0.7);
+}
+
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 501px) {
-    .bookcontainer     { flex-direction: column; text-align: left; width: 100%; }
-    .bookcontainer img { max-width: 100%; margin-top: 0; margin-left: 0; }
-    .blurb             { width: 100%; box-sizing: border-box; }
+    .bookcontainer {
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+
+    .bookcontainer img {
+        max-width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .blurb {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
+</style>
 </style>
 
 
