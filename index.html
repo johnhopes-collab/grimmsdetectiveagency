@@ -340,6 +340,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const workerUrl =
     "https://newsletter-signup.mail-hopes-john.workers.dev/";
 
+  // Flag to track message state
+  let messageVisible = false;
+
   /*
    * Preload button state images
    */
@@ -380,7 +383,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   button.addEventListener('mouseup', function () {
     if (!button.disabled) {
-      // Check if mouse is still over button
       setButtonState('hover');
     }
   });
@@ -392,17 +394,18 @@ document.addEventListener("DOMContentLoaded", function () {
     placeholder.style.display = "none";
     
     // Clear any existing messages when user focuses to start typing
-    if (message.classList.contains("visible")) {
+    if (messageVisible) {
       message.classList.remove("visible");
       message.textContent = "";
+      messageVisible = false;
     }
   });
 
   /*
-   * Bring the placeholder back if the user leaves the field empty.
+   * Bring the placeholder back if the user leaves the field empty and no message is showing.
    */
   emailInput.addEventListener("blur", function () {
-    if (!emailInput.value.trim()) {
+    if (!emailInput.value.trim() && !messageVisible) {
       placeholder.style.display = "";
     }
   });
@@ -416,7 +419,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!email || !emailInput.checkValidity()) {
       message.textContent = "Please Enter a Valid Email Address.";
       message.classList.add("visible");
+      messageVisible = true;
+      emailInput.value = ""; // Clear the invalid input
       emailInput.blur(); // Remove focus so no cursor shows
+      placeholder.style.display = "none"; // Hide placeholder while message shows
       return;
     }
 
@@ -425,6 +431,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     message.classList.remove("visible");
     message.textContent = "";
+    messageVisible = false;
 
     try {
       const response = await fetch(workerUrl, {
@@ -442,23 +449,30 @@ document.addEventListener("DOMContentLoaded", function () {
       if (data.success && data.status === "added") {
         message.textContent = "Added to the Mailing List!";
         message.classList.add("visible");
+        messageVisible = true;
         emailInput.value = "";
-        emailInput.blur(); // Remove focus
-        placeholder.style.display = ""; // Show placeholder since field is empty
+        emailInput.blur();
+        placeholder.style.display = "none"; // Hide placeholder while message shows
       } else if (data.success && data.status === "already_subscribed") {
         message.textContent = "This Address is Already Subscribed.";
         message.classList.add("visible");
-        emailInput.blur(); // Remove focus
+        messageVisible = true;
+        emailInput.blur();
+        placeholder.style.display = "none"; // Hide placeholder while message shows
       } else {
         message.textContent = "Something Went Wrong. Please Try Again.";
         message.classList.add("visible");
-        emailInput.blur(); // Remove focus
+        messageVisible = true;
+        emailInput.blur();
+        placeholder.style.display = "none"; // Hide placeholder while message shows
       }
     } catch (error) {
       console.error("Newsletter signup error:", error);
       message.textContent = "Something Went Wrong. Please Try Again.";
       message.classList.add("visible");
-      emailInput.blur(); // Remove focus
+      messageVisible = true;
+      emailInput.blur();
+      placeholder.style.display = "none"; // Hide placeholder while message shows
     } finally {
       button.disabled = false;
     }
