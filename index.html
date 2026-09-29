@@ -331,17 +331,15 @@ title: Front Desk
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector(".newsletter-form");
   const emailInput = document.getElementById("newsletter-email");
   const placeholder = document.querySelector(".newsletter-placeholder");
   const button = document.getElementById("newsletter-submit");
   const message = document.getElementById("newsletter-message");
 
-  const workerUrl =
-    "https://newsletter-signup.mail-hopes-john.workers.dev/";
+  const workerUrl = "https://newsletter-signup.mail-hopes-john.workers.dev/";
 
   /*
-   * Preload button state images
+   * Button state management (keeping your existing button code)
    */
   const buttonImages = {
     default: button.querySelector('.button-default'),
@@ -349,9 +347,6 @@ document.addEventListener("DOMContentLoaded", function () {
     pressed: button.querySelector('.button-pressed')
   };
 
-  /*
-   * Button state management
-   */
   function setButtonState(state) {
     Object.keys(buttonImages).forEach(key => {
       if (buttonImages[key]) {
@@ -360,113 +355,92 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Hover effects
-  button.addEventListener('mouseenter', function () {
-    if (!button.disabled) {
-      setButtonState('hover');
-    }
-  });
-
-  button.addEventListener('mouseleave', function () {
-    setButtonState('default');
-  });
-
-  // Press effects
-  button.addEventListener('mousedown', function () {
-    if (!button.disabled) {
-      setButtonState('pressed');
-    }
-  });
-
-  button.addEventListener('mouseup', function () {
-    if (!button.disabled) {
-      setButtonState('hover');
-    }
-  });
+  button.addEventListener('mouseenter', () => !button.disabled && setButtonState('hover'));
+  button.addEventListener('mouseleave', () => setButtonState('default'));
+  button.addEventListener('mousedown', () => !button.disabled && setButtonState('pressed'));
+  button.addEventListener('mouseup', () => !button.disabled && setButtonState('hover'));
 
   /*
-   * Hide the custom placeholder when the field receives focus and clear any messages.
+   * State management functions
+   */
+  function showInitialState() {
+    placeholder.style.display = "";
+    message.classList.remove("visible");
+    message.textContent = "";
+  }
+
+  function showTypingState() {
+    placeholder.style.display = "none";
+    message.classList.remove("visible");
+    message.textContent = "";
+  }
+
+  function showMessageState(messageText) {
+    placeholder.style.display = "none";
+    message.textContent = messageText;
+    message.classList.add("visible");
+    emailInput.value = "";
+    emailInput.blur();
+  }
+
+  /*
+   * Event handlers
    */
   emailInput.addEventListener("focus", function () {
-    placeholder.style.display = "none";
-    
-    // Clear any existing messages when user focuses to start typing
-    if (message.classList.contains("visible")) {
-      message.classList.remove("visible");
-      message.textContent = "";
-    }
+    showTypingState();
   });
 
-  /*
-   * Bring the placeholder back if the user leaves the field empty.
-   */
   emailInput.addEventListener("blur", function () {
-    if (!emailInput.value.trim()) {
-      placeholder.style.display = "";
+    // Only show initial state if input is empty AND no message is showing
+    if (!emailInput.value.trim() && !message.classList.contains("visible")) {
+      showInitialState();
     }
   });
 
   /*
-   * Submit newsletter signup.
+   * Submit handler
    */
   button.addEventListener("click", async function () {
     const email = emailInput.value.trim();
 
+    // Validation
     if (!email || !emailInput.checkValidity()) {
-      message.textContent = "Please Enter a Valid Email Address.";
-      message.classList.add("visible");
-      emailInput.value = ""; // Clear the invalid input
-      emailInput.blur(); // Remove focus so no cursor shows
-      placeholder.style.display = "none"; // Hide placeholder while message shows
+      showMessageState("Please Enter a Valid Email Address.");
       return;
     }
 
+    // Disable button and clear any existing messages
     button.disabled = true;
     setButtonState('default');
-
     message.classList.remove("visible");
     message.textContent = "";
 
     try {
       const response = await fetch(workerUrl, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          email: email
-        })
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email })
       });
 
       const data = await response.json();
 
       if (data.success && data.status === "added") {
-        message.textContent = "Added to the Mailing List!";
-        message.classList.add("visible");
-        emailInput.value = "";
-        emailInput.blur();
-        placeholder.style.display = "none"; // Hide placeholder while message shows
+        showMessageState("Added to the Mailing List!");
       } else if (data.success && data.status === "already_subscribed") {
-        message.textContent = "This Address is Already Subscribed.";
-        message.classList.add("visible");
-        emailInput.blur();
-        placeholder.style.display = "none"; // Hide placeholder while message shows
+        showMessageState("This Address is Already Subscribed.");
       } else {
-        message.textContent = "Something Went Wrong. Please Try Again.";
-        message.classList.add("visible");
-        emailInput.blur();
-        placeholder.style.display = "none"; // Hide placeholder while message shows
+        showMessageState("Something Went Wrong. Please Try Again.");
       }
     } catch (error) {
       console.error("Newsletter signup error:", error);
-      message.textContent = "Something Went Wrong. Please Try Again.";
-      message.classList.add("visible");
-      emailInput.blur();
-      placeholder.style.display = "none"; // Hide placeholder while message shows
+      showMessageState("Something Went Wrong. Please Try Again.");
     } finally {
       button.disabled = false;
     }
   });
+
+  // Initialize to initial state
+  showInitialState();
 });
 
     
