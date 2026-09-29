@@ -7,16 +7,16 @@ title: Front Desk
 
 <style>
 
-.social-buttons-container {    display: flex;    flex-wrap: wrap;    align-items: flex-start;    gap: 20px; }
-.social-buttons     {     display: flex;    justify-content: flex-start;    align-items: center;    gap: 10px; }
-.newsletter-section {    position: relative;    display: flex;    flex-direction: column;    align-items: flex-start; }
-.newsletter-trigger {    position: relative;    display: inline-block;    top: -14px;    margin-bottom: -6px;    z-index: 1;    left: 85px; }
+.social-buttons-container { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px; }
+.social-buttons     { display: flex; justify-content: flex-start; align-items: center; gap: 10px; }
+.newsletter-section { position: relative; display: flex; flex-direction: column; align-items: flex-start; }
+.newsletter-trigger { position: relative; display: inline-block; top: -14px; margin-bottom: -6px; z-index: 1; left: 85px; }
 .social-buttons img { }
+    
 .text-box h2.h2alt  { color: var(--button-brown); line-height: 1; margin-top:-5px; }
 .topped-image       { display: block; width: 70%; max-width: 100%; height: auto; margin: -28px auto; border: none; }
 .note-block         { position: absolute; width: 40vw; max-width: 400px; margin-left: 56%; transform: translateY(-15%); z-index: 1; }
-.note-block img     { display: block;   width: 200px; }
-
+.note-block img     { display: block; width: 200px; }
 .retro-text-wrapper { position: relative; max-width: 680px; margin: -10px auto 20px; }
 .retro-text-tab {
     position: absolute;
@@ -44,62 +44,48 @@ title: Front Desk
 
 .retro-text-tab .tab-label { display: none; }
 .retro-text-tab .tab-date  { display: inline; }
-.retro-text-container { background-color: #d4c4a8; border: 1px solid #5e2c04; box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3); margin-top: 14px; font-family: 'Georgia', serif; font-size: 0.719rem; position: relative; z-index: 2; }
-.retro-text-content { padding: 5px 12px 12px 12px; max-height: 350px; overflow-y: auto; overflow-x: hidden; }
-.retro-text-blurb   { padding: 0px 25px  0px 25px; margin: -3px 0px -10px 0px; font-size: 10.5px; }
-.retro-text-display { background-color: #f9f3e9; border: 1px solid #bc9e68; padding: 10px; font-size: 11px; line-height: 1.6; color: #401c00; box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15); white-space: pre-line;  word-wrap: break-word; font-family: "Courier New", Courier, monospace; }
-.retro-text-display:hover { border-color: #5e2c04; box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25); }
-.retro-text-content::-webkit-scrollbar { width: 12px; }
-.retro-text-content::-webkit-scrollbar-track {background: #d4c4a8;border-left: 1px solid #bc9e68;}
-.retro-text-content::-webkit-scrollbar-thumb { background: #bc9e68; border: 1px solid #5e2c04;}
+.retro-text-container      { background-color: #d4c4a8; border: 1px solid #5e2c04; box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3); margin-top: 14px; font-family: 'Georgia', serif; font-size: 0.719rem; position: relative; z-index: 2; }
+.retro-text-content        { padding: 5px 12px 12px 12px; max-height: 350px; overflow-y: auto; overflow-x: hidden; }
+.retro-text-blurb          { padding: 0px 25px  0px 25px; margin: -3px 0px -10px 0px; font-size: 10.5px; }
+.retro-text-display        { background-color: #f9f3e9; border: 1px solid #bc9e68; padding: 10px; font-size: 11px; line-height: 1.6; color: #401c00; box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15); white-space: pre-line;  word-wrap: break-word; font-family: "Courier New", Courier, monospace; }
+.retro-text-display:hover  { border-color: #5e2c04; box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25); }
+.retro-text-content::-webkit-scrollbar             { width: 12px; }
+.retro-text-content::-webkit-scrollbar-track       {background: #d4c4a8;border-left: 1px solid #bc9e68;}
+.retro-text-content::-webkit-scrollbar-thumb       { background: #bc9e68; border: 1px solid #5e2c04;}
 .retro-text-content::-webkit-scrollbar-thumb:hover { background: #5e2c04;}
     
 .vintage-poster1 { display: block; width: 50%; margin: 0 auto; border: none; }
 
 /* =======Newsletter Widget============= */
 
-.newsletter-wrapper     { --newsletter-width: 400px; position: relative; width: var(--newsletter-width); height: calc(var(--newsletter-width) * 219 / 1067); margin-top: -12px;    z-index: 10; }
-.newsletter-widget      { position: absolute; width: 370px; height: 32px; }
-.newsletter-background  { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
-.newsletter-form        { position: absolute; inset: 0; }
+.newsletter-wrapper       { --newsletter-width: 400px; position: relative; width: var(--newsletter-width); height: calc(var(--newsletter-width) * 219 / 1067); margin-top: -12px;    z-index: 10; }
+.newsletter-widget        { position: absolute; width: 370px; height: 32px; }
+.newsletter-background    { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
+.newsletter-form          { position: absolute; inset: 0; }
 .newsletter-input-wrapper { position: absolute; left: 17px; top: 4px; width: 260px; height: 23px; }
-.newsletter-email       { position: absolute; left: 0; top: 0; width: 100%; height: 100%; box-sizing: border-box; border: none; outline: none; background: transparent; padding: 0; font: inherit; color: #000; z-index: 2; }
-.newsletter-placeholder { position: absolute; left: 0; top: 6px; width: 50%; height: auto; object-fit: contain; object-position: left center; pointer-events: none; z-index: 3; }
-.newsletter-message {
-    position: absolute;
-    inset: 0;
-    display: none;  /* Changed from 'display: none;' controlled by .visible class */
-    align-items: center;
-    z-index: 4;
-    font-family: inherit;
-    font-size: 0.719rem;
-    font-weight: normal;
-    color: #4e4e4e;
-    white-space: nowrap;
-    pointer-events: none;  /* ADD THIS - lets clicks pass through to wrapper */
-}
-
-.newsletter-button       { position: absolute; left: 286px; top: 2px; width: 83px; height: 27px; padding: 0; margin: 0; border: none; background: transparent; cursor: pointer; z-index: 5; }
-.newsletter-button-image { position: absolute; top: 0; left: 0; display: block; width: 100%; pointer-events: none; opacity: 0; }
+.newsletter-email         { position: absolute; left: 0;    top: 0;   width: 100%;  height: 100%; box-sizing: border-box; border: none; outline: none; background: transparent; padding: 0; font: inherit; color: #000; z-index: 2; }
+.newsletter-placeholder   { position: absolute; left: 0;    top: 6px; width: 50%;   height: auto; object-fit: contain; object-position: left center; pointer-events: none; z-index: 3; }
+.newsletter-message       { position: absolute; inset: 0; display: none; align-items: center; z-index: 4; font-family: inherit; font-size: 0.719rem; font-weight: normal; color: #4e4e4e; white-space: nowrap; pointer-events: none; }
+.newsletter-button        { position: absolute; left: 286px; top: 2px; width: 83px; height: 27px; padding: 0; margin: 0; border: none; background: transparent; cursor: pointer; z-index: 5; }
+.newsletter-button-image  { position: absolute; top: 0; left: 0; display: block; width: 100%; pointer-events: none; opacity: 0; }
 .newsletter-button-image.button-default { position: relative; opacity: 1; }
 
 /* Mobile Display */
 @media (max-width: 500px) {
-    .social-buttons img { height: 35px; width: auto; display: block; }
-    .text-box h2.h2alt  { display: none;}
-    .topped-image       { width: 100%; margin: -19px auto; }
-    .retro-text-wrapper { max-width: none; width: 100vw; margin: 0px -32px 20px -32px; position: relative; font-size: 0.6rem; }
-    .retro-text-content { padding: 0px; max-height: none; }
-    .retro-text-display { padding: 0px}
-    .retro-text-tab     { min-width: 102vw; width: 102vw; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; text-align: initial; }
-    .retro-text-tab .tab-label { display: inline; text-align: left; }
+    .social-buttons img       { height: 35px; width: auto; display: block; }
+    .text-box h2.h2alt        { display: none;}
+    .topped-image             { width: 100%; margin: -19px auto; }
+    .retro-text-wrapper       { max-width: none; width: 100vw; margin: 0px -32px 20px -32px; position: relative; font-size: 0.6rem; }
+    .retro-text-content       { padding: 0px; max-height: none; }
+    .retro-text-display       { padding: 0px}
+    .retro-text-tab           { min-width: 102vw; width: 102vw; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; text-align: initial; }
+    .retro-text-tab .tab-label{ display: inline; text-align: left; }
     .retro-text-tab .tab-date { display: inline; text-align: right; }
-    .vintage-poster1    { width: 90%; }
-    .note-block         { display: none; }
-    .newsletter-widget  { width: 100%; height: 33px; aspect-ratio: 1067 / 219; }
-    .newsletter-background { width: 100%; height: 100%; }
-    .newsletter-form    { transform-origin: top left;  width: 100%; height: 33px; }
-
+    .vintage-poster1          { width: 90%; }
+    .note-block               { display: none; }
+    .newsletter-widget        { width: 100%; height: 33px; aspect-ratio: 1067 / 219; }
+    .newsletter-background    { width: 100%; height: 100%; }
+    .newsletter-form          { transform-origin: top left;  width: 100%; height: 33px; }
     .social-buttons-container {  flex-direction: column;  align-items: flex-start; }
     .newsletter-section       { width: 100%;  max-width: 400px; margin: 20px 0 40px -5px; }
     .newsletter-wrapper       { --newsletter-width: min(400px, 100%); }
