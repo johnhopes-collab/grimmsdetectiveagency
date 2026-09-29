@@ -3,16 +3,15 @@ layout: default
 title: CASE FILE A-10541
 ---
 <style>
-<style>
 .bookcontainer     { display: flex; align-items: flex-start; gap: 20px; width: 97%; }
-.bookcontainer img { max-width: 300px; width: 100%; height: auto; margin-top: 20px; margin-left: 30px; }
+.bookcontainer > img { max-width: 300px; width: 100%; height: auto; margin-top: 20px; margin-left: 30px; }
 
 .blurb {
     flex: 1;
-    background: #443a2e;
     border: 8px solid transparent;
     border-radius: 14px;
     background:
+        linear-gradient(#443a2e, #443a2e) padding-box,
         radial-gradient(
             ellipse 55% 35% at 50% 0%,
             #d2c49f 0%,
@@ -25,8 +24,7 @@ title: CASE FILE A-10541
             #b5a477 28%,
             #a08e67 62%,
             #96845e 100%
-        ) border-box,
-        #443a2e padding-box;
+        ) border-box;
     box-shadow:
         4px 5px 0 rgba(25, 19, 13, 0.85),
         /* bright inner bevel */
@@ -45,10 +43,9 @@ title: CASE FILE A-10541
 
 @media (max-width: 501px) {
     .bookcontainer     { flex-direction: column; text-align: left; width: 100%; }
-    .bookcontainer img { max-width: 100%; margin-top: 0; margin-left: 0; }
+    .bookcontainer > img { max-width: 100%; margin-top: 0; margin-left: 0; }
     .blurb             { width: 100%; box-sizing: border-box; }
 }
-</style>
 </style>
 
 
