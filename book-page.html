@@ -1,15 +1,73 @@
 ---
 layout: default
-title: Book 1
+title: CASE FILE: A-10541
 ---
 <style>
-     .bookcontainer { display: flex; align-items: flex-start; gap: 20px; width: 97%; }
-     .bookcontainer img { max-width: 300px; width: 100%; height: auto; margin-top: 20px; margin-left: 30px; }
-     .blurb { flex: 1; }
-     @media (max-width: 501px) {
-         .bookcontainer { flex-direction: column; text-align: left ; width: 100%; /* Optional */ }
-         .bookcontainer img { max-width: 100%; margin-top: 0px; margin-left: 0px; }
-     }
+.bookcontainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 97%;
+}
+
+.bookcontainer img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.blurb {
+    flex: 1;
+    background: #443a2e;
+    border: 8px solid transparent;
+    border-radius: 14px;
+    background:
+        radial-gradient(
+            ellipse 55% 35% at 50% 0%,
+            #d2c49f 0%,
+            #c0af85 35%,
+            transparent 75%
+        ) border-box,
+        linear-gradient(
+            to bottom,
+            #c0af85 0%,
+            #b5a477 28%,
+            #a08e67 62%,
+            #96845e 100%
+        ) border-box,
+        #443a2e padding-box;
+    box-shadow:
+        4px 5px 0 rgba(25, 19, 13, 0.85),
+        /* bright inner bevel */
+        inset 0 2px 2px rgba(255, 255, 255, 0.22),
+        /* dark lower bevel */
+        inset 0 -3px 4px rgba(20, 15, 10, 0.65),
+        /* subtle side depth */
+        inset 2px 0 3px rgba(255, 255, 255, 0.08),
+        inset -2px 0 3px rgba(20, 15, 10, 0.45);
+    color: #fff;
+    padding: 18px 22px;
+    line-height: 1.55;
+}
+
+@media (max-width: 501px) {
+    .bookcontainer {
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+    .bookcontainer img {
+        max-width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .blurb {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
 </style>
 
 
