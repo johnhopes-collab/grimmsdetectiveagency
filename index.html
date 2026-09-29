@@ -44,50 +44,26 @@ title: Front Desk
 
 .retro-text-tab .tab-label { display: none; }
 .retro-text-tab .tab-date  { display: inline; }
-
-.retro-text-container {
-    background-color: #d4c4a8;
-    border: 1px solid #5e2c04;
-    box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3);
-    margin-top: 14px; 
-    font-family: 'Georgia', serif;
-    font-size: 0.719rem;
-    position: relative;
-    z-index: 2;
-}
+.retro-text-container { background-color: #d4c4a8; border: 1px solid #5e2c04; box-shadow: 3px 3px 0px rgba(94, 44, 4, 0.3); margin-top: 14px; font-family: 'Georgia', serif; font-size: 0.719rem; position: relative; z-index: 2; }
 .retro-text-content { padding: 5px 12px 12px 12px; max-height: 350px; overflow-y: auto; overflow-x: hidden; }
 .retro-text-blurb   { padding: 0px 25px  0px 25px; margin: -3px 0px -10px 0px; font-size: 10.5px; }
-
-.retro-text-display {
-    background-color: #f9f3e9; /* Lighter beige for text area */
-    border: 1px solid #bc9e68;
-    padding: 10px;
-    font-size: 11px;
-    line-height: 1.6;
-    color: #401c00;
-    box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15);
-    white-space: pre-line; /* Preserves line breaks you put in HTML */
-    word-wrap: break-word;
-    font-family: "Courier New", Courier, monospace;
-}
-
+.retro-text-display { background-color: #f9f3e9; border: 1px solid #bc9e68; padding: 10px; font-size: 11px; line-height: 1.6; color: #401c00; box-shadow: 1px 1px 0px rgba(94, 44, 4, 0.15); white-space: pre-line;  word-wrap: break-word; font-family: "Courier New", Courier, monospace; }
 .retro-text-display:hover { border-color: #5e2c04; box-shadow: 2px 2px 0px rgba(94, 44, 4, 0.25); }
 .retro-text-content::-webkit-scrollbar { width: 12px; }
 .retro-text-content::-webkit-scrollbar-track {background: #d4c4a8;border-left: 1px solid #bc9e68;}
 .retro-text-content::-webkit-scrollbar-thumb { background: #bc9e68; border: 1px solid #5e2c04;}
 .retro-text-content::-webkit-scrollbar-thumb:hover { background: #5e2c04;}
+    
 .vintage-poster1 { display: block; width: 50%; margin: 0 auto; border: none; }
-
-
 
 /* =======Newsletter Widget============= */
 
-.newsletter-wrapper {    --newsletter-width: 400px;    position: relative;    width: var(--newsletter-width);    height: calc(var(--newsletter-width) * 219 / 1067);    margin-top: -12px;    z-index: 10; }
-.newsletter-widget { position: absolute; width: 370px; height: 32px; }
-.newsletter-background { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
-.newsletter-form { position: absolute; inset: 0; }
+.newsletter-wrapper     { --newsletter-width: 400px; position: relative; width: var(--newsletter-width); height: calc(var(--newsletter-width) * 219 / 1067); margin-top: -12px;    z-index: 10; }
+.newsletter-widget      { position: absolute; width: 370px; height: 32px; }
+.newsletter-background  { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
+.newsletter-form        { position: absolute; inset: 0; }
 .newsletter-input-wrapper { position: absolute; left: 17px; top: 4px; width: 260px; height: 23px; }
-.newsletter-email { position: absolute; left: 0; top: 0; width: 100%; height: 100%; box-sizing: border-box; border: none; outline: none; background: transparent; padding: 0; font: inherit; color: #000; z-index: 2; }
+.newsletter-email       { position: absolute; left: 0; top: 0; width: 100%; height: 100%; box-sizing: border-box; border: none; outline: none; background: transparent; padding: 0; font: inherit; color: #000; z-index: 2; }
 .newsletter-placeholder { position: absolute; left: 0; top: 6px; width: 50%; height: auto; object-fit: contain; object-position: left center; pointer-events: none; z-index: 3; }
 .newsletter-message {
     position: absolute;
@@ -103,30 +79,8 @@ title: Front Desk
     pointer-events: none;  /* ADD THIS - lets clicks pass through to wrapper */
 }
 
-
-.newsletter-button {
-    position: absolute;
-    left: 286px;
-    top: 2px;
-    width: 83px;
-    height: 27px;
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    z-index: 5;
-}
-.newsletter-button-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    pointer-events: none;
-    opacity: 0;
-}
-
+.newsletter-button       { position: absolute; left: 286px; top: 2px; width: 83px; height: 27px; padding: 0; margin: 0; border: none; background: transparent; cursor: pointer; z-index: 5; }
+.newsletter-button-image { position: absolute; top: 0; left: 0; display: block; width: 100%; pointer-events: none; opacity: 0; }
 .newsletter-button-image.button-default { position: relative; opacity: 1; }
 
 /* Mobile Display */
@@ -137,21 +91,14 @@ title: Front Desk
     .retro-text-wrapper { max-width: none; width: 100vw; margin: 0px -32px 20px -32px; position: relative; font-size: 0.6rem; }
     .retro-text-content { padding: 0px; max-height: none; }
     .retro-text-display { padding: 0px}
-    .retro-text-tab     { 
-        min-width: 102vw;
-        width: 102vw;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: initial;   }
+    .retro-text-tab     { min-width: 102vw; width: 102vw; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; text-align: initial; }
     .retro-text-tab .tab-label { display: inline; text-align: left; }
     .retro-text-tab .tab-date { display: inline; text-align: right; }
-    .vintage-poster1 { width: 90%; }
-    .note-block      { display: none; }
-    .newsletter-widget { width: 100%; height: 33px; aspect-ratio: 1067 / 219; }
+    .vintage-poster1    { width: 90%; }
+    .note-block         { display: none; }
+    .newsletter-widget  { width: 100%; height: 33px; aspect-ratio: 1067 / 219; }
     .newsletter-background { width: 100%; height: 100%; }
-    .newsletter-form { transform-origin: top left;  width: 100%; height: 33px; }
+    .newsletter-form    { transform-origin: top left;  width: 100%; height: 33px; }
 
     .social-buttons-container {  flex-direction: column;  align-items: flex-start; }
     .newsletter-section       { width: 100%;  max-width: 400px; margin: 20px 0 40px -5px; }
