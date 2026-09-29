@@ -89,8 +89,20 @@ title: Front Desk
 .newsletter-input-wrapper { position: absolute; left: 17px; top: 4px; width: 260px; height: 23px; }
 .newsletter-email { position: absolute; left: 0; top: 0; width: 100%; height: 100%; box-sizing: border-box; border: none; outline: none; background: transparent; padding: 0; font: inherit; color: #000; z-index: 2; }
 .newsletter-placeholder { position: absolute; left: 0; top: 6px; width: 50%; height: auto; object-fit: contain; object-position: left center; pointer-events: none; z-index: 3; }
-.newsletter-message { position: absolute; inset: 0; display: none; align-items: center; z-index: 4; font-family: inherit; font-size: 18px; font-weight: normal; color: #000; white-space: nowrap; }
-.newsletter-message.visible { display: flex; }
+.newsletter-message {
+    position: absolute;
+    inset: 0;
+    display: none;  /* Changed from 'display: none;' controlled by .visible class */
+    align-items: center;
+    z-index: 4;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: normal;
+    color: #000;
+    white-space: nowrap;
+    pointer-events: none;  /* ADD THIS - lets clicks pass through to wrapper */
+}
+
 
 .newsletter-button {
     position: absolute;
@@ -338,9 +350,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const workerUrl = "https://newsletter-signup.mail-hopes-john.workers.dev/";
 
-  /*
-   * Button state management (keeping your existing button code)
-   */
+  // Button state management
   const buttonImages = {
     default: button.querySelector('.button-default'),
     hover: button.querySelector('.button-hover'),
@@ -361,59 +371,80 @@ document.addEventListener("DOMContentLoaded", function () {
   button.addEventListener('mouseup', () => !button.disabled && setButtonState('hover'));
 
   /*
-   * State management functions
+   * THREE STATES
    */
-  function showInitialState() {
+  
+  // STATE 1: Initial - Show placeholder
+  function goToInitialState() {
     placeholder.style.display = "";
-    message.classList.remove("visible");
+    message.style.display = "none";
     message.textContent = "";
+    emailInput.value = "";
   }
 
-  function showTypingState() {
+  // STATE 2: Typing - User is interacting with input
+  function goToTypingState() {
     placeholder.style.display = "none";
-    message.classList.remove("visible");
+    message.style.display = "none";
     message.textContent = "";
+    emailInput.focus();
   }
 
-  function showMessageState(messageText) {
+  // STATE 3: Message - Show response message
+  function goToMessageState(messageText) {
     placeholder.style.display = "none";
     message.textContent = messageText;
-    message.classList.add("visible");
+    message.style.display = "flex";
     emailInput.value = "";
-    emailInput.blur();
   }
 
   /*
-   * Event handlers
+   * EVENT HANDLERS
    */
+  
+  // When input is focused, go to typing state
   emailInput.addEventListener("focus", function () {
-    showTypingState();
+    goToTypingState();
   });
 
+  // When input loses focus, go to initial state if empty
   emailInput.addEventListener("blur", function () {
-    // Only show initial state if input is empty AND no message is showing
-    if (!emailInput.value.trim() && !message.classList.contains("visible")) {
-      showInitialState();
+    if (!emailInput.value.trim()) {
+      goToInitialState();
     }
   });
 
-  /*
-   * Submit handler
-   */
+  // Click on the input wrapper should focus the input (even if message is showing)
+  const inputWrapper = document.querySelector(".newsletter-input-wrapper");
+  inputWrapper.addEventListener("click", function () {
+    goToTypingState();
+  });
+
+  // Enter key submits
+  emailInput.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      button.click();
+    }
+  });
+
+  // Submit handler
   button.addEventListener("click", async function () {
     const email = emailInput.value.trim();
 
     // Validation
-    if (!email || !emailInput.checkValidity()) {
-      showMessageState("Please Enter a Valid Email Address.");
+    if (!email) {
+      goToMessageState("Please Enter an Email Address.");
       return;
     }
 
-    // Disable button and clear any existing messages
+    if (!emailInput.checkValidity()) {
+      goToMessageState("Please Enter a Valid Email Address.");
+      return;
+    }
+
+    // Disable button during submission
     button.disabled = true;
     setButtonState('default');
-    message.classList.remove("visible");
-    message.textContent = "";
 
     try {
       const response = await fetch(workerUrl, {
@@ -425,23 +456,22 @@ document.addEventListener("DOMContentLoaded", function () {
       const data = await response.json();
 
       if (data.success && data.status === "added") {
-        showMessageState("Added to the Mailing List!");
+        goToMessageState("Added to the Mailing List!");
       } else if (data.success && data.status === "already_subscribed") {
-        showMessageState("This Address is Already Subscribed.");
+        goToMessageState("This Address is Already Subscribed.");
       } else {
-        showMessageState("Something Went Wrong. Please Try Again.");
+        goToMessageState("Something Went Wrong. Please Try Again.");
       }
     } catch (error) {
       console.error("Newsletter signup error:", error);
-      showMessageState("Something Went Wrong. Please Try Again.");
+      goToMessageState("Something Went Wrong. Please Try Again.");
     } finally {
       button.disabled = false;
     }
   });
 
-  // Initialize to initial state
-  showInitialState();
+  // Initialize
+  goToInitialState();
 });
-
     
 </script>
