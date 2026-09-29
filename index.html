@@ -35,7 +35,7 @@ title: Front Desk
 
 /* =======Newsletter Widget============= */
 
-.newsletter-wrapper       { --newsletter-width: 360px; position: relative; width: var(--newsletter-width); height: calc(var(--newsletter-width) * 219 / 1067); margin-top: -12px;    z-index: 10; }
+.newsletter-wrapper       { --newsletter-width: 360px; position: relative; width: var(--newsletter-width); height: calc(var(--newsletter-width) * 219 / 1067); margin-top: -12px;    left: -5px; z-index: 10; }
 .newsletter-widget        { position: absolute; width: 370px; height: 32px; }
 .newsletter-background    { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
 .newsletter-form          { position: absolute; inset: 0; }
@@ -65,7 +65,7 @@ title: Front Desk
     .newsletter-form          { transform-origin: top left;  width: 100%; height: 33px; }
     .social-buttons-container {  flex-direction: column;  align-items: flex-start; }
     .newsletter-section       { width: 100%;  max-width: 400px; margin: 20px 0 40px -5px; }
-    .newsletter-wrapper       { --newsletter-width: min(400px, 100%); }
+    .newsletter-wrapper       { --newsletter-width: min(400px, 100%); left: 0;}
     .newsletter-input-wrapper { width: 220px; }
     .newsletter-placeholder   { width: 70%; }
     .newsletter-button        { left: 64vw; }
