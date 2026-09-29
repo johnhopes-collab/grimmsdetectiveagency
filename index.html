@@ -36,14 +36,14 @@ title: Front Desk
 /* =======Newsletter Widget============= */
 
 .newsletter-wrapper       { --newsletter-width: 360px; position: relative; width: var(--newsletter-width); height: calc(var(--newsletter-width) * 219 / 1067); margin-top: -12px;    left: -5px; z-index: 10; }
-.newsletter-widget        { position: absolute; width: 370px; height: 32px; }
+.newsletter-widget        { position: absolute; width: 333px; height: 29px; }
 .newsletter-background    { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
 .newsletter-form          { position: absolute; inset: 0; }
 .newsletter-input-wrapper { position: absolute; left: 17px; top: 4px; width: 260px; height: 23px; }
 .newsletter-email         { position: absolute; left: 0;    top: 0;   width: 100%;  height: 100%; box-sizing: border-box; border: none; outline: none; background: transparent; padding: 0; font: inherit; color: #000; z-index: 2; }
 .newsletter-placeholder   { position: absolute; left: 0;    top: 6px; width: 50%;   height: auto; object-fit: contain; object-position: left center; pointer-events: none; z-index: 3; }
 .newsletter-message       { position: absolute; inset: 0; display: none; align-items: center; z-index: 4; font-family: inherit; font-size: 0.719rem; font-weight: normal; color: #4e4e4e; white-space: nowrap; pointer-events: none; }
-.newsletter-button        { position: absolute; left: 286px; top: 2px; width: 83px; height: 27px; padding: 0; margin: 0; border: none; background: transparent; cursor: pointer; z-index: 5; }
+.newsletter-button        { position: absolute; left: 258px; top: 2px; width: 74px; height: 24px; padding: 0; margin: 0; border: none; background: transparent; cursor: pointer; z-index: 5; }
 .newsletter-button-image  { position: absolute; top: 0; left: 0; display: block; width: 100%; pointer-events: none; opacity: 0; }
 .newsletter-button-image.button-default { position: relative; opacity: 1; }
 
@@ -68,7 +68,7 @@ title: Front Desk
     .newsletter-wrapper       { --newsletter-width: min(400px, 100%); left: 0;}
     .newsletter-input-wrapper { width: 220px; }
     .newsletter-placeholder   { width: 70%; }
-    .newsletter-button        { left: 64vw; }
+    .newsletter-button        { left: 64vw; top: 4px;}
 }
 </style>
 
@@ -103,7 +103,7 @@ title: Front Desk
 
     <div class="newsletter-section">
         <a class="newsletter-trigger">
-            <img src="{{ site.baseurl }}/assets/images/2-newsletter-pre.png" alt="Newsletter" style="height: 17px;">
+            <img src="{{ site.baseurl }}/assets/images/2-newsletter-pre.png" alt="Newsletter" style="height: 16px;">
         </a>
         <div class="newsletter-wrapper">
             <div class="newsletter-widget">
