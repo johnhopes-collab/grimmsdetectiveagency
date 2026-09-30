@@ -40,20 +40,9 @@ title: CASE FILE A-10541
 }
 
 .blurb-image { display: block; width: 300px; max-width: 100%; height: auto; margin-left: auto; margin-right: auto; }
-.praise-container {
-    width: 70%; /* Scale the width */
-    margin: 40px auto; /* auto margins center it horizontally */
-    max-width: 840px; /* 70% of original 1200px */
-}
-
-.praise-header {
-    display: block;
-    max-width: 280px; /* 70% of original 400px */
-    width: 100%;
-    height: auto;
-    margin: 0 auto 20px; /* Reduced bottom margin proportionally */
-}
-
+    
+.praise-container { width: 70%; margin: 40px auto; max-width: 840px; }
+.praise-header    { display: block; max-width: 280px; width: 100%; height: auto; margin: 0 auto 20px; }
 .praise-box {
     position: relative;
     border: 4px solid transparent;
@@ -79,95 +68,34 @@ title: CASE FILE A-10541
         inset 0 -3px 4px rgba(20, 15, 10, 0.65),
         inset 2px 0 3px rgba(255, 255, 255, 0.08),
         inset -2px 0 3px rgba(20, 15, 10, 0.45);
-    padding: 28px 35px; /* 70% of original 40px 50px */
-    min-height: 140px; /* 70% of original 200px */
+    padding: 28px 35px; 
+    min-height: 140px; 
     overflow: hidden;
 }
-
-.praise-carousel {
-    position: relative;
-    height: 140px; /* 70% of original 200px */
-    overflow: hidden;
-}
-
-.praise-item {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    color: #3a3a3a;
-    font-size: 0.77rem; /* 70% of original 1.1rem */
-    line-height: 1.6;
-    animation: revolve 40s linear infinite;
-    pointer-events: none;
-}
-
+.praise-carousel { position: relative; height: 140px; overflow: hidden; }
+.praise-item { position: absolute; width: 100%; text-align: center; color: #3a3a3a; font-size: 0.77rem; line-height: 1.6; animation: revolve 40s linear infinite; pointer-events: none; }
 .praise-item:nth-child(1) { animation-delay: 0s; }
 .praise-item:nth-child(2) { animation-delay: -8s; }
 .praise-item:nth-child(3) { animation-delay: -16s; }
 .praise-item:nth-child(4) { animation-delay: -24s; }
 .praise-item:nth-child(5) { animation-delay: -32s; }
-
 @keyframes revolve {
-    0% {
-        transform: translateY(210px) scale(0.6); /* 70% of 300px */
-        opacity: 0;
-        z-index: 1;
-    }
-    20% {
-        transform: translateY(122.5px) scale(0.8); /* 70% of 175px */
-        opacity: 0.5;
-        z-index: 2;
-    }
-    40% {
-        transform: translateY(35px) scale(1); /* 70% of 50px */
-        opacity: 1;
-        z-index: 10;
-    }
-    60% {
-        transform: translateY(-52.5px) scale(0.8); /* 70% of -75px */
-        opacity: 0.5;
-        z-index: 2;
-    }
-    80% {
-        transform: translateY(-140px) scale(0.6); /* 70% of -200px */
-        opacity: 0;
-        z-index: 1;
-    }
-    100% {
-        transform: translateY(-140px) scale(0.6);
-        opacity: 0;
-        z-index: 1;
-    }
+    0% { transform: translateY(210px) scale(0.6); opacity: 0; z-index: 1; }
+    20%  { transform: translateY(122.5px) scale(0.8); opacity: 0.5; z-index: 2; }
+    40%  { transform: translateY(35px)    scale(1);   opacity: 1;   z-index: 10; }
+    60%  { transform: translateY(-52.5px) scale(0.8); opacity: 0.5; z-index: 2; }
+    80%  { transform: translateY(-140px)  scale(0.6); opacity: 0;   z-index: 1; }
+    100% { transform: translateY(-140px)  scale(0.6); opacity: 0;   z-index: 1; }
 }
-
-.praise-author {
-    display: block;
-    margin-top: 10.5px; /* 70% of original 15px */
-    font-style: italic;
-    font-size: 0.665rem; /* 70% of original 0.95rem */
-    color: #666;
-}
-
-
-
+.praise-author { display: block; margin-top: 10.5px; font-style: italic; font-size: 0.665rem; color: #666; }
 
 @media (max-width: 501px) {
-    .bookcontainer     { flex-direction: column; text-align: left; width: 100%; }
+    .bookcontainer       { flex-direction: column; text-align: left; width: 100%; }
     .bookcontainer > img { max-width: 100%; margin-top: 0; margin-left: 0; }
-    .blurb             { width: 100%; box-sizing: border-box; }
-    .praise-box {
-        padding: 21px 17.5px; /* 70% of 30px 25px */
-    }
-    
-    .praise-item {
-        font-size: 0.7rem; /* 70% of 1rem */
-    }
-    
-    .praise-carousel {
-        height: 154px; /* 70% of 220px */
-    }
-
-
+    .blurb               { width: 100%; box-sizing: border-box; }
+    .praise-box          { padding: 21px 17.5px; }
+    .praise-item         { font-size: 0.7rem; }
+    .praise-carousel     { height: 154px; }
 }
 </style>
 
@@ -188,7 +116,7 @@ title: CASE FILE A-10541
 
 
 <div class="praise-container">
-    <img src=""{{ site.baseurl }}/assets/images/text/praise-for-agency-grimm.png" alt="Praise for the Book" class="praise-header">
+    <img src="{{ site.baseurl }}/assets/images/text/praise-for-agency-grimm.png" alt="Praise for the Book" class="praise-header">
     
     <div class="praise-box">
         <div class="praise-carousel">
