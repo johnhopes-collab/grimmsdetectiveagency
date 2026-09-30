@@ -98,45 +98,56 @@ title: CASE FILE A-10541
     color: #3a3a3a;
     font-size: 1.1rem;
     line-height: 1.6;
-    opacity: 0;
-    transform: translateY(100px) scale(0.7);
-    animation: revolve 25s infinite;
+    animation: revolve 25s linear infinite;
+    pointer-events: none;
 }
 
 .praise-item:nth-child(1) { animation-delay: 0s; }
-.praise-item:nth-child(2) { animation-delay: 5s; }
-.praise-item:nth-child(3) { animation-delay: 10s; }
-.praise-item:nth-child(4) { animation-delay: 15s; }
-.praise-item:nth-child(5) { animation-delay: 20s; }
+.praise-item:nth-child(2) { animation-delay: -5s; }
+.praise-item:nth-child(3) { animation-delay: -10s; }
+.praise-item:nth-child(4) { animation-delay: -15s; }
+.praise-item:nth-child(5) { animation-delay: -20s; }
 
 @keyframes revolve {
     0% {
-        transform: translateY(100px) scale(0.7);
+        transform: translateY(250px) scale(0.6);
         opacity: 0;
+        z-index: 1;
     }
-    10% {
-        transform: translateY(50px) scale(0.85);
-        opacity: 0.5;
+    15% {
+        transform: translateY(150px) scale(0.75);
+        opacity: 0.3;
+        z-index: 1;
     }
-    20% {
+    25% {
+        transform: translateY(75px) scale(0.9);
+        opacity: 0.7;
+        z-index: 2;
+    }
+    40% {
         transform: translateY(0) scale(1);
         opacity: 1;
+        z-index: 10;
     }
-    30%, 40% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
+    55% {
+        transform: translateY(-75px) scale(0.9);
+        opacity: 0.7;
+        z-index: 2;
     }
-    50% {
-        transform: translateY(-50px) scale(0.85);
-        opacity: 0.5;
+    65% {
+        transform: translateY(-150px) scale(0.75);
+        opacity: 0.3;
+        z-index: 1;
     }
-    60% {
-        transform: translateY(-100px) scale(0.7);
+    80% {
+        transform: translateY(-250px) scale(0.6);
         opacity: 0;
+        z-index: 1;
     }
     100% {
-        transform: translateY(-100px) scale(0.7);
+        transform: translateY(-250px) scale(0.6);
         opacity: 0;
+        z-index: 1;
     }
 }
 
@@ -147,6 +158,7 @@ title: CASE FILE A-10541
     font-size: 0.95rem;
     color: #666;
 }
+
 
 
 @media (max-width: 501px) {
