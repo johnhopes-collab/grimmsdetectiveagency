@@ -41,10 +41,130 @@ title: CASE FILE A-10541
 
 .blurb-image { display: block; width: 300px; max-width: 100%; height: auto; margin-left: auto; margin-right: auto; }
 
+.praise-container {
+    width: 100%;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.praise-header {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 30px;
+}
+
+.praise-box {
+    position: relative;
+    border: 4px solid transparent;
+    border-radius: 12px;
+    background:
+        linear-gradient(#f5f1e8, #f5f1e8) padding-box,
+        radial-gradient(
+            ellipse 55% 35% at 50% 0%,
+            #d2c49f 0%,
+            #c0af85 35%,
+            transparent 75%
+        ) border-box,
+        linear-gradient(
+            to bottom,
+            #c0af85 0%,
+            #b5a477 28%,
+            #a08e67 62%,
+            #96845e 100%
+        ) border-box;
+    box-shadow:
+        4px 5px 0 rgba(25, 19, 13, 0.85),
+        inset 0 2px 2px rgba(255, 255, 255, 0.22),
+        inset 0 -3px 4px rgba(20, 15, 10, 0.65),
+        inset 2px 0 3px rgba(255, 255, 255, 0.08),
+        inset -2px 0 3px rgba(20, 15, 10, 0.45);
+    padding: 40px 50px;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.praise-carousel {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.praise-item {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(100px) scale(0.7);
+    animation: revolve 25s infinite;
+}
+
+.praise-item:nth-child(1) { animation-delay: 0s; }
+.praise-item:nth-child(2) { animation-delay: 5s; }
+.praise-item:nth-child(3) { animation-delay: 10s; }
+.praise-item:nth-child(4) { animation-delay: 15s; }
+.praise-item:nth-child(5) { animation-delay: 20s; }
+
+@keyframes revolve {
+    0% {
+        transform: translateY(100px) scale(0.7);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(50px) scale(0.85);
+        opacity: 0.5;
+    }
+    20% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    30%, 40% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50px) scale(0.85);
+        opacity: 0.5;
+    }
+    60% {
+        transform: translateY(-100px) scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-100px) scale(0.7);
+        opacity: 0;
+    }
+}
+
+.praise-author {
+    display: block;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+
 @media (max-width: 501px) {
     .bookcontainer     { flex-direction: column; text-align: left; width: 100%; }
     .bookcontainer > img { max-width: 100%; margin-top: 0; margin-left: 0; }
     .blurb             { width: 100%; box-sizing: border-box; }
+    .praise-box {
+        padding: 30px 25px;
+    }
+    
+    .praise-item {
+        font-size: 1rem;
+    }
+    
+    .praise-carousel {
+        height: 220px;
+    }
+
 }
 </style>
 
@@ -62,3 +182,33 @@ title: CASE FILE A-10541
 </div>
 <br>
 <h2><a href="https://www.amazon.com/Agency-Grimm-10541-Snooze-Button/dp/B0H8B4CKYR/">→ Click here to order your case report today</a></h2>
+
+
+<div class="praise-container">
+    <img src="your-praise-header-image.png" alt="Praise for the Book" class="praise-header">
+    
+    <div class="praise-box">
+        <div class="praise-carousel">
+            <div class="praise-item">
+                "An absolutely captivating read that kept me turning pages late into the night."
+                <span class="praise-author">— Jane Smith, bestselling author</span>
+            </div>
+            <div class="praise-item">
+                "A masterpiece of storytelling. This book will stay with you long after you finish."
+                <span class="praise-author">— John Doe, Literary Review</span>
+            </div>
+            <div class="praise-item">
+                "Brilliant, compelling, and utterly unforgettable. A must-read!"
+                <span class="praise-author">— Sarah Johnson, Book Critics Circle</span>
+            </div>
+            <div class="praise-item">
+                "The author's prose is simply magnificent. One of the best books of the year."
+                <span class="praise-author">— Michael Brown, The Daily Chronicle</span>
+            </div>
+            <div class="praise-item">
+                "A triumph! This is storytelling at its finest."
+                <span class="praise-author">— Emily Davis, Publisher's Weekly</span>
+            </div>
+        </div>
+    </div>
+</div>
