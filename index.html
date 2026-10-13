@@ -440,6 +440,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
 </script>
 
+//Slideshow Carousel
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const slideshow = document.querySelector('.topped-image-slideshow');
@@ -463,7 +464,21 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Clean up after transition
         setTimeout(() => {
+            // Reset position BEFORE removing class
+            currentSlide.style.transform = 'translate(-50%, -50%) translateX(100%)';
+            currentSlide.style.opacity = '0';
+            
+            // Force reflow to ensure style is applied
+            currentSlide.offsetHeight;
+            
+            // Now remove the class
             currentSlide.classList.remove('slide-exiting');
+            
+            // Clear inline styles after a moment
+            setTimeout(() => {
+                currentSlide.style.transform = '';
+                currentSlide.style.opacity = '';
+            }, 50);
         }, 600); // Match transition duration
     }
     
