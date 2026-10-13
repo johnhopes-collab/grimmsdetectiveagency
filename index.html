@@ -23,35 +23,34 @@ title: Front Desk
     max-width: 100%;
     margin: -28px auto;
     overflow: hidden;
-    /* Set a specific aspect ratio or height */
-    aspect-ratio: 16 / 9; /* Adjust this to match your images' typical ratio */
-    /* OR use a fixed height instead: */
-    /* height: 300px; */
+    aspect-ratio: 4 / 3; /* Fixed aspect ratio based on your images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .topped-image-slideshow .topped-image {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateX(100%);
     width: 100%;
     height: 100%;
-    object-fit: contain; /* This keeps aspect ratio, fits within bounds */
-    /* OR use: object-fit: cover; */ /* This fills the space, may crop */
+    object-fit: contain; /* Keeps aspect ratio, fits within bounds */
     opacity: 0;
-    transform: translateX(100%);
     transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
 
 .topped-image-slideshow .topped-image.slide-active {
-    position: absolute; /* Keep absolute, not relative! */
     opacity: 1;
-    transform: translateX(0);
+    transform: translate(-50%, -50%) translateX(0);
 }
 
 .topped-image-slideshow .topped-image.slide-exiting {
     opacity: 1;
-    transform: translateX(-100%);
+    transform: translate(-50%, -50%) translateX(-100%);
 }
+
 
 
     
