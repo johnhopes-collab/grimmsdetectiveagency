@@ -16,44 +16,7 @@ title: Front Desk
 .text-box h2.h2alt  { color: var(--button-brown); line-height: 1; margin-top:-5px; }
     
 .topped-image       { display: block; width: 70%; max-width: 100%; height: auto; margin: -28px auto; border: none; }
-
-.topped-image-slideshow {
-    position: relative;
-    width: 55%;
-    margin: -18px auto -67px auto;
-    overflow: hidden;
-    padding: 72px 0 0 0;
-    aspect-ratio: 9 / 6; /* Fixed aspect ratio based on your images */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.topped-image-slideshow .topped-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) translateX(100%);
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Keeps aspect ratio, fits within bounds */
-    opacity: 0;
-    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
-}
-
-.topped-image-slideshow .topped-image.slide-active {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateX(0);
-}
-
-.topped-image-slideshow .topped-image.slide-exiting {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateX(-100%);
-}
-
-
-
-    
+   
 .note-block         { position: absolute; width: 40vw; max-width: 400px; margin-left: 56%; transform: translateY(-15%); z-index: 1; }
 .note-block img     { display: block; width: 200px; }
 .retro-text-wrapper { position: relative; max-width: 680px; margin: -10px auto 20px; }
@@ -113,26 +76,21 @@ title: Front Desk
 
 <h2 class="h2alt">News & Updates</h2>
 
+
 <div class="retro-text-wrapper">
-    <div class="retro-text-tab">  <span class="tab-label">NEWS —</span> <span class="tab-date">OCTOBER 9th, 2026</span> </div>
+    <div class="retro-text-tab">  <span class="tab-label">NEWS —</span> <span class="tab-date">OCTOBER 29, 2026</span> </div>
         <div class="retro-text-container">
             <div class="retro-text-content">
                     <div class="retro-text-display">
-                        <div class="topped-image-slideshow">
-                            <img src="{{ site.baseurl }}/assets/updates/261009-festival-1.png" alt="Festival Image 1" class="topped-image slide-active">
-                            <img src="{{ site.baseurl }}/assets/updates/261009-festival-2.png" alt="Festival Image 2" class="topped-image">
-                            <img src="{{ site.baseurl }}/assets/updates/261009-festival-3.png" alt="Festival Image 3" class="topped-image">
-                            <img src="{{ site.baseurl }}/assets/updates/261009-festival-4.png" alt="Festival Image 4" class="topped-image">
-                            <img src="{{ site.baseurl }}/assets/updates/261009-festival-5.png" alt="Festival Image 5" class="topped-image">
-                            <img src="{{ site.baseurl }}/assets/updates/261009-festival-6.png" alt="Festival Image 6" class="topped-image">
-                        </div>
+                        <img src="{{ site.baseurl }}/assets/updates/261029-promo.png" alt="Reading Poster" class="topped-image">
                     </div>
                     <div class="retro-text-blurb">
-                        <p>Special thanks to everyone who came and showed their support! The Regina Caeli Fall Festival booth for <strong>Agency Grimm</strong> was a success! We sold out our limited run and sold a lot of merch to boot. It was great speaking with all of you and seeing how much interest there was in the series! Please look forward to the next installment in the lives of the Grimm siblings!</p>
+                        <p>During the Octave of All Saints, from November 1st through the 8th, a plenary indulgence may be obtained by visiting a cemetery and praying for the dead. The indulgence may also be offered to the souls in purgatory. A separate indulgence may be obtained for each day that this is done.</p>
                     </div>
             </div>
         </div>
     </div>
+</div>
 
 <div class="social-buttons-container">
     <div class="social-buttons">
@@ -438,50 +396,4 @@ document.addEventListener("DOMContentLoaded", function () {
   goToInitialState();
 });
     
-</script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const slideshow = document.querySelector('.topped-image-slideshow');
-    if (!slideshow) return;
-    
-    const slides = slideshow.querySelectorAll('.topped-image');
-    let currentIndex = 0;
-    const slideInterval = 4000; // 4 seconds per image
-    
-    function nextSlide() {
-        const currentSlide = slides[currentIndex];
-        currentIndex = (currentIndex + 1) % slides.length;
-        const nextSlide = slides[currentIndex];
-        
-        // Add exiting class to current
-        currentSlide.classList.add('slide-exiting');
-        currentSlide.classList.remove('slide-active');
-        
-        // Add active class to next
-        nextSlide.classList.add('slide-active');
-        
-        // Clean up after transition
-        setTimeout(() => {
-            // Reset position BEFORE removing class
-            currentSlide.style.transform = 'translate(-50%, -50%) translateX(100%)';
-            currentSlide.style.opacity = '0';
-            
-            // Force reflow to ensure style is applied
-            currentSlide.offsetHeight;
-            
-            // Now remove the class
-            currentSlide.classList.remove('slide-exiting');
-            
-            // Clear inline styles after a moment
-            setTimeout(() => {
-                currentSlide.style.transform = '';
-                currentSlide.style.opacity = '';
-            }, 50);
-        }, 600); // Match transition duration
-    }
-    
-    // Start slideshow
-    setInterval(nextSlide, slideInterval);
-});
 </script>
